@@ -1,0 +1,225 @@
+============================================================
+BLACKBOX HACKATHON — UPDATED EXECUTION PLAN
+Team: Tanmay, Jasjyot, Tolendi
+Last updated: 2026-03-23
+============================================================
+
+ARCHITECTURE: ML-AUGMENTED LLM DOPPELGANGER
+============================================
+
+The LLM is the prediction engine. ML models feed it
+sharper context. This gives us the best of both worlds:
+LLM handles unseen questions, ML prevents mean-regression.
+
+  ┌────────────────────────────────────────┐
+  │         PRE-COMPUTED (before test)     │
+  │                                        │
+  │  Model 1: Person Response Profiles     │
+  │  → response style, construct scores,   │
+  │    cognitive performance, game behavior │
+  │                                        │
+  │  Model 2: Behavioral Clustering        │
+  │  → cluster 233 people into ~5-8 types  │
+  │  → label each cluster behaviorally     │
+  │                                        │
+  │  Model 3: Question-Construct Mapping   │
+  │  → embed all known questions           │
+  │  → map new questions to constructs     │
+  │  → pull person's scores on that area   │
+  └──────────────────┬─────────────────────┘
+                     │
+                     ▼
+  ┌────────────────────────────────────────┐
+  │         AT PREDICTION TIME             │
+  │                                        │
+  │  LLM Prompt =                          │
+  │    persona text file                   │
+  │    + Model 1 response profile          │
+  │    + Model 2 cluster label             │
+  │    + Model 3 construct match           │
+  │    + new question + answer options     │
+  │                                        │
+  │  LLM → predicted answer               │
+  └────────────────────────────────────────┘
+
+============================================================
+TASK BREAKDOWN & OWNERSHIP
+============================================================
+
+PHASE 1: FOUNDATION (Hours 0-4)
+-------------------------------
+[DONE] Initial EDA on CSV data — Tanmay
+[DONE] Read hackathon brief, understand task
+[DONE] Read and understand all 3 data formats
+[DONE] Develop strategy and architecture
+
+PHASE 2: BUILD CORE PIPELINE (Hours 4-12)
+------------------------------------------
+[ ] Task A: LLM Prediction Pipeline (Tanmay)
+    - Build prompt template using persona text
+    - Send persona + question to LLM API
+    - Parse LLM output into predicted answer
+    - Handle different question types:
+      * Likert scale (1-5, 1-7)
+      * Multiple choice (select one)
+      * Numeric (percentage, dollar amount)
+    - Script: scripts/llm_predictor.py
+
+[ ] Task B: Validation Harness (Tanmay)
+    - Load all 233 persona JSONs
+    - For each person, hold out N questions as "test"
+    - Feed persona text + held-out question to LLM
+    - Compare predicted vs actual answer
+    - Compute metrics:
+      * MAE / RMSE for numeric/ordinal
+      * Exact match for categorical
+      * Person-wise correlation (key metric!)
+      * Variance preservation across people
+    - Script: scripts/validation_harness.py
+
+[ ] Task C: Model 1 — Person Response Profiles (Teammate)
+    - Compute per-person response features from CSVs
+    - See model1_prompt.txt for full spec
+    - Output: outputs/person_response_profiles.csv
+    - Script: scripts/build_person_profiles.py
+
+[ ] Task D: Model 2 — Behavioral Clustering (Teammate)
+    - Take Model 1 output (person profiles)
+    - Standardize features
+    - Run K-means or hierarchical clustering (k=5-8)
+    - Label each cluster based on dominant traits
+    - Output: outputs/person_clusters.csv
+      (person_id, cluster_id, cluster_label)
+    - Script: scripts/cluster_personas.py
+
+PHASE 3: ENRICH & ITERATE (Hours 12-18)
+-----------------------------------------
+[ ] Task E: Model 3 — Question-Construct Mapping
+    - Embed all known question texts (from label CSVs)
+    - Group questions by construct
+    - Build a classifier: new question text → construct
+    - When test questions arrive, classify each one
+    - Pull person's known scores on matched construct
+    - Script: scripts/question_classifier.py
+
+[ ] Task F: Integrate ML signals into LLM prompt
+    - Add Model 1 response profile to prompt
+    - Add Model 2 cluster label to prompt
+    - Add Model 3 construct match to prompt
+    - Re-run validation, compare to baseline
+    - Iterate prompt wording for best accuracy
+
+[ ] Task G: Calibration Layer
+    - Analyze validation errors by question type
+    - If LLM consistently over/under-predicts certain
+      scales, add a post-prediction adjustment
+    - Example: if LLM predicts 0.3 too high on 1-5 Likert
+      for risk questions, subtract 0.3
+
+PHASE 4: TEST SET (Hours 20-22)
+-------------------------------
+[ ] Task H: When test set drops (Tuesday 7 AM)
+    - Load test questions
+    - Run Model 3 to classify each question
+    - Run full pipeline for all 233 people x N questions
+    - Apply calibration adjustments
+    - Format and submit predictions
+
+PHASE 5: PRESENTATION (Hours 22-24)
+------------------------------------
+[ ] Task I: Build slide deck (PDF)
+    Must cover:
+    - Architecture diagram (the one above)
+    - EDA highlights (charts from outputs/tanmay/)
+    - Methodology: what we tried and why
+    - Validation results: accuracy, correlation, examples
+    - What worked, what didn't, what we'd do differently
+
+    Judge-facing pitch:
+    "We combine behavioral science structure with ML rigor.
+     Instead of treating each answer independently, we model
+     each person as a latent behavioral profile and predict
+     unseen responses using a hybrid system that combines
+     profile features, historical answer structure, and
+     semantic understanding of new questions — all funneled
+     through an LLM that reasons about how a specific person
+     would respond."
+
+============================================================
+KEY METRICS TO TRACK
+============================================================
+
+1. MAE (Mean Absolute Error) — how close on average?
+2. Person-wise correlation — does the model distinguish
+   between individuals? THIS IS CRITICAL.
+3. Variance ratio — predicted variance / actual variance.
+   If < 0.8, model is collapsing to the mean.
+4. Exact match rate — for categorical questions.
+5. Calibration error — are predicted distributions realistic?
+
+============================================================
+VALIDATION STRATEGY
+============================================================
+
+LEAVE-OUT-QUESTION validation:
+- For each person, randomly hold out 20% of their questions
+- Predict held-out questions using only persona text + ML signals
+- This simulates the hidden test perfectly
+
+LEAVE-OUT-CONSTRUCT validation:
+- Hold out an entire construct (e.g., all Risk Aversion questions)
+- Predict using everything EXCEPT that construct
+- This tests true generalization to unseen question types
+
+Run BOTH. Report both in the slides.
+
+============================================================
+RED FLAGS — STOP IF YOU SEE THESE
+============================================================
+
+- Predicted variance across people < 50% of actual variance
+  → model is averaging everyone, correlation will tank
+- MAE barely changes when you switch between different people
+  → model is ignoring the persona, treating everyone the same
+- Validation accuracy on held-out constructs much worse than
+  held-out questions from known constructs
+  → model is memorizing, not generalizing
+- LLM frequently outputs the midpoint (3 on 1-5 scale)
+  → prompt is too vague, needs stronger persona signals
+
+============================================================
+WHAT TO INSTALL
+============================================================
+
+pip install anthropic openai pandas numpy scikit-learn
+pip install matplotlib seaborn sentence-transformers
+
+============================================================
+LLM API CHOICE
+============================================================
+
+Recommended: Claude API (anthropic package)
+  - Best at following complex persona instructions
+  - Strong reasoning about psychological profiles
+  - Use claude-sonnet-4-20250514 for speed during validation
+  - Use claude-opus-4-0-20250115 for final predictions if budget allows
+
+Alternative: OpenAI GPT-4o
+  - Also strong, slightly cheaper per token
+  - Good fallback if rate-limited
+
+For 233 people x ~50 test questions = ~11,650 API calls.
+At ~2000 tokens per call, that's ~23M tokens.
+Budget accordingly.
+
+============================================================
+BLUNT PRIORITIES
+============================================================
+
+If you run out of time, this is the minimum viable submission:
+
+1. LLM pipeline with persona text only (no ML enrichment)
+2. Validation results showing it works
+3. 5-slide deck explaining the approach
+
+Everything else is bonus that improves your score.

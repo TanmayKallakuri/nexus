@@ -1,0 +1,158 @@
+============================================================
+MODEL 1 — PERSON RESPONSE PROFILE BUILDER
+Task for teammate
+============================================================
+
+GOAL:
+For each of the 233 people, compute a set of response-style
+features from their raw survey answers. These features will
+be fed into an LLM prompt to help it predict how each person
+answers unseen questions. This is NOT a standalone predictor.
+
+INPUT FILES:
+  data/survey_1_numbers.csv
+  data/survey_2_numbers.csv
+  data/survey_3_numbers.csv
+  data/survey_4_numbers.csv
+
+NOTE: Each CSV has:
+  - Row 1: short column names (header)
+  - Row 2: full question text (skip this row when loading)
+  - Row 3+: actual numeric responses
+  - Column names have trailing spaces — strip them after loading
+
+Load with:
+  df = pd.read_csv(filepath, header=0, low_memory=False, encoding='utf-8-sig')
+  df.columns = df.columns.str.strip()
+  df = df.iloc[1:].reset_index(drop=True)
+  df = df.apply(pd.to_numeric, errors='coerce')
+
+Merge all 4 surveys on person_id using outer join.
+
+============================================================
+FEATURES TO COMPUTE (per person)
+============================================================
+
+1. RESPONSE CENTRAL TENDENCY
+   - mean_response: average across all Likert-scale items
+   - median_response: median across all Likert-scale items
+
+   How to identify Likert columns: columns where the min is
+   >= 1 and max is <= 7 (or <= 9 for some scales) and the
+   column has at least 100 non-null responses. Exclude
+   person_id and any column with very high cardinality.
+
+2. RESPONSE VARIABILITY
+   - response_std: standard deviation across all Likert items
+   - response_iqr: interquartile range (Q3 - Q1)
+   - coefficient_of_variation: std / mean
+
+3. EXTREME RESPONSE STYLE (ERS)
+   - ers_rate: proportion of responses at scale endpoints
+     (i.e., min or max of that column's scale)
+   - For a 1-5 scale: count of 1s and 5s / total responses
+   - For a 1-7 scale: count of 1s and 7s / total responses
+
+4. MIDPOINT RESPONSE STYLE (MRS)
+   - mrs_rate: proportion of responses at the midpoint
+   - For 1-5 scale: count of 3s / total
+   - For 1-7 scale: count of 4s / total
+
+5. ACQUIESCENCE BIAS
+   - acquiescence_rate: proportion of "agree" responses
+   - For 1-5 scales: count of 4s and 5s / total
+   - For 1-7 scales: count of 5, 6, 7s / total
+   - NOTE: This is imperfect because some items are reverse-
+     coded, but it still captures the tendency.
+
+6. CONSTRUCT-LEVEL AVERAGES
+   Compute mean score per person for each major construct:
+
+   - avg_empathy (Empathy_1 through Empathy_20)
+   - avg_big_five (Big Five _1 through Big Five _44)
+   - avg_need_for_cognition (need for cognition_1 through _18)
+   - avg_agentic_communal (Agentic Communal _1 through _24)
+   - avg_minimalism (Minimalism_1 through _12)
+   - avg_green (GREEN_1 through _6)
+   - avg_conscientiousness (Conscientiousness_1 through _8)
+   - avg_beck_anxiety (Beck Anxiety _1 through _21)
+   - avg_individualism (Individualism_1 through _16)
+   - avg_social_desirability (Social Desirability_1 through _13)
+   - avg_need_for_closure (Need for closure _1 through _15)
+   - avg_need_for_uniqueness (Need for uniqueness _1 through _12)
+   - avg_self_monitoring (Self-Monitoring_1 through _13)
+   - avg_self_concept_clarity (Self-Conc. Clarity _1 through _12)
+   - avg_regulatory_focus (Regulatory Focus _1 through _10)
+   - avg_maximization (Maximization_1 through _6)
+   - avg_risk_aversion (average across Risk Aversion 1-3 items)
+   - avg_loss_aversion (average across Loss Aversion 1-4 items)
+   - avg_present_bias (average across Present bias 1-3 items)
+   - avg_discount_rate (average across Discount Rate 1-2 items)
+
+7. RESPONSE COMPLETENESS
+   - completion_rate: proportion of non-null responses
+   - num_surveys_completed: count of surveys with data (1-4)
+
+8. COGNITIVE PERFORMANCE SUMMARY
+   - crt_total: sum of CRT 1 + CRT 2 + CRT 3 + CRT4
+   - numeracy_total: sum of Numeracy 1 through 8
+   - matrix_total: sum of Matrix 1 + Matrix 2 + Matrix 3
+   - synonym_total: sum of Synonym 1 through 10
+   - antonym_total: sum of Antonym 1 through 10
+
+9. ECONOMIC GAME BEHAVIOR
+   - ultimatum_sender: value from "Ultimatum - sender" column
+   - ultimatum_receiver: value from "Ultimatum - receive" column
+   - trust_sender: value from "Trust game - sender" column
+   - dictator_sender: value from "Dictator" column
+
+============================================================
+OUTPUT
+============================================================
+
+Save as: outputs/person_response_profiles.csv
+
+One row per person_id. Columns:
+  person_id, mean_response, median_response, response_std,
+  response_iqr, coefficient_of_variation, ers_rate, mrs_rate,
+  acquiescence_rate, avg_empathy, avg_big_five, ... (all
+  construct averages), completion_rate, num_surveys_completed,
+  crt_total, numeracy_total, matrix_total, synonym_total,
+  antonym_total, ultimatum_sender, ultimatum_receiver,
+  trust_sender, dictator_sender
+
+Print summary stats at the end so we can sanity-check.
+
+============================================================
+IMPORTANT NOTES
+============================================================
+
+- Use matplotlib.use('Agg') at top of script. No GUI.
+- Script must be self-contained and runnable as:
+    python scripts/build_person_profiles.py
+- Save script to: scripts/build_person_profiles.py
+- Save output to: outputs/person_response_profiles.csv
+- Use descriptive progress markers:
+    print("[1/5] Loading data...")
+    print("[2/5] Computing response style features...")
+    etc.
+- Handle NaN gracefully — use nanmean, nanstd, etc.
+- Do NOT modify original data files in data/
+
+============================================================
+HOW THIS GETS USED DOWNSTREAM
+============================================================
+
+The LLM prediction prompt will include a section like:
+
+  "Response profile for this person:
+   - Average Likert response: 3.42 (below population mean of 3.67)
+   - Response variability: high (std=1.21, population mean std=0.89)
+   - Extreme response style: 28% of answers at endpoints
+   - Acquiescence rate: 45% (slightly above average)
+   - Key construct scores: high empathy (4.1), low risk aversion (2.3)
+   - Cognitive performance: CRT 3/4, Numeracy 7/8 (high)
+   - Economic games: generous sender (60%), accepts most offers"
+
+This gives the LLM concrete, calibrated data about HOW this
+person tends to respond, not just WHAT they believe.
