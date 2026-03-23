@@ -1,0 +1,73 @@
+PROGRESS REPORT V1
+Project: Nexus Hackathon Collaboration Hub
+Stage: Model 1 Complete
+Date: 2026-03-23
+
+1. CURRENT STATUS
+Model 1 has been built and is ready for team use.
+This is not a final prediction model. It is a one-row-per-person feature table designed to support downstream modeling.
+
+2. WHAT WAS COMPLETED
+- Built scripts/build_person_profiles.py
+- Reused existing outputs/master_table.csv instead of rebuilding raw preprocessing
+- Generated outputs/person_response_profiles.csv
+- Generated outputs/person_response_profiles_data_dictionary.csv
+
+3. MODEL 1 PURPOSE
+Model 1 creates person-level behavioral and response-style features from known survey answers.
+It is meant to serve as the structured foundation for later models.
+
+4. OUTPUT SUMMARY
+Primary artifact:
+- outputs/person_response_profiles.csv
+
+Supporting artifact:
+- outputs/person_response_profiles_data_dictionary.csv
+
+Observed output shape:
+- 233 rows x 92 columns
+
+5. FEATURE GROUPS INCLUDED
+- Coverage and completeness features
+- Response style features
+- Personality construct aggregates
+- Economic preference features
+- Cognitive test scores
+- Demographic features
+
+6. VALIDATION CHECKS PASSED
+- 233 unique person_ids found
+- No all-NaN columns
+- Normalized features stayed within expected bounds
+- Script reruns from repo root
+- Missing values preserved as NaN rather than fabricated fills
+
+7. KNOWN RISK / REVIEW POINTS
+Some scored cognitive features depend on hard-coded answer keys.
+These include CRT, numeracy, financial literacy, vocabulary, and Wason-style items.
+These should be sanity-checked on a sample before the team treats them as fully trusted signal.
+
+8. WHAT THIS DOES NOT DO
+- Does not predict hidden test answers
+- Does not perform clustering
+- Does not perform question retrieval
+- Does not use an LLM
+- Does not replace later ensemble models
+
+9. HOW TEAMMATES SHOULD USE IT
+Downstream models should read outputs/person_response_profiles.csv as the main person-level feature matrix.
+Use the data dictionary to understand feature meanings before feature selection or modeling.
+
+10. RECOMMENDED NEXT STEP
+Build Model 2 on top of this artifact:
+Person Embedding Predictor
+Goal: learn latent behavioral structure from the known response matrix and blend it later with Model 1 features.
+
+11. FILES TO TRACK IN REPO
+- scripts/build_person_profiles.py
+- outputs/person_response_profiles.csv
+- outputs/person_response_profiles_data_dictionary.csv
+
+12. BOTTOM LINE
+Model 1 is done enough to push and use.
+Do not waste more time polishing it unless the answer-key assumptions prove wrong.
