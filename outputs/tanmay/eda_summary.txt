@@ -1,0 +1,283 @@
+============================================================
+INITIAL EDA SUMMARY — BEHAVIORAL ECONOMICS SURVEY
+Investigator: tanmay
+Date: 2026-03-23
+============================================================
+
+--- DATASET OVERVIEW ---
+Files: 8 CSV files (4 surveys x 2 versions: labels + numbers)
+Merged master: 234 respondents x 915 variables
+Memory usage: 0.8 MB
+Unique person IDs: 233
+
+--- FORENSICS CONCLUSION ---
+Domain: Behavioral Economics / Cognitive Psychology
+Source: Large-scale online survey (likely MTurk/Prolific)
+Geography: United States (demographics ask about US regions, citizenship)
+Confidence: HIGH
+Constructs measured:
+  - Personality: Big Five, Empathy, Individualism, Conscientiousness
+  - Mental Health: Beck Anxiety Inventory (BAI), Beck Depression Inventory (BDI)
+  - Cognitive: CRT, Numeracy, Financial Literacy, Syllogisms, Wason Selection
+  - Decision Biases: Risk Aversion, Loss Aversion, Present Bias, Discount Rate,
+    Sunk Cost, Allais Paradox, Base Rate Neglect, Linda Problem, Denominator Neglect
+  - Social: Ultimatum Game, Trust Game, Dictator Game
+  - Other: Need for Closure, Need for Cognition, Need for Uniqueness,
+    Minimalism, Maximization, Self-Monitoring, Regulatory Focus, GREEN, Agentic Communal
+
+--- DATA QUALITY ---
+Columns with nulls: 915 / 915
+Overall missing rate: 27.0%
+Most missing column: 5_Q10_9 (100.0%)
+
+--- NUMERIC COLUMNS ---
+Count: 914
+Most appear to be Likert-scale responses (ordinal 1-5 or 1-7)
+
+--- CATEGORICAL COLUMNS ---
+Count: 0
+
+--- TOP CORRELATIONS ---
+  Loss Aversion 1 _1 <-> Loss Aversion 1 _2  r=0.970
+  Loss Aversion 3 _11 <-> Loss Aversion 3 _12  r=0.955
+  Risk Aversion 3 _4 <-> Risk Aversion 3 _5  r=0.946
+  Loss Aversion 3 _1 <-> Loss Aversion 3 _2  r=0.941
+  Loss aversion 4 _13 <-> Loss aversion 4 _14  r=0.941
+  Loss aversion 4 _12 <-> Loss aversion 4 _13  r=0.932
+  Present bias 3 _1 <-> Present bias 3 _2  r=0.930
+  Loss Aversion 1 _4 <-> Loss Aversion 1 _5  r=0.929
+  Loss Aversion 3 _1 <-> Loss Aversion 3 _3  r=0.927
+  Loss Aversion 3 _2 <-> Loss Aversion 3 _3  r=0.925
+
+--- CONSTRUCT GROUPS ---
+  10_Q295: 1 items
+  10_choice questions: 1 items
+  11_Q295: 1 items
+  11_choice questions: 1 items
+  12_Q295: 1 items
+  12_choice questions: 1 items
+  13_Q295: 1 items
+  13_choice questions: 1 items
+  14_Q295: 1 items
+  14_choice questions: 1 items
+  15_Q295: 1 items
+  15_choice questions: 1 items
+  16_Q295: 1 items
+  16_choice questions: 1 items
+  17_Q295: 1 items
+  17_choice questions: 1 items
+  18_Q295: 1 items
+  18_choice questions: 1 items
+  19_Q295: 1 items
+  19_choice questions: 1 items
+  1_Q10: 20 items
+  1_Q295: 1 items
+  1_choice questions: 1 items
+  20_Q295: 1 items
+  20_choice questions: 1 items
+  21_Q295: 1 items
+  21_choice questions: 1 items
+  22_Q295: 1 items
+  22_choice questions: 1 items
+  23_Q295: 1 items
+  23_choice questions: 1 items
+  24_Q295: 1 items
+  24_choice questions: 1 items
+  25_Q295: 1 items
+  25_choice questions: 1 items
+  26_Q295: 1 items
+  26_choice questions: 1 items
+  27_Q295: 1 items
+  27_choice questions: 1 items
+  28_Q295: 1 items
+  28_choice questions: 1 items
+  29_Q295: 1 items
+  29_choice questions: 1 items
+  2_Q10: 20 items
+  2_Q295: 1 items
+  2_choice questions: 1 items
+  30_Q295: 1 items
+  30_choice questions: 1 items
+  31_Q295: 1 items
+  31_choice questions: 1 items
+  32_Q295: 1 items
+  32_choice questions: 1 items
+  33_Q295: 1 items
+  33_choice questions: 1 items
+  34_Q295: 1 items
+  34_choice questions: 1 items
+  35_Q295: 1 items
+  35_choice questions: 1 items
+  36_Q295: 1 items
+  36_choice questions: 1 items
+  37_Q295: 1 items
+  37_choice questions: 1 items
+  38_Q295: 1 items
+  38_choice questions: 1 items
+  39_Q295: 1 items
+  39_choice questions: 1 items
+  3D q1: 1 items
+  3D q2: 1 items
+  3D q3: 1 items
+  3_Q10: 20 items
+  3_Q295: 1 items
+  3_choice questions: 1 items
+  40_Q295: 1 items
+  40_choice questions: 1 items
+  4_Q10: 20 items
+  4_Q295: 1 items
+  4_choice questions: 1 items
+  5_Q10: 20 items
+  5_Q295: 1 items
+  5_choice questions: 1 items
+  6_Q10: 20 items
+  6_Q295: 1 items
+  6_choice questions: 1 items
+  7_Q295: 1 items
+  7_choice questions: 1 items
+  8_Q295: 1 items
+  8_choice questions: 1 items
+  9_Q295: 1 items
+  9_choice questions: 1 items
+  Agentic Communal: 24 items
+  Allais: 1 items
+  Antonym 1: 1 items
+  Antonym 10: 1 items
+  Antonym 2: 1 items
+  Antonym 3: 1 items
+  Antonym 4: 1 items
+  Antonym 5: 1 items
+  Antonym 6: 1 items
+  Antonym 7: 1 items
+  Antonym 8: 1 items
+  Antonym 9: 1 items
+  Beck Anxiety: 21 items
+  Beck Depression 1: 4 items
+  Big Five: 44 items
+  CRT 1: 1 items
+  CRT 2: 1 items
+  CRT 3: 1 items
+  CRT4: 1 items
+  Conscientiousness: 8 items
+  D10: 4 items
+  D11: 4 items
+  D12: 4 items
+  D13: 4 items
+  D14: 4 items
+  D15: 4 items
+  D16: 4 items
+  D17: 4 items
+  D18: 4 items
+  D19: 4 items
+  D2: 4 items
+  D20: 4 items
+  D21: 4 items
+  D3: 4 items
+  D4: 4 items
+  D5: 4 items
+  D6: 4 items
+  D7: 4 items
+  D8: 4 items
+  Denominator neglect: 1 items
+  Dictator: 1 items
+  Discount Rate 1: 9 items
+  Discount rate 2: 10 items
+  Empathy: 20 items
+  False Cons. self: 10 items
+  False cons. others: 10 items
+  Financial literacy 1: 1 items
+  Financial literacy 1.1: 1 items
+  Financial literacy 4: 1 items
+  Form A: 1 items
+  Form B - 70 eng: 1 items
+  GREEN: 6 items
+  Individualism: 16 items
+  Loss Aversion 1: 14 items
+  Loss Aversion 2: 14 items
+  Loss Aversion 3: 14 items
+  Loss aversion 4: 14 items
+  Matrix 1: 1 items
+  Matrix 2: 1 items
+  Matrix 3: 1 items
+  Maximization: 6 items
+  Mental Accounting 1: 1 items
+  Mental Accounting 4: 1 items
+  Mental accounting 2: 1 items
+  Mental accounting 3: 1 items
+  Minimalism: 12 items
+  Modus Ponens: 1 items
+  Myside: 1 items
+  Need for closure: 15 items
+  Need for uniqueness: 12 items
+  Numeracy 1: 1 items
+  Numeracy 2: 1 items
+  Numeracy 3: 1 items
+  Numeracy 4: 1 items
+  Numeracy 5: 1 items
+  Numeracy 6: 1 items
+  Numeracy 7: 1 items
+  Numeracy 8: 1 items
+  Omission bias: 1 items
+  Overconfidence: 1 items
+  Overplacement: 1 items
+  Present bias 1: 9 items
+  Present bias 2: 10 items
+  Present bias 3: 11 items
+  Q156: 1 items
+  Q159: 3 items
+  Q160: 3 items
+  Q198: 10 items
+  Q203: 6 items
+  Q245: 11 items
+  Q275: 6 items
+  Regulatory Focus: 10 items
+  Risk Aversion 1: 14 items
+  Risk Aversion 2: 14 items
+  Risk Aversion 3: 14 items
+  Self-Conc. Clarity: 12 items
+  Self-Monitoring: 13 items
+  Selves questionnair: 1 items
+  Social Desirability: 13 items
+  Spendthrift: 1 items
+  Standalone Q items: 73 items
+  Syllogism: 1 items
+  Synonym 1: 1 items
+  Synonym 10: 1 items
+  Synonym 2: 1 items
+  Synonym 3: 1 items
+  Synonym 4: 1 items
+  Synonym 5: 1 items
+  Synonym 6: 1 items
+  Synonym 7: 1 items
+  Synonym 8: 1 items
+  Synonym 9: 1 items
+  Thaler: 1 items
+  Trust - receiver 1: 1 items
+  Trust - receiver 2: 1 items
+  Trust - receiver 3: 1 items
+  Trust - receiver 4: 1 items
+  Trust - receiver 5: 1 items
+  Trust Though rec: 6 items
+  Trust Thought Send: 6 items
+  Trust game - sender: 1 items
+  Ultimatum - receive: 1 items
+  Ultimatum - sender: 1 items
+  Ut: 1 items
+  Wason Selection: 4 items
+  absolute: 1 items
+  african: 1 items
+  base_rate: 1 items
+  disease: 1 items
+  less_is_more: 1 items
+  linda: 1 items
+  matching: 1 items
+  need for cognition: 18 items
+  nonseparability ris: 4 items
+  nonseparabilty bene: 4 items
+  outcome_bias: 1 items
+  redwood: 1 items
+  sunk_cost: 1 items
+  syllogism continued: 1 items
+  weight loss: 1 items
+
+Note: Charts based on (234 rows)
