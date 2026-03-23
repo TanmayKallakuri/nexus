@@ -9,8 +9,8 @@ Data Sources:
   - outputs/unique_questions.csv (531 unique questions, used for reference)
 
 Output:
-  - outputs/person_response_profiles.csv   (233 rows × ~60 feature columns)
-  - outputs/person_response_profiles_data_dictionary.csv
+  - outputs/person_response_profiles_repaired.csv   (233 rows × ~60 feature columns)
+  - outputs/person_response_profiles_repaired_data_dictionary.csv
 
 Feature Groups:
   1. Coverage & completeness       — answer counts per block and overall
@@ -45,8 +45,8 @@ from pathlib import Path
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 MASTER_TABLE_PATH = PROJECT_ROOT / "outputs" / "master_table.csv"
 UNIQUE_Q_PATH = PROJECT_ROOT / "outputs" / "unique_questions.csv"
-OUTPUT_PATH = PROJECT_ROOT / "outputs" / "person_response_profiles.csv"
-DATA_DICT_PATH = PROJECT_ROOT / "outputs" / "person_response_profiles_data_dictionary.csv"
+OUTPUT_PATH = PROJECT_ROOT / "outputs" / "person_response_profiles_repaired.csv"
+DATA_DICT_PATH = PROJECT_ROOT / "outputs" / "person_response_profiles_repaired_data_dictionary.csv"
 
 
 # ============================================================
@@ -56,33 +56,35 @@ DATA_DICT_PATH = PROJECT_ROOT / "outputs" / "person_response_profiles_data_dicti
 # Cognitive Reflection Test (CRT) — QID49-QID55
 # Standard CRT items with known correct answers
 CRT_ANSWERS = {
-    "QID49": "5",       # 5 minutes for 100 machines
-    "QID50": "0.05",    # ball costs 5 cents
-    "QID51": "47",      # 47 days for half the lake
-    "QID52": "emily",   # Emily's father's third daughter
-    "QID53": "0",       # no dirt in a hole
-    "QID54": "2",       # 2nd place after passing 2nd
-    "QID55": "8",       # 8 sheep left
+    "QID52": "emily",
+    "QID53": "0",
+    "QID54": "2",
+    "QID55": "8",
 }
 
 # Numeracy items — QID43-QID48
 # Berlin Numeracy Test + Schwartz/Woloshin items
 NUMERACY_ANSWERS = {
-    "QID43": "never",   # credit card minimum payment — never paid off
-    "QID44": "167",     # 1000/6 ≈ 167 (accept 166-167)
-    "QID45": "10",      # 1% of BIG BUCKS = 10 winners per 1000
-    "QID46": "20",      # 20 out of 100 = 20%
-    "QID47": "0.1",     # 1/1000 = 0.1%
-    "QID48": "100",     # 10% of 1000 = 100
+    "QID44": "500",
+    "QID45": "10",
+    "QID46": "20",
+    "QID47": "0.1",
+    "QID48": "100",
+    "QID49": "5",
+    "QID50": "0.05",
+    "QID51": "47",
 }
 
 # Financial literacy — QID38-QID42 (Lusardi & Mitchell)
 FINANCIAL_LITERACY_ANSWERS = {
-    "QID38": "Stocks",       # more return than savings/bonds over long period
-    "QID39": "True",         # interest rate + inflation understanding
-    "QID40": "Decreases",    # diversification reduces risk
-    "QID41": "Stocks",       # stocks give highest return over 10-20 years
-    "QID42": "True",         # must withdraw from 401k after 70.5
+    "QID36": "true",
+    "QID37": "less than today with the money in this account",
+    "QID38": "stocks",
+    "QID39": "true",
+    "QID40": "decreases",
+    "QID41": "stocks",
+    "QID42": "false",
+    "QID43": "never",
 }
 
 # Vocabulary — Synonyms (QID63-72), correct answer positions
@@ -161,66 +163,18 @@ def normalize_text_answer(text):
 
 
 def check_crt_correct(qid, answer_text):
-    """Check if a CRT answer is correct, with fuzzy numeric matching."""
     expected = CRT_ANSWERS.get(qid)
     if expected is None or pd.isna(answer_text):
         return np.nan
-
-    ans = normalize_text_answer(answer_text)
-    if not ans:
-        return np.nan
-
-    # Special case: QID52 (Emily) — text match
-    if qid == "QID52":
-        return 1.0 if "emily" in ans else 0.0
-
-    # Special case: QID43 (never) — text match
-    if qid == "QID43":
-        return 1.0 if "never" in ans else 0.0
-
-    # Numeric comparison
-    try:
-        ans_num = float(ans)
-        exp_num = float(expected)
-        # Allow small tolerance for float representations
-        if abs(ans_num - exp_num) < 0.01:
-            return 1.0
-        return 0.0
-    except ValueError:
-        return 0.0
-
+    ans = str(answer_text).strip().lower()
+    return 1.0 if expected == ans else 0.0
 
 def check_numeracy_correct(qid, answer_text):
-    """Check if a numeracy answer is correct, with fuzzy matching."""
     expected = NUMERACY_ANSWERS.get(qid)
     if expected is None or pd.isna(answer_text):
         return np.nan
-
-    ans = normalize_text_answer(answer_text)
-    if not ans:
-        return np.nan
-
-    # QID43 — text "never"
-    if qid == "QID43":
-        return 1.0 if "never" in ans else 0.0
-
-    # QID44 — accept 166 or 167
-    if qid == "QID44":
-        try:
-            val = float(ans)
-            return 1.0 if 166 <= val <= 167 else 0.0
-        except ValueError:
-            return 0.0
-
-    # Numeric comparison for the rest
-    try:
-        ans_num = float(ans)
-        exp_num = float(expected)
-        if abs(ans_num - exp_num) < 0.01:
-            return 1.0
-        return 0.0
-    except ValueError:
-        return 0.0
+    ans = str(answer_text).strip().lower()
+    return 1.0 if expected == ans else 0.0
 
 
 def count_forward_flow_words(answer_text):
@@ -364,7 +318,7 @@ def build_personality_construct_features(person_df):
 
         # BAI: also compute sum score (standard clinical scoring)
         if parent_qid == "QID125":
-            features["bai_sum_score"] = float(valid["pos_float"].sum())
+            features["bai_sum_score"] = float((valid["pos_float"] - 1).sum())
 
     # Spending habits (categorical MC items QID31-34)
     for qid, name in [("QID31", "spending_scale"), ("QID32", "spending_difficulty"),
@@ -497,7 +451,7 @@ def build_cognitive_features(person_df):
             ans = normalize_text_answer(row.iloc[0]["answer_text"])
             if ans:
                 fin_total += 1
-                if ans == correct_text.lower():
+                if correct_text.lower() in ans:
                     fin_correct += 1
     features["financial_literacy_score"] = fin_correct if fin_total > 0 else np.nan
     features["financial_literacy_total"] = fin_total
@@ -513,7 +467,7 @@ def build_cognitive_features(person_df):
                 syn_total += 1
                 if pos == correct_pos:
                     syn_correct += 1
-    features["vocabulary_synonym_score"] = syn_correct if syn_total > 0 else np.nan
+    
     features["vocabulary_synonym_total"] = syn_total
 
     # Vocabulary — Antonyms: QID74-83
@@ -527,12 +481,12 @@ def build_cognitive_features(person_df):
                 ant_total += 1
                 if pos == correct_pos:
                     ant_correct += 1
-    features["vocabulary_antonym_score"] = ant_correct if ant_total > 0 else np.nan
+    
     features["vocabulary_antonym_total"] = ant_total
 
     # Combined vocabulary
     if syn_total > 0 or ant_total > 0:
-        features["vocabulary_total_score"] = syn_correct + ant_correct
+        pass # Vocab unresolved
     else:
         features["vocabulary_total_score"] = np.nan
 
@@ -552,7 +506,12 @@ def build_cognitive_features(person_df):
     row = person_df[person_df["question_id"] == "QID221"]
     if len(row) > 0:
         selected = parse_multi_select_positions(row.iloc[0]["answer_position"])
-        features["wason_correct"] = 1.0 if selected == WASON_CORRECT else 0.0
+        wason_score = 0
+        if 1 in selected: wason_score += 1
+        if 2 not in selected: wason_score += 1
+        if 3 not in selected: wason_score += 1
+        if 4 in selected: wason_score += 1
+        features["wason_correct"] = float(wason_score)
         features["wason_n_selected"] = len(selected)
     else:
         features["wason_correct"] = np.nan

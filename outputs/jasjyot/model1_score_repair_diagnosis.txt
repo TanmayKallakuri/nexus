@@ -1,0 +1,252 @@
+============================================================
+SCALE: CRT
+============================================================
+
+User: 00a1r | GT: 3 | Patched CSV: 6
+Raw answers:
+  QID49: text='5', pos=NaN, options=''
+  QID50: text='0.05', pos=NaN, options=''
+  QID51: text='47', pos=NaN, options=''
+  QID52: text='Emily', pos=NaN, options=''
+  QID53: text='0', pos=NaN, options=''
+  QID54: text='1', pos=NaN, options=''
+  QID55: text='8', pos=NaN, options=''
+
+User: 7hiu4 | GT: 2 | Patched CSV: 4
+Raw answers:
+  QID49: text='5', pos=NaN, options=''
+  QID50: text='0.1', pos=NaN, options=''
+  QID51: text='47', pos=NaN, options=''
+  QID52: text='Emily', pos=NaN, options=''
+  QID53: text='27', pos=NaN, options=''
+  QID54: text='1', pos=NaN, options=''
+  QID55: text='8', pos=NaN, options=''
+
+User: k8gd7 | GT: 4 | Patched CSV: 7
+Raw answers:
+  QID49: text='5', pos=NaN, options=''
+  QID50: text='0.05', pos=NaN, options=''
+  QID51: text='47', pos=NaN, options=''
+  QID52: text='Emily', pos=NaN, options=''
+  QID53: text='0', pos=NaN, options=''
+  QID54: text='2', pos=NaN, options=''
+  QID55: text='8', pos=NaN, options=''
+============================================================
+SCALE: Numeracy
+============================================================
+
+User: 00a1r | GT: 7 | Patched CSV: 3
+Raw answers:
+  QID43: text='15', pos=NaN, options=''
+  QID44: text='500', pos=NaN, options=''
+  QID45: text='10', pos=NaN, options=''
+  QID46: text='20', pos=NaN, options=''
+  QID47: text='1', pos=NaN, options=''
+  QID48: text='100', pos=NaN, options=''
+
+User: 7hiu4 | GT: 7 | Patched CSV: 5
+Raw answers:
+  QID43: text='never', pos=NaN, options=''
+  QID44: text='500', pos=NaN, options=''
+  QID45: text='10', pos=NaN, options=''
+  QID46: text='20', pos=NaN, options=''
+  QID47: text='0.1', pos=NaN, options=''
+  QID48: text='100', pos=NaN, options=''
+
+User: k8gd7 | GT: 8 | Patched CSV: 4
+Raw answers:
+  QID43: text='1% of the remaining balance', pos=NaN, options=''
+  QID44: text='500', pos=NaN, options=''
+  QID45: text='10', pos=NaN, options=''
+  QID46: text='20', pos=NaN, options=''
+  QID47: text='0.1', pos=NaN, options=''
+  QID48: text='100', pos=NaN, options=''
+============================================================
+SCALE: Financial Literacy
+============================================================
+
+User: 00a1r | GT: 4 | Patched CSV: 4
+Raw answers:
+  QID38: text='Stocks', pos=2, options='["Savings account", "Stocks", "Bonds", "Do not know"]'
+  QID39: text='True', pos=1, options='["True", "False"]'
+  QID40: text='Decreases', pos=2, options='["Increases", "Decreases", "Stays the same", "Do not know"]'
+  QID41: text='Bonds', pos=3, options='["Savings account", "Stocks", "Bonds", "Do not know"]'
+  QID42: text='True', pos=1, options='["True", "False"]'
+
+User: 7hiu4 | GT: 6 | Patched CSV: 3
+Raw answers:
+  QID38: text='Stocks', pos=2, options='["Savings account", "Stocks", "Bonds", "Do not know"]'
+  QID39: text='True', pos=1, options='["True", "False"]'
+  QID40: text='Decreases', pos=2, options='["Increases", "Decreases", "Stays the same", "Do not know"]'
+  QID41: text='Bonds', pos=3, options='["Savings account", "Stocks", "Bonds", "Do not know"]'
+  QID42: text='False', pos=2, options='["True", "False"]'
+
+User: k8gd7 | GT: 5 | Patched CSV: 5
+Raw answers:
+  QID38: text='Stocks', pos=2, options='["Savings account", "Stocks", "Bonds", "Do not know"]'
+  QID39: text='True', pos=1, options='["True", "False"]'
+  QID40: text='Decreases', pos=2, options='["Increases", "Decreases", "Stays the same", "Do not know"]'
+  QID41: text='Stocks', pos=2, options='["Savings account", "Stocks", "Bonds", "Do not know"]'
+  QID42: text='True', pos=1, options='["True", "False"]'
+============================================================
+SCALE: Crystallized Intel
+============================================================
+
+User: 00a1r | GT: 7 | Patched CSV: 15
+Raw answers:
+  QID63: text='acquiesce', pos=1, options='["acquiesce", "extricate", "divulge", "concoct", "ransack"]'
+  QID64: text='appropriate', pos=4, options='["harass", "repulse", "console", "appropriate", "congregate"]'
+  QID65: text='exert', pos=4, options='["purge", "spurn", "entrance", "exert", "beseech"]'
+  QID66: text='facile', pos=5, options='["ecstatic", "heinous", "stealthy", "flimsy", "facile"]'
+  QID67: text='ascetic', pos=2, options='["bizarre", "ascetic", "sagacious", "lineal", "irritable"]'
+  QID68: text='crave', pos=1, options='["crave", "claim", "avenge", "clutch", "comply"]'
+  QID69: text='vacilate', pos=3, options='["premeditate", "irradiate", "vacilate", "recapitulate", "furbish"]'
+  QID70: text='slothful', pos=5, options='["contrite", "inexhaustible", "impervious", "arduous", "slothful"]'
+  QID71: text='incongruity', pos=4, options='["despondency", "mediocrity", "serenity", "incongruity", "assiduity"]'
+  QID72: text='fiscal', pos=2, options='["refractory", "fiscal", "destitute", "tolerable", "diligent"]'
+  QID74: text='famished', pos=1, options='["famished", "finished", "finicky", "fulfilled", "fortunate"]'
+  QID75: text='recalcitrant', pos=5, options='["distasteful", "egoistical", "alone", "ugly", "recalcitrant"]'
+  QID76: text='gregarious', pos=3, options='["happy", "deadly", "gregarious", "manly", "varied"]'
+  QID77: text='adore', pos=1, options='["adore", "despair", "abate", "deplore", "attach"]'
+  QID78: text='taciturn', pos=4, options='["garrulous", "magnificent", "grandiloquent", "taciturn", "calculating"]'
+  QID79: text='abundance', pos=3, options='["birth", "brevity", "abundance", "splendor", "renaissance"]'
+  QID81: text='emaciated', pos=3, options='["sallow", "affiliated", "emaciated", "entrepreneur", "anemic"]'
+  QID82: text='irrelevant', pos=3, options='["teutonic", "healthful", "irrelevant", "massive", "puny"]'
+  QID83: text='bankrupt', pos=1, options='["bankrupt", "loose", "livid", "superficial", "profound"]'
+  QID80: text='incessant', pos=3, options='["germinal", "antiseptic", "incessant", "summery", "wintry"]'
+
+User: 7hiu4 | GT: 7 | Patched CSV: 17
+Raw answers:
+  QID63: text='ransack', pos=5, options='["acquiesce", "extricate", "divulge", "concoct", "ransack"]'
+  QID64: text='appropriate', pos=4, options='["harass", "repulse", "console", "appropriate", "congregate"]'
+  QID65: text='beseech', pos=5, options='["purge", "spurn", "entrance", "exert", "beseech"]'
+  QID66: text='stealthy', pos=3, options='["ecstatic", "heinous", "stealthy", "flimsy", "facile"]'
+  QID67: text='sagacious', pos=3, options='["bizarre", "ascetic", "sagacious", "lineal", "irritable"]'
+  QID68: text='crave', pos=1, options='["crave", "claim", "avenge", "clutch", "comply"]'
+  QID69: text='vacilate', pos=3, options='["premeditate", "irradiate", "vacilate", "recapitulate", "furbish"]'
+  QID70: text='slothful', pos=5, options='["contrite", "inexhaustible", "impervious", "arduous", "slothful"]'
+  QID71: text='incongruity', pos=4, options='["despondency", "mediocrity", "serenity", "incongruity", "assiduity"]'
+  QID72: text='destitute', pos=3, options='["refractory", "fiscal", "destitute", "tolerable", "diligent"]'
+  QID74: text='famished', pos=1, options='["famished", "finished", "finicky", "fulfilled", "fortunate"]'
+  QID75: text='recalcitrant', pos=5, options='["distasteful", "egoistical", "alone", "ugly", "recalcitrant"]'
+  QID76: text='gregarious', pos=3, options='["happy", "deadly", "gregarious", "manly", "varied"]'
+  QID77: text='adore', pos=1, options='["adore", "despair", "abate", "deplore", "attach"]'
+  QID78: text='calculating', pos=5, options='["garrulous", "magnificent", "grandiloquent", "taciturn", "calculating"]'
+  QID79: text='abundance', pos=3, options='["birth", "brevity", "abundance", "splendor", "renaissance"]'
+  QID81: text='emaciated', pos=3, options='["sallow", "affiliated", "emaciated", "entrepreneur", "anemic"]'
+  QID82: text='irrelevant', pos=3, options='["teutonic", "healthful", "irrelevant", "massive", "puny"]'
+  QID83: text='profound', pos=5, options='["bankrupt", "loose", "livid", "superficial", "profound"]'
+  QID80: text='antiseptic', pos=2, options='["germinal", "antiseptic", "incessant", "summery", "wintry"]'
+
+User: k8gd7 | GT: 9 | Patched CSV: 20
+Raw answers:
+  QID63: text='acquiesce', pos=1, options='["acquiesce", "extricate", "divulge", "concoct", "ransack"]'
+  QID64: text='appropriate', pos=4, options='["harass", "repulse", "console", "appropriate", "congregate"]'
+  QID65: text='beseech', pos=5, options='["purge", "spurn", "entrance", "exert", "beseech"]'
+  QID66: text='stealthy', pos=3, options='["ecstatic", "heinous", "stealthy", "flimsy", "facile"]'
+  QID67: text='sagacious', pos=3, options='["bizarre", "ascetic", "sagacious", "lineal", "irritable"]'
+  QID68: text='crave', pos=1, options='["crave", "claim", "avenge", "clutch", "comply"]'
+  QID69: text='vacilate', pos=3, options='["premeditate", "irradiate", "vacilate", "recapitulate", "furbish"]'
+  QID70: text='slothful', pos=5, options='["contrite", "inexhaustible", "impervious", "arduous", "slothful"]'
+  QID71: text='incongruity', pos=4, options='["despondency", "mediocrity", "serenity", "incongruity", "assiduity"]'
+  QID72: text='destitute', pos=3, options='["refractory", "fiscal", "destitute", "tolerable", "diligent"]'
+  QID74: text='famished', pos=1, options='["famished", "finished", "finicky", "fulfilled", "fortunate"]'
+  QID75: text='recalcitrant', pos=5, options='["distasteful", "egoistical", "alone", "ugly", "recalcitrant"]'
+  QID76: text='gregarious', pos=3, options='["happy", "deadly", "gregarious", "manly", "varied"]'
+  QID77: text='adore', pos=1, options='["adore", "despair", "abate", "deplore", "attach"]'
+  QID78: text='taciturn', pos=4, options='["garrulous", "magnificent", "grandiloquent", "taciturn", "calculating"]'
+  QID79: text='abundance', pos=3, options='["birth", "brevity", "abundance", "splendor", "renaissance"]'
+  QID81: text='emaciated', pos=3, options='["sallow", "affiliated", "emaciated", "entrepreneur", "anemic"]'
+  QID82: text='irrelevant', pos=3, options='["teutonic", "healthful", "irrelevant", "massive", "puny"]'
+  QID83: text='profound', pos=5, options='["bankrupt", "loose", "livid", "superficial", "profound"]'
+  QID80: text='incessant', pos=3, options='["germinal", "antiseptic", "incessant", "summery", "wintry"]'
+============================================================
+SCALE: Wason
+============================================================
+
+User: 00a1r | GT: 2 | Patched CSV: 0.0
+Raw answers:
+  QID221: text='["A", "3"]', pos=[1, 3], options='["A", "F", "3", "7"]'
+
+User: 7hiu4 | GT: 2 | Patched CSV: 0.0
+Raw answers:
+  QID221: text='["A", "3"]', pos=[1, 3], options='["A", "F", "3", "7"]'
+
+User: k8gd7 | GT: 1 | Patched CSV: 0.0
+Raw answers:
+  QID221: text='["3"]', pos=[3], options='["A", "F", "3", "7"]'
+============================================================
+SCALE: Beck Anxiety
+============================================================
+
+User: 00a1r | GT: 1 | Patched CSV: 22.0
+Raw answers:
+  QID125_r1: text='Not at all 0', pos=1, options='["Not at all 0", "1", "2", "Severely - I barely could stand it 3"]'
+  QID125_r2: text='Not at all 0', pos=1, options='["Not at all 0", "1", "2", "Severely - I barely could stand it 3"]'
+  QID125_r3: text='Not at all 0', pos=1, options='["Not at all 0", "1", "2", "Severely - I barely could stand it 3"]'
+  QID125_r4: text='Not at all 0', pos=1, options='["Not at all 0", "1", "2", "Severely - I barely could stand it 3"]'
+  QID125_r5: text='1', pos=2, options='["Not at all 0", "1", "2", "Severely - I barely could stand it 3"]'
+  QID125_r6: text='Not at all 0', pos=1, options='["Not at all 0", "1", "2", "Severely - I barely could stand it 3"]'
+  QID125_r7: text='Not at all 0', pos=1, options='["Not at all 0", "1", "2", "Severely - I barely could stand it 3"]'
+  QID125_r8: text='Not at all 0', pos=1, options='["Not at all 0", "1", "2", "Severely - I barely could stand it 3"]'
+  QID125_r9: text='Not at all 0', pos=1, options='["Not at all 0", "1", "2", "Severely - I barely could stand it 3"]'
+  QID125_r10: text='Not at all 0', pos=1, options='["Not at all 0", "1", "2", "Severely - I barely could stand it 3"]'
+  QID125_r11: text='Not at all 0', pos=1, options='["Not at all 0", "1", "2", "Severely - I barely could stand it 3"]'
+  QID125_r12: text='Not at all 0', pos=1, options='["Not at all 0", "1", "2", "Severely - I barely could stand it 3"]'
+  QID125_r13: text='Not at all 0', pos=1, options='["Not at all 0", "1", "2", "Severely - I barely could stand it 3"]'
+  QID125_r14: text='Not at all 0', pos=1, options='["Not at all 0", "1", "2", "Severely - I barely could stand it 3"]'
+  QID125_r15: text='Not at all 0', pos=1, options='["Not at all 0", "1", "2", "Severely - I barely could stand it 3"]'
+  QID125_r16: text='Not at all 0', pos=1, options='["Not at all 0", "1", "2", "Severely - I barely could stand it 3"]'
+  QID125_r17: text='Not at all 0', pos=1, options='["Not at all 0", "1", "2", "Severely - I barely could stand it 3"]'
+  QID125_r18: text='Not at all 0', pos=1, options='["Not at all 0", "1", "2", "Severely - I barely could stand it 3"]'
+  QID125_r19: text='Not at all 0', pos=1, options='["Not at all 0", "1", "2", "Severely - I barely could stand it 3"]'
+  QID125_r20: text='Not at all 0', pos=1, options='["Not at all 0", "1", "2", "Severely - I barely could stand it 3"]'
+  QID125_r21: text='Not at all 0', pos=1, options='["Not at all 0", "1", "2", "Severely - I barely could stand it 3"]'
+
+User: 7hiu4 | GT: 8 | Patched CSV: 29.0
+Raw answers:
+  QID125_r1: text='1', pos=2, options='["Not at all 0", "1", "2", "Severely - I barely could stand it 3"]'
+  QID125_r2: text='Not at all 0', pos=1, options='["Not at all 0", "1", "2", "Severely - I barely could stand it 3"]'
+  QID125_r3: text='Not at all 0', pos=1, options='["Not at all 0", "1", "2", "Severely - I barely could stand it 3"]'
+  QID125_r4: text='Not at all 0', pos=1, options='["Not at all 0", "1", "2", "Severely - I barely could stand it 3"]'
+  QID125_r5: text='1', pos=2, options='["Not at all 0", "1", "2", "Severely - I barely could stand it 3"]'
+  QID125_r6: text='Not at all 0', pos=1, options='["Not at all 0", "1", "2", "Severely - I barely could stand it 3"]'
+  QID125_r7: text='Not at all 0', pos=1, options='["Not at all 0", "1", "2", "Severely - I barely could stand it 3"]'
+  QID125_r8: text='Not at all 0', pos=1, options='["Not at all 0", "1", "2", "Severely - I barely could stand it 3"]'
+  QID125_r9: text='1', pos=2, options='["Not at all 0", "1", "2", "Severely - I barely could stand it 3"]'
+  QID125_r10: text='Not at all 0', pos=1, options='["Not at all 0", "1", "2", "Severely - I barely could stand it 3"]'
+  QID125_r11: text='1', pos=2, options='["Not at all 0", "1", "2", "Severely - I barely could stand it 3"]'
+  QID125_r12: text='1', pos=2, options='["Not at all 0", "1", "2", "Severely - I barely could stand it 3"]'
+  QID125_r13: text='Not at all 0', pos=1, options='["Not at all 0", "1", "2", "Severely - I barely could stand it 3"]'
+  QID125_r14: text='Not at all 0', pos=1, options='["Not at all 0", "1", "2", "Severely - I barely could stand it 3"]'
+  QID125_r15: text='Not at all 0', pos=1, options='["Not at all 0", "1", "2", "Severely - I barely could stand it 3"]'
+  QID125_r16: text='Not at all 0', pos=1, options='["Not at all 0", "1", "2", "Severely - I barely could stand it 3"]'
+  QID125_r17: text='2', pos=3, options='["Not at all 0", "1", "2", "Severely - I barely could stand it 3"]'
+  QID125_r18: text='Not at all 0', pos=1, options='["Not at all 0", "1", "2", "Severely - I barely could stand it 3"]'
+  QID125_r19: text='Not at all 0', pos=1, options='["Not at all 0", "1", "2", "Severely - I barely could stand it 3"]'
+  QID125_r20: text='Not at all 0', pos=1, options='["Not at all 0", "1", "2", "Severely - I barely could stand it 3"]'
+  QID125_r21: text='1', pos=2, options='["Not at all 0", "1", "2", "Severely - I barely could stand it 3"]'
+
+User: k8gd7 | GT: 10 | Patched CSV: 31.0
+Raw answers:
+  QID125_r1: text='Not at all 0', pos=1, options='["Not at all 0", "1", "2", "Severely - I barely could stand it 3"]'
+  QID125_r2: text='2', pos=3, options='["Not at all 0", "1", "2", "Severely - I barely could stand it 3"]'
+  QID125_r3: text='Not at all 0', pos=1, options='["Not at all 0", "1", "2", "Severely - I barely could stand it 3"]'
+  QID125_r4: text='Not at all 0', pos=1, options='["Not at all 0", "1", "2", "Severely - I barely could stand it 3"]'
+  QID125_r5: text='1', pos=2, options='["Not at all 0", "1", "2", "Severely - I barely could stand it 3"]'
+  QID125_r6: text='1', pos=2, options='["Not at all 0", "1", "2", "Severely - I barely could stand it 3"]'
+  QID125_r7: text='Not at all 0', pos=1, options='["Not at all 0", "1", "2", "Severely - I barely could stand it 3"]'
+  QID125_r8: text='1', pos=2, options='["Not at all 0", "1", "2", "Severely - I barely could stand it 3"]'
+  QID125_r9: text='1', pos=2, options='["Not at all 0", "1", "2", "Severely - I barely could stand it 3"]'
+  QID125_r10: text='Not at all 0', pos=1, options='["Not at all 0", "1", "2", "Severely - I barely could stand it 3"]'
+  QID125_r11: text='Not at all 0', pos=1, options='["Not at all 0", "1", "2", "Severely - I barely could stand it 3"]'
+  QID125_r12: text='Not at all 0', pos=1, options='["Not at all 0", "1", "2", "Severely - I barely could stand it 3"]'
+  QID125_r13: text='Not at all 0', pos=1, options='["Not at all 0", "1", "2", "Severely - I barely could stand it 3"]'
+  QID125_r14: text='Not at all 0', pos=1, options='["Not at all 0", "1", "2", "Severely - I barely could stand it 3"]'
+  QID125_r15: text='Not at all 0', pos=1, options='["Not at all 0", "1", "2", "Severely - I barely could stand it 3"]'
+  QID125_r16: text='1', pos=2, options='["Not at all 0", "1", "2", "Severely - I barely could stand it 3"]'
+  QID125_r17: text='1', pos=2, options='["Not at all 0", "1", "2", "Severely - I barely could stand it 3"]'
+  QID125_r18: text='Not at all 0', pos=1, options='["Not at all 0", "1", "2", "Severely - I barely could stand it 3"]'
+  QID125_r19: text='Not at all 0', pos=1, options='["Not at all 0", "1", "2", "Severely - I barely could stand it 3"]'
+  QID125_r20: text='1', pos=2, options='["Not at all 0", "1", "2", "Severely - I barely could stand it 3"]'
+  QID125_r21: text='1', pos=2, options='["Not at all 0", "1", "2", "Severely - I barely could stand it 3"]'
