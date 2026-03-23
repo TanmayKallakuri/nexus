@@ -405,3 +405,245 @@ TARGET NUMBERS
 
 If you hit these after any round, STOP and push.
 Don't over-optimize. Good enough wins hackathons.
+
+============================================================
+CODEX REVIEW - SAFER V2 IMPLEMENTATION PLAN
+Use this plan instead of following the original V2 literally
+============================================================
+
+BOTTOM LINE:
+  The V2 ideas are directionally good, but there is a major
+  validation risk:
+
+  - construct features can leak held-out answers if they are
+    built from the full dataset before the holdout split
+  - many constructs are actually single-question constructs,
+    so "person percentile on this construct" can become a
+    disguised copy of the target if we are not careful
+
+  Therefore:
+  DO NOT trust any validation result unless person-level
+  construct features are rebuilt inside each fold using only
+  training questions.
+
+============================================================
+WHAT WE LEARNED FROM V1
+============================================================
+
+V1 metrics:
+  Accuracy:       0.724
+  Mean Pearson r: 0.259
+  Variance ratio: 0.288
+
+Diagnosis:
+  1. The model is collapsing toward the mean
+     - predicted std is far below actual std
+     - this hurts Pearson r even when MAE looks acceptable
+
+  2. One model for all question types is too coarse
+     - Personality works best
+     - Economic preferences is negative
+     - Cognitive and Demographics are weak
+
+  3. Raw answer_position is not the right target for every item
+     - true ordinal Likert items behave differently from
+       binary/categorical knowledge items
+
+============================================================
+REVISED BUILD ORDER - DO THIS INSTEAD
+============================================================
+
+ROUND 0 - FIX VALIDATION FIRST
+---------------------------------
+Before any new modeling:
+
+  1. Split holdout by question_id
+  2. Build all person-level aggregate features using ONLY the
+     training questions in that fold
+  3. For multi-item constructs, compute leave-one-item-out
+     construct features so the target item is not included in
+     the person's own aggregate
+
+Why this matters:
+  If held-out answers are used to build person aggregates,
+  validation is optimistic and feature importance is misleading.
+
+============================================================
+ROUND 1 - PERSONALITY-ONLY LEAKAGE-FREE MODEL
+Highest-priority model
+============================================================
+
+Goal:
+  Build a strong model for Personality questions first, because
+  that is the only block already showing real signal.
+
+Features:
+  - Model 1 person features rebuilt inside each fold
+  - question text embeddings
+  - num_options
+  - block_name / question_type
+  - leave-one-item-out construct features for the matched scale:
+      * person_construct_mean_loo
+      * person_construct_std_loo
+      * person_construct_percentile_loo
+
+Target:
+  Use normalized ordinal target instead of raw answer_position:
+
+    y_norm = (answer_position - 1) / (num_options - 1)
+
+  This makes 5-point and 6-point items comparable and reduces
+  scale compression.
+
+Expected outcome:
+  Personality Pearson r should improve first.
+  Do not optimize other blocks until this works.
+
+============================================================
+ROUND 2 - SPLIT NON-PERSONALITY BY QUESTION TYPE
+Do not force one regressor to do every task
+============================================================
+
+Recommended routing:
+
+  A. Personality matrix / Likert items
+     -> regression or ordinal model on normalized target
+
+  B. Binary economic choices
+     -> classifier or probability model, not raw-position
+        regression
+
+  C. Cognitive multiple-choice / true-false items
+     -> classifier, not ordinal regression on answer_position
+
+  D. Demographics
+     -> separate classifier or exclude from the main Tolendi
+        correlation model if they continue to drag results down
+
+Why:
+  The current V1 model treats synonym questions, Likert scales,
+  binary economic decisions, and employment status as one
+  unified numeric task. That is structurally wrong.
+
+============================================================
+ROUND 3 - REDUCE QUESTION EMBEDDING DIMENSION
+Regularization step, not the first fix
+============================================================
+
+Apply PCA to question embeddings AFTER the leakage fix:
+
+  - try 25, 50, and 100 dimensions
+  - keep the smallest value that preserves good validation
+
+Why:
+  V1 uses 384 question embedding dimensions versus 92 person
+  features, which overweights "what is this question" relative
+  to "who is this person."
+
+Note:
+  50 dimensions is a reasonable starting point, but not a rule.
+  Validate it.
+
+============================================================
+ROUND 4 - ONLY THEN TRY CALIBRATION
+Calibration cannot rescue weak ranking
+============================================================
+
+Use variance stretching only after:
+  - leakage-free validation is in place
+  - ranking quality is already decent
+  - mean Pearson r is clearly improved
+
+Guideline:
+  If calibration improves variance ratio but not Pearson r,
+  it is cosmetic and should not be trusted.
+
+============================================================
+ROUND 5 - BASELINE + BLENDING, WITH SAFETY CHECKS
+============================================================
+
+Percentile baseline can be useful, but only with caution.
+
+Rule:
+  Do NOT use percentile baseline blindly for all constructs.
+
+Reason:
+  Many constructs are single-question constructs.
+  For those items, construct percentile can behave like a
+  near-direct encoding of the target if computed from the full
+  data.
+
+Safe use:
+  - use percentile baseline only for true multi-item constructs
+  - compute it from training-only data
+  - compare against the ML model honestly on holdout questions
+
+If the percentile baseline alone beats the ML model:
+  That is acceptable, but it means the mapping is doing most of
+  the work and the ensemble is not yet earning its complexity.
+
+============================================================
+PRACTICAL IMPLEMENTATION PRIORITY
+============================================================
+
+If time is limited, do the steps in this exact order:
+
+  1. Fix validation leakage
+  2. Rebuild construct features inside each fold
+  3. Train Personality-only model with leave-one-item-out
+     construct features
+  4. Switch ordinal target to normalized scale position
+  5. Try PCA on question embeddings
+  6. Only then test calibration and blending
+
+This order is more likely to produce real Pearson r gains than
+starting with calibration.
+
+============================================================
+SAVE AS V2 ARTIFACTS
+============================================================
+
+Recommended outputs:
+
+  scripts/bootstrap_ensemble_tolendi_v2.py
+  outputs/tolendi/bootstrap_ensemble_v2.pkl
+  outputs/tolendi/pca_model.pkl
+  outputs/tolendi/validation_summary_v2.json
+  outputs/tolendi/validation_by_block_v2.csv
+  outputs/tolendi/validation_by_question_v2.csv
+  outputs/tolendi/training_report_v2.txt
+
+Optional only if actually used:
+  outputs/tolendi/calibration_params.json
+  outputs/tolendi/blend_weights.json
+
+============================================================
+STOP CONDITIONS
+============================================================
+
+Stop and reassess if any of these happen:
+
+  - leakage-free validation drops dramatically versus V1
+    -> previous gains were inflated
+
+  - Personality improves but Economic/Cognitive stay broken
+    -> maintain separate models rather than forcing a unified one
+
+  - calibration needs stretch_factor > 4
+    -> ranking is too weak; fix model, don't stretch harder
+
+  - percentile baseline beats the ensemble everywhere
+    -> use the simpler system or redesign the ML architecture
+
+============================================================
+RECOMMENDED SUCCESS CRITERIA
+============================================================
+
+Primary:
+  - Honest, leakage-free mean Pearson r > 0.35
+  - Variance ratio materially improved over 0.288
+
+Strong result:
+  - Honest mean Pearson r > 0.40
+  - Variance ratio > 0.70
+  - Personality clearly improved without breaking other blocks

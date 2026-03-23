@@ -1,0 +1,24 @@
+TOLENDI V2 TRAINING REPORT
+========================================
+
+Accuracy: 0.7303
+Mean Pearson r: 0.3009
+Median Pearson r: 0.2717
+Variance ratio: 0.3786
+Holdout questions: 65
+
+Per-block results:
+  Cognitive tests: accuracy=0.6334, mean_r=0.1351, questions=8
+  Demographics: accuracy=0.6120, mean_r=0.0585, questions=2
+  Economic preferences: accuracy=0.6644, mean_r=0.1183, questions=3
+  Personality: accuracy=0.7458, mean_r=0.3463, questions=52
+
+Route diagnostics:
+  personality: train_rows=46351, test_rows=12115, oob_mean=0.1666
+  binary_non_personality: train_rows=4893, test_rows=1398, oob_mean=0.1923
+  other_multi: train_rows=9553, test_rows=1631, oob_mean=0.1274
+
+Red flag checks:
+  Mean Pearson r < 0.25: False
+  Variance ratio < 0.30: False
+  Accuracy < 0.67: False
