@@ -1,0 +1,133 @@
+Team, here’s the strongest angle I think we should take for this hackathon.
+
+This is not really a “digital twin” creativity problem. It is a supervised prediction problem disguised as persona modeling. The teams that get distracted by storytelling, prompt magic, or one big LLM workflow will likely lose to teams that build a better validation setup and preserve person-specific answer patterns.
+
+What the problem is actually asking:
+We have 233 people.
+For each person, we have rich structured and text-based information: demographics, psych traits, cognition, behavioral tendencies, and prior answers.
+At the end, we get hidden questions and need to predict how each person would answer.
+The scoring is not just about being close on average. It also rewards correlation and distinction across people. That means if our model predicts everyone too similarly, we are dead.
+
+So the real goal is:
+1. predict answers accurately
+2. preserve between-person differences
+3. generalize to unseen questions, not just memorize patterns
+
+Our proposed strategy:
+Use a hybrid ensemble instead of one model.
+
+Core prediction idea:
+prediction(person i, question q)
+= global question prior
++ person latent profile
++ engineered trait interactions
++ question-type adjustment
++ calibration layer
+
+In simpler terms:
+- start with what people usually answer for this type of question
+- adjust using that person’s psychological and behavioral profile
+- learn hidden embeddings from all observed answers
+- add question-specific logic
+- calibrate output so we do not overpredict extremes or collapse to the mean
+
+Why this should beat other teams:
+Most teams will likely do one of these two things:
+1. use an LLM to read the persona and guess the answer
+2. throw all features into a single generic model
+
+Both approaches have weaknesses.
+Pure LLM approach:
+- sounds smart but may regress people toward generic answers
+- weak on calibration
+- bad at maintaining person-level variance consistently
+Generic single-model approach:
+- may overfit because sample size is only 233
+- may not exploit the structure across question families
+- may fail on unseen question styles
+
+Our edge:
+We treat this as a structured human-response prediction problem with multiple signals:
+- explicit features from profile/persona data
+- latent features from prior answer matrix
+- semantic features from question text and answer options
+- validation specifically designed to mimic hidden test conditions
+
+System design:
+Model 1: tabular baseline
+- engineered profile features
+- trait scores, demographics, behavioral indicators, normalized numeric variables
+- use tree-based models or regularized regression depending on answer type
+
+Model 2: response-matrix model
+- build person embeddings from known answers
+- use matrix factorization / latent factor approach
+- captures hidden structure like fairness, risk style, conformity, impulsiveness, trust, etc.
+
+Model 3: semantic question model
+- embed question text and answer options
+- map question meaning to response patterns
+- helps with generalization to unseen questions
+
+Model 4: LLM-assisted predictor
+- not the main engine
+- use only as reranker, fallback, or explanation layer
+- can help infer how new questions relate to known trait dimensions
+- should not be trusted alone for final predictions
+
+Final output:
+Blend all models using validation-based weights.
+
+Most important technical principle:
+We should optimize not just point accuracy but person-level discrimination.
+That means our predictions for Person A and Person B must meaningfully differ where their underlying profiles differ.
+If our outputs become too “safe” and average-looking, correlation score likely suffers.
+
+Validation plan:
+This is probably the most important part of the whole project.
+We should simulate the hidden test by masking unseen questions during training.
+Not random row split only.
+We need:
+- leave-out-question validation
+- leave-out-question-family validation
+- maybe leave-out-entire sections if possible
+
+Why:
+The real test is unseen questions near the end, not repeated questions from the training distribution.
+So the team with the best fake-hidden-test evaluation will probably build the best real model.
+
+What we should measure internally:
+- exact match if labels are categorical
+- MAE / RMSE if ordinal or numeric
+- person-wise correlation between predicted and true response vectors
+- variance preservation across people
+- calibration error, especially for ordinal scales
+
+Red flags we should avoid:
+- relying on one prompting workflow and calling it a model
+- overusing persona summaries while ignoring raw answer patterns
+- random train/test split that leaks question structure
+- predicting too close to the average person
+- building slides before locking evaluation
+
+Execution plan:
+1. inspect data schema and answer formats
+2. identify question families and target types
+3. engineer clean person-level features
+4. create response-matrix embeddings
+5. build strong baseline
+6. build question semantic features
+7. simulate hidden test with masked questions
+8. ensemble and calibrate
+9. turn methodology into a clean story for judges
+
+Judge-facing pitch:
+We are combining behavioral science structure with machine learning rigor.
+Instead of treating each answer independently, we model each participant as a latent behavioral profile and predict unseen responses using a hybrid system that combines profile features, historical answer structure, and semantic understanding of new questions.
+This should produce predictions that are both accurate and person-specific, which aligns directly with the evaluation criteria.
+
+Blunt summary:
+If other teams chase “AI twin” vibes, we should chase prediction science.
+If other teams build one model, we build a controlled ensemble.
+If other teams optimize average closeness, we optimize closeness plus person-level distinction.
+That is probably our path to winning.
