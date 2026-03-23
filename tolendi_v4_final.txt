@@ -1,0 +1,280 @@
+============================================================
+TOLENDI — V4 FINAL ITERATION
+============================================================
+
+This is the last model version before we wire into submission.
+
+V3 BASELINE (what you're improving from):
+  Accuracy:       0.730
+  Mean Pearson r: 0.306
+  Variance ratio: 0.383
+
+WHAT V4 CHANGES:
+  1. Swap to Jasjyot's repaired Model 1
+  2. Two-route split (Personality vs Everything Else)
+  3. Analytical category as feature inside Route 2
+  4. Variance calibration
+  5. Use K=10 embeddings (K=50 didn't help)
+
+============================================================
+CHANGE 1: USE REPAIRED MODEL 1
+============================================================
+
+Switch from:
+  outputs/person_response_profiles.csv (broken cognitive scores)
+To:
+  outputs/person_response_profiles_repaired.csv (fixed)
+
+Changes in the repaired file:
+  - Beck Anxiety: fixed (was off by +21)
+  - Wason: fixed (was always 0)
+  - CRT: improved (4/5 exact match)
+  - Numeracy: improved (4/5 exact match)
+  - Vocabulary/spatial: DROPPED (unresolvable)
+
+Just change the filename in your load step. Nothing else.
+
+============================================================
+CHANGE 2: TWO ROUTES
+============================================================
+
+Replace your current 3-route split with 2 routes:
+
+  Route 1: Personality (251 questions, 58,466 rows)
+    Filter: block_name == 'Personality'
+
+  Route 2: Everything else (75 questions, 17,475 rows)
+    Filter: block_name != 'Personality'
+    Includes: Cognitive tests, Economic preferences, Demographics
+
+Why 2 not 3 or 8:
+  - Only Personality has enough holdout questions (~50) for
+    reliable per-route validation
+  - Everything else combined gives ~15 holdout questions —
+    minimum viable
+  - Finer splits (verbal, numeracy, games separately) give
+    1-4 holdout questions each — can't validate
+
+============================================================
+CHANGE 3: ANALYTICAL CATEGORY AS FEATURE IN ROUTE 2
+============================================================
+
+Add a categorical feature to Route 2 that tags what each
+question actually measures. This lets LightGBM learn
+different patterns per category without separate models.
+
+QUESTION-TO-CATEGORY MAPPING:
+
+  # Verbal ability
+  verbal = ['QID63','QID64','QID65','QID66','QID67',
+            'QID68','QID69','QID70','QID71','QID72',
+            'QID74','QID75','QID76','QID77','QID78',
+            'QID79','QID80','QID81','QID82','QID83']
+
+  # Financial literacy
+  finlit = ['QID36','QID37','QID38','QID39','QID40','QID41','QID42']
+
+  # Logical reasoning (modus ponens + syllogisms)
+  logical = ['QID217','QID218','QID219','QID220',
+             'QID273','QID274','QID275','QID276',
+             'QID277','QID278','QID279']
+
+  # Economic games (dictator, trust, ultimatum)
+  games = ['QID117','QID118','QID119','QID120','QID121','QID122',
+           'QID224','QID225','QID226','QID227','QID228',
+           'QID229','QID230','QID231']
+
+  # Risk/framing
+  framing = ['QID149','QID150','QID151','QID152']
+
+  # Self-concept essays (coded ordinal but actually ratings)
+  selfconcept = ['QID268','QID269','QID270','QID271','QID272']
+
+  # Demographics
+  demographics = ['QID11','QID12','QID13','QID14','QID15','QID16',
+                  'QID17','QID18','QID19','QID20','QID21','QID22',
+                  'QID23','QID24']
+
+  def get_analytical_category(parent_qid):
+      if parent_qid in verbal:       return 'verbal'
+      if parent_qid in finlit:       return 'finlit'
+      if parent_qid in logical:      return 'logical'
+      if parent_qid in games:        return 'games'
+      if parent_qid in framing:      return 'framing'
+      if parent_qid in selfconcept:  return 'selfconcept'
+      if parent_qid in demographics: return 'demographics'
+      return 'other'
+
+  # Add to Route 2 dataframe
+  df_route2['analytical_category'] = df_route2['parent_question_id'].apply(get_analytical_category)
+
+  # One-hot encode for LightGBM
+  cat_dummies = pd.get_dummies(df_route2['analytical_category'], prefix='cat')
+  df_route2 = pd.concat([df_route2, cat_dummies], axis=1)
+
+  # Add dummy columns to feature_cols
+  feature_cols_route2 = feature_cols + [c for c in cat_dummies.columns]
+
+============================================================
+CHANGE 4: VARIANCE CALIBRATION
+============================================================
+
+This is the biggest untapped gain. Predicted std is 0.42 vs
+actual std of 1.10. Stretching predictions away from the
+per-question mean directly fixes this.
+
+Apply AFTER ensemble prediction, BEFORE scoring:
+
+  def calibrate(test_df, stretch_factor):
+      cal = test_df.copy()
+      for qid in cal['question_id'].unique():
+          mask = cal['question_id'] == qid
+          preds = cal.loc[mask, 'predicted'].values
+          q_mean = preds.mean()
+          q_std = preds.std()
+          if q_std < 0.01:
+              continue
+          stretched = q_mean + stretch_factor * (preds - q_mean)
+          # Clamp to valid range
+          num_opts = cal.loc[mask, 'num_options'].iloc[0]
+          stretched = np.clip(stretched, 1, num_opts)
+          cal.loc[mask, 'predicted'] = stretched
+      return cal
+
+TUNE stretch_factor ON VALIDATION:
+
+  from scipy.stats import pearsonr
+
+  best_r = -1
+  best_sf = 1.0
+  best_acc = 0
+
+  for sf in [1.0, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0]:
+      cal_df = calibrate(test_df, sf)
+
+      # Accuracy
+      cal_df['abs_error'] = np.abs(cal_df['predicted'] - cal_df['answer_position'])
+      cal_df['range'] = cal_df['num_options'] - 1
+      accuracy = 1 - (cal_df['abs_error'].mean() / cal_df['range'].mean())
+
+      # Pearson r per question
+      corrs = []
+      for qid in holdout_qids:
+          q = cal_df[cal_df['question_id'] == qid]
+          a, p = q['answer_position'].values, q['predicted'].values
+          if len(a) >= 3 and np.std(a) > 0 and np.std(p) > 0:
+              r, _ = pearsonr(a, p)
+              corrs.append(r)
+      mean_r = np.mean(corrs)
+
+      # Variance ratio
+      act_std = cal_df.groupby('question_id')['answer_position'].std().mean()
+      pred_std = cal_df.groupby('question_id')['predicted'].std().mean()
+      var_ratio = pred_std / act_std
+
+      print(f"sf={sf}: acc={accuracy:.4f} r={mean_r:.4f} var={var_ratio:.3f}")
+
+      if mean_r > best_r:
+          best_r = mean_r
+          best_sf = sf
+          best_acc = accuracy
+
+  print(f"\nBest: sf={best_sf} acc={best_acc:.4f} r={best_r:.4f}")
+
+SAVE the best stretch_factor — needed at test time.
+
+  import json
+  with open('outputs/tolendi/calibration_params.json', 'w') as f:
+      json.dump({'stretch_factor': best_sf}, f)
+
+============================================================
+CHANGE 5: USE K=10 EMBEDDINGS
+============================================================
+
+V3 showed K=10,20,30,50 all performed nearly identically.
+K=10 is cheapest and avoids overfitting.
+
+  person_emb = pd.read_csv('outputs/person_embeddings_k10.csv')
+  emb_cols = [f'emb_{i}' for i in range(10)]
+
+If recomputing per fold (as in V3), use K=10 for the fold
+SVD as well.
+
+============================================================
+FULL V4 PIPELINE
+============================================================
+
+  1. Load repaired Model 1 features
+  2. Load K=10 person embeddings
+  3. Load master table, filter ordinal, normalize target
+  4. Split holdout by question_id (20%)
+  5. Recompute fold-specific embeddings (K=10) if doing
+     leakage-free validation
+  6. Route 1: Personality questions
+     - Features: person features + embeddings + question
+       embeddings (PCA 50) + construct features (LOO)
+     - Train bootstrap LightGBM (12 models)
+  7. Route 2: Everything else
+     - Same features + analytical_category dummies
+     - Train bootstrap LightGBM (10 models)
+  8. Combine predictions from both routes
+  9. Apply calibration with tuned stretch_factor
+  10. Score: accuracy, Pearson r, variance ratio, by-block
+
+============================================================
+WHAT TO REPORT
+============================================================
+
+After V4, report:
+
+  Pre-calibration:
+    Accuracy, Mean Pearson r, Variance ratio
+
+  Post-calibration (for each stretch_factor tested):
+    Accuracy, Mean Pearson r, Variance ratio
+
+  Best calibrated result:
+    Accuracy, Mean Pearson r, Variance ratio
+    Per-block Pearson r
+    Best stretch_factor
+
+  Comparison table:
+    V1 → V2 → V3 → V4 (pre-cal) → V4 (post-cal)
+
+============================================================
+STOP CONDITIONS
+============================================================
+
+If post-calibration r > 0.35 and accuracy > 0.73:
+  SHIP IT. This is good enough.
+
+If calibration stretch_factor > 4.0 and r barely improves:
+  Ranking is too weak. Calibration can't save it.
+  Ship V3 or V4 pre-calibration as-is.
+
+If accuracy drops below 0.70 after calibration:
+  Stretch too aggressive. Use a milder factor.
+
+============================================================
+SAVE V4 ARTIFACTS
+============================================================
+
+  scripts/bootstrap_ensemble_tolendi_v4.py
+  outputs/tolendi/bootstrap_ensemble_v4.pkl
+  outputs/tolendi/calibration_params.json
+  outputs/tolendi/validation_summary_v4.json
+  outputs/tolendi/validation_by_block_v4.csv
+  outputs/tolendi/training_report_v4.txt
+
+============================================================
+AFTER V4: WIRE INTO SUBMISSION
+============================================================
+
+Once V4 is validated:
+  1. Push all artifacts to GitHub
+  2. Jasjyot updates predict_submission.py to load V4 models
+  3. Test end-to-end on sample_test_questions.json
+  4. Ready for when test set drops
+
+This is the final model iteration. After V4, focus shifts
+to submission readiness and slide deck.
