@@ -1,0 +1,203 @@
+============================================================
+TOLENDI — RE-EXPORT V4.1 MODELS (version-safe format)
+============================================================
+
+PROBLEM:
+  Your V4.1 pickle (bootstrap_ensemble_v4_1.pkl) can't load
+  on Tanmay's machine due to pandas version mismatch.
+
+  The final submission script (scripts/final_predict.py)
+  tries to load your ensemble to blend with KNN predictions.
+  Right now it falls back to KNN-only because the pickle
+  fails.
+
+  KNN-only still works (r=0.319, accuracy=0.737) and beats
+  every ensemble version on overall metrics. But ensemble
+  is better on Cognitive (r=0.131 vs KNN's 0.004). We want
+  both.
+
+WHAT WE NEED:
+  Re-export your V4.1 models in a format that doesn't
+  depend on pandas version. LightGBM has a native text
+  format that any machine can load.
+
+============================================================
+WHAT TO DO
+============================================================
+
+STEP 1: Load your existing V4.1 bundle
+-----------------------------------------
+
+  import pickle
+  import os
+
+  with open('outputs/tolendi/bootstrap_ensemble_v4_1.pkl', 'rb') as f:
+      bundle = pickle.load(f)
+
+  # Inspect what's in there
+  print(type(bundle))
+  print(list(bundle.keys()) if isinstance(bundle, dict) else 'not a dict')
+
+STEP 2: Save each LightGBM model as a text file
+-----------------------------------------
+
+  LightGBM models have a save_model / booster_ method that
+  writes a version-independent text file.
+
+  os.makedirs('outputs/tolendi/v4_1_models', exist_ok=True)
+
+  # Adapt this based on your bundle structure:
+  # If bundle has routes:
+  if 'routes' in bundle:
+      for route_name, route_data in bundle['routes'].items():
+          models = route_data.get('models', [])
+          for i, model in enumerate(models):
+              path = f'outputs/tolendi/v4_1_models/{route_name}_model_{i}.txt'
+              model.booster_.save_model(path)
+              print(f'Saved: {path}')
+
+  # If bundle has a flat models list:
+  elif 'models' in bundle:
+      for i, model in enumerate(bundle['models']):
+          path = f'outputs/tolendi/v4_1_models/model_{i}.txt'
+          model.booster_.save_model(path)
+          print(f'Saved: {path}')
+
+STEP 3: Save the metadata separately
+-----------------------------------------
+
+  Save everything that ISN'T a model or pandas object as
+  plain JSON or numpy:
+
+  import json
+  import numpy as np
+
+  meta = {}
+
+  # Feature column names (list of strings — safe as JSON)
+  if 'feature_cols' in bundle:
+      meta['feature_cols'] = bundle['feature_cols']
+
+  # Route info
+  if 'routes' in bundle:
+      meta['route_names'] = list(bundle['routes'].keys())
+      meta['route_model_counts'] = {
+          name: len(data.get('models', []))
+          for name, data in bundle['routes'].items()
+      }
+
+  # Imputer values (if stored)
+  if 'imputer' in bundle:
+      imp = bundle['imputer']
+      if hasattr(imp, 'statistics_'):
+          meta['imputer_values'] = imp.statistics_.tolist()
+
+  # Any other config
+  if 'calibration' in bundle:
+      meta['calibration'] = bundle['calibration']
+  if 'stretch_factor' in bundle:
+      meta['stretch_factor'] = bundle['stretch_factor']
+
+  with open('outputs/tolendi/v4_1_models/meta.json', 'w') as f:
+      json.dump(meta, f, indent=2)
+  print('Saved: meta.json')
+
+STEP 4: Save the PCA model as numpy arrays
+-----------------------------------------
+
+  The PCA model for question embeddings also needs to be
+  version-safe:
+
+  with open('outputs/tolendi/pca_model_v4_1.pkl', 'rb') as f:
+      pca = pickle.load(f)
+
+  np.save('outputs/tolendi/v4_1_models/pca_components.npy', pca.components_)
+  np.save('outputs/tolendi/v4_1_models/pca_mean.npy', pca.mean_)
+  print(f'PCA: {pca.components_.shape[0]} components, {pca.components_.shape[1]} features')
+
+STEP 5: Save person features as CSV (already done)
+-----------------------------------------
+
+  These files are already version-safe (CSV):
+  - outputs/person_response_profiles_repaired.csv
+  - outputs/tolendi/person_embeddings_v4_1_k10.csv
+
+  No action needed.
+
+STEP 6: Verify the exports work
+-----------------------------------------
+
+  Test that the text models can be loaded on a clean env:
+
+  import lightgbm as lgb
+  import os
+
+  model_dir = 'outputs/tolendi/v4_1_models'
+  model_files = sorted([f for f in os.listdir(model_dir) if f.endswith('.txt')])
+
+  for f in model_files:
+      booster = lgb.Booster(model_file=os.path.join(model_dir, f))
+      print(f'{f}: loaded, {booster.num_trees()} trees')
+
+  print('All models load successfully.')
+
+STEP 7: Push to GitHub
+-----------------------------------------
+
+  git add outputs/tolendi/v4_1_models/
+  git commit -m "Re-export V4.1 models as version-safe LightGBM text files"
+  git push
+
+============================================================
+AFTER YOU PUSH
+============================================================
+
+  Tanmay will update scripts/final_predict.py to load
+  the text-format models instead of the pickle bundle.
+  The final script will then blend KNN + ensemble on
+  any machine.
+
+============================================================
+HOW THE FINAL SCRIPT USES YOUR MODELS
+============================================================
+
+  For each test question:
+
+  1. KNN predicts (K=7 nearest questions, person's answers)
+  2. Your V4.1 ensemble predicts:
+     a. Load person features (repaired CSV + K=10 embeddings)
+     b. Embed question text, PCA to 50 dims
+     c. Concat person features + question features
+     d. Run through all bootstrap models
+     e. Average predictions
+  3. Blend: 0.6 * KNN + 0.4 * ensemble
+  4. Output
+
+  This gives us:
+  - KNN's strength on Personality/Economic/Demographics
+  - Ensemble's strength on Cognitive
+  - Natural variance from KNN (0.494 ratio)
+  - Learned patterns from ensemble
+
+============================================================
+CONTEXT: WHERE WE STAND
+============================================================
+
+  Best results so far:
+
+  Model      | Accuracy | Mean r | Var ratio
+  V4.1       | 0.731    | 0.305  | 0.380
+  KNN (K=7)  | 0.737    | 0.319  | 0.494
+
+  Per-block:
+  Block       | V4.1 r | KNN r  | Better
+  Personality | 0.353  | 0.368  | KNN
+  Cognitive   | 0.131  | 0.004  | V4.1
+  Economic    | 0.105  | 0.385  | KNN
+  Demographics| 0.070  | 0.162  | KNN
+
+  The blend should outperform either alone.
+
+============================================================
+TIME ESTIMATE: 15 minutes
+============================================================
