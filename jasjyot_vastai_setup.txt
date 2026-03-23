@@ -1,0 +1,187 @@
+============================================================
+JASJYOT — VAST.AI SETUP
+Get the instance running. We get sponsor points for using it.
+============================================================
+
+GOAL:
+  Rent a GPU instance on vast.ai, serve a model via vLLM,
+  confirm it works from your local machine. That's it.
+
+  Do NOT start building prediction logic yet.
+  Just get the infra running and verified.
+
+============================================================
+STEP 1: CREATE ACCOUNT (2 min)
+============================================================
+
+  1. Go to vast.ai → Sign Up
+  2. Go to Billing → Add Credits
+  3. Add $10-15 (plenty for the hackathon)
+
+============================================================
+STEP 2: SET UP SSH KEY (3 min)
+============================================================
+
+  Open PowerShell on your machine:
+
+  # Check if you already have a key
+  type $env:USERPROFILE\.ssh\id_ed25519.pub
+
+  # If not found, generate one
+  ssh-keygen -t ed25519
+
+  # Copy the output of this command — you'll paste it in vast.ai
+  type $env:USERPROFILE\.ssh\id_ed25519.pub
+
+============================================================
+STEP 3: RENT AN INSTANCE (5 min)
+============================================================
+
+  1. Go to vast.ai dashboard
+  2. Click "Select Template" → choose "vLLM" template
+     (it's under Recommended)
+  3. Filter by GPU: select A100 40GB
+     - Price: ~$0.75/hr
+     - Look for instances marked "Verified"
+     - Reliability > 95%
+  4. Set container size to 32 GB
+  5. Click RENT
+
+  Wait for status to show "Running" (1-2 min)
+
+============================================================
+STEP 4: ADD SSH KEY TO INSTANCE (2 min)
+============================================================
+
+  1. On your instance card, click the key icon
+  2. Paste your public SSH key from Step 2
+  3. Click "ADD SSH KEY"
+
+============================================================
+STEP 5: CONNECT (2 min)
+============================================================
+
+  1. Click the terminal icon on your instance card
+  2. Copy the SSH command shown (looks like):
+     ssh -p 13783 root@ssh4.vast.ai
+  3. Run it in your terminal
+
+  First thing after connecting:
+  nvidia-smi
+  → Verify GPU is visible and memory is available
+
+  If memory shows high usage with no processes:
+  nvidia-smi --query-compute-apps=pid,used_memory,name --format=csv,noheader
+  kill -9 <PID>
+
+============================================================
+STEP 6: SERVE QWEN 2.5 7B (5 min)
+============================================================
+
+  Use Qwen — no HuggingFace login needed. Faster to start.
+
+  Run inside the instance:
+
+  vllm serve Qwen/Qwen2.5-7B-Instruct --port 8000 --max-model-len 32768
+
+  Wait for it to say "Uvicorn running on http://0.0.0.0:8000"
+  First run downloads the model (~15GB). Takes a few minutes.
+
+============================================================
+STEP 7: TEST FROM INSTANCE (1 min)
+============================================================
+
+  Open a second SSH session to the same instance, then:
+
+  curl http://localhost:8000/v1/chat/completions \
+    -H "Content-Type: application/json" \
+    -d '{"model": "Qwen/Qwen2.5-7B-Instruct",
+         "messages": [{"role": "user", "content": "Say hello"}],
+         "max_tokens": 50}'
+
+  If you get a JSON response with generated text → working.
+
+============================================================
+STEP 8: TEST FROM YOUR LOCAL MACHINE (2 min)
+============================================================
+
+  You need the instance's IP and forwarded port.
+  On the vast.ai dashboard, your instance card shows the IP.
+
+  On your local machine:
+
+  pip install openai
+
+  Then run:
+
+  python -c "
+  from openai import OpenAI
+  client = OpenAI(
+      base_url='http://YOUR_IP:YOUR_PORT/v1',
+      api_key='dummy'
+  )
+  response = client.chat.completions.create(
+      model='Qwen/Qwen2.5-7B-Instruct',
+      messages=[{'role': 'user', 'content': 'Say hello'}],
+      max_tokens=50
+  )
+  print(response.choices[0].message.content)
+  "
+
+  Replace YOUR_IP and YOUR_PORT with values from the dashboard.
+
+  If you see a response → vast.ai is fully operational.
+
+============================================================
+STEP 9: REPORT BACK
+============================================================
+
+  Tell Tanmay:
+    1. Instance ID and GPU type
+    2. IP and port for API access
+    3. Which model is serving (Qwen 2.5 7B)
+    4. Confirmed working: yes/no
+
+  DO NOT destroy the instance. Keep it running.
+  We'll use it later for predictions.
+
+============================================================
+COST CHECK
+============================================================
+
+  A100 40GB at $0.75/hr × 6 hours = $4.50
+  Well within the $10-15 budget.
+
+  Set a phone alarm to destroy the instance when we're done
+  so you don't get charged overnight.
+
+============================================================
+IF SOMETHING GOES WRONG
+============================================================
+
+  Instance won't start:
+    → Destroy it, rent a different one
+
+  nvidia-smi shows no GPU:
+    → Destroy, rent a verified instance
+
+  vllm serve hangs or crashes:
+    → Check GPU memory with nvidia-smi
+    → Kill stale processes
+    → Try again
+
+  Can't connect from local machine:
+    → Check if the port is correct (dashboard shows it)
+    → Try the SSH tunnel approach:
+      ssh -p PORT -L 8080:localhost:8000 root@ssh4.vast.ai
+      Then use http://localhost:8080/v1 as base_url
+
+============================================================
+AFTER THIS IS DONE
+============================================================
+
+  Next task: we'll give you a prediction script that sends
+  persona text + question to the Qwen model and gets back
+  predicted answers. That plugs into predict_submission.py.
+
+  For now, just get the instance running and confirmed.
