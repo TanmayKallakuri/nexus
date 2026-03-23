@@ -1,0 +1,144 @@
+BLACKBOX HACKATHON — REVISED EXECUTION PLAN
+
+CORE DECISION
+We should not make the LLM the main predictor.
+We should make ML the main predictor and use the LLM only to help interpret unseen questions.
+
+WHY
+This is a prediction problem, not a storytelling problem.
+We only have 233 people, so we need a pipeline that is measurable, calibratable, and fast to validate.
+The biggest risk is not low intelligence. It is averaging everyone and losing person-level distinction.
+
+FINAL ARCHITECTURE
+For each person i and new question q:
+
+final prediction(i, q) =
+blend(
+  base question prior,
+  person embedding model,
+  engineered feature model,
+  nearest known question model,
+  optional small LLM adjustment
+)
+
+What each part means:
+1. Base question prior
+- Default tendency for this kind of question
+- Example: average answer for similar risk or fairness items
+
+2. Person embedding model
+- Learn low-dimensional latent traits from the person’s known response history
+- Captures patterns like fairness, impulsiveness, conformity, numeracy, risk style, etc.
+
+3. Engineered feature model
+- Use persona summary + CSV features
+- Demographics, personality traits, cognition, game behavior, risk scores, mental accounting, etc.
+
+4. Nearest known question model
+- Embed question text/options
+- Retrieve similar known questions
+- Use how similar people answered those questions
+
+5. Optional LLM adjustment
+- LLM reads the new question and helps map it to constructs / ranges / similar known items
+- It can slightly adjust or rerank predictions
+- It should NOT be the main generator unless all other signals are weak
+
+TEAM TASKS
+
+Track 1 — Data + Schema
+- Merge CSV + JSON + text into one unified format
+- Build a master table:
+  person_id, question_id, question_text, construct, answer_type, answer_value, options
+- Tag each answer as:
+  ordinal / categorical / numeric / text-like
+- Identify question families and ranges
+
+Track 2 — Core Models
+- Build baseline feature model
+- Build person embedding model from response matrix
+- Build ensembling logic
+- Build per-type prediction heads:
+  ordinal, categorical, numeric
+
+Track 3 — Question Semantics + Presentation
+- Embed all known questions
+- Build nearest-question retrieval
+- Build LLM helper that outputs:
+  construct
+  answer type
+  likely value range
+  top similar known questions
+- Maintain slides and document validation findings as we go
+
+MODEL ORDER OF ATTACK
+
+Step 1: Strong baseline
+- Predict from engineered person features + question family/type
+- This gives us a stable benchmark fast
+
+Step 2: Person response embeddings
+- Use the full response matrix to learn respondent latent factors
+- This is likely our biggest edge over simple prompt-based teams
+
+Step 3: Question similarity retrieval
+- For a new question, find semantically similar known questions
+- Use similar-question answers from this person and nearby people
+
+Step 4: Ensemble
+- Combine baseline + embeddings + retrieval
+- Weight using validation results
+
+Step 5: LLM helper
+- Use only for question interpretation and maybe small bounded correction
+- Never trust it blindly for final answers
+
+VALIDATION
+We need 3 validation setups, not 1.
+
+1. Random holdout
+- Hold out random known questions per person
+- Useful but too easy
+
+2. Leave-out-question-cluster
+- Group semantically similar questions
+- Hold out whole groups
+- Better test of generalization
+
+3. Leave-out-construct
+- Hold out entire constructs like risk, trust, anxiety, pricing, etc.
+- Harshest but most honest
+
+We should choose our final model based mostly on the harshest split, not the easiest one.
+
+METRICS
+1. MAE / RMSE for numeric and ordinal
+2. Exact match for multiple choice
+3. Person-wise correlation
+4. Variance ratio across people
+5. Error by question family
+
+RED FLAGS
+- Predictions across different people look too similar
+- Variance ratio collapses
+- Random holdout looks good but construct holdout collapses
+- LLM keeps outputting midpoint answers
+- Cluster labels sound nice but do not improve metrics
+
+WHAT TO DROP
+- Do not make cluster labels a major dependency
+- Do not spend too much time on prompt wording early
+- Do not call random 20% holdout a true simulation of the hidden test
+- Do not make the slide deck before the validation story is clear
+
+MINIMUM VIABLE SUBMISSION
+1. Clean unified dataset
+2. Strong baseline model
+3. One better ensemble
+4. Honest validation on multiple split types
+5. Slide deck showing what we tried, what failed, what won, and why
+
+JUDGE-FACING STORY
+We treated the problem as structured human-response prediction, not generic persona prompting.
+Our system models each participant through both explicit behavioral features and latent response embeddings, then generalizes to unseen questions using semantic retrieval over previously seen items.
+This lets us optimize both answer accuracy and person-level distinction, which directly matches the evaluation criteria.
