@@ -41,7 +41,7 @@ from pathlib import Path
 # PATHS
 # ============================================================
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
-PROFILES_PATH = PROJECT_ROOT / "outputs" / "person_response_profiles.csv"
+PROFILES_PATH = PROJECT_ROOT / "outputs" / "person_response_profiles_repaired.csv"
 CONSTRUCT_SCORES_PATH = PROJECT_ROOT / "outputs" / "person_construct_scores.csv"
 CONSTRUCT_MAPPING_PATH = PROJECT_ROOT / "outputs" / "construct_mapping.csv"
 CONSTRUCT_CENTROIDS_PATH = PROJECT_ROOT / "outputs" / "construct_centroids.pkl"
