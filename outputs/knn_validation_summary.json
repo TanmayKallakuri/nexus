@@ -1,0 +1,160 @@
+{
+  "best_k": 7,
+  "results_by_k": {
+    "3": {
+      "accuracy": 0.7314,
+      "mean_r": 0.2924,
+      "median_r": 0.3258,
+      "var_ratio": 0.6524,
+      "positive_r": 53,
+      "total_corr_questions": 65,
+      "block_results": {
+        "Economic preferences": {
+          "accuracy": 0.657,
+          "mean_r": 0.3112,
+          "n_questions": 4
+        },
+        "Personality": {
+          "accuracy": 0.7407,
+          "mean_r": 0.3369,
+          "n_questions": 51
+        },
+        "Demographics": {
+          "accuracy": 0.7014,
+          "mean_r": 0.1519,
+          "n_questions": 3
+        },
+        "Cognitive tests": {
+          "accuracy": 0.7393,
+          "mean_r": 0.018,
+          "n_questions": 7
+        }
+      }
+    },
+    "5": {
+      "accuracy": 0.7295,
+      "mean_r": 0.2792,
+      "median_r": 0.2994,
+      "var_ratio": 0.5453,
+      "positive_r": 53,
+      "total_corr_questions": 65,
+      "block_results": {
+        "Economic preferences": {
+          "accuracy": 0.6143,
+          "mean_r": 0.2,
+          "n_questions": 4
+        },
+        "Personality": {
+          "accuracy": 0.7409,
+          "mean_r": 0.3366,
+          "n_questions": 51
+        },
+        "Demographics": {
+          "accuracy": 0.702,
+          "mean_r": 0.0961,
+          "n_questions": 3
+        },
+        "Cognitive tests": {
+          "accuracy": 0.7664,
+          "mean_r": -0.0156,
+          "n_questions": 7
+        }
+      }
+    },
+    "7": {
+      "accuracy": 0.7369,
+      "mean_r": 0.3193,
+      "median_r": 0.3196,
+      "var_ratio": 0.494,
+      "positive_r": 56,
+      "total_corr_questions": 65,
+      "block_results": {
+        "Economic preferences": {
+          "accuracy": 0.6907,
+          "mean_r": 0.3848,
+          "n_questions": 4
+        },
+        "Personality": {
+          "accuracy": 0.7408,
+          "mean_r": 0.3678,
+          "n_questions": 51
+        },
+        "Demographics": {
+          "accuracy": 0.6984,
+          "mean_r": 0.1615,
+          "n_questions": 3
+        },
+        "Cognitive tests": {
+          "accuracy": 0.777,
+          "mean_r": -0.0036,
+          "n_questions": 7
+        }
+      }
+    },
+    "10": {
+      "accuracy": 0.7385,
+      "mean_r": 0.3143,
+      "median_r": 0.3391,
+      "var_ratio": 0.4314,
+      "positive_r": 54,
+      "total_corr_questions": 65,
+      "block_results": {
+        "Economic preferences": {
+          "accuracy": 0.7139,
+          "mean_r": 0.415,
+          "n_questions": 4
+        },
+        "Personality": {
+          "accuracy": 0.741,
+          "mean_r": 0.3595,
+          "n_questions": 51
+        },
+        "Demographics": {
+          "accuracy": 0.6868,
+          "mean_r": 0.1247,
+          "n_questions": 3
+        },
+        "Cognitive tests": {
+          "accuracy": 0.7756,
+          "mean_r": 0.0086,
+          "n_questions": 7
+        }
+      }
+    },
+    "15": {
+      "accuracy": 0.736,
+      "mean_r": 0.2991,
+      "median_r": 0.3262,
+      "var_ratio": 0.3869,
+      "positive_r": 52,
+      "total_corr_questions": 65,
+      "block_results": {
+        "Economic preferences": {
+          "accuracy": 0.7232,
+          "mean_r": 0.3584,
+          "n_questions": 4
+        },
+        "Personality": {
+          "accuracy": 0.7362,
+          "mean_r": 0.3469,
+          "n_questions": 51
+        },
+        "Demographics": {
+          "accuracy": 0.6779,
+          "mean_r": 0.0956,
+          "n_questions": 3
+        },
+        "Cognitive tests": {
+          "accuracy": 0.7866,
+          "mean_r": 0.0045,
+          "n_questions": 7
+        }
+      }
+    }
+  },
+  "holdout_fraction": 0.2,
+  "holdout_questions": 65,
+  "train_questions": 261,
+  "embedding_dim": 384,
+  "embedding_model": "all-MiniLM-L6-v2"
+}
