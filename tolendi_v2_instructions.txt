@@ -1,0 +1,407 @@
+============================================================
+TOLENDI — V2 ENSEMBLE IMPROVEMENTS
+5 changes to fix variance collapse and boost correlation
+============================================================
+
+YOUR V1 RESULTS:
+  Accuracy:       0.724  (target: >0.748)
+  Pearson r:      0.259  (needs to be higher)
+  Variance ratio: 0.288  (RED FLAG — predictions too compressed)
+
+  Personality:    r=0.317  (working)
+  Cognitive:      r=0.035  (weak)
+  Economic:       r=-0.036 (INVERTED — predicting backwards)
+
+THE CORE PROBLEM:
+  Your predicted std per question is 0.32 vs actual std of 1.10.
+  The model squeezes 233 people into a narrow band around the mean.
+  This kills correlation even when the ranking direction is correct.
+
+============================================================
+CHANGE 1: ADD CONSTRUCT-PERCENTILE FEATURES
+Priority: HIGHEST — do this first
+============================================================
+
+WHY:
+  Right now the model sees person features and question embeddings
+  separately. It has to DISCOVER that "this person is high on
+  risk aversion" and "this question measures risk aversion" by
+  itself. That's hard with 233 people.
+
+  We already computed each person's percentile on each construct.
+  Adding this as a feature directly tells the model: "this person
+  ranks 95th on what this question measures."
+
+HOW:
+
+  import pandas as pd
+  import numpy as np
+
+  # Load the two files Tanmay already built
+  construct_mapping = pd.read_csv('outputs/construct_mapping.csv')
+  # columns: question_id, construct_id, block_name, question_type
+
+  person_construct = pd.read_csv('outputs/person_construct_scores.csv')
+  # columns: person_id, construct_id, mean_answer, std_answer, n_answers, percentile
+
+  # Step 1: Add construct_id to your training dataframe
+  # Your df already has question_id from the master table
+  df = df.merge(
+      construct_mapping[['question_id', 'construct_id']],
+      on='question_id',
+      how='left'
+  )
+
+  # Step 2: Add person's score on that construct
+  df = df.merge(
+      person_construct[['person_id', 'construct_id', 'mean_answer', 'std_answer', 'percentile']],
+      on=['person_id', 'construct_id'],
+      how='left'
+  )
+
+  # Rename for clarity
+  df = df.rename(columns={
+      'mean_answer': 'person_construct_mean',
+      'std_answer': 'person_construct_std',
+      'percentile': 'person_construct_percentile',
+  })
+
+  # Step 3: Add these 3 new columns to your feature_cols list
+  # person_construct_mean — their average answer on this construct
+  # person_construct_std — their variability on this construct
+  # person_construct_percentile — their rank (0-1) on this construct
+
+  # Handle NaN (some person-construct pairs may not exist)
+  df['person_construct_mean'] = df['person_construct_mean'].fillna(df['answer_position'].mean())
+  df['person_construct_std'] = df['person_construct_std'].fillna(0)
+  df['person_construct_percentile'] = df['person_construct_percentile'].fillna(0.5)
+
+  # Add to feature columns
+  new_cols = ['person_construct_mean', 'person_construct_std', 'person_construct_percentile']
+  feature_cols = feature_cols + new_cols
+
+EXPECTED IMPACT:
+  Pearson r: 0.26 → 0.35+
+  This is the single highest-impact change.
+
+============================================================
+CHANGE 2: PCA QUESTION EMBEDDINGS FROM 384 → 50 DIMS
+Priority: HIGH — do this second
+============================================================
+
+WHY:
+  You have 384 question embedding dims vs 92 person features.
+  The model sees 4x more "what is this question" signal than
+  "who is this person" signal. It learns question-level patterns
+  (average answer for this type of question) instead of
+  person-level patterns (how this person differs from average).
+
+  Reducing to 50 dims rebalances the signal.
+
+HOW:
+
+  from sklearn.decomposition import PCA
+
+  # After you compute q_embeddings (the 384-dim vectors):
+  pca = PCA(n_components=50, random_state=42)
+  q_embeddings_reduced = pca.fit_transform(q_embeddings)
+
+  print(f"Variance explained by 50 components: {pca.explained_variance_ratio_.sum():.3f}")
+  # Should be > 0.80, meaning you keep most of the information
+
+  # Build your q_embed_df using the reduced embeddings:
+  q_embed_df = pd.DataFrame(
+      q_embeddings_reduced,
+      columns=[f'qemb_{i}' for i in range(50)]
+  )
+  q_embed_df['question_id'] = unique_q['question_id'].values
+  q_embed_df['num_options'] = unique_q['num_options'].values
+
+  # IMPORTANT: Save the PCA model — you need it at test time
+  import pickle
+  with open('outputs/tolendi/pca_model.pkl', 'wb') as f:
+      pickle.dump(pca, f)
+
+  # At test time for new questions:
+  # new_embedding_384 = embedder.encode([question_text])
+  # new_embedding_50 = pca.transform(new_embedding_384)
+
+EXPECTED IMPACT:
+  Model pays more attention to person features.
+  Variance ratio: 0.29 → 0.45+
+
+============================================================
+CHANGE 3: CALIBRATION LAYER (VARIANCE STRETCHING)
+Priority: HIGH — do this after retraining with changes 1+2
+============================================================
+
+WHY:
+  Even after changes 1 and 2, LightGBM will still somewhat
+  regress to the mean. This post-hoc step stretches predictions
+  to match the actual variance, without retraining.
+
+HOW:
+
+  After you get predictions from the ensemble, apply this
+  PER QUESTION (not globally):
+
+  def calibrate_predictions(test_df, stretch_factor=None):
+      """
+      Stretch predictions away from per-question mean
+      to match actual variance.
+      """
+      calibrated = test_df.copy()
+
+      for qid in calibrated['question_id'].unique():
+          mask = calibrated['question_id'] == qid
+          preds = calibrated.loc[mask, 'predicted'].values
+
+          q_mean = preds.mean()
+          q_pred_std = preds.std()
+
+          if q_pred_std < 0.01:
+              # No variance to stretch — skip
+              continue
+
+          if stretch_factor is None:
+              # Auto-compute: target std ~1.1 (observed average across training)
+              target_std = 1.1
+              sf = target_std / q_pred_std
+          else:
+              sf = stretch_factor
+
+          # Stretch
+          stretched = q_mean + sf * (preds - q_mean)
+
+          # Clamp to valid range
+          num_opts = calibrated.loc[mask, 'num_options'].iloc[0]
+          stretched = np.clip(stretched, 1, num_opts)
+
+          calibrated.loc[mask, 'predicted'] = stretched
+
+      return calibrated
+
+  # Tune stretch_factor on validation:
+  # Try values: 1.5, 2.0, 2.5, 3.0, 3.5
+  # Pick the one that maximizes Pearson r on holdout questions
+
+  best_r = -1
+  best_sf = 1.0
+  for sf in [1.5, 2.0, 2.5, 3.0, 3.5]:
+      cal_df = calibrate_predictions(test_df, stretch_factor=sf)
+
+      # Compute Pearson r on calibrated predictions
+      correlations = []
+      for qid in holdout_qids:
+          q_mask = cal_df['question_id'] == qid
+          actual = cal_df.loc[q_mask, 'answer_position'].values
+          predicted = cal_df.loc[q_mask, 'predicted'].values
+          if len(actual) >= 3 and np.std(actual) > 0 and np.std(predicted) > 0:
+              from scipy.stats import pearsonr
+              r, _ = pearsonr(actual, predicted)
+              correlations.append(r)
+      mean_r = np.mean(correlations)
+
+      # Also compute accuracy
+      cal_df['abs_error'] = np.abs(cal_df['predicted'] - cal_df['answer_position'])
+      cal_df['range'] = cal_df['num_options'] - 1
+      accuracy = 1 - (cal_df['abs_error'].mean() / cal_df['range'].mean())
+
+      print(f"  stretch={sf}: accuracy={accuracy:.4f}, r={mean_r:.4f}")
+      if mean_r > best_r:
+          best_r = mean_r
+          best_sf = sf
+
+  print(f"\nBest stretch factor: {best_sf} (r={best_r:.4f})")
+
+EXPECTED IMPACT:
+  Variance ratio: 0.45 → 0.80+
+  Pearson r: improves IF the ranking from changes 1+2 is decent
+
+============================================================
+CHANGE 4: BUILD PERCENTILE BASELINE AND BLEND
+Priority: MEDIUM — do this after changes 1-3
+============================================================
+
+WHY:
+  A dead-simple model that maps person construct percentile
+  directly to the answer scale has PERFECT variance by
+  construction. Blending it with LightGBM corrects for
+  variance collapse.
+
+HOW:
+
+  def percentile_baseline_predict(person_id, question_id, num_options,
+                                   construct_mapping, person_construct):
+      """
+      Simple predictor: person percentile on matched construct → answer
+      """
+      # Find construct for this question
+      cm = construct_mapping[construct_mapping['question_id'] == question_id]
+      if cm.empty:
+          return num_options / 2  # midpoint fallback
+
+      construct_id = cm['construct_id'].iloc[0]
+
+      # Find person's percentile on this construct
+      pc = person_construct[
+          (person_construct['person_id'] == person_id) &
+          (person_construct['construct_id'] == construct_id)
+      ]
+      if pc.empty:
+          return num_options / 2  # midpoint fallback
+
+      percentile = pc['percentile'].iloc[0]
+
+      # Map percentile to answer scale: 1 to num_options
+      prediction = 1 + percentile * (num_options - 1)
+      return prediction
+
+  # Compute percentile baseline for all test rows
+  test_df['percentile_pred'] = test_df.apply(
+      lambda row: percentile_baseline_predict(
+          row['person_id'], row['question_id'], row['num_options'],
+          construct_mapping, person_construct
+      ), axis=1
+  )
+
+  # Blend with LightGBM
+  # Try different weights on validation
+  best_r = -1
+  best_w = 0.5
+  for w_lgbm in [0.3, 0.4, 0.5, 0.6, 0.7, 0.8]:
+      test_df['blended'] = w_lgbm * test_df['predicted'] + (1 - w_lgbm) * test_df['percentile_pred']
+
+      correlations = []
+      for qid in holdout_qids:
+          q_mask = test_df['question_id'] == qid
+          actual = test_df.loc[q_mask, 'answer_position'].values
+          predicted = test_df.loc[q_mask, 'blended'].values
+          if len(actual) >= 3 and np.std(actual) > 0 and np.std(predicted) > 0:
+              r, _ = pearsonr(actual, predicted)
+              correlations.append(r)
+
+      mean_r = np.mean(correlations)
+      print(f"  w_lgbm={w_lgbm}: r={mean_r:.4f}")
+      if mean_r > best_r:
+          best_r = mean_r
+          best_w = w_lgbm
+
+  print(f"\nBest blend: {best_w} LightGBM + {1-best_w} percentile (r={best_r:.4f})")
+
+EXPECTED IMPACT:
+  Correlation improves because percentile baseline has natural
+  person-level spread that combats LightGBM's compression.
+
+============================================================
+CHANGE 5: BLOCK-SPECIFIC HANDLING
+Priority: MEDIUM — do this last
+============================================================
+
+WHY:
+  Personality (r=0.317) works 10x better than everything else.
+  Economic preferences (r=-0.036) is INVERTED.
+  Using one model for everything drags down the good parts.
+
+HOW:
+
+  Option A (simple): Use LightGBM for Personality questions,
+  use percentile baseline for everything else.
+
+  # At prediction time:
+  def predict_with_routing(row, models, ...):
+      if row['block_name'] == 'Personality':
+          # Use LightGBM ensemble
+          return lgbm_predict(row, models, ...)
+      else:
+          # Use percentile baseline
+          return percentile_baseline_predict(
+              row['person_id'], row['question_id'], row['num_options'],
+              construct_mapping, person_construct
+          )
+
+  Option B (better but more work): Train separate LightGBM
+  models per block, each with their own hyperparameters.
+
+  for block in ['Personality', 'Cognitive tests', 'Economic preferences']:
+      block_df = df[df['block_name'] == block]
+      # Train separate bootstrap ensemble
+      # Validate separately
+      # Save separate models
+
+EXPECTED IMPACT:
+  Economic preferences r goes from -0.04 to ~+0.15
+  (by using percentile baseline instead of broken ML predictions)
+  Overall r improves by 0.03-0.05
+
+============================================================
+BUILD ORDER — DO EXACTLY THIS
+============================================================
+
+Round 1: Quick wins (30 min)
+  1. Add construct percentile features (Change 1)
+  2. PCA embeddings 384 → 50 (Change 2)
+  3. Retrain 20 bootstrap models with the new features
+  4. Re-run validation
+  5. REPORT: accuracy, r, variance ratio
+
+Round 2: Calibration (15 min)
+  6. Apply calibration stretching (Change 3)
+  7. Tune stretch_factor on validation
+  8. REPORT: accuracy, r, variance ratio after calibration
+
+Round 3: Blending (20 min)
+  9. Build percentile baseline (Change 4)
+  10. Tune blend weights
+  11. Apply calibration on top of blended predictions
+  12. REPORT: final accuracy, r, variance ratio
+
+Round 4: Routing (15 min)
+  13. Route Personality → blended model, rest → percentile baseline (Change 5)
+  14. Re-validate
+  15. REPORT: final numbers
+
+After each round, REPORT these numbers to Tanmay:
+  - Accuracy
+  - Mean Pearson r
+  - Variance ratio
+  - Per-block Pearson r
+
+============================================================
+WHAT TO SAVE AFTER ALL CHANGES
+============================================================
+
+  outputs/tolendi/bootstrap_ensemble_v2.pkl  — new models
+  outputs/tolendi/pca_model.pkl              — PCA for question embeddings
+  outputs/tolendi/calibration_params.json    — best stretch factor
+  outputs/tolendi/blend_weights.json         — best LightGBM vs percentile weight
+  outputs/tolendi/validation_summary_v2.json — new validation results
+
+  scripts/bootstrap_ensemble_tolendi_v2.py   — updated script
+
+============================================================
+RED FLAGS — STOP AND TELL TEAM
+============================================================
+
+After Change 1+2 retrain:
+  - If Pearson r DROPPED below 0.25 → something broke, revert
+  - If variance ratio still < 0.3 → changes didn't help, move to Change 3
+
+After Change 3 calibration:
+  - If best stretch_factor is > 4.0 → model ranking is too weak
+  - If accuracy drops below 0.67 → stretching too aggressive
+
+After Change 4 blending:
+  - If percentile baseline alone beats LightGBM → ML model isn't adding value
+    (this is OK — it means the construct mapping is doing the heavy lifting)
+
+============================================================
+TARGET NUMBERS
+============================================================
+
+  Accuracy:       > 0.748
+  Mean Pearson r: > 0.40
+  Variance ratio: > 0.70
+
+If you hit these after any round, STOP and push.
+Don't over-optimize. Good enough wins hackathons.
