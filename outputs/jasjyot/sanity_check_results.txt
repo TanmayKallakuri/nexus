@@ -1,0 +1,65 @@
+============================================================
+SANITY CHECK RESULTS: MODEL 1 COGNITIVE ANSWER KEYS
+============================================================
+
+
+Person: 00a1r
+--------------------------------------------------
+  Feature              | Persona Text  | Model 1 CSV  | Match?
+  ---------------------|---------------|---------------|-------
+  CRT                  | 3             | 6             | NO (diff 3)
+  Numeracy             | 7             | 3             | NO (diff 4)
+  Financial Literacy   | 4             | 4             | YES
+  Crystallized Intel   | 7             | 15            | NO (diff 8)
+  Wason                | 2             | 0             | NO (diff 2)
+  Beck Anxiety         | 1             | 22            | NO (diff 21)
+
+Person: 7hiu4
+--------------------------------------------------
+  Feature              | Persona Text  | Model 1 CSV  | Match?
+  ---------------------|---------------|---------------|-------
+  CRT                  | 2             | 4             | NO (diff 2)
+  Numeracy             | 7             | 5             | NO (diff 2)
+  Financial Literacy   | 6             | 3             | NO (diff 3)
+  Crystallized Intel   | 7             | 17            | NO (diff 10)
+  Wason                | 2             | 0             | NO (diff 2)
+  Beck Anxiety         | 8             | 29            | NO (diff 21)
+
+Person: k8gd7
+--------------------------------------------------
+  Feature              | Persona Text  | Model 1 CSV  | Match?
+  ---------------------|---------------|---------------|-------
+  CRT                  | 4             | 7             | NO (diff 3)
+  Numeracy             | 8             | 4             | NO (diff 4)
+  Financial Literacy   | 5             | 5             | YES
+  Crystallized Intel   | 9             | 20            | NO (diff 11)
+  Wason                | 1             | 0             | YES
+  Beck Anxiety         | 10            | 31            | NO (diff 21)
+
+Person: sw55g
+--------------------------------------------------
+  Feature              | Persona Text  | Model 1 CSV  | Match?
+  ---------------------|---------------|---------------|-------
+  CRT                  | 3             | 6             | NO (diff 3)
+  Numeracy             | 5             | 2             | NO (diff 3)
+  Financial Literacy   | 1             | 2             | YES
+  Crystallized Intel   | 7             | 16            | NO (diff 9)
+  Wason                | 2             | 0             | NO (diff 2)
+  Beck Anxiety         | 40            | 61            | NO (diff 21)
+
+Person: ridfr
+--------------------------------------------------
+  Feature              | Persona Text  | Model 1 CSV  | Match?
+  ---------------------|---------------|---------------|-------
+  CRT                  | 1             | 2             | YES
+  Numeracy             | 4             | 3             | YES
+  Financial Literacy   | 6             | 4             | NO (diff 2)
+  Crystallized Intel   | 7             | 13            | NO (diff 6)
+  Wason                | 3             | 0             | NO (diff 3)
+  Beck Anxiety         | 24            | 45            | NO (diff 21)
+
+============================================================
+SUMMARY
+============================================================
+MISMATCHES FOUND. Model 1 Answer Keys require fixing before test time!
+Suspect Keys: CRT, Numeracy, Financial Literacy, Beck Anxiety, Crystallized Intel, Wason
