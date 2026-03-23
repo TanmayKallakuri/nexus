@@ -1,0 +1,19 @@
+{
+  "accuracy": 0.7243823519538567,
+  "actual_std_mean": 1.0990268235364822,
+  "avg_range": 3.9074220813523506,
+  "holdout_fraction": 0.2,
+  "holdout_question_count": 65,
+  "holdout_row_count": 15144,
+  "mad": 1.0769544839859009,
+  "mean_pearson_r": 0.2587311367361018,
+  "median_pearson_r": 0.28695181012153625,
+  "predicted_std_mean": 0.3168424069881439,
+  "questions_with_corr": 65,
+  "questions_with_positive_r": 48,
+  "train_question_count": 261,
+  "train_row_count": 60797,
+  "validation_oob_mae_mean": 0.7350074648857117,
+  "validation_oob_mae_std": 0.0043107322435532395,
+  "variance_ratio": 0.2882936068553802
+}

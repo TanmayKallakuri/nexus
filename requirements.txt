@@ -7,3 +7,5 @@ scikit-learn
 openpyxl
 python-docx
 Pillow
+lightgbm
+sentence-transformers
