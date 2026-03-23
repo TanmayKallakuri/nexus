@@ -1,0 +1,146 @@
+[
+  {
+    "person_id": "saurav_the_best",
+    "question_id": "S1",
+    "context": null,
+    "question_text": "Have you ever Googled yourself?",
+    "options": [
+      "1 - Yes",
+      "2 - No"
+    ],
+    "predicted_answer": 2
+  },
+  {
+    "person_id": "saurav_the_best",
+    "question_id": "S2",
+    "context": null,
+    "question_text": "Would you ever let an AI pick your outfit for a first date?",
+    "options": [
+      "1 - Yes",
+      "2 - No",
+      "3 - Only if it has better taste than me"
+    ],
+    "predicted_answer": 2
+  },
+  {
+    "person_id": "saurav_the_best",
+    "question_id": "S3",
+    "context": "Your friend starts a heated debate at dinner about whether a hot dog is a sandwich.",
+    "question_text": "What do you do?",
+    "options": [
+      "1 - Strongly argue it IS a sandwich",
+      "2 - Strongly argue it is NOT a sandwich",
+      "3 - Play devil's advocate just to keep the chaos going",
+      "4 - Quietly eat your hot dog and ignore everyone"
+    ],
+    "predicted_answer": 2
+  },
+  {
+    "person_id": "saurav_the_best",
+    "question_id": "S4",
+    "context": null,
+    "question_text": "If you could only eat one cuisine for the rest of your life, what would it be?",
+    "options": [
+      "1 - Italian",
+      "2 - Mexican",
+      "3 - Japanese",
+      "4 - Indian",
+      "5 - Thai"
+    ],
+    "predicted_answer": 3
+  },
+  {
+    "person_id": "saurav_the_best",
+    "question_id": "S5",
+    "context": null,
+    "question_text": "How likely are you to mass text an apology to everyone you've ever ghosted?",
+    "options": [
+      "1 - Extremely unlikely",
+      "2 - Unlikely",
+      "3 - Somewhat unlikely",
+      "4 - Somewhat likely",
+      "5 - Likely",
+      "6 - Extremely likely, already drafting"
+    ],
+    "predicted_answer": 4
+  },
+  {
+    "person_id": "saurav_the_best",
+    "question_id": "S6",
+    "context": "Article: Local Man Teaches His Cat To Use a Tiny Skateboard \u2014 REDDIT.COM",
+    "question_text": "If you were to see the above article on social media, how likely would you be to share it?",
+    "options": [
+      "1 - Very unlikely to share",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7 - Very likely to share"
+    ],
+    "predicted_answer": 4
+  },
+  {
+    "person_id": "saurav_the_best",
+    "question_id": "S7",
+    "context": "Rate how much you agree with the following statements about your daily habits.",
+    "question_text": "I check my phone within 5 minutes of waking up",
+    "options": [
+      "1 - Strongly disagree",
+      "2 - Disagree",
+      "3 - Neutral",
+      "4 - Agree",
+      "5 - Strongly agree"
+    ],
+    "predicted_answer": 3
+  },
+  {
+    "person_id": "saurav_the_best",
+    "question_id": "S8",
+    "context": "Rate how much you agree with the following statements about your daily habits.",
+    "question_text": "I have pretended to work while actually scrolling memes",
+    "options": [
+      "1 - Strongly disagree",
+      "2 - Disagree",
+      "3 - Neutral",
+      "4 - Agree",
+      "5 - Strongly agree"
+    ],
+    "predicted_answer": 3
+  },
+  {
+    "person_id": "saurav_the_best",
+    "question_id": "S9",
+    "context": "Rate how much you agree with the following statements about your daily habits.",
+    "question_text": "I judge people by their coffee order",
+    "options": [
+      "1 - Strongly disagree",
+      "2 - Disagree",
+      "3 - Neutral",
+      "4 - Agree",
+      "5 - Strongly agree"
+    ],
+    "predicted_answer": 3
+  },
+  {
+    "person_id": "saurav_the_best",
+    "question_id": "S10",
+    "context": null,
+    "question_text": "On a scale of 0 to 100, how confident are you that you could survive a zombie apocalypse?",
+    "options": "0 to 100",
+    "predicted_answer": 50
+  },
+  {
+    "person_id": "saurav_the_best",
+    "question_id": "S11",
+    "context": "Imagine you just won a free vacation but you have to leave tomorrow.",
+    "question_text": "Where are you going?",
+    "options": [
+      "1 - Beach resort in Bali",
+      "2 - Road trip through Iceland",
+      "3 - Backpacking in Patagonia",
+      "4 - City hopping in Tokyo"
+    ],
+    "predicted_answer": 2
+  }
+]
