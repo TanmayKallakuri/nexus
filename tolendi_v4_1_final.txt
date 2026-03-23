@@ -1,0 +1,294 @@
+============================================================
+TOLENDI — V4.1 FINAL BUILD
+This replaces the V4 spec. Follow this exactly.
+============================================================
+
+CONTEXT:
+  V2 is our trusted baseline (r=0.301, accuracy=0.730)
+  V3 showed embeddings help slightly (+0.005 r)
+  V4.1 is the final candidate to ship
+
+  After V4.1: stop modeling, wire into submission pipeline.
+
+V4.1 DEFINITION:
+  - Repaired Model 1
+  - K=10 person embeddings
+  - Two top-level routes: Personality and Non-Personality
+  - Inside Non-Personality:
+      binary questions → classification-style prediction
+      non-binary questions → regression-style prediction
+  - Analytical category dummies inside Non-Personality
+  - Calibration after prediction
+  - Fully leakage-free validation throughout
+
+============================================================
+DATA INPUTS
+============================================================
+
+  Person features:
+    outputs/person_response_profiles_repaired.csv
+    (Jasjyot's fixed file — broken scores corrected, bad
+     columns dropped)
+
+  Person embeddings:
+    outputs/person_embeddings_k10.csv
+    (233 rows x 11 cols: person_id + emb_0..emb_9)
+
+  Training data:
+    outputs/master_table.csv
+    Filter to answer_type == 'ordinal'
+    Normalize target: y = (answer_position - 1) / (num_options - 1)
+
+  Construct features:
+    outputs/person_construct_scores.csv
+    outputs/construct_mapping.csv
+
+============================================================
+ROUTING LOGIC
+============================================================
+
+  TOP LEVEL:
+
+    if block_name == 'Personality':
+        → Route 1: Personality model
+
+    else:
+        → Route 2: Non-Personality model
+           if num_options == 2:
+               → Sub-route 2a: binary classifier
+           else:
+               → Sub-route 2b: multi-option regressor
+
+  Route 1: Personality
+    Questions: 251
+    Rows: ~58,466
+    Holdout (20%): ~50 questions — reliable
+
+  Route 2a: Non-Personality binary (num_options == 2)
+    Questions: ~30 binary questions
+    Rows: ~7,000
+    Holdout: ~6 questions — small but grouped
+
+  Route 2b: Non-Personality non-binary (num_options > 2)
+    Questions: ~45 multi-option questions
+    Rows: ~10,000
+    Holdout: ~9 questions — acceptable
+
+============================================================
+ANALYTICAL CATEGORY FEATURE (Route 2 only)
+============================================================
+
+  Map each question's parent_question_id to a category.
+  One-hot encode. Add as features for Route 2a and 2b.
+
+  MAPPING:
+
+  verbal = {'QID63','QID64','QID65','QID66','QID67',
+            'QID68','QID69','QID70','QID71','QID72',
+            'QID74','QID75','QID76','QID77','QID78',
+            'QID79','QID80','QID81','QID82','QID83'}
+
+  finlit = {'QID36','QID37','QID38','QID39','QID40',
+            'QID41','QID42'}
+
+  logical = {'QID217','QID218','QID219','QID220',
+             'QID273','QID274','QID275','QID276',
+             'QID277','QID278','QID279'}
+
+  games = {'QID117','QID118','QID119','QID120','QID121',
+           'QID122','QID224','QID225','QID226','QID227',
+           'QID228','QID229','QID230','QID231'}
+
+  framing = {'QID149','QID150','QID151','QID152'}
+
+  selfconcept = {'QID268','QID269','QID270','QID271','QID272'}
+
+  demographics = {'QID11','QID12','QID13','QID14','QID15',
+                  'QID16','QID17','QID18','QID19','QID20',
+                  'QID21','QID22','QID23','QID24'}
+
+  def get_category(parent_qid):
+      if parent_qid in verbal:       return 'verbal'
+      if parent_qid in finlit:       return 'finlit'
+      if parent_qid in logical:      return 'logical'
+      if parent_qid in games:        return 'games'
+      if parent_qid in framing:      return 'framing'
+      if parent_qid in selfconcept:  return 'selfconcept'
+      if parent_qid in demographics: return 'demographics'
+      return 'other'
+
+  # Apply to Route 2 data
+  df_r2['category'] = df_r2['parent_question_id'].apply(get_category)
+  cat_dummies = pd.get_dummies(df_r2['category'], prefix='cat')
+  # Add to feature_cols for Route 2
+
+============================================================
+FEATURES PER ROUTE
+============================================================
+
+  SHARED (all routes):
+    - Repaired Model 1 person features (from repaired CSV)
+    - K=10 person embeddings (emb_0..emb_9)
+    - PCA-reduced question embeddings
+    - num_options
+    - Leakage-free construct features:
+        person_construct_mean_loo
+        person_construct_percentile_loo
+
+  ROUTE 1 ONLY (Personality):
+    - Nothing extra. The shared features are sufficient.
+
+  ROUTE 2 ONLY (Non-Personality):
+    - analytical_category one-hot dummies (7 categories)
+
+============================================================
+MODEL SPECS PER ROUTE
+============================================================
+
+  Route 1 — Personality (regression):
+    Target: y_norm = (answer_position - 1) / (num_options - 1)
+    Model: LGBMRegressor
+    Bootstrap: 12 models
+    Hyperparameters:
+      n_estimators=500
+      learning_rate=0.05
+      max_depth=6
+      num_leaves=31
+      subsample=0.8
+      colsample_bytree=0.8
+      reg_alpha=0.1
+      reg_lambda=0.1
+
+  Route 2a — Non-Personality binary (classification):
+    Target: answer_position (1 or 2)
+    Model: LGBMClassifier
+    Bootstrap: 10 models
+    Predict probability of class 2, then threshold or
+    return expected value: pred = 1 * P(1) + 2 * P(2)
+
+  Route 2b — Non-Personality non-binary (regression):
+    Target: y_norm = (answer_position - 1) / (num_options - 1)
+    Model: LGBMRegressor
+    Bootstrap: 10 models
+    Same hyperparameters as Route 1
+
+============================================================
+LEAKAGE-FREE VALIDATION
+============================================================
+
+  This is non-negotiable. Every fold must be clean.
+
+  1. Split holdout by question_id (20%)
+
+  2. For each fold, rebuild these from TRAINING questions only:
+     a. Person construct features (leave-one-item-out for
+        multi-item scales)
+     b. Person embeddings K=10 (re-pivot, re-standardize,
+        re-fit PCA on training questions only, transform
+        both train and test persons)
+
+  3. Train Route 1, 2a, 2b on training data
+  4. Predict on holdout data
+  5. Apply calibration (see below)
+  6. Score
+
+============================================================
+CALIBRATION
+============================================================
+
+  Apply per-question variance stretching AFTER prediction,
+  BEFORE scoring.
+
+  def calibrate(predictions_df, stretch_factor):
+      cal = predictions_df.copy()
+      for qid in cal['question_id'].unique():
+          mask = cal['question_id'] == qid
+          preds = cal.loc[mask, 'predicted'].values
+          q_mean = preds.mean()
+          q_std = preds.std()
+          if q_std < 0.01:
+              continue
+          stretched = q_mean + stretch_factor * (preds - q_mean)
+          num_opts = cal.loc[mask, 'num_options'].iloc[0]
+          stretched = np.clip(stretched, 1, num_opts)
+          cal.loc[mask, 'predicted'] = stretched
+      return cal
+
+  TUNING:
+
+  Test stretch_factor in [1.0, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0]
+  Pick the value that maximizes mean Pearson r on holdout.
+  Track accuracy alongside — reject if accuracy < 0.70.
+
+  Report for each stretch_factor:
+    accuracy, mean_r, variance_ratio
+
+  Save best:
+    outputs/tolendi/calibration_params_v4.json
+    {'stretch_factor': best_sf, 'best_accuracy': ..., 'best_r': ...}
+
+============================================================
+WHAT TO REPORT
+============================================================
+
+  TABLE 1: Version comparison
+  Version | Accuracy | Mean r | Var ratio | Notes
+  V1      | 0.724    | 0.259  | 0.288     | baseline
+  V2      | 0.730    | 0.301  | 0.379     | routing + leakage fix
+  V3      | 0.730    | 0.306  | 0.383     | + K=50 embeddings
+  V4.1 pre| ???      | ???    | ???       | repaired M1 + K=10 + cats
+  V4.1 cal| ???      | ???    | ???       | + calibration
+
+  TABLE 2: Per-block (V4.1 calibrated)
+  Block            | Accuracy | Mean r
+  Personality      | ???      | ???
+  Cognitive tests  | ???      | ???
+  Economic prefs   | ???      | ???
+  Demographics     | ???      | ???
+
+  TABLE 3: Calibration sweep
+  stretch | accuracy | mean_r | var_ratio
+  1.0     | ???      | ???    | ???
+  1.5     | ???      | ???    | ???
+  2.0     | ???      | ???    | ???
+  2.5     | ???      | ???    | ???
+  3.0     | ???      | ???    | ???
+  3.5     | ???      | ???    | ???
+  4.0     | ???      | ???    | ???
+
+============================================================
+SHIP CONDITION
+============================================================
+
+  Ship V4.1 calibrated if:
+    Mean Pearson r > 0.35 AND accuracy > 0.70
+
+  Ship V4.1 pre-calibration if:
+    Calibration hurts accuracy below 0.70
+
+  Fall back to V2 if:
+    V4.1 regresses below V2 on both r and accuracy
+
+============================================================
+SAVE ARTIFACTS
+============================================================
+
+  scripts/bootstrap_ensemble_tolendi_v4_1.py
+  outputs/tolendi/bootstrap_ensemble_v4_1.pkl
+  outputs/tolendi/calibration_params_v4.json
+  outputs/tolendi/validation_summary_v4_1.json
+  outputs/tolendi/validation_by_block_v4_1.csv
+  outputs/tolendi/training_report_v4_1.txt
+  outputs/tolendi/calibration_sweep_v4_1.csv
+
+============================================================
+AFTER V4.1
+============================================================
+
+  1. Push artifacts to GitHub
+  2. Jasjyot wires V4.1 models into predict_submission.py
+  3. End-to-end test on sample_test_questions.json
+  4. Wait for hidden test set (Tuesday 7 AM)
+  5. Build slide deck
+
+  No more model iterations after this.
