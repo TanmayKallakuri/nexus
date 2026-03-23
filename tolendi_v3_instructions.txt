@@ -189,3 +189,181 @@ TARGET NUMBERS
   Variance ratio: > 0.50
 
 If these are hit, STOP and push. We're in good shape.
+
+============================================================
+CODEX REVIEW - SAFER V3 IMPLEMENTATION PLAN
+Use this instead of the shortcut leakage option
+============================================================
+
+BOTTOM LINE:
+  V3 is a good next step, but only if it is layered on top of
+  the safer V2 pipeline and validated honestly.
+
+  The key idea is sound:
+    add latent person embeddings to improve person-level
+    separation that the handcrafted Model 1 features may miss
+
+  The risky part is the shortcut:
+    using embeddings built from all questions during held-out
+    question validation reintroduces leakage
+
+  We already fixed that problem in V2.
+  Do not add it back in V3.
+
+============================================================
+WHAT WE SHOULD KEEP FROM V2
+============================================================
+
+V3 should inherit the V2 structure, not replace it:
+
+  - hold out by question_id
+  - rebuild person features inside each fold
+  - use leave-one-item-out construct features
+  - route models by block / question family
+  - use normalized ordinal targets
+  - keep PCA-reduced question features
+
+Person embeddings are an ADDITIONAL person feature set, not a
+reason to simplify the rest of the pipeline.
+
+============================================================
+LEAKAGE POLICY FOR V3
+============================================================
+
+For validation:
+  Recompute person embeddings using ONLY the training
+  questions in that fold.
+
+Reason:
+  Even indirect leakage matters when the goal is to measure
+  how well the model generalizes to unseen questions.
+
+Practical note:
+  Recomputing fold-specific embeddings is acceptable here.
+  The matrix is only 233 x ~325, so PCA/SVD is cheap.
+
+For full training after validation:
+  Train final embeddings on all available ordinal questions.
+
+============================================================
+REVISED BUILD ORDER
+============================================================
+
+ROUND 1 - CLEAN V3 CORE
+---------------------------------
+  1. Start from bootstrap_ensemble_tolendi_v2.py
+  2. Add person embeddings as extra person features
+  3. Recompute embeddings per fold excluding held-out questions
+  4. Keep the same routing:
+       - personality
+       - binary_non_personality
+       - other_multi
+  5. Re-run honest validation
+
+ROUND 2 - TEST EMBEDDING DIMENSIONS
+---------------------------------
+Test these K values first:
+  - K=10
+  - K=20
+  - K=30
+
+Only test K=50 if smaller K values do not help enough.
+
+Why:
+  K=50 may help, but it also raises overfitting risk.
+  Smaller K often works better for tree models when data is
+  this small.
+
+ROUND 3 - PICK BEST K
+---------------------------------
+Choose best K using:
+  1. Mean Pearson r
+  2. Variance ratio
+  3. Block stability
+
+Do not choose K on accuracy alone.
+
+============================================================
+HOW TO COMPUTE EMBEDDINGS SAFELY
+============================================================
+
+Recommended fold-time process:
+
+  1. Build person x question matrix from ordinal training rows
+  2. Normalize answers:
+       (answer_position - 1) / (num_options - 1)
+  3. Pivot to wide matrix
+  4. Impute missing cells with column means
+  5. Z-score per question column
+  6. Drop zero-variance columns
+  7. Fit PCA with K components
+  8. Merge resulting emb_* columns by person_id
+
+For validation:
+  Use the training-fold PCA to transform both train and test
+  persons, using only the kept training question columns.
+
+============================================================
+WHAT TO MEASURE
+============================================================
+
+For each K, report:
+
+  - Accuracy
+  - Mean Pearson r
+  - Variance ratio
+  - Positive-r questions
+  - Per-block Pearson r
+  - Route-level changes if any route regresses badly
+
+Also inspect whether embeddings help the weakest blocks:
+  - Cognitive tests
+  - Economic preferences
+
+If embeddings only improve Personality but hurt the others,
+keep them route-specific rather than global.
+
+============================================================
+STOP CONDITIONS
+============================================================
+
+Stop and reassess if:
+
+  - honest V3 r does not beat V2
+  - variance ratio does not improve meaningfully
+  - embeddings help only because leakage was reintroduced
+  - K=50 wins by a tiny margin but is much less stable by block
+
+If no K improves V2:
+  keep V2 as the main model and move next to calibration or
+  route-specific post-processing.
+
+============================================================
+RECOMMENDED SUCCESS CRITERIA
+============================================================
+
+Minimum win over V2:
+  - Mean Pearson r > 0.31
+  - Variance ratio > 0.40
+
+Strong V3 result:
+  - Mean Pearson r > 0.35
+  - Variance ratio > 0.50
+  - Economic and Cognitive both remain non-negative
+
+============================================================
+SAVE V3 ARTIFACTS
+============================================================
+
+Recommended outputs:
+
+  scripts/bootstrap_ensemble_tolendi_v3.py
+  outputs/tolendi/bootstrap_ensemble_v3.pkl
+  outputs/tolendi/validation_summary_v3.json
+  outputs/tolendi/validation_by_block_v3.csv
+  outputs/tolendi/validation_by_question_v3.csv
+  outputs/tolendi/training_report_v3.txt
+
+Helpful extras:
+  outputs/tolendi/v3_k_comparison.csv
+  outputs/tolendi/person_embeddings_v3_k{K}.csv

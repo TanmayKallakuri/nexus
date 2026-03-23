@@ -1,0 +1,31 @@
+TOLENDI V3 TRAINING REPORT
+========================================
+
+Best embedding K: 50
+Accuracy: 0.7300
+Mean Pearson r: 0.3057
+Median Pearson r: 0.3053
+Variance ratio: 0.3834
+Holdout questions: 65
+
+Per-block results:
+  Cognitive tests: accuracy=0.6302, mean_r=0.1284, questions=8
+  Demographics: accuracy=0.6095, mean_r=0.0645, questions=2
+  Economic preferences: accuracy=0.6548, mean_r=0.0982, questions=3
+  Personality: accuracy=0.7461, mean_r=0.3542, questions=52
+
+Route diagnostics:
+  personality: train_rows=46351, test_rows=12115, oob_mean=0.1682
+  binary_non_personality: train_rows=4893, test_rows=1398, oob_mean=0.1794
+  other_multi: train_rows=9553, test_rows=1631, oob_mean=0.1305
+
+K comparison:
+  K=50: accuracy=0.7300, mean_r=0.3057, variance_ratio=0.3834
+  K=30: accuracy=0.7301, mean_r=0.3040, variance_ratio=0.3852
+  K=10: accuracy=0.7305, mean_r=0.3035, variance_ratio=0.3808
+  K=20: accuracy=0.7304, mean_r=0.3030, variance_ratio=0.3824
+
+Red flag checks:
+  Mean Pearson r <= V2 (0.3009): False
+  Variance ratio <= V2 (0.3786): False
+  Accuracy < 0.67: False

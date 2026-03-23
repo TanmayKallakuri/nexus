@@ -1,0 +1,50 @@
+{
+  "accuracy": 0.7300357228943208,
+  "actual_std_mean": 1.0990268235364822,
+  "avg_range": 3.9074220813523506,
+  "holdout_fraction": 0.2,
+  "holdout_question_count": 65,
+  "holdout_row_count": 15144,
+  "mad": 1.0548643775390558,
+  "mean_pearson_r": 0.30566786404412527,
+  "median_pearson_r": 0.30532556772232056,
+  "person_embedding_info": {
+    "explained_variance": 0.7280001044273376,
+    "k_requested": 50,
+    "k_used": 50,
+    "n_questions_used": 260,
+    "zero_variance_questions": [
+      "QID16"
+    ]
+  },
+  "person_embedding_k": 50,
+  "predicted_std_mean": 0.4213844835758209,
+  "questions_with_corr": 65,
+  "questions_with_positive_r": 55,
+  "route_reports": {
+    "binary_non_personality": {
+      "n_bootstraps": 10,
+      "oob_mean": 0.1794179395244615,
+      "oob_std": 0.00416406646574098,
+      "test_rows": 1398,
+      "train_rows": 4893
+    },
+    "other_multi": {
+      "n_bootstraps": 10,
+      "oob_mean": 0.1305243894457817,
+      "oob_std": 0.0022618653947672407,
+      "test_rows": 1631,
+      "train_rows": 9553
+    },
+    "personality": {
+      "n_bootstraps": 12,
+      "oob_mean": 0.16820383196075758,
+      "oob_std": 0.001484457045715152,
+      "test_rows": 12115,
+      "train_rows": 46351
+    }
+  },
+  "train_question_count": 261,
+  "train_row_count": 60797,
+  "variance_ratio": 0.38341601365094713
+}
