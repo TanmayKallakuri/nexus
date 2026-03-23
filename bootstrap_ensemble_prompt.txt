@@ -1,0 +1,371 @@
+============================================================
+BOOTSTRAP ENSEMBLE — BUILD PROMPT FOR TOLENDI
+============================================================
+
+GOAL:
+Build a bootstrap ensemble of 20 LightGBM models that predicts
+a person's answer to any question. Uses person features (from
+Model 1) + question embeddings as input.
+
+Optimizes for TWO metrics (from scoring guide):
+  1. Accuracy = 1 - (MAD / range)   → target > 0.748
+  2. Correlation = Pearson r per question across 233 people
+     → THIS IS THE KEY DIFFERENTIATOR. Optimize for this.
+
+============================================================
+PREREQUISITES
+============================================================
+
+You need these files:
+  1. outputs/master_table.csv  (125K rows — already built)
+     Columns: person_id, question_id, answer_position, answer_type,
+              block_name, full_question, options, num_options, etc.
+
+  2. outputs/person_response_profiles.csv (from Jasjyot's Model 1)
+     Columns: person_id + all computed person features
+     (mean_response, response_std, ers_rate, construct averages, etc.)
+
+     IF THIS ISN'T READY YET: you can start with a simpler version.
+     See "FALLBACK PERSON FEATURES" section below.
+
+  3. Question embeddings — YOU WILL BUILD THESE (Step 2 below)
+
+============================================================
+INSTALL DEPENDENCIES
+============================================================
+
+pip install lightgbm sentence-transformers pandas numpy scikit-learn
+
+============================================================
+STEP 1: LOAD AND PREPARE DATA
+============================================================
+
+import pandas as pd
+import numpy as np
+
+# Load master table
+master = pd.read_csv('outputs/master_table.csv')
+
+# FILTER: only use ordinal questions (Likert scales)
+# These are the ones we can predict numerically
+# Drop text answers and multi-select — handle separately later
+df = master[master['answer_type'] == 'ordinal'].copy()
+df['answer_position'] = pd.to_numeric(df['answer_position'], errors='coerce')
+df = df.dropna(subset=['answer_position'])
+
+print(f"Trainable rows: {df.shape[0]}")
+print(f"Unique persons: {df['person_id'].nunique()}")
+print(f"Unique questions: {df['question_id'].nunique()}")
+
+# Load person features (Model 1)
+person_feat = pd.read_csv('outputs/person_response_profiles.csv')
+
+============================================================
+STEP 2: BUILD QUESTION EMBEDDINGS
+============================================================
+
+Use sentence-transformers to embed each unique question text.
+This is what lets the model generalize to UNSEEN questions.
+
+from sentence_transformers import SentenceTransformer
+
+# Get unique questions
+unique_q = df.drop_duplicates(subset=['question_id'])[
+    ['question_id', 'full_question', 'num_options', 'block_name']
+].reset_index(drop=True)
+
+# Embed question text
+model_embed = SentenceTransformer('all-MiniLM-L6-v2')
+q_texts = unique_q['full_question'].tolist()
+q_embeddings = model_embed.encode(q_texts, show_progress_bar=True)
+
+# Create a DataFrame: question_id → embedding vector
+q_embed_df = pd.DataFrame(
+    q_embeddings,
+    columns=[f'qemb_{i}' for i in range(q_embeddings.shape[1])]
+)
+q_embed_df['question_id'] = unique_q['question_id'].values
+
+# Also add num_options as a feature (scale range matters)
+q_embed_df['num_options'] = unique_q['num_options'].values
+
+# Save for reuse
+q_embed_df.to_csv('outputs/question_embeddings.csv', index=False)
+print(f"Embedded {len(q_embed_df)} unique questions, dim={q_embeddings.shape[1]}")
+
+============================================================
+STEP 3: BUILD FEATURE MATRIX
+============================================================
+
+For each (person, question) pair, create feature vector:
+  X = [person_features, question_embedding, num_options]
+  y = answer_position
+
+# Merge person features into master table
+df = df.merge(person_feat, on='person_id', how='left')
+
+# Merge question embeddings into master table
+df = df.merge(q_embed_df, on='question_id', how='left')
+
+# Define feature columns
+person_feature_cols = [c for c in person_feat.columns if c != 'person_id']
+question_feature_cols = [c for c in q_embed_df.columns if c != 'question_id']
+feature_cols = person_feature_cols + question_feature_cols
+
+X = df[feature_cols].values
+y = df['answer_position'].values
+
+print(f"Feature matrix: {X.shape}")
+print(f"Target: {y.shape}")
+print(f"Person features: {len(person_feature_cols)}")
+print(f"Question features: {len(question_feature_cols)}")
+
+============================================================
+STEP 4: BOOTSTRAP ENSEMBLE TRAINING
+============================================================
+
+import lightgbm as lgb
+from sklearn.utils import resample
+
+N_BOOTSTRAPS = 20
+RANDOM_SEED = 42
+
+models = []
+oob_scores = []  # out-of-bag scores for each model
+
+for i in range(N_BOOTSTRAPS):
+    print(f"[{i+1}/{N_BOOTSTRAPS}] Training bootstrap model...")
+
+    # Create bootstrap sample (same size, with replacement)
+    np.random.seed(RANDOM_SEED + i)
+    boot_idx = np.random.choice(len(X), size=len(X), replace=True)
+
+    # Out-of-bag indices (rows NOT in this bootstrap sample)
+    oob_idx = np.array(list(set(range(len(X))) - set(boot_idx)))
+
+    X_boot, y_boot = X[boot_idx], y[boot_idx]
+    X_oob, y_oob = X[oob_idx], y[oob_idx]
+
+    # Train LightGBM
+    model = lgb.LGBMRegressor(
+        n_estimators=500,
+        learning_rate=0.05,
+        max_depth=6,
+        num_leaves=31,
+        subsample=0.8,
+        colsample_bytree=0.8,
+        reg_alpha=0.1,
+        reg_lambda=0.1,
+        random_state=RANDOM_SEED + i,
+        verbose=-1
+    )
+    model.fit(X_boot, y_boot)
+    models.append(model)
+
+    # Score on out-of-bag data
+    if len(oob_idx) > 0:
+        oob_pred = model.predict(X_oob)
+        oob_mae = np.mean(np.abs(oob_pred - y_oob))
+        oob_scores.append(oob_mae)
+        print(f"  OOB MAE: {oob_mae:.3f}")
+
+print(f"\nMean OOB MAE across {N_BOOTSTRAPS} models: {np.mean(oob_scores):.3f}")
+
+============================================================
+STEP 5: ENSEMBLE PREDICTION FUNCTION
+============================================================
+
+def predict_ensemble(X_new, models):
+    """
+    Predict using all bootstrap models.
+    Returns: mean prediction, std (uncertainty)
+    """
+    all_preds = np.array([m.predict(X_new) for m in models])
+    mean_pred = all_preds.mean(axis=0)
+    std_pred = all_preds.std(axis=0)
+    return mean_pred, std_pred
+
+# Test on full training data
+mean_preds, std_preds = predict_ensemble(X, models)
+
+print(f"Prediction mean range: {mean_preds.min():.2f} to {mean_preds.max():.2f}")
+print(f"Prediction std  range: {std_preds.min():.3f} to {std_preds.max():.3f}")
+print(f"Actual mean range:     {y.min():.2f} to {y.max():.2f}")
+
+# CHECK: variance preservation
+print(f"\nVariance check (CRITICAL FOR CORRELATION):")
+print(f"  Actual std across people (per question): ~{df.groupby('question_id')['answer_position'].std().mean():.3f}")
+print(f"  Predicted std across people (per question): ~compute this per question")
+
+============================================================
+STEP 6: VALIDATION — USING EXACT SCORING FORMULAS
+============================================================
+
+This is the most important part. Simulate the hidden test.
+
+from scipy.stats import pearsonr
+
+def validate_leave_out_questions(df, feature_cols, models, holdout_frac=0.2):
+    """
+    Hold out random questions, predict them, score.
+    """
+    # Get unique question_ids
+    all_qids = df['question_id'].unique()
+    np.random.seed(42)
+    holdout_qids = np.random.choice(all_qids, size=int(len(all_qids) * holdout_frac), replace=False)
+    train_qids = [q for q in all_qids if q not in holdout_qids]
+
+    # Split
+    train_mask = df['question_id'].isin(train_qids)
+    test_mask = df['question_id'].isin(holdout_qids)
+
+    # NOTE: We use ALL data for training the ensemble (already trained above)
+    # For proper validation, you'd retrain on train_qids only.
+    # But for a quick check, using the full ensemble is OK.
+
+    test_df = df[test_mask].copy()
+    X_test = test_df[feature_cols].values
+    y_test = test_df['answer_position'].values
+
+    # Predict
+    mean_preds, std_preds = predict_ensemble(X_test, models)
+
+    # --- METRIC 1: Accuracy ---
+    # Accuracy = 1 - (MAD / range)
+    # Use num_options - 1 as range for each question
+    test_df['predicted'] = mean_preds
+    test_df['abs_error'] = np.abs(test_df['predicted'] - test_df['answer_position'])
+    test_df['range'] = test_df['num_options'] - 1
+
+    mad = test_df['abs_error'].mean()
+    avg_range = test_df['range'].mean()
+    accuracy = 1 - (mad / avg_range)
+
+    # --- METRIC 2: Correlation (Pearson r per question, then average) ---
+    correlations = []
+    for qid in holdout_qids:
+        q_mask = test_df['question_id'] == qid
+        q_actual = test_df.loc[q_mask, 'answer_position'].values
+        q_pred = test_df.loc[q_mask, 'predicted'].values
+
+        # Need at least 3 people and some variance
+        if len(q_actual) >= 3 and np.std(q_actual) > 0 and np.std(q_pred) > 0:
+            r, _ = pearsonr(q_actual, q_pred)
+            correlations.append(r)
+
+    mean_corr = np.mean(correlations) if correlations else 0.0
+
+    print(f"\n=== VALIDATION RESULTS ===")
+    print(f"Holdout questions: {len(holdout_qids)}")
+    print(f"Test rows: {len(test_df)}")
+    print(f"Accuracy: {accuracy:.4f}  (baseline ~0.67, target >0.748)")
+    print(f"Mean Pearson r: {mean_corr:.4f}  (THIS IS THE KEY METRIC)")
+    print(f"Median Pearson r: {np.median(correlations):.4f}")
+    print(f"MAD: {mad:.3f}")
+    print(f"Avg range: {avg_range:.1f}")
+    print(f"Correlations computed: {len(correlations)} / {len(holdout_qids)}")
+
+    # --- VARIANCE CHECK ---
+    actual_var = test_df.groupby('question_id')['answer_position'].std().mean()
+    pred_var = test_df.groupby('question_id')['predicted'].std().mean()
+    print(f"\nVariance ratio: {pred_var/actual_var:.3f}  (want > 0.8, if < 0.5 model is collapsing)")
+
+    # --- PER-BLOCK BREAKDOWN ---
+    print(f"\nPer-block correlation:")
+    for block in test_df['block_name'].unique():
+        b_mask = test_df['block_name'] == block
+        b_qids = test_df.loc[b_mask, 'question_id'].unique()
+        b_corrs = []
+        for qid in b_qids:
+            q_mask = test_df['question_id'] == qid
+            qa = test_df.loc[q_mask, 'answer_position'].values
+            qp = test_df.loc[q_mask, 'predicted'].values
+            if len(qa) >= 3 and np.std(qa) > 0 and np.std(qp) > 0:
+                r, _ = pearsonr(qa, qp)
+                b_corrs.append(r)
+        if b_corrs:
+            print(f"  {block}: r={np.mean(b_corrs):.3f} ({len(b_corrs)} questions)")
+
+    return accuracy, mean_corr, correlations
+
+# Run validation
+accuracy, mean_corr, correlations = validate_leave_out_questions(
+    df, feature_cols, models, holdout_frac=0.2
+)
+
+============================================================
+STEP 7: SAVE MODELS AND RESULTS
+============================================================
+
+import pickle
+
+# Save all 20 models
+with open('outputs/bootstrap_ensemble_models.pkl', 'wb') as f:
+    pickle.dump(models, f)
+print("Saved 20 bootstrap models to outputs/bootstrap_ensemble_models.pkl")
+
+# Save feature column names (needed at prediction time)
+with open('outputs/feature_columns.pkl', 'wb') as f:
+    pickle.dump(feature_cols, f)
+
+============================================================
+FALLBACK PERSON FEATURES (if Model 1 not ready yet)
+============================================================
+
+If Jasjyot's person_response_profiles.csv isn't ready,
+build quick person features directly from master table:
+
+def quick_person_features(master):
+    ordinal = master[master['answer_type'] == 'ordinal'].copy()
+    ordinal['answer_position'] = pd.to_numeric(ordinal['answer_position'], errors='coerce')
+
+    person_feat = ordinal.groupby('person_id')['answer_position'].agg(
+        mean_response='mean',
+        std_response='std',
+        median_response='median',
+        min_response='min',
+        max_response='max',
+    ).reset_index()
+
+    # Add per-block averages
+    for block in ordinal['block_name'].unique():
+        block_data = ordinal[ordinal['block_name'] == block]
+        block_avg = block_data.groupby('person_id')['answer_position'].mean()
+        block_avg.name = f'avg_{block.strip().lower().replace(" ", "_")}'
+        person_feat = person_feat.merge(block_avg, on='person_id', how='left')
+
+    return person_feat
+
+============================================================
+RED FLAGS — STOP IF YOU SEE THESE
+============================================================
+
+- Pearson r < 0.1 on validation → model isn't distinguishing people
+- Variance ratio < 0.5 → predictions are collapsing to the mean
+- OOB MAE doesn't vary across bootstrap models → bootstrap isn't helping
+- Predictions range is much narrower than actual range → scale compression
+- One block has r < 0 → model is inverting answers for that block
+
+============================================================
+SCRIPT LOCATION
+============================================================
+
+Save as: scripts/bootstrap_ensemble.py
+Run as:  python scripts/bootstrap_ensemble.py
+Output:  outputs/bootstrap_ensemble_models.pkl
+         outputs/question_embeddings.csv
+         outputs/feature_columns.pkl
+
+============================================================
+HOW THIS CONNECTS TO THE FINAL PIPELINE
+============================================================
+
+At test time (when hidden questions arrive):
+
+1. Embed the new question text using same sentence-transformer
+2. Look up person features from Model 1
+3. Concat [person_features, question_embedding, num_options]
+4. Run through all 20 models → get mean + std
+5. If std < 0.5 → use mean prediction directly
+6. If std > 0.5 → blend with construct-percentile fallback
+7. Round to nearest valid answer on the scale

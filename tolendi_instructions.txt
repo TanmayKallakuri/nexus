@@ -1,0 +1,295 @@
+============================================================
+TOLENDI — BOOTSTRAP ENSEMBLE BUILD INSTRUCTIONS
+Updated after Jasjyot's Model 1 sync
+============================================================
+
+STATUS: Model 1 is DONE. You have everything you need.
+
+============================================================
+FILES YOU NEED (all in repo, git pull first)
+============================================================
+
+1. outputs/master_table.csv
+   → 125,115 rows of (person_id, question_id, answer_position, ...)
+   → This is your TRAINING DATA (y = answer_position)
+
+2. outputs/person_response_profiles.csv
+   → 233 rows x 92 columns (one row per person)
+   → This is your PERSON FEATURES (part of X)
+   → Built by Jasjyot — Model 1 is complete
+
+3. outputs/person_response_profiles_data_dictionary.csv
+   → Explains what each of the 92 columns means
+   → Read this before doing feature selection
+
+4. outputs/unique_questions.csv
+   → 531 unique questions with text, type, options, block
+   → You will EMBED these to create question features
+
+============================================================
+WHAT YOU ARE BUILDING
+============================================================
+
+A prediction system:
+
+  X = [92 person features] + [question embedding] + [num_options]
+  y = answer_position (what the person actually answered)
+
+Trained on 125K rows. Tested on held-out questions.
+
+Scored by:
+  1. Accuracy = 1 - (MAD / range)     target > 0.748
+  2. Correlation = Pearson r PER QUESTION across 233 people
+     → THIS IS THE KEY METRIC. If you predict everyone
+       the same, r = 0 and you lose.
+
+============================================================
+STEP-BY-STEP BUILD
+============================================================
+
+STEP 1: Install dependencies
+---------------------------------
+pip install lightgbm sentence-transformers pandas numpy scikit-learn scipy
+
+STEP 2: Load and filter data
+---------------------------------
+import pandas as pd
+import numpy as np
+
+master = pd.read_csv('outputs/master_table.csv')
+person_feat = pd.read_csv('outputs/person_response_profiles.csv')
+
+# Only train on ordinal questions (Likert scales = 61% of data)
+# These have numeric answer_position we can predict
+df = master[master['answer_type'] == 'ordinal'].copy()
+df['answer_position'] = pd.to_numeric(df['answer_position'], errors='coerce')
+df = df.dropna(subset=['answer_position'])
+
+print(f"Training rows: {df.shape[0]}")
+# Expected: ~76K rows
+
+STEP 3: Embed question texts
+---------------------------------
+from sentence_transformers import SentenceTransformer
+
+unique_q = df.drop_duplicates(subset=['question_id'])[
+    ['question_id', 'full_question', 'num_options']
+].reset_index(drop=True)
+
+embedder = SentenceTransformer('all-MiniLM-L6-v2')
+embeddings = embedder.encode(unique_q['full_question'].tolist(), show_progress_bar=True)
+# This produces 384-dimensional vectors
+
+q_embed_df = pd.DataFrame(
+    embeddings,
+    columns=[f'qemb_{i}' for i in range(embeddings.shape[1])]
+)
+q_embed_df['question_id'] = unique_q['question_id'].values
+q_embed_df['num_options'] = unique_q['num_options'].values
+
+# Save for reuse at test time
+q_embed_df.to_csv('outputs/question_embeddings.csv', index=False)
+
+STEP 4: Build feature matrix
+---------------------------------
+# Merge person features + question embeddings into training data
+df = df.merge(person_feat, on='person_id', how='left')
+df = df.merge(q_embed_df, on='question_id', how='left')
+
+# Define feature columns
+person_cols = [c for c in person_feat.columns if c != 'person_id']
+question_cols = [c for c in q_embed_df.columns if c != 'question_id']
+feature_cols = person_cols + question_cols
+
+X = df[feature_cols].values.astype(np.float32)
+y = df['answer_position'].values.astype(np.float32)
+
+# Handle any NaN in features
+from sklearn.impute import SimpleImputer
+imputer = SimpleImputer(strategy='median')
+X = imputer.fit_transform(X)
+
+print(f"X shape: {X.shape}")  # Expected: (~76K, 92+384+1 = ~477)
+print(f"y shape: {y.shape}")
+
+STEP 5: Train 20 bootstrap LightGBM models
+---------------------------------
+import lightgbm as lgb
+import pickle
+
+N_BOOTSTRAPS = 20
+SEED = 42
+models = []
+oob_maes = []
+
+for i in range(N_BOOTSTRAPS):
+    print(f"[{i+1}/{N_BOOTSTRAPS}] Training...")
+
+    np.random.seed(SEED + i)
+    boot_idx = np.random.choice(len(X), size=len(X), replace=True)
+    oob_idx = np.array(list(set(range(len(X))) - set(boot_idx)))
+
+    model = lgb.LGBMRegressor(
+        n_estimators=500,
+        learning_rate=0.05,
+        max_depth=6,
+        num_leaves=31,
+        subsample=0.8,
+        colsample_bytree=0.8,
+        reg_alpha=0.1,
+        reg_lambda=0.1,
+        random_state=SEED + i,
+        verbose=-1
+    )
+    model.fit(X[boot_idx], y[boot_idx])
+    models.append(model)
+
+    if len(oob_idx) > 0:
+        oob_pred = model.predict(X[oob_idx])
+        mae = np.mean(np.abs(oob_pred - y[oob_idx]))
+        oob_maes.append(mae)
+        print(f"  OOB MAE: {mae:.3f}")
+
+print(f"\nMean OOB MAE: {np.mean(oob_maes):.3f}")
+
+# Save
+with open('outputs/bootstrap_models.pkl', 'wb') as f:
+    pickle.dump({'models': models, 'imputer': imputer, 'feature_cols': feature_cols}, f)
+
+STEP 6: VALIDATION — this is the most important step
+---------------------------------
+from scipy.stats import pearsonr
+
+# Hold out 20% of QUESTIONS (not rows)
+all_qids = df['question_id'].unique()
+np.random.seed(42)
+holdout_qids = set(np.random.choice(all_qids, size=int(len(all_qids)*0.2), replace=False))
+train_qids = set(all_qids) - holdout_qids
+
+# IMPORTANT: Retrain on train questions only for honest validation
+train_mask = df['question_id'].isin(train_qids)
+test_mask = df['question_id'].isin(holdout_qids)
+
+X_train = X[train_mask]
+y_train = y[train_mask]
+X_test = X[test_mask]
+y_test = y[test_mask]
+test_df = df[test_mask].copy()
+
+# Retrain one quick model for honest validation
+val_model = lgb.LGBMRegressor(
+    n_estimators=500, learning_rate=0.05, max_depth=6,
+    num_leaves=31, subsample=0.8, colsample_bytree=0.8,
+    random_state=42, verbose=-1
+)
+val_model.fit(X_train, y_train)
+test_df['predicted'] = val_model.predict(X_test)
+
+# --- METRIC 1: Accuracy = 1 - (MAD / range) ---
+test_df['abs_error'] = np.abs(test_df['predicted'] - test_df['answer_position'])
+test_df['range'] = test_df['num_options'] - 1
+mad = test_df['abs_error'].mean()
+avg_range = test_df['range'].mean()
+accuracy = 1 - (mad / avg_range)
+
+# --- METRIC 2: Pearson r per question ---
+correlations = []
+for qid in holdout_qids:
+    q_data = test_df[test_df['question_id'] == qid]
+    actual = q_data['answer_position'].values
+    predicted = q_data['predicted'].values
+    if len(actual) >= 3 and np.std(actual) > 0 and np.std(predicted) > 0:
+        r, _ = pearsonr(actual, predicted)
+        correlations.append(r)
+
+mean_r = np.mean(correlations)
+
+print(f"\n{'='*50}")
+print(f"VALIDATION RESULTS")
+print(f"{'='*50}")
+print(f"Holdout questions:  {len(holdout_qids)}")
+print(f"Accuracy:           {accuracy:.4f}  (baseline=0.67, target>0.748)")
+print(f"Mean Pearson r:     {mean_r:.4f}  (THIS IS THE KEY)")
+print(f"Median Pearson r:   {np.median(correlations):.4f}")
+print(f"Questions with r>0: {sum(1 for r in correlations if r > 0)}/{len(correlations)}")
+
+# --- VARIANCE CHECK ---
+actual_std = test_df.groupby('question_id')['answer_position'].std().mean()
+pred_std = test_df.groupby('question_id')['predicted'].std().mean()
+var_ratio = pred_std / actual_std
+print(f"\nVariance ratio:     {var_ratio:.3f}  (want >0.8)")
+print(f"  Actual std:       {actual_std:.3f}")
+print(f"  Predicted std:    {pred_std:.3f}")
+
+if var_ratio < 0.5:
+    print("  WARNING: Model is collapsing to the mean!")
+if mean_r < 0.1:
+    print("  WARNING: Model is not distinguishing between people!")
+
+# --- PER-BLOCK BREAKDOWN ---
+print(f"\nPer-block results:")
+for block in test_df['block_name'].unique():
+    b_data = test_df[test_df['block_name'] == block]
+    b_qids = b_data['question_id'].unique()
+    b_corrs = []
+    for qid in b_qids:
+        qd = b_data[b_data['question_id'] == qid]
+        a, p = qd['answer_position'].values, qd['predicted'].values
+        if len(a) >= 3 and np.std(a) > 0 and np.std(p) > 0:
+            r, _ = pearsonr(a, p)
+            b_corrs.append(r)
+    if b_corrs:
+        b_acc_data = b_data.copy()
+        b_mad = b_acc_data['abs_error'].mean()
+        b_range = b_acc_data['range'].mean()
+        b_accuracy = 1 - (b_mad / b_range)
+        print(f"  {block}:")
+        print(f"    Accuracy: {b_accuracy:.4f}  |  Mean r: {np.mean(b_corrs):.4f}  |  Questions: {len(b_corrs)}")
+
+============================================================
+WHAT TO REPORT BACK TO TEAM
+============================================================
+
+After running, share these numbers with Tanmay:
+  1. Accuracy score
+  2. Mean Pearson r
+  3. Variance ratio
+  4. Per-block breakdown
+  5. Any red flags
+
+These numbers determine our next move.
+
+============================================================
+SAVE SCRIPT AS
+============================================================
+
+scripts/bootstrap_ensemble.py
+
+Run from repo root:
+  python scripts/bootstrap_ensemble.py
+
+============================================================
+RED FLAGS — STOP AND TELL THE TEAM
+============================================================
+
+- Pearson r < 0.1       → model isn't working, need different approach
+- Variance ratio < 0.5  → predictions too similar across people
+- Accuracy < 0.67       → worse than always predicting the mean
+- One block has r < 0   → model is inverting for that block
+- OOB MAE varies wildly → data might have issues
+
+============================================================
+AFTER VALIDATION SUCCEEDS
+============================================================
+
+If results look good (r > 0.3, accuracy > 0.74):
+  1. Retrain the full 20-model bootstrap ensemble on ALL data
+  2. Save models + imputer + feature_cols to outputs/
+  3. Push to GitHub
+  4. We're ready for when the test set drops
+
+If results are weak (r < 0.2):
+  1. Report numbers to team
+  2. We'll try adding construct-percentile features
+  3. Or try different model (Ridge, neural net)
+  4. Don't waste time tuning hyperparameters — architecture matters more
