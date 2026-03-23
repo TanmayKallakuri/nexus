@@ -1,0 +1,300 @@
+============================================================
+JASJYOT — TEST SUBMISSION PIPELINE
+Build while waiting for Tolendi's ensemble results
+============================================================
+
+GOAL:
+Build the script that takes a test JSON file (like sample_test_questions.json),
+runs predictions through our models, and outputs the filled JSON.
+
+This is the LAST MILE. When the hidden test drops at Tuesday 7 AM,
+we run this script and submit. If this isn't ready, nothing else matters.
+
+============================================================
+INPUT FORMAT (from sample_test_questions.json)
+============================================================
+
+[
+  {
+    "person_id": "00a1r",          ← will be real IDs from our 233 people
+    "question_id": "S1",
+    "context": null,                ← can be null OR a scenario string
+    "question_text": "...",
+    "options": ["1 - Yes", "2 - No"],   ← list OR string like "0 to 100"
+    "predicted_answer": null        ← WE FILL THIS IN
+  },
+  ...
+]
+
+============================================================
+OUTPUT FORMAT
+============================================================
+
+Same JSON, but with predicted_answer filled:
+
+  "predicted_answer": 2       ← for option-based questions (pick option number)
+  "predicted_answer": 73      ← for 0-100 scale questions
+
+============================================================
+STEP-BY-STEP BUILD
+============================================================
+
+STEP 1: Parse and classify questions
+---------------------------------
+import json
+import pandas as pd
+import numpy as np
+
+def load_test(filepath):
+    with open(filepath, 'r') as f:
+        questions = json.load(f)
+    return questions
+
+def classify_question(q):
+    """Determine question type from options format."""
+    options = q.get('options', [])
+
+    if isinstance(options, str):
+        # "0 to 100" style — continuous
+        return 'continuous'
+    elif len(options) == 2:
+        return 'binary'
+    elif all(any(kw in opt.lower() for kw in ['strongly', 'agree', 'disagree', 'neutral', 'likely', 'unlikely'])
+             for opt in options):
+        return 'likert'
+    elif len(options) <= 7 and any(opt[0].isdigit() for opt in options):
+        # Numbered options that look ordered
+        return 'ordinal'
+    else:
+        return 'categorical'
+
+def parse_options_range(options):
+    """Extract numeric range from options."""
+    if isinstance(options, str):
+        # "0 to 100" → (0, 100)
+        parts = options.replace('to', ' ').split()
+        nums = [int(p) for p in parts if p.isdigit()]
+        if len(nums) == 2:
+            return nums[0], nums[1]
+        return 0, 100  # fallback
+    else:
+        return 1, len(options)
+
+def build_question_text(q):
+    """Combine context + question_text for embedding."""
+    context = q.get('context', None)
+    qtext = q.get('question_text', '')
+    if context:
+        return f"{context} {qtext}"
+    return qtext
+
+
+STEP 2: Load our models and data
+---------------------------------
+import pickle
+
+# Person features (Model 1)
+person_feat = pd.read_csv('outputs/person_response_profiles.csv')
+
+# Question embeddings model
+from sentence_transformers import SentenceTransformer
+embedder = SentenceTransformer('all-MiniLM-L6-v2')
+
+# Bootstrap ensemble (from Tolendi — load when ready)
+# with open('outputs/bootstrap_models.pkl', 'rb') as f:
+#     saved = pickle.load(f)
+#     models = saved['models']
+#     imputer = saved['imputer']
+#     feature_cols = saved['feature_cols']
+
+# Persona text files (for LLM fallback)
+import os
+persona_texts = {}
+for fname in os.listdir('personas_text'):
+    pid = fname.replace('_persona.txt', '')
+    with open(f'personas_text/{fname}', 'r') as f:
+        persona_texts[pid] = f.read()
+
+
+STEP 3: ML prediction path (for ordinal/likert)
+---------------------------------
+def predict_ml(person_id, question_text, num_options, models, imputer, feature_cols, person_feat, embedder):
+    """Predict using bootstrap ensemble."""
+    # Get person features
+    pf = person_feat[person_feat['person_id'] == person_id]
+    if pf.empty:
+        return None, None  # unknown person, fallback to LLM
+
+    person_cols = [c for c in person_feat.columns if c != 'person_id']
+    person_vec = pf[person_cols].values.flatten()
+
+    # Embed question
+    q_emb = embedder.encode([question_text])[0]
+
+    # Build feature vector: person_features + question_embedding + num_options
+    feature_vec = np.concatenate([person_vec, q_emb, [num_options]])
+
+    # Impute NaN
+    feature_vec = imputer.transform(feature_vec.reshape(1, -1))
+
+    # Predict with all bootstrap models
+    preds = [m.predict(feature_vec)[0] for m in models]
+    mean_pred = np.mean(preds)
+    std_pred = np.std(preds)
+
+    return mean_pred, std_pred
+
+
+STEP 4: LLM prediction path (for categorical/binary/fallback)
+---------------------------------
+# PLACEHOLDER — Tanmay is building this
+# For now, use a simple heuristic or leave as None
+
+def predict_llm(person_id, question, persona_texts):
+    """
+    Use LLM to predict answer for non-ordinal questions.
+    Will be implemented by Tanmay.
+
+    For now: return None (we'll fill this in later)
+    """
+    # TODO: Call Claude/OpenAI API with persona text + question
+    # persona = persona_texts.get(person_id, '')
+    # prompt = build_prompt(persona, question)
+    # response = call_llm(prompt)
+    # return parse_answer(response)
+    return None
+
+
+STEP 5: Main prediction router
+---------------------------------
+def predict_all(test_questions, models, imputer, feature_cols,
+                person_feat, embedder, persona_texts):
+    """
+    Route each question to the right prediction method.
+    Fill in predicted_answer for all questions.
+    """
+    results = []
+
+    for i, q in enumerate(test_questions):
+        pid = q['person_id']
+        qtype = classify_question(q)
+        full_text = build_question_text(q)
+        options = q.get('options', [])
+        lo, hi = parse_options_range(options)
+        num_options = hi - lo + 1 if isinstance(options, list) else hi - lo
+
+        if i % 50 == 0:
+            print(f"[{i+1}/{len(test_questions)}] Predicting...")
+
+        pred = None
+
+        if qtype in ('likert', 'ordinal'):
+            # ML path
+            mean_pred, std_pred = predict_ml(
+                pid, full_text, len(options) if isinstance(options, list) else num_options,
+                models, imputer, feature_cols, person_feat, embedder
+            )
+            if mean_pred is not None:
+                # Clamp to valid range and round
+                pred = int(round(np.clip(mean_pred, lo, hi)))
+
+        elif qtype == 'continuous':
+            # ML path, scaled
+            mean_pred, std_pred = predict_ml(
+                pid, full_text, num_options,
+                models, imputer, feature_cols, person_feat, embedder
+            )
+            if mean_pred is not None:
+                # Scale from model output to 0-100 range
+                pred = int(round(np.clip(mean_pred, lo, hi)))
+
+        elif qtype in ('binary', 'categorical'):
+            # LLM path (or heuristic fallback)
+            pred = predict_llm(pid, q, persona_texts)
+
+        # Fallback: if still None, use LLM
+        if pred is None:
+            pred = predict_llm(pid, q, persona_texts)
+
+        # Last resort fallback: midpoint
+        if pred is None:
+            pred = int(round((lo + hi) / 2))
+
+        q_copy = q.copy()
+        q_copy['predicted_answer'] = pred
+        results.append(q_copy)
+
+    return results
+
+
+STEP 6: Run and save
+---------------------------------
+def run_submission(test_filepath, output_filepath):
+    """Full pipeline: load test → predict → save."""
+    print(f"Loading test questions from {test_filepath}...")
+    questions = load_test(test_filepath)
+    print(f"Loaded {len(questions)} questions")
+
+    # Classify
+    type_counts = {}
+    for q in questions:
+        t = classify_question(q)
+        type_counts[t] = type_counts.get(t, 0) + 1
+    print(f"Question types: {type_counts}")
+
+    # Predict
+    print("Running predictions...")
+    results = predict_all(
+        questions, models, imputer, feature_cols,
+        person_feat, embedder, persona_texts
+    )
+
+    # Save
+    with open(output_filepath, 'w') as f:
+        json.dump(results, f, indent=2)
+    print(f"Saved predictions to {output_filepath}")
+
+    # Summary
+    filled = sum(1 for r in results if r['predicted_answer'] is not None)
+    print(f"Filled: {filled}/{len(results)}")
+
+    return results
+
+# Test with sample
+# results = run_submission('sample_test_questions.json', 'outputs/sample_predictions.json')
+
+============================================================
+SAVE SCRIPT AS
+============================================================
+
+scripts/predict_submission.py
+
+============================================================
+WHAT TO BUILD NOW (before Tolendi's models are ready)
+============================================================
+
+1. Build Steps 1, 2, 4, 5, 6 — everything EXCEPT the ML predict call
+2. Test the router on sample_test_questions.json
+   - Verify classify_question works for all 11 samples
+   - Verify build_question_text handles context correctly
+   - Verify parse_options_range handles "0 to 100"
+3. Use midpoint fallback for now — the ML models will plug in later
+4. Push to GitHub when the skeleton works
+
+============================================================
+WHEN TOLENDI'S MODELS ARE READY
+============================================================
+
+1. Uncomment the pickle load in Step 2
+2. The predict_ml function should just work
+3. Test on sample_test_questions.json end-to-end
+4. Push updated script
+
+============================================================
+WHEN TEST DROPS (Tuesday 7 AM)
+============================================================
+
+1. Download test JSON
+2. Run: python scripts/predict_submission.py
+3. Verify output JSON has all predicted_answer filled
+4. Submit

@@ -1,0 +1,532 @@
+question_id,construct_id,block_name,question_type
+QID10,QID10,Forward Flow,TE
+QID11,QID11,Demographics,MC
+QID117,QID117,Economic preferences,MC
+QID118,QID118,Economic preferences,MC
+QID119,QID119,Economic preferences,MC
+QID12,QID12,Demographics,MC
+QID120,QID120,Economic preferences,MC
+QID121,QID121,Economic preferences,MC
+QID122,QID122,Economic preferences,MC
+QID123,QID123,Cognitive tests,TE
+QID124,QID124,Cognitive tests,TE
+QID125_r1,QID125,Personality,Matrix
+QID125_r10,QID125,Personality,Matrix
+QID125_r11,QID125,Personality,Matrix
+QID125_r12,QID125,Personality,Matrix
+QID125_r13,QID125,Personality,Matrix
+QID125_r14,QID125,Personality,Matrix
+QID125_r15,QID125,Personality,Matrix
+QID125_r16,QID125,Personality,Matrix
+QID125_r17,QID125,Personality,Matrix
+QID125_r18,QID125,Personality,Matrix
+QID125_r19,QID125,Personality,Matrix
+QID125_r2,QID125,Personality,Matrix
+QID125_r20,QID125,Personality,Matrix
+QID125_r21,QID125,Personality,Matrix
+QID125_r3,QID125,Personality,Matrix
+QID125_r4,QID125,Personality,Matrix
+QID125_r5,QID125,Personality,Matrix
+QID125_r6,QID125,Personality,Matrix
+QID125_r7,QID125,Personality,Matrix
+QID125_r8,QID125,Personality,Matrix
+QID125_r9,QID125,Personality,Matrix
+QID126,QID126,Personality,MC_multi
+QID128,QID128,Personality,MC_multi
+QID129,QID129,Personality,MC_multi
+QID13,QID13,Demographics,MC
+QID130,QID130,Personality,MC_multi
+QID131,QID131,Personality,MC_multi
+QID132,QID132,Personality,MC_multi
+QID133,QID133,Personality,MC_multi
+QID134,QID134,Personality,MC_multi
+QID136,QID136,Personality,MC_multi
+QID137,QID137,Personality,MC_multi
+QID138,QID138,Personality,MC_multi
+QID139,QID139,Personality,MC_multi
+QID14,QID14,Demographics,MC
+QID140,QID140,Personality,MC_multi
+QID141,QID141,Personality,MC_multi
+QID142,QID142,Personality,MC_multi
+QID143,QID143,Personality,MC_multi
+QID144,QID144,Personality,MC_multi
+QID145,QID145,Personality,MC_multi
+QID146,QID146,Personality,MC_multi
+QID147,QID147,Personality,MC_multi
+QID148,QID148,Personality,MC
+QID149,QID149,Economic preferences,MC
+QID15,QID15,Demographics,MC
+QID150,QID150,Economic preferences,MC
+QID151,QID151,Economic preferences,MC
+QID152,QID152,Economic preferences,MC
+QID16,QID16,Demographics,MC
+QID17,QID17,Demographics,MC
+QID18,QID18,Demographics,MC
+QID19,QID19,Demographics,MC
+QID20,QID20,Demographics,MC
+QID21,QID21,Demographics,MC
+QID217,QID217,Cognitive tests,MC
+QID218,QID218,Cognitive tests,MC
+QID219,QID219,Cognitive tests,MC
+QID22,QID22,Demographics,MC
+QID220,QID220,Cognitive tests,MC
+QID221,QID221,Cognitive tests,MC_multi
+QID224,QID224,Economic preferences,MC
+QID225,QID225,Economic preferences,MC
+QID226,QID226,Economic preferences,MC
+QID227,QID227,Economic preferences,MC
+QID228,QID228,Economic preferences,MC
+QID229,QID229,Economic preferences,MC
+QID23,QID23,Demographics,MC
+QID230,QID230,Economic preferences,MC
+QID231,QID231,Economic preferences,MC
+QID232_r1,QID232,Personality,Matrix
+QID232_r10,QID232,Personality,Matrix
+QID232_r11,QID232,Personality,Matrix
+QID232_r12,QID232,Personality,Matrix
+QID232_r13,QID232,Personality,Matrix
+QID232_r14,QID232,Personality,Matrix
+QID232_r15,QID232,Personality,Matrix
+QID232_r16,QID232,Personality,Matrix
+QID232_r17,QID232,Personality,Matrix
+QID232_r18,QID232,Personality,Matrix
+QID232_r19,QID232,Personality,Matrix
+QID232_r2,QID232,Personality,Matrix
+QID232_r20,QID232,Personality,Matrix
+QID232_r3,QID232,Personality,Matrix
+QID232_r4,QID232,Personality,Matrix
+QID232_r5,QID232,Personality,Matrix
+QID232_r6,QID232,Personality,Matrix
+QID232_r7,QID232,Personality,Matrix
+QID232_r8,QID232,Personality,Matrix
+QID232_r9,QID232,Personality,Matrix
+QID233_r1,QID233,Personality,Matrix
+QID233_r10,QID233,Personality,Matrix
+QID233_r11,QID233,Personality,Matrix
+QID233_r12,QID233,Personality,Matrix
+QID233_r13,QID233,Personality,Matrix
+QID233_r14,QID233,Personality,Matrix
+QID233_r15,QID233,Personality,Matrix
+QID233_r16,QID233,Personality,Matrix
+QID233_r2,QID233,Personality,Matrix
+QID233_r3,QID233,Personality,Matrix
+QID233_r4,QID233,Personality,Matrix
+QID233_r5,QID233,Personality,Matrix
+QID233_r6,QID233,Personality,Matrix
+QID233_r7,QID233,Personality,Matrix
+QID233_r8,QID233,Personality,Matrix
+QID233_r9,QID233,Personality,Matrix
+QID234_r1,QID234,Personality,Matrix
+QID234_r10,QID234,Personality,Matrix
+QID234_r11,QID234,Personality,Matrix
+QID234_r12,QID234,Personality,Matrix
+QID234_r2,QID234,Personality,Matrix
+QID234_r3,QID234,Personality,Matrix
+QID234_r4,QID234,Personality,Matrix
+QID234_r5,QID234,Personality,Matrix
+QID234_r6,QID234,Personality,Matrix
+QID234_r7,QID234,Personality,Matrix
+QID234_r8,QID234,Personality,Matrix
+QID234_r9,QID234,Personality,Matrix
+QID235_r1,QID235,Personality,Matrix
+QID235_r2,QID235,Personality,Matrix
+QID235_r3,QID235,Personality,Matrix
+QID235_r4,QID235,Personality,Matrix
+QID235_r5,QID235,Personality,Matrix
+QID235_r6,QID235,Personality,Matrix
+QID236_r1,QID236,Personality,Matrix
+QID236_r10,QID236,Personality,Matrix
+QID236_r11,QID236,Personality,Matrix
+QID236_r12,QID236,Personality,Matrix
+QID236_r13,QID236,Personality,Matrix
+QID236_r2,QID236,Personality,Matrix
+QID236_r3,QID236,Personality,Matrix
+QID236_r4,QID236,Personality,Matrix
+QID236_r5,QID236,Personality,Matrix
+QID236_r6,QID236,Personality,Matrix
+QID236_r7,QID236,Personality,Matrix
+QID236_r8,QID236,Personality,Matrix
+QID236_r9,QID236,Personality,Matrix
+QID237_r1,QID237,Personality,Matrix
+QID237_r10,QID237,Personality,Matrix
+QID237_r11,QID237,Personality,Matrix
+QID237_r12,QID237,Personality,Matrix
+QID237_r2,QID237,Personality,Matrix
+QID237_r3,QID237,Personality,Matrix
+QID237_r4,QID237,Personality,Matrix
+QID237_r5,QID237,Personality,Matrix
+QID237_r6,QID237,Personality,Matrix
+QID237_r7,QID237,Personality,Matrix
+QID237_r8,QID237,Personality,Matrix
+QID237_r9,QID237,Personality,Matrix
+QID238_r1,QID238,Personality,Matrix
+QID238_r10,QID238,Personality,Matrix
+QID238_r11,QID238,Personality,Matrix
+QID238_r12,QID238,Personality,Matrix
+QID238_r13,QID238,Personality,Matrix
+QID238_r14,QID238,Personality,Matrix
+QID238_r15,QID238,Personality,Matrix
+QID238_r2,QID238,Personality,Matrix
+QID238_r3,QID238,Personality,Matrix
+QID238_r4,QID238,Personality,Matrix
+QID238_r5,QID238,Personality,Matrix
+QID238_r6,QID238,Personality,Matrix
+QID238_r7,QID238,Personality,Matrix
+QID238_r8,QID238,Personality,Matrix
+QID238_r9,QID238,Personality,Matrix
+QID239_r1,QID239,Personality,Matrix
+QID239_r2,QID239,Personality,Matrix
+QID239_r3,QID239,Personality,Matrix
+QID239_r4,QID239,Personality,Matrix
+QID239_r5,QID239,Personality,Matrix
+QID239_r6,QID239,Personality,Matrix
+QID24,QID24,Demographics,MC
+QID244_r1,QID244,Economic preferences,Matrix
+QID244_r10,QID244,Economic preferences,Matrix
+QID244_r2,QID244,Economic preferences,Matrix
+QID244_r3,QID244,Economic preferences,Matrix
+QID244_r4,QID244,Economic preferences,Matrix
+QID244_r5,QID244,Economic preferences,Matrix
+QID244_r6,QID244,Economic preferences,Matrix
+QID244_r7,QID244,Economic preferences,Matrix
+QID244_r8,QID244,Economic preferences,Matrix
+QID244_r9,QID244,Economic preferences,Matrix
+QID245_r1,QID245,Economic preferences,Matrix
+QID245_r10,QID245,Economic preferences,Matrix
+QID245_r11,QID245,Economic preferences,Matrix
+QID245_r2,QID245,Economic preferences,Matrix
+QID245_r3,QID245,Economic preferences,Matrix
+QID245_r4,QID245,Economic preferences,Matrix
+QID245_r5,QID245,Economic preferences,Matrix
+QID245_r6,QID245,Economic preferences,Matrix
+QID245_r7,QID245,Economic preferences,Matrix
+QID245_r8,QID245,Economic preferences,Matrix
+QID245_r9,QID245,Economic preferences,Matrix
+QID246_r1,QID246,Economic preferences,Matrix
+QID246_r2,QID246,Economic preferences,Matrix
+QID246_r3,QID246,Economic preferences,Matrix
+QID246_r4,QID246,Economic preferences,Matrix
+QID246_r5,QID246,Economic preferences,Matrix
+QID246_r6,QID246,Economic preferences,Matrix
+QID246_r7,QID246,Economic preferences,Matrix
+QID246_r8,QID246,Economic preferences,Matrix
+QID246_r9,QID246,Economic preferences,Matrix
+QID247_r1,QID247,Economic preferences,Matrix
+QID247_r10,QID247,Economic preferences,Matrix
+QID247_r2,QID247,Economic preferences,Matrix
+QID247_r3,QID247,Economic preferences,Matrix
+QID247_r4,QID247,Economic preferences,Matrix
+QID247_r5,QID247,Economic preferences,Matrix
+QID247_r6,QID247,Economic preferences,Matrix
+QID247_r7,QID247,Economic preferences,Matrix
+QID247_r8,QID247,Economic preferences,Matrix
+QID247_r9,QID247,Economic preferences,Matrix
+QID248_r1,QID248,Economic preferences,Matrix
+QID248_r10,QID248,Economic preferences,Matrix
+QID248_r11,QID248,Economic preferences,Matrix
+QID248_r2,QID248,Economic preferences,Matrix
+QID248_r3,QID248,Economic preferences,Matrix
+QID248_r4,QID248,Economic preferences,Matrix
+QID248_r5,QID248,Economic preferences,Matrix
+QID248_r6,QID248,Economic preferences,Matrix
+QID248_r7,QID248,Economic preferences,Matrix
+QID248_r8,QID248,Economic preferences,Matrix
+QID248_r9,QID248,Economic preferences,Matrix
+QID250_r1,QID250,Economic preferences,Matrix
+QID250_r10,QID250,Economic preferences,Matrix
+QID250_r11,QID250,Economic preferences,Matrix
+QID250_r12,QID250,Economic preferences,Matrix
+QID250_r13,QID250,Economic preferences,Matrix
+QID250_r14,QID250,Economic preferences,Matrix
+QID250_r2,QID250,Economic preferences,Matrix
+QID250_r3,QID250,Economic preferences,Matrix
+QID250_r4,QID250,Economic preferences,Matrix
+QID250_r5,QID250,Economic preferences,Matrix
+QID250_r6,QID250,Economic preferences,Matrix
+QID250_r7,QID250,Economic preferences,Matrix
+QID250_r8,QID250,Economic preferences,Matrix
+QID250_r9,QID250,Economic preferences,Matrix
+QID251_r1,QID251,Economic preferences,Matrix
+QID251_r10,QID251,Economic preferences,Matrix
+QID251_r11,QID251,Economic preferences,Matrix
+QID251_r12,QID251,Economic preferences,Matrix
+QID251_r13,QID251,Economic preferences,Matrix
+QID251_r14,QID251,Economic preferences,Matrix
+QID251_r2,QID251,Economic preferences,Matrix
+QID251_r3,QID251,Economic preferences,Matrix
+QID251_r4,QID251,Economic preferences,Matrix
+QID251_r5,QID251,Economic preferences,Matrix
+QID251_r6,QID251,Economic preferences,Matrix
+QID251_r7,QID251,Economic preferences,Matrix
+QID251_r8,QID251,Economic preferences,Matrix
+QID251_r9,QID251,Economic preferences,Matrix
+QID252_r1,QID252,Economic preferences,Matrix
+QID252_r10,QID252,Economic preferences,Matrix
+QID252_r11,QID252,Economic preferences,Matrix
+QID252_r12,QID252,Economic preferences,Matrix
+QID252_r13,QID252,Economic preferences,Matrix
+QID252_r14,QID252,Economic preferences,Matrix
+QID252_r2,QID252,Economic preferences,Matrix
+QID252_r3,QID252,Economic preferences,Matrix
+QID252_r4,QID252,Economic preferences,Matrix
+QID252_r5,QID252,Economic preferences,Matrix
+QID252_r6,QID252,Economic preferences,Matrix
+QID252_r7,QID252,Economic preferences,Matrix
+QID252_r8,QID252,Economic preferences,Matrix
+QID252_r9,QID252,Economic preferences,Matrix
+QID25_r1,QID25,Personality,Matrix
+QID25_r10,QID25,Personality,Matrix
+QID25_r11,QID25,Personality,Matrix
+QID25_r12,QID25,Personality,Matrix
+QID25_r13,QID25,Personality,Matrix
+QID25_r14,QID25,Personality,Matrix
+QID25_r15,QID25,Personality,Matrix
+QID25_r16,QID25,Personality,Matrix
+QID25_r17,QID25,Personality,Matrix
+QID25_r18,QID25,Personality,Matrix
+QID25_r19,QID25,Personality,Matrix
+QID25_r2,QID25,Personality,Matrix
+QID25_r20,QID25,Personality,Matrix
+QID25_r21,QID25,Personality,Matrix
+QID25_r22,QID25,Personality,Matrix
+QID25_r23,QID25,Personality,Matrix
+QID25_r24,QID25,Personality,Matrix
+QID25_r25,QID25,Personality,Matrix
+QID25_r26,QID25,Personality,Matrix
+QID25_r27,QID25,Personality,Matrix
+QID25_r28,QID25,Personality,Matrix
+QID25_r29,QID25,Personality,Matrix
+QID25_r3,QID25,Personality,Matrix
+QID25_r30,QID25,Personality,Matrix
+QID25_r31,QID25,Personality,Matrix
+QID25_r32,QID25,Personality,Matrix
+QID25_r33,QID25,Personality,Matrix
+QID25_r34,QID25,Personality,Matrix
+QID25_r35,QID25,Personality,Matrix
+QID25_r36,QID25,Personality,Matrix
+QID25_r37,QID25,Personality,Matrix
+QID25_r38,QID25,Personality,Matrix
+QID25_r39,QID25,Personality,Matrix
+QID25_r4,QID25,Personality,Matrix
+QID25_r40,QID25,Personality,Matrix
+QID25_r41,QID25,Personality,Matrix
+QID25_r42,QID25,Personality,Matrix
+QID25_r43,QID25,Personality,Matrix
+QID25_r44,QID25,Personality,Matrix
+QID25_r5,QID25,Personality,Matrix
+QID25_r6,QID25,Personality,Matrix
+QID25_r7,QID25,Personality,Matrix
+QID25_r8,QID25,Personality,Matrix
+QID25_r9,QID25,Personality,Matrix
+QID268,QID268,Personality,TE
+QID269,QID269,Personality,TE
+QID26_r1,QID26,Personality,Matrix
+QID26_r10,QID26,Personality,Matrix
+QID26_r11,QID26,Personality,Matrix
+QID26_r12,QID26,Personality,Matrix
+QID26_r13,QID26,Personality,Matrix
+QID26_r14,QID26,Personality,Matrix
+QID26_r15,QID26,Personality,Matrix
+QID26_r16,QID26,Personality,Matrix
+QID26_r17,QID26,Personality,Matrix
+QID26_r18,QID26,Personality,Matrix
+QID26_r2,QID26,Personality,Matrix
+QID26_r3,QID26,Personality,Matrix
+QID26_r4,QID26,Personality,Matrix
+QID26_r5,QID26,Personality,Matrix
+QID26_r6,QID26,Personality,Matrix
+QID26_r7,QID26,Personality,Matrix
+QID26_r8,QID26,Personality,Matrix
+QID26_r9,QID26,Personality,Matrix
+QID270,QID270,Personality,TE
+QID271,QID271,Economic preferences,TE
+QID272,QID272,Economic preferences,TE
+QID273,QID273,Cognitive tests,MC
+QID274,QID274,Cognitive tests,MC
+QID275,QID275,Economic preferences,TE
+QID276,QID276,Cognitive tests,MC
+QID276_r1,QID276,Economic preferences,Matrix
+QID276_r10,QID276,Economic preferences,Matrix
+QID276_r11,QID276,Economic preferences,Matrix
+QID276_r12,QID276,Economic preferences,Matrix
+QID276_r13,QID276,Economic preferences,Matrix
+QID276_r14,QID276,Economic preferences,Matrix
+QID276_r2,QID276,Economic preferences,Matrix
+QID276_r3,QID276,Economic preferences,Matrix
+QID276_r4,QID276,Economic preferences,Matrix
+QID276_r5,QID276,Economic preferences,Matrix
+QID276_r6,QID276,Economic preferences,Matrix
+QID276_r7,QID276,Economic preferences,Matrix
+QID276_r8,QID276,Economic preferences,Matrix
+QID276_r9,QID276,Economic preferences,Matrix
+QID277,QID277,Cognitive tests,MC
+QID277_r1,QID277,Economic preferences,Matrix
+QID277_r10,QID277,Economic preferences,Matrix
+QID277_r11,QID277,Economic preferences,Matrix
+QID277_r12,QID277,Economic preferences,Matrix
+QID277_r13,QID277,Economic preferences,Matrix
+QID277_r14,QID277,Economic preferences,Matrix
+QID277_r2,QID277,Economic preferences,Matrix
+QID277_r3,QID277,Economic preferences,Matrix
+QID277_r4,QID277,Economic preferences,Matrix
+QID277_r5,QID277,Economic preferences,Matrix
+QID277_r6,QID277,Economic preferences,Matrix
+QID277_r7,QID277,Economic preferences,Matrix
+QID277_r8,QID277,Economic preferences,Matrix
+QID277_r9,QID277,Economic preferences,Matrix
+QID278,QID278,Cognitive tests,MC
+QID278_r1,QID278,Economic preferences,Matrix
+QID278_r10,QID278,Economic preferences,Matrix
+QID278_r11,QID278,Economic preferences,Matrix
+QID278_r12,QID278,Economic preferences,Matrix
+QID278_r13,QID278,Economic preferences,Matrix
+QID278_r14,QID278,Economic preferences,Matrix
+QID278_r2,QID278,Economic preferences,Matrix
+QID278_r3,QID278,Economic preferences,Matrix
+QID278_r4,QID278,Economic preferences,Matrix
+QID278_r5,QID278,Economic preferences,Matrix
+QID278_r6,QID278,Economic preferences,Matrix
+QID278_r7,QID278,Economic preferences,Matrix
+QID278_r8,QID278,Economic preferences,Matrix
+QID278_r9,QID278,Economic preferences,Matrix
+QID279,QID279,Cognitive tests,MC
+QID279_r1,QID279,Economic preferences,Matrix
+QID279_r10,QID279,Economic preferences,Matrix
+QID279_r11,QID279,Economic preferences,Matrix
+QID279_r12,QID279,Economic preferences,Matrix
+QID279_r13,QID279,Economic preferences,Matrix
+QID279_r14,QID279,Economic preferences,Matrix
+QID279_r2,QID279,Economic preferences,Matrix
+QID279_r3,QID279,Economic preferences,Matrix
+QID279_r4,QID279,Economic preferences,Matrix
+QID279_r5,QID279,Economic preferences,Matrix
+QID279_r6,QID279,Economic preferences,Matrix
+QID279_r7,QID279,Economic preferences,Matrix
+QID279_r8,QID279,Economic preferences,Matrix
+QID279_r9,QID279,Economic preferences,Matrix
+QID27_r1,QID27,Personality,Matrix
+QID27_r10,QID27,Personality,Matrix
+QID27_r11,QID27,Personality,Matrix
+QID27_r12,QID27,Personality,Matrix
+QID27_r13,QID27,Personality,Matrix
+QID27_r2,QID27,Personality,Matrix
+QID27_r3,QID27,Personality,Matrix
+QID27_r4,QID27,Personality,Matrix
+QID27_r5,QID27,Personality,Matrix
+QID27_r6,QID27,Personality,Matrix
+QID27_r7,QID27,Personality,Matrix
+QID27_r8,QID27,Personality,Matrix
+QID27_r9,QID27,Personality,Matrix
+QID28_r1,QID28,Personality,Matrix
+QID28_r10,QID28,Personality,Matrix
+QID28_r2,QID28,Personality,Matrix
+QID28_r3,QID28,Personality,Matrix
+QID28_r4,QID28,Personality,Matrix
+QID28_r5,QID28,Personality,Matrix
+QID28_r6,QID28,Personality,Matrix
+QID28_r7,QID28,Personality,Matrix
+QID28_r8,QID28,Personality,Matrix
+QID28_r9,QID28,Personality,Matrix
+QID29_r1,QID29,Personality,Matrix
+QID29_r10,QID29,Personality,Matrix
+QID29_r11,QID29,Personality,Matrix
+QID29_r12,QID29,Personality,Matrix
+QID29_r13,QID29,Personality,Matrix
+QID29_r14,QID29,Personality,Matrix
+QID29_r15,QID29,Personality,Matrix
+QID29_r16,QID29,Personality,Matrix
+QID29_r17,QID29,Personality,Matrix
+QID29_r18,QID29,Personality,Matrix
+QID29_r19,QID29,Personality,Matrix
+QID29_r2,QID29,Personality,Matrix
+QID29_r20,QID29,Personality,Matrix
+QID29_r21,QID29,Personality,Matrix
+QID29_r22,QID29,Personality,Matrix
+QID29_r23,QID29,Personality,Matrix
+QID29_r24,QID29,Personality,Matrix
+QID29_r3,QID29,Personality,Matrix
+QID29_r4,QID29,Personality,Matrix
+QID29_r5,QID29,Personality,Matrix
+QID29_r6,QID29,Personality,Matrix
+QID29_r7,QID29,Personality,Matrix
+QID29_r8,QID29,Personality,Matrix
+QID29_r9,QID29,Personality,Matrix
+QID30_r1,QID30,Personality,Matrix
+QID30_r2,QID30,Personality,Matrix
+QID30_r3,QID30,Personality,Matrix
+QID30_r4,QID30,Personality,Matrix
+QID30_r5,QID30,Personality,Matrix
+QID30_r6,QID30,Personality,Matrix
+QID30_r7,QID30,Personality,Matrix
+QID30_r8,QID30,Personality,Matrix
+QID31,QID31,Personality,MC
+QID32,QID32,Personality,MC
+QID33,QID33,Personality,MC
+QID34,QID34,Personality,MC
+QID35_r1,QID35,Personality,Matrix
+QID35_r10,QID35,Personality,Matrix
+QID35_r11,QID35,Personality,Matrix
+QID35_r12,QID35,Personality,Matrix
+QID35_r2,QID35,Personality,Matrix
+QID35_r3,QID35,Personality,Matrix
+QID35_r4,QID35,Personality,Matrix
+QID35_r5,QID35,Personality,Matrix
+QID35_r6,QID35,Personality,Matrix
+QID35_r7,QID35,Personality,Matrix
+QID35_r8,QID35,Personality,Matrix
+QID35_r9,QID35,Personality,Matrix
+QID36,QID36,Cognitive tests,MC
+QID37,QID37,Cognitive tests,MC
+QID38,QID38,Cognitive tests,MC
+QID39,QID39,Cognitive tests,MC
+QID40,QID40,Cognitive tests,MC
+QID41,QID41,Cognitive tests,MC
+QID42,QID42,Cognitive tests,MC
+QID43,QID43,Cognitive tests,TE
+QID44,QID44,Cognitive tests,TE
+QID45,QID45,Cognitive tests,TE
+QID46,QID46,Cognitive tests,TE
+QID47,QID47,Cognitive tests,TE
+QID48,QID48,Cognitive tests,TE
+QID49,QID49,Cognitive tests,TE
+QID50,QID50,Cognitive tests,TE
+QID51,QID51,Cognitive tests,TE
+QID52,QID52,Cognitive tests,TE
+QID53,QID53,Cognitive tests,TE
+QID54,QID54,Cognitive tests,TE
+QID55,QID55,Cognitive tests,TE
+QID56,QID56,Cognitive tests,MC
+QID57,QID57,Cognitive tests,MC
+QID58,QID58,Cognitive tests,MC
+QID59,QID59,Cognitive tests,MC
+QID60,QID60,Cognitive tests,MC
+QID61,QID61,Cognitive tests,MC
+QID63,QID63,Cognitive tests,MC
+QID64,QID64,Cognitive tests,MC
+QID65,QID65,Cognitive tests,MC
+QID66,QID66,Cognitive tests,MC
+QID67,QID67,Cognitive tests,MC
+QID68,QID68,Cognitive tests,MC
+QID69,QID69,Cognitive tests,MC
+QID70,QID70,Cognitive tests,MC
+QID71,QID71,Cognitive tests,MC
+QID72,QID72,Cognitive tests,MC
+QID74,QID74,Cognitive tests,MC
+QID75,QID75,Cognitive tests,MC
+QID76,QID76,Cognitive tests,MC
+QID77,QID77,Cognitive tests,MC
+QID78,QID78,Cognitive tests,MC
+QID79,QID79,Cognitive tests,MC
+QID80,QID80,Cognitive tests,MC
+QID81,QID81,Cognitive tests,MC
+QID82,QID82,Cognitive tests,MC
+QID83,QID83,Cognitive tests,MC
+QID84_r1,QID84,Economic preferences,Matrix
+QID84_r2,QID84,Economic preferences,Matrix
+QID84_r3,QID84,Economic preferences,Matrix
+QID84_r4,QID84,Economic preferences,Matrix
+QID84_r5,QID84,Economic preferences,Matrix
+QID84_r6,QID84,Economic preferences,Matrix
+QID84_r7,QID84,Economic preferences,Matrix
+QID84_r8,QID84,Economic preferences,Matrix
+QID84_r9,QID84,Economic preferences,Matrix

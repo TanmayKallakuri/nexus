@@ -1,0 +1,179 @@
+============================================================
+JASJYOT — SANITY CHECK MODEL 1 ANSWER KEYS
+Do this while waiting for Tolendi's ensemble
+============================================================
+
+GOAL:
+Verify that the scores computed in person_response_profiles.csv
+match the ground truth scores in the persona text files.
+
+If they don't match, every downstream model is using bad data.
+
+============================================================
+WHY THIS MATTERS
+============================================================
+
+Model 1 has hard-coded answer keys for cognitive tests:
+  - CRT (Cognitive Reflection Test)
+  - Numeracy
+  - Financial literacy
+  - Vocabulary (synonyms/antonyms)
+  - Wason selection
+  - Syllogisms
+
+If these answer keys are wrong, the computed scores are wrong,
+the person features are wrong, and the ensemble predictions
+will be systematically biased.
+
+============================================================
+HOW TO CHECK
+============================================================
+
+STEP 1: Pick 5 random people
+---------------------------------
+Use these person_ids (spread across the dataset):
+  1. 00a1r
+  2. 7hiu4
+  3. k8gd7
+  4. sw55g
+  5. ridfr
+
+STEP 2: For each person, read their persona text file
+---------------------------------
+File location: personas_text/{person_id}_persona.txt
+
+Extract these ground truth scores from the text:
+  - CRT score (listed as "crt2_score = X")
+  - Numeracy score (listed as "score_numeracy = X")
+  - Financial literacy score (listed as "score_finliteracy = X")
+  - Fluid intelligence / matrix score (listed as "score_fluid = X")
+  - Crystallized intelligence / vocabulary (listed as "score_crystallized = X")
+  - Syllogism score (listed as "score_syllogism_merged = X")
+  - Wason score (listed as "score_wason = X")
+  - Beck anxiety sum (listed as "score_anxiety = X")
+  - Beck depression (listed as "score_depression = X")
+
+STEP 3: For each person, read their row from Model 1
+---------------------------------
+File: outputs/person_response_profiles.csv
+
+Look up the same person_id and find the corresponding columns.
+Check the data dictionary (outputs/person_response_profiles_data_dictionary.csv)
+to map column names to what they measure.
+
+Columns to check (names may vary — use data dictionary):
+  - Any column related to CRT
+  - Any column related to numeracy
+  - Any column related to financial literacy
+  - bai_sum_score (should match score_anxiety)
+  - Any cognitive scored columns
+
+STEP 4: Compare
+---------------------------------
+For each person, build a table like this:
+
+Person: 00a1r
+  Feature              | Persona Text  | Model 1 CSV  | Match?
+  ---------------------|---------------|---------------|-------
+  CRT score            | 3             | ???           |
+  Numeracy             | 7             | ???           |
+  Financial literacy   | 4             | ???           |
+  Fluid intelligence   | 4             | ???           |
+  Crystallized intel   | 7             | ???           |
+  Syllogism            | 5             | ???           |
+  Wason                | 2             | ???           |
+  Beck anxiety sum     | 1             | ???           |
+
+NOTE: The persona text scores are pre-computed from the raw
+survey answers. Model 1 recomputes them from the raw CSV data.
+Small differences (±1) are acceptable due to rounding.
+Large differences (±3 or more) mean the answer key is wrong.
+
+STEP 5: Report findings
+---------------------------------
+Create a file: outputs/jasjyot/sanity_check_results.txt
+
+For each person checked, record:
+  - Which scores matched
+  - Which scores didn't match (and by how much)
+  - Which answer keys are suspect
+
+If everything matches: "Model 1 cognitive scores validated. Safe to use."
+If mismatches found: flag the specific features and we'll fix before test time.
+
+============================================================
+SCRIPT VERSION (if you want to automate)
+============================================================
+
+import pandas as pd
+import re
+import os
+
+# Load Model 1
+profiles = pd.read_csv('outputs/person_response_profiles.csv')
+
+# People to check
+check_ids = ['00a1r', '7hiu4', 'k8gd7', 'sw55g', 'ridfr']
+
+for pid in check_ids:
+    print(f"\n{'='*50}")
+    print(f"Person: {pid}")
+    print(f"{'='*50}")
+
+    # Read persona text
+    txt_path = f'personas_text/{pid}_persona.txt'
+    if not os.path.exists(txt_path):
+        print(f"  File not found: {txt_path}")
+        continue
+
+    with open(txt_path, 'r', encoding='utf-8') as f:
+        text = f.read()
+
+    # Extract scores from persona text using regex
+    ground_truth = {}
+    patterns = {
+        'CRT': r'crt2_score\s*=\s*(\d+)',
+        'Numeracy': r'score_numeracy\s*=\s*(\d+)',
+        'Financial Literacy': r'score_finliteracy\s*=\s*(\d+)',
+        'Fluid Intelligence': r'score_fluid\s*=\s*(\d+)',
+        'Crystallized Intel': r'score_crystallized\s*=\s*(\d+)',
+        'Syllogism': r'score_syllogism_merged\s*=\s*(\d+)',
+        'Wason': r'score_wason\s*=\s*(\d+)',
+        'Beck Anxiety': r'score_anxiety\s*=\s*(\d+)',
+        'Beck Depression': r'score_depression\s*=\s*(\d+)',
+    }
+
+    for name, pattern in patterns.items():
+        match = re.search(pattern, text)
+        if match:
+            ground_truth[name] = int(match.group(1))
+
+    # Get Model 1 row
+    row = profiles[profiles['person_id'] == pid]
+    if row.empty:
+        print(f"  Not found in Model 1")
+        continue
+
+    # Print ground truth
+    print(f"\n  Ground truth (from persona text):")
+    for name, val in ground_truth.items():
+        print(f"    {name}: {val}")
+
+    # Print Model 1 values (you'll need to map column names)
+    print(f"\n  Model 1 columns available:")
+    for col in row.columns:
+        if any(kw in col.lower() for kw in ['crt', 'numer', 'finan', 'fluid',
+               'crystal', 'syllog', 'wason', 'bai', 'anxiety', 'depress']):
+            val = row[col].values[0]
+            print(f"    {col}: {val}")
+
+    print(f"\n  Compare the two lists above. Flag mismatches > 2.")
+
+============================================================
+PUSH RESULTS
+============================================================
+
+When done:
+  git add outputs/jasjyot/sanity_check_results.txt
+  git commit -m "Sanity check Model 1 cognitive answer keys"
+  git push
