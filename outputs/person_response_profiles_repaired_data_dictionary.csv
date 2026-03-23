@@ -1,0 +1,90 @@
+column,group,description,source_qids
+person_id,identifier,Unique person identifier,all
+n_total_answers,coverage,Total number of answered items,all
+n_missing_answers,coverage,Count of non-text items with missing answer position,all
+n_answered_personality,coverage,Items answered in Personality block,Personality
+n_answered_economic,coverage,Items answered in Economic preferences block,Economic preferences
+n_answered_cognitive,coverage,Items answered in Cognitive tests block,Cognitive tests
+n_answered_demographics,coverage,Items answered in Demographics block,Demographics
+n_ordinal_items,coverage,Count of ordinal-type answers,all
+n_categorical_items,coverage,Count of categorical-type answers,all
+n_text_items,coverage,Count of text-entry answers,all
+n_multi_select_items,coverage,Count of multi-select answers,all
+ordinal_mean_normalized,response_style,Mean of answer_position/num_options across ordinal items,ordinal
+ordinal_std_normalized,response_style,Std dev of normalized ordinal responses,ordinal
+ordinal_midpoint_rate,response_style,Fraction of ordinal responses at exact midpoint,ordinal
+ordinal_extreme_rate,response_style,Fraction of ordinal responses at min or max,ordinal
+ordinal_acquiescence,response_style,Mean raw ordinal position (agreement tendency),ordinal
+straightlining_max_repeat_rate,response_style,Max fraction of identical responses within any matrix question,ordinal
+bfi_44_mean_norm,personality,Mean normalized score for bfi_44 (QID25),QID25
+bfi_44_n_items,personality,Number of items answered for bfi_44,QID25
+bfi_18_mean_norm,personality,Mean normalized score for bfi_18 (QID26),QID26
+bfi_18_n_items,personality,Number of items answered for bfi_18,QID26
+autonomy_cognition_mean_norm,personality,Mean normalized score for autonomy_cognition (QID28),QID28
+autonomy_cognition_n_items,personality,Number of items answered for autonomy_cognition,QID28
+personal_values_mean_norm,personality,Mean normalized score for personal_values (QID29),QID29
+personal_values_n_items,personality,Number of items answered for personal_values,QID29
+self_monitoring_mean_norm,personality,Mean normalized score for self_monitoring (QID30),QID30
+self_monitoring_n_items,personality,Number of items answered for self_monitoring,QID30
+self_monitoring_binary_mean_norm,personality,Mean normalized score for self_monitoring_binary (QID27),QID27
+self_monitoring_binary_n_items,personality,Number of items answered for self_monitoring_binary,QID27
+regulatory_focus_mean_norm,personality,Mean normalized score for regulatory_focus (QID35),QID35
+regulatory_focus_n_items,personality,Number of items answered for regulatory_focus,QID35
+bai_anxiety_mean_norm,personality,Mean normalized score for bai_anxiety (QID125),QID125
+bai_anxiety_n_items,personality,Number of items answered for bai_anxiety,QID125
+bai_sum_score,personality,"Beck Anxiety Inventory sum score (QID125, 21 items)",QID125
+self_concept_mean_norm,personality,Mean normalized score for self_concept (QID232),QID232
+self_concept_n_items,personality,Number of items answered for self_concept,QID232
+need_uniqueness_mean_norm,personality,Mean normalized score for need_uniqueness (QID233),QID233
+need_uniqueness_n_items,personality,Number of items answered for need_uniqueness,QID233
+need_closure_mean_norm,personality,Mean normalized score for need_closure (QID234),QID234
+need_closure_n_items,personality,Number of items answered for need_closure,QID234
+personality_traits_5pt_mean_norm,personality,Mean normalized score for personality_traits_5pt (QID235),QID235
+personality_traits_5pt_n_items,personality,Number of items answered for personality_traits_5pt,QID235
+maximization_mean_norm,personality,Mean normalized score for maximization (QID236),QID236
+maximization_n_items,personality,Number of items answered for maximization,QID236
+uncertainty_beliefs_mean_norm,personality,Mean normalized score for uncertainty_beliefs (QID237),QID237
+uncertainty_beliefs_n_items,personality,Number of items answered for uncertainty_beliefs,QID237
+risk_sensitivity_personality_mean_norm,personality,Mean normalized score for risk_sensitivity_personality (QID238),QID238
+risk_sensitivity_personality_n_items,personality,Number of items answered for risk_sensitivity_personality,QID238
+self_regulation_mean_norm,personality,Mean normalized score for self_regulation (QID239),QID239
+self_regulation_n_items,personality,Number of items answered for self_regulation,QID239
+spending_scale,personality,Tightwad-spendthrift self-placement QID31 (1-11 scale),QID31
+spending_difficulty,personality,Difficulty controlling spending QID32,QID32
+spending_anxiety,personality,Anxiety about spending QID33,QID33
+shopper_type,personality,Shopper type self-identification QID34,QID34
+weight_loss_intention,personality,Weight loss intention QID148,QID148
+dictator_game_position,economic,Dictator game offer position QID117,QID117
+ultimatum_offer_position,economic,Ultimatum game offer position QID224,QID224
+trust_game_send_position,economic,Trust game send-back position QID118,QID118
+trust_return_mean_position,economic,Mean trust game return position QID119-122,QID119-122
+ultimatum_reject_rate,economic,Fraction of ultimatum offers rejected QID225-230,QID225-230
+hedonic_framing_mean,economic,Mean hedonic framing tendency QID149-152,QID149-152
+loss_aversion_risky_choices,economic,Count of risky choices in loss aversion lottery QID84,QID84
+loss_aversion_risky_rate,economic,Rate of risky choices in loss aversion lottery QID84,QID84
+crt_score,cognitive,Cognitive Reflection Test correct answers (0-7),QID49-55
+crt_total_attempted,cognitive,CRT items attempted,QID49-55
+numeracy_score,cognitive,Numeracy test correct answers (0-6),QID43-48
+numeracy_total_attempted,cognitive,Numeracy items attempted,QID43-48
+financial_literacy_score,cognitive,Financial literacy correct answers (0-5),QID38-42
+financial_literacy_total,cognitive,Financial literacy items attempted,QID38-42
+vocabulary_synonym_total,cognitive,Synonym items attempted,QID63-72
+vocabulary_antonym_total,cognitive,Antonym items attempted,QID74-83
+spatial_n_attempted,cognitive,Spatial reasoning items attempted,QID56-61
+wason_correct,cognitive,Wason card task correct (1) or not (0),QID221
+wason_n_selected,cognitive,Number of cards selected in Wason task,QID221
+forward_flow_word_count,cognitive,Number of words generated in forward flow task,QID10
+demo_region,demographics,US region (ordinal position encoding),Demographics
+demo_sex,demographics,Sex at birth (ordinal position encoding),Demographics
+demo_age,demographics,Age bracket (ordinal position encoding),Demographics
+demo_education,demographics,Education level (ordinal position encoding),Demographics
+demo_race,demographics,Race/origin (ordinal position encoding),Demographics
+demo_citizenship,demographics,US citizenship (ordinal position encoding),Demographics
+demo_occupation,demographics,Occupation type (ordinal position encoding),Demographics
+demo_religion,demographics,Religion (ordinal position encoding),Demographics
+demo_religiosity,demographics,Religious service attendance (ordinal position encoding),Demographics
+demo_political_party,demographics,Political party (ordinal position encoding),Demographics
+demo_income,demographics,Family income bracket (ordinal position encoding),Demographics
+demo_political_views,demographics,Political views (ordinal position encoding),Demographics
+demo_household_size,demographics,Household size (ordinal position encoding),Demographics
+demo_employment,demographics,Employment status (ordinal position encoding),Demographics
