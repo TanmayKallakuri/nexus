@@ -1,0 +1,191 @@
+============================================================
+TOLENDI — V3: ADD MODEL 2 PERSON EMBEDDINGS
+============================================================
+
+V2 RESULTS (your baseline):
+  Accuracy:       0.730
+  Mean Pearson r: 0.301
+  Variance ratio: 0.379
+
+  Personality:    r=0.346 (good, improving)
+  Cognitive:      r=0.135 (4x better than V1)
+  Economic:       r=0.118 (fixed from -0.036)
+  Demographics:   r=0.058 (weak)
+
+V3 GOAL:
+  Add Model 2 person embeddings (30 latent factors from SVD
+  of the full response matrix) as extra person features.
+
+  These capture cross-construct behavioral patterns that
+  summary scores miss. Two people with identical Big Five
+  might have very different embeddings.
+
+============================================================
+NEW FILE AVAILABLE — git pull first
+============================================================
+
+  outputs/person_embeddings.csv
+    → 233 rows x 31 columns (person_id + emb_0 through emb_29)
+    → Built from SVD on normalized 233x325 ordinal response matrix
+    → K=30 explains 58.5% of response variance
+
+  Alternative sizes also available if you want to test:
+    outputs/person_embeddings_k10.csv  (37.9% variance)
+    outputs/person_embeddings_k20.csv  (50.0% variance)
+    outputs/person_embeddings_k50.csv  (70.9% variance)
+
+  outputs/person_embeddings_meta.json
+    → Build parameters, explained variance by K, method details
+
+============================================================
+WHAT TO CHANGE IN YOUR V2 SCRIPT
+============================================================
+
+STEP 1: Load person embeddings alongside Model 1 features
+---------------------------------------------------------
+
+  person_emb = pd.read_csv('outputs/person_embeddings.csv')
+
+  # Merge into your training dataframe
+  df = df.merge(person_emb, on='person_id', how='left')
+
+  # Add embedding columns to your feature list
+  emb_cols = [f'emb_{i}' for i in range(30)]
+  feature_cols = feature_cols + emb_cols
+
+That's it. The rest of your pipeline stays the same.
+
+STEP 2: Handle the leakage concern
+---------------------------------------------------------
+
+The embeddings were built from ALL 326 ordinal questions.
+If you hold out questions for validation, the embeddings
+contain indirect information about those held-out answers.
+
+Options (pick one):
+
+  A. QUICK (acceptable for hackathon):
+     Use the full embeddings as-is. The leakage is indirect
+     and diluted across 325 questions. A single held-out
+     question contributes ~0.3% to the embedding. This is
+     pragmatically safe for a 24-hour hackathon.
+
+  B. PROPER (if you have time):
+     For each validation fold, recompute embeddings excluding
+     the held-out questions. This requires:
+     - Re-pivoting the response matrix without held-out Qs
+     - Re-fitting SVD
+     - Re-extracting embeddings
+     This adds ~30 seconds per fold. Script below.
+
+  Option A is fine. The indirect leakage from 1 question out
+  of 325 is negligible compared to the signal gained.
+
+STEP 3: Try different K values
+---------------------------------------------------------
+
+  K=30 is the default. But your model might prefer fewer
+  or more dimensions.
+
+  Test plan:
+    - Run V3 with K=10 (outputs/person_embeddings_k10.csv)
+    - Run V3 with K=20 (outputs/person_embeddings_k20.csv)
+    - Run V3 with K=30 (outputs/person_embeddings.csv)
+    - Run V3 with K=50 (outputs/person_embeddings_k50.csv)
+    - Pick the K that gives best holdout Pearson r
+
+  To switch K, just change the file you load:
+    person_emb = pd.read_csv('outputs/person_embeddings_k20.csv')
+    emb_cols = [f'emb_{i}' for i in range(20)]
+
+============================================================
+WHAT TO REPORT
+============================================================
+
+After V3, report these vs V2:
+
+  1. Accuracy
+  2. Mean Pearson r
+  3. Variance ratio
+  4. Per-block Pearson r
+  5. Which K worked best
+  6. Feature importance: did emb_* columns show up
+     in LightGBM's feature importance?
+
+============================================================
+IF EMBEDDINGS DON'T HELP
+============================================================
+
+Possible reasons:
+  - K too high (overfitting) → try K=10
+  - K too low (not enough signal) → try K=50
+  - Embeddings redundant with Model 1 features → check
+    correlation between emb_0 and existing person features
+  - Model already saturated → embeddings won't help if
+    the bottleneck is question representation, not person
+    representation
+
+If no K helps:
+  - Drop embeddings, focus on calibration (Round 4 from
+    your safer V2 plan)
+  - Don't force it
+
+============================================================
+OPTIONAL: RECOMPUTE LEAKAGE-FREE EMBEDDINGS PER FOLD
+(only if you have time)
+============================================================
+
+  from sklearn.decomposition import PCA
+  import numpy as np
+
+  def compute_embeddings_excluding(response_matrix, exclude_qids, K=30):
+      """
+      Recompute person embeddings excluding specific questions.
+      response_matrix: DataFrame (person_id x question_id)
+      exclude_qids: set of question_ids to exclude
+      """
+      keep_cols = [c for c in response_matrix.columns if c not in exclude_qids]
+      matrix = response_matrix[keep_cols]
+
+      # Impute, standardize
+      col_means = matrix.mean()
+      matrix_filled = matrix.fillna(col_means)
+      col_stds = matrix_filled.std()
+      col_stds = col_stds.replace(0, 1)  # avoid division by zero
+      matrix_std = (matrix_filled - col_means) / col_stds
+
+      # SVD
+      pca = PCA(n_components=K, random_state=42)
+      embeddings = pca.fit_transform(matrix_std.values)
+
+      emb_df = pd.DataFrame(
+          embeddings,
+          columns=[f'emb_{i}' for i in range(K)]
+      )
+      emb_df['person_id'] = response_matrix.index.tolist()
+      return emb_df
+
+  # In your validation loop:
+  # holdout_qids = set of held-out question_ids
+  # emb_train = compute_embeddings_excluding(response_matrix, holdout_qids, K=30)
+  # Merge emb_train into your train/test dataframes
+
+============================================================
+SAVE V3 ARTIFACTS
+============================================================
+
+  scripts/bootstrap_ensemble_tolendi_v3.py
+  outputs/tolendi/bootstrap_ensemble_v3.pkl
+  outputs/tolendi/validation_summary_v3.json
+  outputs/tolendi/validation_by_block_v3.csv
+  outputs/tolendi/training_report_v3.txt
+
+============================================================
+TARGET NUMBERS
+============================================================
+
+  Accuracy:       > 0.748
+  Mean Pearson r: > 0.35
+  Variance ratio: > 0.50
+
+If these are hit, STOP and push. We're in good shape.

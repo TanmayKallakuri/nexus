@@ -1,0 +1,27 @@
+{
+  "K_primary": 30,
+  "K_options_saved": [
+    10,
+    20,
+    30,
+    50
+  ],
+  "n_persons": 233,
+  "n_questions": 325,
+  "n_imputed_cells": 17,
+  "n_zero_variance_dropped": 1,
+  "zero_variance_questions": [
+    "QID16"
+  ],
+  "explained_variance_by_K": {
+    "10": 0.3790469789123761,
+    "20": 0.5001372294317198,
+    "30": 0.5850326216543031,
+    "50": 0.7093121197029602
+  },
+  "elbow_k": 18,
+  "normalization": "(answer_position - 1) / (num_options - 1)",
+  "standardization": "z-score per column (mean=0, std=1)",
+  "imputation": "column mean",
+  "method": "PCA (centered SVD)"
+}
