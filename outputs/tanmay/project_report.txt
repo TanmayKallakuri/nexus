@@ -1,0 +1,302 @@
+================================================================
+NEXUS HACKATHON — PROJECT STATE REPORT
+BlackBox Hackathon: Can AI Truly Become You?
+Team: Tanmay, Jasjyot, Tolendi
+Generated: 2026-03-23 6:30 PM
+================================================================
+
+EXECUTIVE SUMMARY
+================================================================
+
+We built a hybrid prediction system to predict 233 people's
+answers to unseen survey questions. The system evolved through
+two distinct phases:
+
+Phase 1 (ML-only): Achieved accuracy 0.737 but Pearson r of
+-0.066 — the model could not distinguish between individuals.
+
+Phase 2 (ML + LLM): Adding an LLM predictor flipped correlation
+from negative to positive. The blend achieves accuracy 0.897
+and Pearson r 0.457 on initial testing.
+
+The key insight: ML models regress to the mean (52% midpoint
+predictions). LLMs reason about individual profiles and produce
+person-specific answers (15% midpoint). Correlation — the
+metric that matters most — requires variance between people,
+which only the LLM provides.
+
+================================================================
+PHASE 1: ML-ONLY (Models 1-3 + KNN + Ensemble V1-V4.1)
+================================================================
+
+WHAT WE BUILT:
+
+  Model 1 — Person Response Profiles (Jasjyot)
+    233 people x 92 features: response style, personality
+    constructs, cognitive scores, demographics.
+    Repaired after sanity check found broken answer keys.
+
+  Model 2 — Person Embeddings via SVD (Tanmay)
+    SVD on 233 x 325 normalized response matrix.
+    K=10 sufficient. Captures latent behavioral dimensions
+    not visible in summary scores.
+
+  Model 3 — Question-to-Construct Mapper (Tanmay)
+    531 questions mapped to 148 constructs. Embeds questions
+    (384-dim) and matches unseen questions to nearest known
+    construct. Provides per-person construct percentiles.
+
+  KNN Nearest-Question Retrieval (Tanmay)
+    For each new question, find 7 most similar known questions.
+    Look up each person's actual answers. Weighted average.
+    No training. Best single ML model.
+
+  Bootstrap Ensemble V1-V4.1 (Tolendi)
+    LightGBM bootstrap ensemble (32 models across 3 routes).
+    Iterated through 4 versions with leakage fixes, routing,
+    repaired features, category features, calibration.
+
+ENSEMBLE EVOLUTION:
+
+  Version | Accuracy | Mean r | Var ratio | Key change
+  --------|----------|--------|-----------|---------------------------
+  V1      | 0.724    | 0.259  | 0.288     | Single model baseline
+  V2      | 0.730    | 0.301  | 0.379     | 3-route split + leakage fix
+  V3      | 0.730    | 0.306  | 0.383     | + K=50 SVD embeddings
+  V4.1    | 0.731    | 0.305  | 0.380     | Repaired M1, K=10, cats, cal
+
+  Key observations:
+  - Accuracy plateaued at 0.73 across all versions
+  - Pearson r plateaued at 0.30 — never reached target 0.35
+  - Variance ratio stuck at 0.38 — predictions compressed
+  - Calibration HURT correlation (best r at stretch=1.0)
+  - Embeddings added negligible value (+0.005 r)
+  - Routing helped most (V1->V2: +0.042 r)
+
+KNN RESULTS (best single ML model):
+
+  Accuracy:       0.737
+  Mean Pearson r: 0.319
+  Variance ratio: 0.494
+
+  Per-block:
+    Personality:  r = 0.368
+    Economic:     r = 0.385
+    Cognitive:    r = 0.004
+    Demographics: r = 0.162
+
+ML-ONLY SCORING ON SAMPLE QUESTIONS (233 people, LLM consensus
+as proxy ground truth):
+
+  Accuracy:       0.824
+  Mean Pearson r: -0.066
+
+  CRITICAL FINDING: Negative correlation means the ML model
+  ranks people in the wrong order on most questions.
+
+  Root cause: 52% of Likert predictions land on the exact
+  midpoint. When most people get the same answer, Pearson r
+  is undefined or negative from random noise.
+
+  Per-question analysis:
+    7 of 11 questions: zero predicted variance (all same answer)
+    S10 (zombie confidence): r = -0.984 (ranking inverted)
+    S4 (cuisine): r = 0.756 (one of few working questions)
+
+================================================================
+PHASE 2: LLM INTRODUCTION (Model 4)
+================================================================
+
+WHY THE PIVOT:
+
+  Three independent LLMs were tested on the same 11 sample
+  questions for all 233 people:
+
+  Model          | Accuracy | Mean r | Midpoint %
+  ---------------|----------|--------|----------
+  Sonnet 4.6 (J) | 0.882    | 0.672  | 23%
+  GPT            | 0.879    | 0.576  | 27%
+  Sonnet         | 0.884    | 0.279  | 24%
+
+  All three LLMs demolished the ML model on correlation.
+  The worst LLM (r=0.279) still far exceeded the best ML
+  model (r=-0.066). LLMs naturally produce person-specific
+  answers because they reason about personality profiles.
+
+WHAT WE BUILT:
+
+  Model 4 — LLM Respondent Simulator (Tanmay)
+    Script: scripts/model4_llm_predictor.py
+    API: Claude Sonnet via Anthropic
+    Approach: few-shot prompting with compressed trait summary
+
+    Prompt structure:
+    1. Compressed trait summary (high/low/moderate per dimension)
+    2. Key profile details (first 2000 chars of persona text)
+    3. 3 few-shot examples from training data
+    4. Target question + answer scale
+    5. Instruction: predict THIS person, not the average
+
+MODEL 4 RESULTS (3-person test):
+
+  Accuracy:       0.833
+  Mean Pearson r: 0.370
+  Midpoint rate:  15%
+
+  Compared to ML model on same 3 people:
+    ML:  accuracy 0.831, r = -0.146
+    LLM: accuracy 0.833, r = +0.370
+
+  Correlation flipped from negative to strongly positive.
+
+BLEND RESULTS (3-person test):
+
+  Blend formula: 0.3 * ML + 0.7 * LLM
+
+  Accuracy:       0.897
+  Mean Pearson r: 0.457
+
+  The blend outperforms both individual models because:
+  - ML contributes data-grounded accuracy
+  - LLM contributes person-level variance
+  - Averaging reduces LLM noise while preserving spread
+
+================================================================
+THE CORRELATION STORY
+================================================================
+
+This is the central narrative of the project:
+
+  Stage 1: ML predicts the average
+  --------------------------------
+  Accuracy: 0.73-0.82 (decent)
+  Pearson r: -0.07 to 0.31 (weak to broken)
+
+  The ML pipeline learned what the AVERAGE person answers
+  for each question type. It could not learn what makes
+  Person A different from Person B on an unseen question.
+
+  Why: LightGBM and KNN both average toward the center.
+  52% of predictions were the exact midpoint of the scale.
+  With 233 people getting the same answer, Pearson r dies.
+
+  Stage 2: LLM preserves individuality
+  -------------------------------------
+  Accuracy: 0.83-0.88 (strong)
+  Pearson r: 0.28-0.67 (strong)
+
+  The LLM reads each person's full profile — personality
+  traits, cognitive abilities, self-descriptions, game
+  behavior — and reasons about how THIS person would answer.
+
+  It produces 1s, 2s, 4s, 5s — not just 3s. Different
+  people get different answers. That spread is what
+  Pearson r measures.
+
+  Stage 3: Blend gets both
+  -------------------------
+  Accuracy: 0.897 (best)
+  Pearson r: 0.457 (best)
+
+  The ML model anchors predictions to data-grounded values.
+  The LLM adds the person-specific variance that the scoring
+  metric rewards. Together they beat either alone.
+
+VARIANCE ANALYSIS (std across 3 people per question):
+
+  Question        | ML std | LLM std | Ratio
+  ----------------|--------|---------|------
+  S1 Googled      | 0.00   | 0.47    | inf
+  S2 AI outfit    | 0.00   | 0.47    | inf
+  S5 Mass apology | 0.00   | 1.70    | inf
+  S6 Share article| 0.00   | 1.41    | inf
+  S8 Memes        | 0.47   | 0.94    | 2.0x
+  S10 Zombie      | 6.94   | 18.19   | 2.6x
+
+  ML produced zero variance on 5 of 11 questions.
+  LLM produced nonzero variance on 9 of 11 questions.
+
+================================================================
+WHAT DIDN'T WORK
+================================================================
+
+  1. Adding more features (V3 embeddings): +0.005 r
+  2. Repaired cognitive scores (V4.1): +0.00 r
+  3. Calibration/variance stretching: negative impact on r
+  4. More routing categories: insufficient holdout data
+  5. Synthetic bootstrapped respondents: rejected (breaks coherence)
+
+  The ML pipeline hit a ceiling at r ~0.30 that no feature
+  engineering or model tuning could break through. The problem
+  was architectural: averaging methods cannot preserve individual
+  differences on questions dissimilar to training data.
+
+================================================================
+FINAL ARCHITECTURE
+================================================================
+
+  Test question arrives
+          |
+          v
+    Embed question (sentence-transformers)
+          |
+          +---> KNN (K=7 nearest known questions)
+          |       weighted average of person's real answers
+          |
+          +---> V4.1 Ensemble (3-route LightGBM)
+          |       person features + question features -> prediction
+          |
+          +---> Model 4 LLM (Claude Sonnet)
+          |       persona text + question -> predicted answer
+          |
+          v
+    Blend: 0.3 * (0.6*KNN + 0.4*Ensemble) + 0.7 * LLM
+          |
+          v
+    Round to valid answer scale
+          |
+          v
+    Output predicted_answer
+
+================================================================
+WHAT'S LEFT
+================================================================
+
+  1. Run Model 4 on all 233 people (~$7, ~50 min)
+     to get reliable full-scale correlation number
+  2. Integrate Model 4 into final_predict.py blend
+  3. Test end-to-end on Mac Mini
+  4. Build slide deck
+  5. Wait for test set (Tuesday 7 AM)
+  6. Run predictions + submit (Tuesday 7-10 AM)
+
+================================================================
+COST SUMMARY
+================================================================
+
+  Component          | Cost    | Time invested
+  -------------------|---------|-------------
+  Model 1 (Jasjyot)  | $0      | ~4 hours
+  Model 2 (Tanmay)   | $0      | ~1 hour
+  Model 3 (Tanmay)   | $0      | ~1 hour
+  KNN (Tanmay)        | $0      | ~1 hour
+  V1-V4.1 (Tolendi)  | $0      | ~6 hours
+  Model 4 test       | ~$0.30  | ~2 minutes
+  Model 4 full run   | ~$7     | ~50 minutes
+  Test day run       | ~$13-33 | ~90-230 min
+  -------------------|---------|
+  Total so far       | ~$0.30  |
+  Projected total    | ~$20-40 |
+
+================================================================
+TEAM CONTRIBUTIONS
+================================================================
+
+  Tanmay:  EDA, master table, Model 2, Model 3, KNN,
+           Model 4 LLM, final pipeline, analysis, scoring
+
+  Jasjyot: Model 1, repair + sanity check, submission
+           pipeline skeleton, scoring map, LLM predictions
+
+  Tolendi: V1-V4.1 ensemble, leakage-free validation,
+           routing, calibration, model re-export
