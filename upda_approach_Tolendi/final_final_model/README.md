@@ -48,7 +48,7 @@ python export_claude_blend_inputs.py \
   --output-jsonl artifacts/claude_blend_seed.jsonl
 ```
 
-3. Use the instructions in `CLAUDE_BLEND_PLAYBOOK.md` to get Claude predictions.
+3. Use the instructions in `CLAUDE_INSTRUCTIONS.md` to get Claude predictions.
 
 4. Blend Claude with ML:
 

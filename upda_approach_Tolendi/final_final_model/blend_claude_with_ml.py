@@ -13,6 +13,9 @@ import build_family_aware_submission as fam
 DEFAULT_ML = Path("artifacts/final_test_ml_predictions.json")
 DEFAULT_QUESTION_JSON = Path("final_test_questions.json")
 DEFAULT_OUTPUT = Path("artifacts/final_blended_predictions.json")
+OVERRIDE_CHOICES = ("none", "media_only", "weak_blocks")
+PREFERENCE_QIDS = {f"T{i}" for i in range(45, 58)} | {"T74", "T75", "T76"}
+MEDIA_TRUST_QIDS = {f"T{i}" for i in range(77, 85)}
 
 MAINSTREAM_SOURCES = {"bbc news", "bbcnews", "pbs news", "the economist", "the wall street journal"}
 PEER_SOURCES = {"reddit.com", "quora.com", "reddit", "quora"}
@@ -32,6 +35,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--claude-json", type=Path, required=True)
     parser.add_argument("--question-json", type=Path, default=DEFAULT_QUESTION_JSON)
     parser.add_argument("--output-json", type=Path, default=DEFAULT_OUTPUT)
+    parser.add_argument("--override-mode", choices=OVERRIDE_CHOICES, default="weak_blocks")
     return parser.parse_args()
 
 
@@ -370,7 +374,64 @@ def media_source_signal(person: pd.DataFrame, source_key: str) -> pd.Series:
     return score.clip(0.0, 100.0)
 
 
-def apply_final_focus_calibration(out: pd.DataFrame) -> pd.DataFrame:
+def apply_question_calibrations(
+    out: pd.DataFrame,
+    derived_signals: dict[str, pd.Series],
+    calibrations: dict[str, dict[str, float]],
+) -> pd.DataFrame:
+    out = out.copy()
+    for qid, settings in calibrations.items():
+        mask = out["question_id"].eq(qid)
+        if not bool(mask.any()):
+            continue
+        current = out.loc[mask].set_index("person_id")["blended_prediction"]
+        derived = derived_signals.get(qid)
+        if derived is None:
+            continue
+        lo, hi = option_bounds(out.loc[mask, "options"].iloc[0])
+        adjusted = question_rank_adjust(
+            current=current,
+            derived=derived,
+            lo=lo,
+            hi=hi,
+            current_weight=settings["current"],
+            spread_floor_ratio=settings["floor"],
+            gain=settings["gain"],
+        )
+        out.loc[mask, "blended_prediction"] = out.loc[mask, "person_id"].map(adjusted)
+    return out
+
+
+def apply_media_trust_override(
+    out: pd.DataFrame,
+    person: pd.DataFrame,
+    current_mix: float = 0.16,
+) -> pd.DataFrame:
+    out = out.copy()
+    for qid in sorted(MEDIA_TRUST_QIDS, key=lambda x: int(x[1:])):
+        mask = out["question_id"].eq(qid)
+        if not bool(mask.any()):
+            continue
+        signal = media_source_signal(person, QID_TO_SOURCE[qid])
+        current = out.loc[mask].set_index("person_id")["blended_prediction"]
+        base = current_mix * current + (1.0 - current_mix) * signal.reindex(current.index).fillna(float(signal.mean()))
+        adjusted = question_rank_adjust(
+            current=base,
+            derived=signal,
+            lo=0.0,
+            hi=100.0,
+            current_weight=0.04,
+            spread_floor_ratio=0.22,
+            gain=1.30,
+        )
+        out.loc[mask, "blended_prediction"] = out.loc[mask, "person_id"].map(adjusted)
+    return out
+
+
+def apply_final_focus_calibration(out: pd.DataFrame, override_mode: str) -> pd.DataFrame:
+    if override_mode == "none":
+        return out
+
     person = build_person_latents(out).set_index("person_id")
 
     derived_signals: dict[str, pd.Series] = {
@@ -395,53 +456,28 @@ def apply_final_focus_calibration(out: pd.DataFrame) -> pd.DataFrame:
     for qid, source in QID_TO_SOURCE.items():
         derived_signals[qid] = media_source_signal(person, source)
 
-    calibrations = {
-        "T45": {"floor": 0.18, "gain": 1.12, "current": 0.18},
-        "T46": {"floor": 0.18, "gain": 1.15, "current": 0.16},
-        "T47": {"floor": 0.18, "gain": 1.12, "current": 0.18},
-        "T48": {"floor": 0.18, "gain": 1.18, "current": 0.14},
-        "T49": {"floor": 0.18, "gain": 1.18, "current": 0.16},
-        "T50": {"floor": 0.16, "gain": 1.08, "current": 0.20},
-        "T51": {"floor": 0.18, "gain": 1.15, "current": 0.18},
-        "T52": {"floor": 0.16, "gain": 1.06, "current": 0.20},
-        "T53": {"floor": 0.18, "gain": 1.14, "current": 0.18},
-        "T54": {"floor": 0.18, "gain": 1.10, "current": 0.18},
-        "T55": {"floor": 0.18, "gain": 1.18, "current": 0.14},
-        "T56": {"floor": 0.28, "gain": 1.10, "current": 0.24},
-        "T57": {"floor": 0.18, "gain": 1.10, "current": 0.18},
-        "T74": {"floor": 0.18, "gain": 1.18, "current": 0.14},
-        "T75": {"floor": 0.18, "gain": 1.16, "current": 0.16},
-        "T76": {"floor": 0.28, "gain": 1.10, "current": 0.24},
-        "T77": {"floor": 0.20, "gain": 1.22, "current": 0.10},
-        "T78": {"floor": 0.20, "gain": 1.22, "current": 0.10},
-        "T79": {"floor": 0.20, "gain": 1.22, "current": 0.10},
-        "T80": {"floor": 0.20, "gain": 1.22, "current": 0.10},
-        "T81": {"floor": 0.20, "gain": 1.20, "current": 0.12},
-        "T82": {"floor": 0.20, "gain": 1.22, "current": 0.10},
-        "T83": {"floor": 0.20, "gain": 1.18, "current": 0.12},
-        "T84": {"floor": 0.20, "gain": 1.22, "current": 0.10},
+    preference_calibrations = {
+        "T45": {"floor": 0.20, "gain": 1.18, "current": 0.10},
+        "T46": {"floor": 0.20, "gain": 1.22, "current": 0.08},
+        "T47": {"floor": 0.20, "gain": 1.18, "current": 0.10},
+        "T48": {"floor": 0.22, "gain": 1.24, "current": 0.06},
+        "T49": {"floor": 0.20, "gain": 1.22, "current": 0.08},
+        "T50": {"floor": 0.18, "gain": 1.12, "current": 0.14},
+        "T51": {"floor": 0.20, "gain": 1.22, "current": 0.08},
+        "T52": {"floor": 0.18, "gain": 1.10, "current": 0.14},
+        "T53": {"floor": 0.22, "gain": 1.20, "current": 0.08},
+        "T54": {"floor": 0.20, "gain": 1.16, "current": 0.12},
+        "T55": {"floor": 0.22, "gain": 1.24, "current": 0.06},
+        "T56": {"floor": 0.30, "gain": 1.12, "current": 0.12},
+        "T57": {"floor": 0.20, "gain": 1.14, "current": 0.12},
+        "T74": {"floor": 0.22, "gain": 1.24, "current": 0.06},
+        "T75": {"floor": 0.20, "gain": 1.20, "current": 0.08},
+        "T76": {"floor": 0.30, "gain": 1.12, "current": 0.12},
     }
 
-    out = out.copy()
-    for qid, settings in calibrations.items():
-        mask = out["question_id"].eq(qid)
-        if not bool(mask.any()):
-            continue
-        current = out.loc[mask].set_index("person_id")["blended_prediction"]
-        derived = derived_signals.get(qid)
-        if derived is None:
-            continue
-        lo, hi = option_bounds(out.loc[mask, "options"].iloc[0])
-        adjusted = question_rank_adjust(
-            current=current,
-            derived=derived,
-            lo=lo,
-            hi=hi,
-            current_weight=settings["current"],
-            spread_floor_ratio=settings["floor"],
-            gain=settings["gain"],
-        )
-        out.loc[mask, "blended_prediction"] = out.loc[mask, "person_id"].map(adjusted)
+    out = apply_media_trust_override(out, person, current_mix=0.16)
+    if override_mode == "weak_blocks":
+        out = apply_question_calibrations(out, derived_signals, preference_calibrations)
     return out
 
 
@@ -478,7 +514,7 @@ def main() -> None:
         (1.0 - out["claude_weight"]) * out["ml_prediction"]
         + out["claude_weight"] * out["claude_prediction"]
     )
-    out = apply_final_focus_calibration(out)
+    out = apply_final_focus_calibration(out, args.override_mode)
     out["predicted_answer"] = out.apply(finalize_prediction, axis=1)
 
     args.output_json.parent.mkdir(parents=True, exist_ok=True)
