@@ -1,0 +1,840 @@
+person_id,Form A _1,1_Q295,2_Q295,3_Q295,4_Q295,5_Q295,6_Q295,7_Q295,8_Q295,9_Q295,10_Q295,11_Q295,12_Q295,13_Q295,14_Q295,15_Q295,16_Q295,17_Q295,18_Q295,19_Q295,20_Q295,21_Q295,22_Q295,23_Q295,24_Q295,25_Q295,26_Q295,27_Q295,28_Q295,29_Q295,30_Q295,31_Q295,32_Q295,33_Q295,34_Q295,35_Q295,36_Q295,37_Q295,38_Q295,39_Q295,40_Q295,base_rate,outcome_bias,sunk_cost,Allais,disease,linda,african,redwood,absolute,Myside,less_is_more,Thaler,matching
+person_id,"A panel of psychologist have interviewed and administered personality tests to 30 engineers and 70 lawyers, all successful in their respective fields. On the basis of this information, thumbnail descriptions of the 30 engineers and 70 lawyers have been written. Below is one description, chosen at random from the 100 available descriptions. 
+
+Jack is a 45-year-old man. He is married and has four children. He is generally conservative, careful, and ambitious. He shows no interest in political and social issues and spends most of his free time on his many hobbies which include home carpentry, sailing, and mathematical puzzles.
+
+The probability that Jack is one of the 30 engineers in the sample of 100 is ___%. Please indicate the probability on a scale from 0 to 100.","1 - (PLEASE DO NOT REFRESH THIS PAGE)
+QUESTION [CurrentLoopNumber] OF [TotalLoops]:
+
+ 
+
+Please consider the following product category: .
+
+ 
+
+Suppose you are in a grocery store, and you see the following product in that category: 
+
+ 
+
+The product is priced at: 
+
+ Would you or would you not purchase the product?","2 - (PLEASE DO NOT REFRESH THIS PAGE)
+QUESTION [CurrentLoopNumber] OF [TotalLoops]:
+
+ 
+
+Please consider the following product category: .
+
+ 
+
+Suppose you are in a grocery store, and you see the following product in that category: 
+
+ 
+
+The product is priced at: 
+
+ Would you or would you not purchase the product?","3 - (PLEASE DO NOT REFRESH THIS PAGE)
+QUESTION [CurrentLoopNumber] OF [TotalLoops]:
+
+ 
+
+Please consider the following product category: .
+
+ 
+
+Suppose you are in a grocery store, and you see the following product in that category: 
+
+ 
+
+The product is priced at: 
+
+ Would you or would you not purchase the product?","4 - (PLEASE DO NOT REFRESH THIS PAGE)
+QUESTION [CurrentLoopNumber] OF [TotalLoops]:
+
+ 
+
+Please consider the following product category: .
+
+ 
+
+Suppose you are in a grocery store, and you see the following product in that category: 
+
+ 
+
+The product is priced at: 
+
+ Would you or would you not purchase the product?","5 - (PLEASE DO NOT REFRESH THIS PAGE)
+QUESTION [CurrentLoopNumber] OF [TotalLoops]:
+
+ 
+
+Please consider the following product category: .
+
+ 
+
+Suppose you are in a grocery store, and you see the following product in that category: 
+
+ 
+
+The product is priced at: 
+
+ Would you or would you not purchase the product?","6 - (PLEASE DO NOT REFRESH THIS PAGE)
+QUESTION [CurrentLoopNumber] OF [TotalLoops]:
+
+ 
+
+Please consider the following product category: .
+
+ 
+
+Suppose you are in a grocery store, and you see the following product in that category: 
+
+ 
+
+The product is priced at: 
+
+ Would you or would you not purchase the product?","7 - (PLEASE DO NOT REFRESH THIS PAGE)
+QUESTION [CurrentLoopNumber] OF [TotalLoops]:
+
+ 
+
+Please consider the following product category: .
+
+ 
+
+Suppose you are in a grocery store, and you see the following product in that category: 
+
+ 
+
+The product is priced at: 
+
+ Would you or would you not purchase the product?","8 - (PLEASE DO NOT REFRESH THIS PAGE)
+QUESTION [CurrentLoopNumber] OF [TotalLoops]:
+
+ 
+
+Please consider the following product category: .
+
+ 
+
+Suppose you are in a grocery store, and you see the following product in that category: 
+
+ 
+
+The product is priced at: 
+
+ Would you or would you not purchase the product?","9 - (PLEASE DO NOT REFRESH THIS PAGE)
+QUESTION [CurrentLoopNumber] OF [TotalLoops]:
+
+ 
+
+Please consider the following product category: .
+
+ 
+
+Suppose you are in a grocery store, and you see the following product in that category: 
+
+ 
+
+The product is priced at: 
+
+ Would you or would you not purchase the product?","10 - (PLEASE DO NOT REFRESH THIS PAGE)
+QUESTION [CurrentLoopNumber] OF [TotalLoops]:
+
+ 
+
+Please consider the following product category: .
+
+ 
+
+Suppose you are in a grocery store, and you see the following product in that category: 
+
+ 
+
+The product is priced at: 
+
+ Would you or would you not purchase the product?","11 - (PLEASE DO NOT REFRESH THIS PAGE)
+QUESTION [CurrentLoopNumber] OF [TotalLoops]:
+
+ 
+
+Please consider the following product category: .
+
+ 
+
+Suppose you are in a grocery store, and you see the following product in that category: 
+
+ 
+
+The product is priced at: 
+
+ Would you or would you not purchase the product?","12 - (PLEASE DO NOT REFRESH THIS PAGE)
+QUESTION [CurrentLoopNumber] OF [TotalLoops]:
+
+ 
+
+Please consider the following product category: .
+
+ 
+
+Suppose you are in a grocery store, and you see the following product in that category: 
+
+ 
+
+The product is priced at: 
+
+ Would you or would you not purchase the product?","13 - (PLEASE DO NOT REFRESH THIS PAGE)
+QUESTION [CurrentLoopNumber] OF [TotalLoops]:
+
+ 
+
+Please consider the following product category: .
+
+ 
+
+Suppose you are in a grocery store, and you see the following product in that category: 
+
+ 
+
+The product is priced at: 
+
+ Would you or would you not purchase the product?","14 - (PLEASE DO NOT REFRESH THIS PAGE)
+QUESTION [CurrentLoopNumber] OF [TotalLoops]:
+
+ 
+
+Please consider the following product category: .
+
+ 
+
+Suppose you are in a grocery store, and you see the following product in that category: 
+
+ 
+
+The product is priced at: 
+
+ Would you or would you not purchase the product?","15 - (PLEASE DO NOT REFRESH THIS PAGE)
+QUESTION [CurrentLoopNumber] OF [TotalLoops]:
+
+ 
+
+Please consider the following product category: .
+
+ 
+
+Suppose you are in a grocery store, and you see the following product in that category: 
+
+ 
+
+The product is priced at: 
+
+ Would you or would you not purchase the product?","16 - (PLEASE DO NOT REFRESH THIS PAGE)
+QUESTION [CurrentLoopNumber] OF [TotalLoops]:
+
+ 
+
+Please consider the following product category: .
+
+ 
+
+Suppose you are in a grocery store, and you see the following product in that category: 
+
+ 
+
+The product is priced at: 
+
+ Would you or would you not purchase the product?","17 - (PLEASE DO NOT REFRESH THIS PAGE)
+QUESTION [CurrentLoopNumber] OF [TotalLoops]:
+
+ 
+
+Please consider the following product category: .
+
+ 
+
+Suppose you are in a grocery store, and you see the following product in that category: 
+
+ 
+
+The product is priced at: 
+
+ Would you or would you not purchase the product?","18 - (PLEASE DO NOT REFRESH THIS PAGE)
+QUESTION [CurrentLoopNumber] OF [TotalLoops]:
+
+ 
+
+Please consider the following product category: .
+
+ 
+
+Suppose you are in a grocery store, and you see the following product in that category: 
+
+ 
+
+The product is priced at: 
+
+ Would you or would you not purchase the product?","19 - (PLEASE DO NOT REFRESH THIS PAGE)
+QUESTION [CurrentLoopNumber] OF [TotalLoops]:
+
+ 
+
+Please consider the following product category: .
+
+ 
+
+Suppose you are in a grocery store, and you see the following product in that category: 
+
+ 
+
+The product is priced at: 
+
+ Would you or would you not purchase the product?","20 - (PLEASE DO NOT REFRESH THIS PAGE)
+QUESTION [CurrentLoopNumber] OF [TotalLoops]:
+
+ 
+
+Please consider the following product category: .
+
+ 
+
+Suppose you are in a grocery store, and you see the following product in that category: 
+
+ 
+
+The product is priced at: 
+
+ Would you or would you not purchase the product?","21 - (PLEASE DO NOT REFRESH THIS PAGE)
+QUESTION [CurrentLoopNumber] OF [TotalLoops]:
+
+ 
+
+Please consider the following product category: .
+
+ 
+
+Suppose you are in a grocery store, and you see the following product in that category: 
+
+ 
+
+The product is priced at: 
+
+ Would you or would you not purchase the product?","22 - (PLEASE DO NOT REFRESH THIS PAGE)
+QUESTION [CurrentLoopNumber] OF [TotalLoops]:
+
+ 
+
+Please consider the following product category: .
+
+ 
+
+Suppose you are in a grocery store, and you see the following product in that category: 
+
+ 
+
+The product is priced at: 
+
+ Would you or would you not purchase the product?","23 - (PLEASE DO NOT REFRESH THIS PAGE)
+QUESTION [CurrentLoopNumber] OF [TotalLoops]:
+
+ 
+
+Please consider the following product category: .
+
+ 
+
+Suppose you are in a grocery store, and you see the following product in that category: 
+
+ 
+
+The product is priced at: 
+
+ Would you or would you not purchase the product?","24 - (PLEASE DO NOT REFRESH THIS PAGE)
+QUESTION [CurrentLoopNumber] OF [TotalLoops]:
+
+ 
+
+Please consider the following product category: .
+
+ 
+
+Suppose you are in a grocery store, and you see the following product in that category: 
+
+ 
+
+The product is priced at: 
+
+ Would you or would you not purchase the product?","25 - (PLEASE DO NOT REFRESH THIS PAGE)
+QUESTION [CurrentLoopNumber] OF [TotalLoops]:
+
+ 
+
+Please consider the following product category: .
+
+ 
+
+Suppose you are in a grocery store, and you see the following product in that category: 
+
+ 
+
+The product is priced at: 
+
+ Would you or would you not purchase the product?","26 - (PLEASE DO NOT REFRESH THIS PAGE)
+QUESTION [CurrentLoopNumber] OF [TotalLoops]:
+
+ 
+
+Please consider the following product category: .
+
+ 
+
+Suppose you are in a grocery store, and you see the following product in that category: 
+
+ 
+
+The product is priced at: 
+
+ Would you or would you not purchase the product?","27 - (PLEASE DO NOT REFRESH THIS PAGE)
+QUESTION [CurrentLoopNumber] OF [TotalLoops]:
+
+ 
+
+Please consider the following product category: .
+
+ 
+
+Suppose you are in a grocery store, and you see the following product in that category: 
+
+ 
+
+The product is priced at: 
+
+ Would you or would you not purchase the product?","28 - (PLEASE DO NOT REFRESH THIS PAGE)
+QUESTION [CurrentLoopNumber] OF [TotalLoops]:
+
+ 
+
+Please consider the following product category: .
+
+ 
+
+Suppose you are in a grocery store, and you see the following product in that category: 
+
+ 
+
+The product is priced at: 
+
+ Would you or would you not purchase the product?","29 - (PLEASE DO NOT REFRESH THIS PAGE)
+QUESTION [CurrentLoopNumber] OF [TotalLoops]:
+
+ 
+
+Please consider the following product category: .
+
+ 
+
+Suppose you are in a grocery store, and you see the following product in that category: 
+
+ 
+
+The product is priced at: 
+
+ Would you or would you not purchase the product?","30 - (PLEASE DO NOT REFRESH THIS PAGE)
+QUESTION [CurrentLoopNumber] OF [TotalLoops]:
+
+ 
+
+Please consider the following product category: .
+
+ 
+
+Suppose you are in a grocery store, and you see the following product in that category: 
+
+ 
+
+The product is priced at: 
+
+ Would you or would you not purchase the product?","31 - (PLEASE DO NOT REFRESH THIS PAGE)
+QUESTION [CurrentLoopNumber] OF [TotalLoops]:
+
+ 
+
+Please consider the following product category: .
+
+ 
+
+Suppose you are in a grocery store, and you see the following product in that category: 
+
+ 
+
+The product is priced at: 
+
+ Would you or would you not purchase the product?","32 - (PLEASE DO NOT REFRESH THIS PAGE)
+QUESTION [CurrentLoopNumber] OF [TotalLoops]:
+
+ 
+
+Please consider the following product category: .
+
+ 
+
+Suppose you are in a grocery store, and you see the following product in that category: 
+
+ 
+
+The product is priced at: 
+
+ Would you or would you not purchase the product?","33 - (PLEASE DO NOT REFRESH THIS PAGE)
+QUESTION [CurrentLoopNumber] OF [TotalLoops]:
+
+ 
+
+Please consider the following product category: .
+
+ 
+
+Suppose you are in a grocery store, and you see the following product in that category: 
+
+ 
+
+The product is priced at: 
+
+ Would you or would you not purchase the product?","34 - (PLEASE DO NOT REFRESH THIS PAGE)
+QUESTION [CurrentLoopNumber] OF [TotalLoops]:
+
+ 
+
+Please consider the following product category: .
+
+ 
+
+Suppose you are in a grocery store, and you see the following product in that category: 
+
+ 
+
+The product is priced at: 
+
+ Would you or would you not purchase the product?","35 - (PLEASE DO NOT REFRESH THIS PAGE)
+QUESTION [CurrentLoopNumber] OF [TotalLoops]:
+
+ 
+
+Please consider the following product category: .
+
+ 
+
+Suppose you are in a grocery store, and you see the following product in that category: 
+
+ 
+
+The product is priced at: 
+
+ Would you or would you not purchase the product?","36 - (PLEASE DO NOT REFRESH THIS PAGE)
+QUESTION [CurrentLoopNumber] OF [TotalLoops]:
+
+ 
+
+Please consider the following product category: .
+
+ 
+
+Suppose you are in a grocery store, and you see the following product in that category: 
+
+ 
+
+The product is priced at: 
+
+ Would you or would you not purchase the product?","37 - (PLEASE DO NOT REFRESH THIS PAGE)
+QUESTION [CurrentLoopNumber] OF [TotalLoops]:
+
+ 
+
+Please consider the following product category: .
+
+ 
+
+Suppose you are in a grocery store, and you see the following product in that category: 
+
+ 
+
+The product is priced at: 
+
+ Would you or would you not purchase the product?","38 - (PLEASE DO NOT REFRESH THIS PAGE)
+QUESTION [CurrentLoopNumber] OF [TotalLoops]:
+
+ 
+
+Please consider the following product category: .
+
+ 
+
+Suppose you are in a grocery store, and you see the following product in that category: 
+
+ 
+
+The product is priced at: 
+
+ Would you or would you not purchase the product?","39 - (PLEASE DO NOT REFRESH THIS PAGE)
+QUESTION [CurrentLoopNumber] OF [TotalLoops]:
+
+ 
+
+Please consider the following product category: .
+
+ 
+
+Suppose you are in a grocery store, and you see the following product in that category: 
+
+ 
+
+The product is priced at: 
+
+ Would you or would you not purchase the product?","40 - (PLEASE DO NOT REFRESH THIS PAGE)
+QUESTION [CurrentLoopNumber] OF [TotalLoops]:
+
+ 
+
+Please consider the following product category: .
+
+ 
+
+Suppose you are in a grocery store, and you see the following product in that category: 
+
+ 
+
+The product is priced at: 
+
+ Would you or would you not purchase the product?",base_rate,outcome_bias,sunk_cost,Allais,disease,linda,african,redwood,absolute,Myside,less_is_more,Thaler,matching
+,"{""ImportId"":""QID154_1""}","{""ImportId"":""1_QID295""}","{""ImportId"":""2_QID295""}","{""ImportId"":""3_QID295""}","{""ImportId"":""4_QID295""}","{""ImportId"":""5_QID295""}","{""ImportId"":""6_QID295""}","{""ImportId"":""7_QID295""}","{""ImportId"":""8_QID295""}","{""ImportId"":""9_QID295""}","{""ImportId"":""10_QID295""}","{""ImportId"":""11_QID295""}","{""ImportId"":""12_QID295""}","{""ImportId"":""13_QID295""}","{""ImportId"":""14_QID295""}","{""ImportId"":""15_QID295""}","{""ImportId"":""16_QID295""}","{""ImportId"":""17_QID295""}","{""ImportId"":""18_QID295""}","{""ImportId"":""19_QID295""}","{""ImportId"":""20_QID295""}","{""ImportId"":""21_QID295""}","{""ImportId"":""22_QID295""}","{""ImportId"":""23_QID295""}","{""ImportId"":""24_QID295""}","{""ImportId"":""25_QID295""}","{""ImportId"":""26_QID295""}","{""ImportId"":""27_QID295""}","{""ImportId"":""28_QID295""}","{""ImportId"":""29_QID295""}","{""ImportId"":""30_QID295""}","{""ImportId"":""31_QID295""}","{""ImportId"":""32_QID295""}","{""ImportId"":""33_QID295""}","{""ImportId"":""34_QID295""}","{""ImportId"":""35_QID295""}","{""ImportId"":""36_QID295""}","{""ImportId"":""37_QID295""}","{""ImportId"":""38_QID295""}","{""ImportId"":""39_QID295""}","{""ImportId"":""40_QID295""}","{""ImportId"":""base_rate""}","{""ImportId"":""outcome_bias""}","{""ImportId"":""sunk_cost""}","{""ImportId"":""Allais""}","{""ImportId"":""disease""}","{""ImportId"":""linda""}","{""ImportId"":""african""}","{""ImportId"":""redwood""}","{""ImportId"":""absolute""}","{""ImportId"":""Myside""}","{""ImportId"":""less_is_more""}","{""ImportId"":""Thaler""}","{""ImportId"":""matching""}"
+7ge54,70,2,2,1,2,2,2,2,1,2,1,2,2,1,2,2,2,1,2,2,1,1,2,2,1,1,2,2,2,2,2,1,2,1,1,1,1,1,2,1,2,30,failure,no,2,gain,no_conjunction,high,low,jacket,Germany,C,WTP_certainty,1
+sv357,70,1,2,2,1,2,2,2,1,2,2,2,2,1,2,2,2,1,1,1,2,1,2,2,2,2,2,2,1,1,1,2,2,2,2,1,2,1,1,2,2,30,success,no,1,gain,no_conjunction,high,high,jacket,Germany,C,WTA_certainty,2
+g00ic,,1,1,2,2,2,2,2,2,1,2,1,1,2,1,1,2,1,2,2,1,1,1,2,1,2,1,2,2,2,1,1,1,2,2,2,1,1,2,1,1,70,failure,no,2,loss,conjunction,high,high,jacket,Germany,C,WTP_certainty,2
+7ub3z,82,2,1,2,1,1,2,2,1,2,2,1,2,1,2,1,2,2,2,1,2,2,2,2,1,1,1,1,2,1,2,1,1,2,2,2,2,2,2,2,2,30,failure,yes,2,gain,no_conjunction,high,low,calculator,Ford,A,WTP_non_certainty,2
+n0s0f,,1,1,1,1,2,1,1,1,1,2,2,1,1,2,1,1,1,1,1,2,1,1,2,1,2,2,1,1,2,1,1,1,2,1,1,1,2,1,1,1,70,failure,no,2,gain,no_conjunction,low,low,calculator,Germany,B,WTP_certainty,2
+70l1y,20,2,1,1,1,2,1,2,2,2,1,1,2,1,2,2,2,2,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,2,1,2,2,2,30,failure,no,1,gain,conjunction,low,high,calculator,Ford,A,WTP_certainty,1
+c9e9n,90,2,2,1,1,1,1,1,1,1,1,2,1,2,2,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,30,success,no,2,loss,no_conjunction,low,high,jacket,Ford,B,WTA_certainty,2
+nuaiw,45,2,2,2,1,2,2,1,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,30,failure,yes,1,gain,conjunction,high,low,jacket,Germany,A,WTP_non_certainty,1
+i2m95,80,1,2,1,2,1,1,1,2,1,2,2,2,1,2,2,2,2,2,2,2,2,1,2,1,2,1,2,2,1,2,1,2,2,2,2,2,2,1,2,2,30,failure,yes,1,loss,conjunction,low,low,jacket,Ford,A,WTA_certainty,1
+t6mgm,,2,2,1,1,1,1,2,2,1,1,1,1,2,2,2,2,1,1,1,1,2,1,2,1,2,1,1,2,2,1,2,2,2,2,1,1,2,1,2,1,70,failure,no,2,gain,no_conjunction,high,high,calculator,Germany,B,WTA_certainty,1
+8tr2p,40,1,2,2,2,1,1,1,2,2,1,2,1,2,2,1,1,1,2,2,1,2,2,2,1,2,1,2,2,2,1,1,2,1,1,2,1,1,1,2,2,30,success,yes,1,loss,no_conjunction,low,high,jacket,Ford,A,WTP_non_certainty,1
+y2ysu,,2,2,2,2,2,2,1,2,1,2,2,2,2,2,1,2,2,2,1,2,2,2,2,2,1,2,2,2,2,1,1,2,2,2,2,2,2,2,2,2,70,failure,yes,2,gain,conjunction,low,low,jacket,Germany,C,WTA_certainty,2
+29g1r,85,1,2,1,2,2,1,2,2,2,2,1,2,2,2,2,2,2,1,1,2,2,1,2,1,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,1,30,failure,no,2,loss,no_conjunction,high,high,calculator,Ford,C,WTP_certainty,1
+xhlgi,30,2,2,1,1,2,1,1,2,2,1,2,2,2,2,2,1,2,2,2,1,2,2,2,2,1,1,2,2,2,2,2,1,2,2,2,1,2,1,1,1,30,failure,yes,1,loss,conjunction,low,low,jacket,Ford,A,WTP_certainty,2
+vlxvq,70,2,2,1,2,2,1,2,2,2,2,1,2,2,2,2,2,2,2,2,2,1,2,1,2,2,2,2,1,2,1,2,2,2,2,2,2,2,2,2,2,30,success,yes,1,gain,no_conjunction,high,high,jacket,Ford,B,WTP_non_certainty,1
+bf785,,1,1,1,2,2,2,2,2,1,2,2,1,1,1,2,2,2,2,1,2,2,1,1,1,2,2,1,2,1,1,2,2,2,1,2,2,2,2,1,1,70,success,no,2,loss,conjunction,low,high,calculator,Germany,A,WTP_non_certainty,1
+r11kw,,2,1,2,1,1,1,1,2,2,2,2,1,2,1,2,2,1,1,1,1,2,1,1,2,1,2,1,1,1,2,2,1,1,2,2,1,2,2,2,1,70,failure,yes,1,gain,conjunction,high,high,jacket,Germany,C,WTP_certainty,2
+t3mwb,83,2,1,2,2,2,1,2,2,2,1,1,2,2,1,1,2,2,1,2,2,2,1,2,2,1,1,1,1,2,1,1,1,1,1,1,2,2,1,1,2,30,failure,no,2,loss,no_conjunction,low,low,calculator,Ford,B,WTP_non_certainty,2
+cmmpb,81,1,2,1,2,1,2,2,2,1,1,2,1,1,2,1,1,1,1,1,2,2,2,1,1,1,2,2,1,2,2,1,2,1,2,1,1,2,2,2,1,30,failure,yes,1,loss,conjunction,high,low,jacket,Germany,C,WTP_certainty,1
+afrls,30,1,1,1,1,2,2,2,1,1,1,1,2,1,1,2,2,1,1,2,1,2,1,2,1,2,1,1,1,2,1,1,1,2,1,1,1,2,1,2,2,30,success,yes,1,gain,conjunction,low,high,calculator,Ford,C,WTP_certainty,2
+ztc36,40,1,1,1,1,2,1,1,2,2,1,1,1,1,1,1,2,1,1,1,2,1,1,2,1,1,2,1,1,1,2,1,2,1,1,1,1,1,2,1,1,30,success,yes,1,gain,no_conjunction,high,high,jacket,Ford,A,WTP_certainty,1
+lx6ix,30,2,1,2,2,2,2,2,2,2,1,1,1,2,1,1,2,1,2,1,1,2,1,2,1,1,1,2,2,2,1,2,1,1,2,1,2,2,2,2,1,30,failure,no,1,loss,conjunction,low,low,jacket,Germany,B,WTP_certainty,1
+2bpor,30,2,2,2,1,2,2,2,1,2,2,2,2,2,2,2,1,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,30,success,yes,1,loss,no_conjunction,low,high,calculator,Germany,B,WTP_non_certainty,2
+uo96e,,2,2,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,1,2,2,2,2,2,1,2,2,1,1,2,2,2,2,1,1,2,70,failure,yes,2,gain,conjunction,low,high,calculator,Germany,A,WTP_certainty,1
+ayss6,30,1,2,1,2,2,2,1,2,1,1,2,1,2,2,1,1,1,1,2,2,1,1,2,2,1,1,1,1,1,1,1,1,2,2,2,1,2,2,2,2,30,success,no,2,loss,conjunction,high,low,jacket,Germany,A,WTP_non_certainty,1
+hfvpz,30,2,1,2,1,2,2,2,2,1,1,1,2,1,2,1,1,2,1,2,2,2,2,2,1,2,2,2,2,2,1,2,1,1,2,1,1,1,1,2,2,30,success,no,1,loss,conjunction,high,high,calculator,Ford,A,WTP_non_certainty,2
+b9jzt,,1,2,1,2,2,2,1,1,1,1,2,1,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,1,2,1,1,1,2,2,2,2,2,2,2,2,70,failure,yes,2,gain,conjunction,high,low,calculator,Ford,B,WTP_non_certainty,2
+7vnea,,2,2,1,1,1,2,1,1,2,1,1,1,1,2,2,1,1,2,2,2,2,2,1,2,2,2,1,1,2,2,2,1,2,2,1,2,2,1,1,2,70,failure,no,1,loss,conjunction,low,low,jacket,Germany,C,WTA_certainty,2
+wfreb,,1,2,1,1,1,1,1,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2,1,2,2,2,2,2,2,2,2,70,success,no,2,loss,conjunction,high,low,jacket,Ford,A,WTA_certainty,2
+o9a24,,1,2,1,2,1,2,1,1,2,1,1,2,1,2,1,2,1,2,1,1,1,1,2,1,1,2,1,2,1,1,1,2,2,1,2,1,2,2,1,1,70,failure,no,2,gain,conjunction,low,low,calculator,Ford,A,WTA_certainty,2
+iueq4,,1,1,2,1,2,1,1,1,2,2,1,1,1,1,1,1,2,1,1,1,2,2,1,1,1,1,2,1,2,2,1,2,2,1,1,2,2,2,1,1,70,failure,no,1,loss,no_conjunction,low,high,jacket,Germany,C,WTP_certainty,2
+zlfti,,2,2,2,1,2,2,2,1,2,2,2,1,1,2,2,1,2,2,2,2,2,1,1,1,2,1,1,2,2,2,2,2,1,2,2,2,2,2,1,2,70,failure,yes,2,loss,conjunction,low,low,calculator,Germany,A,WTP_non_certainty,2
+uy2vm,,2,2,1,1,1,1,1,2,1,1,1,1,2,2,2,1,2,1,1,2,1,1,1,2,1,2,2,1,2,1,1,1,2,2,2,2,2,1,2,1,70,failure,no,2,gain,no_conjunction,low,low,calculator,Germany,A,WTP_non_certainty,1
+nz9w1,,2,2,2,1,1,2,1,2,1,2,1,2,1,2,2,1,2,2,1,2,2,2,2,2,2,1,1,1,2,1,1,2,1,1,2,2,1,2,2,1,70,success,yes,2,loss,no_conjunction,high,low,jacket,Ford,C,WTA_certainty,1
+twpda,39,2,1,2,2,1,2,2,2,2,2,1,2,2,2,2,2,2,2,1,1,2,2,2,1,1,2,1,2,2,1,2,1,2,1,2,1,2,1,2,2,30,failure,yes,2,gain,no_conjunction,low,low,calculator,Germany,A,WTP_certainty,1
+mxuqf,,2,2,2,1,1,2,2,2,1,1,1,1,1,2,1,1,1,1,2,2,1,1,2,1,2,1,1,2,1,1,1,1,1,2,1,2,1,2,1,1,70,success,no,1,loss,no_conjunction,low,low,jacket,Ford,C,WTP_certainty,1
+zgz4t,,1,1,1,2,1,1,1,1,2,2,2,1,1,1,1,1,1,1,2,1,1,2,1,2,1,2,2,1,1,2,1,1,1,2,1,2,1,1,2,1,70,success,no,2,loss,conjunction,low,low,jacket,Ford,B,WTP_non_certainty,2
+amf2x,,2,2,1,2,2,2,2,1,2,2,1,2,2,1,2,1,1,2,1,2,2,2,2,1,2,1,2,2,1,1,2,2,1,2,1,1,1,1,2,2,70,success,yes,1,gain,conjunction,low,high,calculator,Germany,C,WTP_certainty,2
+g89mx,,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,70,success,no,1,gain,conjunction,low,high,jacket,Ford,B,WTP_certainty,2
+0ldjp,64,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,30,success,yes,2,loss,no_conjunction,low,high,jacket,Ford,C,WTP_non_certainty,2
+egrrg,,2,2,1,1,2,1,2,1,1,2,1,1,2,2,2,1,2,2,2,2,1,2,1,2,1,1,1,1,2,2,2,1,1,1,2,1,2,1,1,2,70,failure,no,1,gain,conjunction,high,high,calculator,Ford,B,WTP_non_certainty,2
+sw55g,,1,1,2,1,2,2,2,2,2,2,1,2,2,2,1,1,1,2,2,1,1,1,2,2,2,2,1,2,2,1,1,2,1,2,2,2,1,2,1,2,70,success,no,2,gain,no_conjunction,low,low,jacket,Ford,B,WTA_certainty,2
+a8aho,,1,1,2,2,1,1,1,2,1,1,1,2,1,1,2,2,1,2,1,2,2,2,2,1,2,2,1,2,1,1,1,1,1,2,2,2,2,2,1,1,70,success,no,2,loss,conjunction,low,high,calculator,Ford,A,WTP_non_certainty,1
+8ij30,,1,2,2,2,1,1,1,2,2,2,1,2,2,1,2,1,1,2,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,1,1,70,success,no,2,gain,conjunction,low,low,calculator,Germany,B,WTA_certainty,2
+33a05,,1,2,1,1,1,1,1,1,2,2,2,2,1,2,2,2,1,1,2,2,1,1,2,2,1,1,2,2,2,2,1,2,2,1,2,2,2,1,2,1,70,failure,yes,2,loss,no_conjunction,low,high,calculator,Ford,A,WTA_certainty,1
+qu2by,70,1,1,1,1,1,2,2,2,2,2,2,2,2,1,2,1,1,1,2,2,2,2,2,2,1,2,1,1,2,1,2,2,2,2,1,2,1,1,2,2,30,success,yes,2,gain,conjunction,high,high,calculator,Ford,A,WTP_non_certainty,1
+qn6ki,30,2,2,1,2,2,2,2,1,2,2,2,2,1,2,2,1,1,2,2,1,2,2,2,2,1,1,2,2,2,1,2,1,2,2,1,2,2,2,2,2,30,failure,no,1,gain,no_conjunction,high,low,jacket,Ford,A,WTP_non_certainty,1
+9duy2,,1,1,1,2,1,2,1,2,1,2,2,2,2,1,1,1,1,1,2,2,1,1,2,1,2,2,1,1,2,2,1,2,2,1,1,1,1,1,2,1,70,failure,yes,1,loss,no_conjunction,low,low,jacket,Ford,B,WTA_certainty,2
+z2bfu,50,1,2,2,2,2,2,2,2,2,1,1,1,2,1,1,2,1,2,2,2,2,2,1,2,1,2,1,2,1,2,2,2,2,2,2,1,2,2,1,1,30,failure,yes,2,loss,conjunction,low,low,jacket,Ford,A,WTP_certainty,1
+stahe,100,1,1,2,2,1,1,2,2,1,1,1,1,1,1,2,2,2,1,2,1,1,1,1,2,1,1,1,2,2,1,2,1,2,2,2,1,1,1,1,2,30,success,yes,1,gain,conjunction,high,high,jacket,Germany,C,WTP_certainty,2
+7e5rr,80,1,1,1,1,1,1,1,2,1,1,1,1,1,2,2,2,2,2,1,1,1,1,2,2,2,2,1,1,2,1,2,2,1,2,1,2,1,2,1,2,30,success,no,1,loss,conjunction,high,low,calculator,Germany,A,WTP_certainty,2
+cmjtd,30,1,2,2,2,1,2,1,2,2,1,1,1,2,1,2,2,2,1,1,2,1,2,2,2,1,1,1,2,2,1,1,2,2,2,1,2,2,2,2,2,30,success,yes,1,loss,no_conjunction,high,high,calculator,Germany,B,WTP_certainty,1
+hetd5,,1,2,1,2,2,2,1,2,2,2,2,1,2,2,2,2,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,2,1,2,1,2,70,success,no,2,gain,conjunction,high,high,calculator,Germany,A,WTP_certainty,1
+uk2vf,30,1,1,1,2,1,1,2,2,1,2,2,1,1,1,2,1,1,1,1,2,2,1,1,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,30,success,no,1,loss,no_conjunction,low,high,jacket,Germany,A,WTP_certainty,1
+4wcis,30,1,2,2,2,2,2,1,2,1,1,1,2,2,1,2,1,1,2,1,2,1,2,1,2,2,1,2,1,2,2,2,2,2,1,2,1,2,1,1,1,30,failure,yes,1,gain,conjunction,high,low,jacket,Ford,C,WTP_non_certainty,2
+b8zaq,80,2,2,2,1,1,2,2,2,1,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,2,2,2,2,2,2,2,1,2,2,30,success,no,2,loss,conjunction,high,high,jacket,Germany,A,WTP_non_certainty,1
+wdfyy,,2,1,2,2,2,1,2,1,1,2,1,2,2,1,1,1,2,2,1,2,2,1,2,1,2,2,2,1,2,1,1,2,2,2,2,2,2,2,2,2,70,success,no,1,gain,conjunction,low,high,jacket,Germany,A,WTP_certainty,2
+dg0ss,,1,2,2,2,2,1,1,2,2,2,2,1,2,1,2,2,1,1,1,2,2,1,2,1,1,2,2,2,1,2,1,2,2,2,2,1,2,2,2,2,70,failure,yes,1,loss,conjunction,low,low,calculator,Germany,A,WTA_certainty,2
+l7xza,,2,2,1,2,2,2,1,2,2,2,2,1,2,2,2,2,2,2,2,2,2,1,2,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,70,failure,no,2,loss,no_conjunction,high,low,jacket,Ford,A,WTP_certainty,1
+x8lvd,,1,2,2,2,2,1,2,2,1,1,2,1,2,2,2,1,1,2,2,2,1,2,2,2,2,2,2,2,1,2,1,1,2,2,2,1,2,2,2,2,70,success,no,2,gain,no_conjunction,low,low,jacket,Ford,B,WTP_certainty,2
+mtom9,,2,1,2,2,1,2,2,1,2,2,1,2,1,2,2,2,1,2,1,2,1,1,2,2,2,1,2,1,1,2,2,1,2,1,1,2,1,2,2,2,70,success,no,1,gain,no_conjunction,high,low,calculator,Germany,C,WTP_certainty,2
+lclop,80,1,2,2,2,2,2,1,1,2,2,2,1,1,2,1,2,2,2,1,2,2,2,2,2,2,2,1,2,2,2,2,1,1,2,2,2,2,1,2,1,30,failure,no,1,gain,conjunction,high,high,calculator,Ford,C,WTA_certainty,2
+wrvfk,80,1,2,2,1,2,2,1,2,2,2,1,1,1,2,2,2,2,1,1,1,2,2,2,2,1,1,2,1,1,1,1,1,2,1,2,1,1,2,2,2,30,success,no,1,loss,no_conjunction,high,high,jacket,Germany,A,WTA_certainty,1
+evqeq,42,2,2,1,2,2,2,1,2,2,2,1,2,2,2,2,1,2,2,2,2,1,1,2,1,2,1,2,2,2,2,2,1,1,2,2,2,2,2,1,2,30,success,yes,2,gain,no_conjunction,high,high,jacket,Germany,B,WTA_certainty,1
+ncyc2,46,1,1,2,2,2,1,2,1,2,1,2,2,1,2,2,1,2,1,2,2,1,1,2,2,2,2,1,2,1,2,1,2,2,1,2,2,2,1,2,2,30,failure,no,1,gain,no_conjunction,high,low,calculator,Ford,C,WTP_non_certainty,2
+ridfr,86,2,2,2,2,1,2,2,2,2,2,2,2,1,2,2,2,2,2,1,1,2,1,2,2,2,2,1,2,2,1,2,2,1,2,2,2,1,1,2,1,30,failure,no,1,loss,conjunction,high,low,calculator,Ford,C,WTA_certainty,2
+o3lxf,,2,2,1,2,1,2,2,2,2,1,2,2,2,1,2,2,2,2,2,2,1,2,2,1,2,2,2,2,1,2,2,1,1,2,2,2,2,1,2,1,70,failure,yes,2,loss,no_conjunction,low,high,calculator,Germany,A,WTA_certainty,1
+ek9iq,76,2,2,1,2,2,2,2,2,2,2,1,1,1,1,2,1,2,2,1,2,2,2,2,1,1,1,1,2,2,1,1,1,1,2,2,2,2,2,2,1,30,failure,yes,2,gain,conjunction,low,high,jacket,Ford,A,WTA_certainty,2
+3uy58,80,2,1,1,2,2,2,2,1,1,1,1,1,1,1,2,1,1,2,2,1,1,1,1,1,1,2,1,1,1,2,1,1,2,1,2,1,2,1,2,1,30,success,yes,1,gain,no_conjunction,low,high,calculator,Germany,B,WTA_certainty,1
+bc9lg,,2,1,1,2,2,1,1,2,2,1,2,1,2,1,1,2,2,2,1,2,1,1,2,2,1,2,1,2,2,2,2,1,2,2,2,2,1,2,1,2,70,failure,no,1,gain,conjunction,low,low,calculator,Ford,B,WTP_non_certainty,1
+bc0tc,,2,2,2,2,1,2,2,1,1,2,1,1,1,1,2,2,2,2,1,1,2,2,2,2,2,2,2,2,1,2,2,1,1,2,2,2,2,2,1,2,70,success,no,2,loss,no_conjunction,high,low,jacket,Germany,A,WTA_certainty,1
+cnx9d,30,1,1,2,2,2,2,2,1,2,1,2,2,1,2,2,2,2,1,2,2,2,2,2,1,1,1,2,2,2,2,2,2,2,1,2,2,2,2,2,2,30,success,yes,2,loss,no_conjunction,low,high,jacket,Germany,C,WTP_non_certainty,1
+1vec3,80,2,2,2,2,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2,2,1,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,30,failure,yes,1,loss,no_conjunction,high,low,jacket,Ford,C,WTA_certainty,1
+o1zc3,,2,1,2,1,2,2,2,1,1,2,2,1,2,1,1,2,2,2,2,1,2,2,2,1,1,1,2,2,1,2,2,2,1,1,2,1,1,2,2,2,70,failure,yes,1,loss,conjunction,low,high,jacket,Ford,C,WTP_non_certainty,1
+y78ay,,1,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,1,1,2,1,2,2,2,2,2,1,2,2,2,1,2,2,2,2,2,2,2,2,70,failure,no,2,loss,no_conjunction,high,high,calculator,Ford,B,WTP_non_certainty,1
+njkpj,30,2,2,2,1,2,2,2,2,2,1,2,2,2,2,2,1,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,30,failure,yes,1,loss,conjunction,high,low,calculator,Germany,A,WTP_certainty,2
+d3vke,,2,2,1,1,2,1,2,1,1,2,2,1,2,1,1,2,1,2,1,1,2,1,2,1,2,2,2,1,2,1,2,1,1,1,1,1,1,1,1,1,70,failure,no,1,loss,no_conjunction,low,high,jacket,Ford,B,WTP_certainty,2
+2ea2g,86,1,1,2,1,2,1,2,2,2,2,1,1,1,1,2,2,2,1,2,2,1,2,1,2,2,1,1,1,1,1,1,2,1,1,2,2,1,1,2,2,30,failure,no,2,loss,no_conjunction,high,low,jacket,Germany,B,WTP_non_certainty,1
+tv81i,70,2,2,1,1,1,1,2,2,2,2,2,2,2,1,2,1,2,2,2,2,2,2,1,2,2,2,1,1,1,2,1,2,2,2,1,1,1,2,2,1,30,failure,yes,1,gain,conjunction,high,high,jacket,Germany,B,WTP_certainty,2
+4p3l9,,2,1,2,2,1,1,1,1,2,1,2,1,1,1,1,2,2,2,2,2,2,2,1,2,2,2,1,2,2,2,2,2,1,2,1,2,1,1,1,2,70,failure,no,1,loss,conjunction,high,low,jacket,Ford,A,WTP_certainty,2
+jex85,,2,2,2,1,1,1,1,1,2,2,2,1,2,2,2,2,2,1,1,2,2,2,2,1,1,2,1,1,1,1,2,2,2,2,1,1,2,2,2,2,70,failure,no,2,loss,no_conjunction,high,high,jacket,Germany,B,WTP_non_certainty,2
+wxbai,,2,2,2,2,2,2,2,2,2,1,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2,1,2,2,2,2,2,2,70,failure,yes,2,loss,conjunction,high,high,jacket,Germany,C,WTP_certainty,1
+j8yub,,2,1,1,1,1,1,1,1,2,2,2,2,1,2,1,1,1,1,1,2,2,1,1,1,1,1,2,2,1,2,2,1,1,1,1,2,1,1,1,1,70,failure,no,2,gain,no_conjunction,low,low,jacket,Germany,A,WTP_certainty,2
+axvvp,,1,2,2,1,1,2,1,2,2,2,1,1,2,1,1,2,1,2,2,1,1,2,2,2,2,1,2,2,2,2,1,1,2,1,2,2,2,2,2,2,70,success,no,2,gain,no_conjunction,high,high,jacket,Ford,A,WTA_certainty,2
+u41kq,,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,1,2,2,1,2,2,1,2,2,2,1,1,2,2,2,2,2,2,2,2,1,2,70,failure,no,1,gain,conjunction,low,high,jacket,Ford,A,WTP_certainty,2
+t67m6,29,1,2,2,1,2,1,2,2,2,2,1,2,2,2,2,2,2,2,2,2,1,2,2,2,2,1,1,2,2,1,2,1,2,1,2,2,1,2,1,1,30,failure,yes,1,loss,no_conjunction,high,low,calculator,Ford,B,WTP_non_certainty,1
+e8ihk,,2,2,2,2,1,1,1,1,2,2,2,2,2,1,2,1,2,2,2,1,1,1,2,1,2,1,1,2,2,2,1,2,2,2,1,2,2,1,1,1,70,success,yes,2,loss,conjunction,high,high,jacket,Ford,B,WTP_non_certainty,2
+jqodr,,2,2,2,2,1,1,1,1,1,1,1,2,2,1,2,2,2,1,2,2,1,2,1,1,2,2,2,1,1,2,2,2,2,2,2,2,1,1,1,2,70,success,no,2,gain,no_conjunction,high,high,calculator,Germany,A,WTP_certainty,1
+t65ti,70,2,1,2,1,2,2,2,2,1,2,2,2,2,2,2,1,2,2,2,2,2,1,1,2,2,2,1,2,2,2,2,2,2,2,2,2,2,1,2,2,30,success,yes,1,loss,no_conjunction,low,low,calculator,Ford,C,WTP_certainty,1
+i89x5,,2,1,2,1,1,1,1,2,1,2,1,1,2,1,2,2,1,2,1,1,1,1,1,1,1,2,1,1,1,1,1,2,1,1,1,1,1,1,2,2,70,success,yes,2,gain,no_conjunction,low,low,calculator,Ford,A,WTP_certainty,1
+v4cye,,1,2,1,1,1,2,2,1,2,2,2,1,1,1,1,1,1,2,2,1,1,2,2,2,1,2,1,1,1,1,2,1,1,1,2,2,1,2,1,2,70,failure,no,2,gain,no_conjunction,low,low,jacket,Germany,A,WTP_certainty,1
+kzigb,,2,2,2,2,1,2,1,2,2,1,1,2,2,2,1,2,1,2,1,2,1,2,1,2,2,1,2,2,2,2,1,2,2,2,2,2,2,1,2,2,70,success,yes,2,loss,no_conjunction,high,low,calculator,Ford,C,WTA_certainty,2
+sa9ho,,1,2,2,2,1,2,1,2,2,2,1,2,2,2,2,2,2,2,1,1,1,2,2,2,1,2,1,2,2,1,2,2,2,2,2,1,2,2,1,2,70,success,no,1,gain,no_conjunction,low,high,jacket,Germany,B,WTA_certainty,2
+ln91z,,2,2,2,2,1,2,2,1,2,2,2,2,2,1,1,2,2,1,2,2,2,2,2,2,2,2,2,2,2,2,1,1,2,2,2,2,2,2,2,2,70,failure,no,1,loss,no_conjunction,high,high,jacket,Ford,A,WTP_certainty,2
+212kx,95,1,1,1,1,1,1,1,2,2,1,2,1,2,2,1,1,2,2,1,2,2,1,2,1,2,1,2,1,2,2,1,1,2,1,2,1,2,2,1,2,30,success,yes,2,loss,no_conjunction,high,high,jacket,Germany,B,WTA_certainty,1
+mi5r8,50,1,2,2,2,2,1,2,1,2,2,1,2,2,1,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,1,2,2,2,2,2,2,2,1,2,2,30,failure,yes,1,loss,no_conjunction,high,low,calculator,Germany,C,WTP_certainty,1
+v20pc,30,2,1,1,1,2,1,2,1,2,1,1,1,2,2,1,2,1,1,1,2,1,1,2,1,1,1,2,2,1,1,1,2,2,1,2,1,2,1,1,2,30,failure,no,1,gain,no_conjunction,low,high,calculator,Ford,A,WTA_certainty,2
+byr2v,,1,2,2,1,1,2,2,2,2,1,2,2,2,1,2,2,1,2,2,1,2,2,2,2,2,2,2,1,2,2,2,2,2,1,2,1,2,1,1,2,70,failure,no,2,loss,conjunction,high,high,calculator,Germany,A,WTP_non_certainty,2
+y2eke,30,2,1,2,2,2,2,1,2,2,1,2,1,2,1,1,1,2,2,2,2,1,2,1,2,2,1,1,1,1,2,1,2,2,2,2,2,1,2,2,1,30,failure,no,1,loss,conjunction,low,low,jacket,Germany,B,WTP_non_certainty,2
+00a1r,80,1,2,1,1,1,1,2,2,1,2,1,2,1,1,2,2,1,1,2,1,1,1,1,2,2,1,2,1,1,2,1,2,2,2,2,2,1,1,1,2,30,success,no,1,loss,no_conjunction,high,high,jacket,Ford,C,WTP_certainty,1
+9o70p,30,1,2,2,2,2,2,1,2,2,2,2,1,1,2,2,2,2,2,2,1,1,2,2,2,1,2,2,1,2,2,1,2,2,1,2,2,1,1,2,1,30,failure,no,2,gain,conjunction,high,low,jacket,Germany,A,WTP_non_certainty,2
+fz8wa,30,2,1,2,1,2,1,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,1,1,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,30,failure,yes,1,gain,conjunction,high,high,jacket,Ford,B,WTP_certainty,2
+6rxfs,,2,2,1,2,2,2,2,1,2,2,1,2,2,1,2,2,2,1,1,2,2,2,2,1,2,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,70,success,yes,1,loss,no_conjunction,low,high,jacket,Ford,B,WTA_certainty,1
+rf2g7,95,1,1,2,2,1,2,2,2,2,1,1,2,1,1,1,2,2,1,1,1,2,2,2,1,2,1,2,1,2,1,2,1,2,1,2,2,1,1,2,2,30,success,no,2,gain,no_conjunction,low,high,jacket,Germany,B,WTA_certainty,2
+ighhg,,2,2,2,2,1,1,1,2,2,2,1,2,2,2,2,2,2,2,2,2,1,2,1,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,2,2,70,success,no,2,loss,conjunction,low,low,calculator,Ford,C,WTA_certainty,1
+8bg18,81,2,2,1,2,2,2,1,1,2,2,2,2,1,2,2,1,2,2,2,1,2,2,2,2,2,1,2,2,2,2,2,2,2,2,1,1,2,2,2,1,30,success,no,1,loss,conjunction,low,high,jacket,Germany,B,WTA_certainty,1
+7ftdk,30,2,2,2,2,1,1,1,1,2,1,1,1,2,1,2,2,2,1,1,2,1,2,2,2,2,1,2,1,1,1,2,1,2,1,2,2,2,2,2,2,30,failure,no,1,loss,no_conjunction,low,high,calculator,Germany,B,WTP_certainty,2
+zenjf,30,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,30,success,no,1,gain,no_conjunction,low,low,calculator,Ford,A,WTP_certainty,2
+n6xqr,,2,2,2,2,1,2,2,2,2,2,2,2,1,2,2,2,1,2,2,2,2,1,2,2,2,2,2,2,1,2,2,2,2,2,2,1,2,1,2,2,70,failure,yes,1,loss,no_conjunction,low,low,calculator,Germany,A,WTP_certainty,2
+t3qe4,70,2,2,2,2,2,2,2,1,2,2,2,2,2,2,1,2,2,2,2,1,2,2,2,1,2,2,2,2,2,2,2,1,2,2,2,2,2,2,1,2,30,success,no,1,gain,conjunction,high,low,calculator,Ford,C,WTP_non_certainty,2
+4kx6v,,1,2,1,2,1,1,1,2,2,2,2,1,2,2,2,2,1,2,2,2,1,2,2,1,2,2,2,1,1,1,2,1,2,1,1,2,2,2,2,2,70,success,no,2,loss,conjunction,high,high,jacket,Germany,C,WTP_certainty,1
+3d56s,70,1,2,2,2,2,1,2,1,2,2,2,1,1,2,2,1,2,2,2,2,1,2,2,1,2,1,1,2,2,2,1,2,2,1,1,2,2,1,2,2,30,success,yes,2,gain,no_conjunction,low,low,jacket,Germany,C,WTA_certainty,1
+rkkav,30,1,1,2,1,2,2,1,2,2,2,2,2,2,1,1,2,2,2,1,2,2,2,2,2,1,2,1,2,2,2,2,1,2,1,1,1,2,2,2,1,30,failure,yes,1,gain,no_conjunction,high,high,jacket,Ford,A,WTP_certainty,1
+uir5g,60,1,2,2,2,2,1,2,1,2,2,2,2,1,1,1,1,2,2,1,2,2,2,1,1,2,2,1,1,2,1,2,1,2,1,1,1,2,2,2,1,30,failure,yes,1,gain,no_conjunction,low,low,jacket,Germany,C,WTP_non_certainty,1
+f76v0,,1,2,2,2,2,2,2,2,2,2,1,1,2,1,2,2,2,2,1,1,2,1,2,1,1,2,2,1,1,1,1,2,2,2,2,1,2,2,2,2,70,failure,no,1,loss,no_conjunction,high,low,calculator,Germany,B,WTA_certainty,2
+t8dkc,90,2,1,2,1,1,1,1,1,2,2,1,2,1,1,2,2,2,2,1,2,1,1,1,1,2,2,2,2,2,1,2,1,2,2,2,1,2,1,2,2,30,success,no,1,gain,no_conjunction,high,low,calculator,Germany,C,WTA_certainty,2
+2vz3n,,1,1,2,1,2,1,2,1,2,1,1,1,1,1,2,2,1,1,1,2,2,2,1,2,1,1,2,1,1,1,2,2,1,1,1,2,1,2,2,2,70,success,yes,1,loss,conjunction,low,low,jacket,Ford,B,WTP_non_certainty,1
+r82fi,,2,2,1,2,2,1,2,2,1,2,1,1,2,1,1,2,2,2,1,2,1,2,1,1,2,1,1,2,2,2,1,1,2,2,2,1,2,2,2,2,70,success,yes,2,gain,no_conjunction,high,high,jacket,Germany,B,WTA_certainty,2
+dy25d,,2,2,2,1,1,1,1,1,2,1,1,2,1,1,2,1,1,1,2,2,1,1,2,2,1,2,1,1,1,2,1,2,1,2,2,2,1,2,1,2,70,success,yes,1,loss,no_conjunction,low,low,calculator,Ford,A,WTA_certainty,1
+8r5lt,,1,2,2,2,1,1,2,1,1,1,1,2,2,1,1,1,2,1,2,1,2,1,1,1,2,1,2,2,1,1,1,1,1,2,1,2,1,2,1,1,70,success,yes,2,loss,no_conjunction,low,high,calculator,Ford,C,WTP_certainty,1
+arxcr,30,2,2,2,1,2,2,1,1,1,1,2,1,2,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,1,2,1,2,1,1,2,1,1,2,2,30,failure,yes,2,loss,no_conjunction,high,high,jacket,Germany,A,WTP_certainty,1
+kms82,30,2,2,2,1,2,2,2,2,2,1,2,2,2,1,2,1,2,2,1,1,1,2,2,2,1,2,1,2,1,2,2,1,1,2,2,2,2,2,1,1,30,failure,no,2,gain,no_conjunction,low,low,calculator,Germany,B,WTA_certainty,1
+pw1a2,30,1,1,2,1,1,1,2,1,2,1,2,2,2,2,1,1,2,2,2,2,2,2,2,1,2,2,1,1,2,1,1,2,2,1,1,2,1,2,1,2,30,success,yes,2,gain,conjunction,low,low,calculator,Ford,B,WTP_certainty,2
+meqhr,,1,1,1,1,2,2,2,1,2,2,1,2,2,2,1,2,1,2,2,1,1,1,2,2,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,70,success,yes,2,gain,no_conjunction,low,low,calculator,Ford,B,WTA_certainty,1
+ahyp7,,2,1,1,2,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,2,2,2,1,1,2,2,2,2,2,1,2,2,1,1,1,1,2,1,2,1,70,failure,no,1,loss,conjunction,low,high,jacket,Germany,C,WTA_certainty,2
+k7iif,,2,2,1,1,2,1,1,2,2,2,2,2,2,1,1,2,2,2,2,1,2,2,2,2,2,2,2,2,1,2,2,2,1,2,2,2,2,2,2,1,70,failure,yes,1,loss,no_conjunction,low,high,calculator,Ford,C,WTP_certainty,2
+s6avc,,2,1,2,2,1,2,1,2,1,1,2,2,2,1,1,2,2,2,2,1,1,1,2,1,1,2,2,1,2,2,1,1,1,2,2,1,2,1,1,1,70,success,yes,1,gain,no_conjunction,high,high,calculator,Germany,B,WTP_certainty,2
+8ka4n,,1,2,1,1,1,2,1,1,1,2,2,1,2,2,2,1,2,2,2,1,1,2,1,1,1,1,2,2,1,1,2,1,2,2,2,1,2,2,1,2,70,success,yes,2,gain,no_conjunction,low,high,calculator,Ford,C,WTA_certainty,2
+iyz57,90,1,2,1,1,1,1,2,2,2,1,2,1,1,1,2,1,1,1,1,1,1,1,1,2,1,1,2,1,1,2,1,2,1,1,1,1,2,1,1,1,30,failure,yes,1,gain,conjunction,high,high,calculator,Germany,B,WTP_non_certainty,2
+ha6bv,,1,2,2,2,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,2,1,2,2,2,1,2,1,2,2,1,1,2,2,1,2,1,1,1,70,failure,no,1,loss,conjunction,low,high,jacket,Ford,C,WTP_non_certainty,2
+a53lx,30,1,2,1,1,2,1,2,2,2,2,2,1,2,1,2,1,1,2,1,2,1,1,2,2,2,1,2,1,2,2,2,2,2,2,1,2,1,2,2,1,30,success,no,2,gain,conjunction,high,low,calculator,Ford,C,WTA_certainty,1
+qw4hl,30,1,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2,2,1,2,2,1,2,2,2,2,2,1,2,2,2,2,1,1,2,1,2,2,2,30,failure,no,2,gain,conjunction,low,high,jacket,Germany,C,WTA_certainty,2
+d8l9i,,1,2,1,2,2,1,1,2,2,2,2,2,1,2,2,1,1,1,2,2,2,1,2,1,2,1,1,2,2,2,2,2,1,1,1,1,1,2,1,1,70,success,yes,1,gain,no_conjunction,high,high,jacket,Germany,B,WTP_non_certainty,2
+rlkzv,75,2,1,1,2,2,1,2,2,2,1,1,2,2,2,2,1,1,1,2,2,2,2,2,1,2,1,1,2,2,1,1,2,2,2,1,2,2,2,1,1,30,success,no,2,loss,no_conjunction,high,high,calculator,Germany,C,WTP_certainty,2
+bbrrv,25,1,1,2,2,1,2,2,2,2,2,2,2,1,2,2,2,1,2,2,1,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,2,1,30,failure,no,1,gain,conjunction,low,low,calculator,Germany,A,WTP_non_certainty,2
+x23wu,,1,2,1,2,1,2,2,2,1,1,2,2,1,1,1,2,2,1,2,2,2,2,1,1,1,2,2,1,2,2,2,2,1,1,1,2,2,2,2,1,70,failure,yes,1,loss,conjunction,low,low,calculator,Germany,A,WTA_certainty,1
+6qe7v,,1,2,2,1,1,1,2,2,1,1,1,1,1,2,2,2,2,1,2,2,1,1,2,2,2,1,1,1,2,1,1,2,2,1,1,2,2,1,2,2,70,failure,yes,2,gain,no_conjunction,high,low,jacket,Germany,A,WTA_certainty,2
+lfhm6,,2,2,2,1,1,1,1,1,1,1,2,1,2,1,1,1,1,1,1,2,1,2,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,2,1,70,success,no,2,loss,no_conjunction,high,low,jacket,Ford,B,WTP_non_certainty,2
+a6adz,,1,2,2,2,2,1,1,2,1,1,2,1,2,2,1,2,2,1,2,2,1,2,2,1,2,1,2,2,1,2,2,2,2,1,2,2,2,2,2,1,70,success,no,1,gain,conjunction,low,low,jacket,Germany,B,WTP_non_certainty,1
+4wbsc,,1,2,2,2,1,1,1,1,1,1,1,1,1,2,2,1,2,1,1,2,2,1,2,1,2,2,1,1,1,2,1,1,2,2,1,1,1,1,2,2,70,failure,no,1,loss,no_conjunction,high,low,jacket,Ford,C,WTP_non_certainty,1
+1b3hy,,2,2,1,1,1,1,1,2,1,1,2,1,2,2,1,1,2,2,2,2,1,1,2,1,2,1,2,2,2,2,1,2,2,1,1,2,1,2,2,2,70,failure,no,2,gain,no_conjunction,high,low,calculator,Ford,C,WTP_certainty,1
+f60ro,76,1,1,2,1,1,2,2,1,2,2,1,1,1,2,1,1,1,2,1,1,2,1,2,1,2,2,2,1,1,1,2,1,2,1,2,1,2,1,2,1,30,failure,yes,1,loss,conjunction,high,high,jacket,Ford,B,WTP_certainty,2
+oct5j,,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,2,2,2,2,1,2,2,1,1,2,2,2,1,2,2,2,1,2,2,2,2,2,1,70,success,no,1,loss,conjunction,low,high,calculator,Germany,A,WTP_certainty,1
+yfl6g,30,2,1,1,1,2,2,1,2,1,2,1,1,1,2,2,2,1,1,2,1,2,1,1,2,1,1,2,1,1,1,1,1,1,1,1,1,2,2,1,2,30,success,yes,2,gain,conjunction,high,high,jacket,Germany,B,WTP_certainty,1
+bm5ba,,2,2,2,1,2,2,1,2,1,1,1,1,2,1,1,1,1,1,1,1,1,1,2,1,1,2,1,2,1,1,2,2,2,1,1,1,1,1,2,1,70,success,no,2,loss,no_conjunction,high,low,calculator,Germany,C,WTP_non_certainty,1
+bnxw1,95,2,2,1,1,1,1,1,1,1,1,2,1,1,1,1,2,1,1,2,1,1,2,1,2,2,2,1,2,1,2,1,1,1,1,1,2,2,2,1,1,30,failure,no,2,loss,no_conjunction,high,high,jacket,Germany,C,WTP_certainty,2
+ssiwx,,2,1,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,2,1,2,1,1,2,2,1,1,2,2,2,2,2,2,1,2,2,2,2,2,2,2,70,success,no,1,gain,no_conjunction,high,low,jacket,Ford,A,WTA_certainty,2
+t4ldc,,1,1,2,1,2,2,1,1,2,1,1,2,2,2,2,2,2,2,1,1,1,2,1,2,2,2,1,2,2,2,1,2,2,1,1,1,2,1,2,1,70,success,yes,2,loss,conjunction,high,low,jacket,Ford,C,WTA_certainty,1
+kvy1a,90,1,1,1,1,1,2,1,1,1,2,1,1,1,1,2,2,2,2,1,2,2,2,1,1,2,2,2,2,1,1,1,1,2,2,2,1,2,2,1,2,30,failure,yes,2,gain,conjunction,high,high,calculator,Germany,A,WTA_certainty,2
+xj2yb,,2,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,1,2,2,2,2,2,70,success,no,2,loss,conjunction,high,low,calculator,Germany,B,WTP_certainty,1
+l8eqt,30,1,2,1,1,1,1,1,2,2,2,1,1,2,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2,2,1,2,2,2,2,2,2,2,2,1,2,30,success,yes,1,loss,no_conjunction,high,high,jacket,Ford,A,WTP_certainty,1
+7o17s,,1,2,1,2,1,2,2,1,2,2,2,2,2,2,1,1,2,2,1,2,2,1,2,2,1,2,2,2,1,2,2,1,2,2,1,2,2,1,1,1,70,failure,no,1,gain,no_conjunction,low,high,jacket,Germany,A,WTP_non_certainty,2
+g0rj9,75,1,2,2,1,1,2,2,1,2,1,2,2,1,1,1,1,1,1,1,2,2,1,2,1,2,2,1,1,2,2,1,2,2,2,2,2,1,1,2,2,30,success,yes,2,gain,no_conjunction,high,high,calculator,Ford,C,WTA_certainty,2
+eels5,,2,1,2,1,1,2,2,2,2,1,1,2,2,2,2,2,1,2,1,2,1,2,1,2,2,2,2,2,2,2,2,2,2,2,2,1,1,1,1,2,70,failure,yes,1,gain,no_conjunction,low,high,calculator,Germany,B,WTA_certainty,1
+2g6k8,30,1,1,1,1,1,2,2,1,2,1,2,1,1,1,1,2,1,1,1,1,1,1,1,2,1,2,1,1,1,1,1,1,2,1,1,1,2,1,1,2,30,failure,no,1,loss,conjunction,low,low,calculator,Germany,A,WTA_certainty,2
+3wglb,30,2,2,1,1,1,1,1,1,1,2,1,1,2,1,1,1,1,2,1,1,1,1,1,1,1,1,2,1,1,1,1,2,1,2,1,1,1,1,1,1,30,failure,no,2,gain,conjunction,low,high,calculator,Ford,B,WTP_certainty,1
+bhiml,,2,2,1,2,2,1,2,2,2,2,2,1,1,2,1,2,1,2,2,2,1,2,1,2,2,2,2,2,2,2,1,1,1,1,2,2,2,2,2,2,70,failure,yes,2,loss,no_conjunction,low,low,jacket,Germany,B,WTP_non_certainty,1
+k8gd7,74,1,1,1,2,1,1,1,1,1,1,1,1,1,2,1,1,2,1,2,1,1,1,1,1,1,1,2,1,1,2,1,1,1,1,1,1,1,2,1,1,30,failure,no,2,gain,no_conjunction,low,high,jacket,Ford,B,WTP_certainty,2
+5puzl,30,2,2,1,2,1,2,1,1,1,2,2,2,2,2,1,1,2,1,1,2,1,1,2,1,2,1,1,1,2,2,1,1,2,1,2,2,2,2,2,1,30,failure,no,1,gain,conjunction,low,low,calculator,Germany,A,WTA_certainty,1
+lspv3,,1,1,1,1,1,2,1,1,1,1,2,2,2,2,2,1,2,2,2,2,2,1,1,1,1,2,1,2,1,1,1,1,1,2,1,1,1,1,1,2,70,success,yes,1,loss,no_conjunction,high,high,jacket,Ford,C,WTP_certainty,2
+ez9fl,,2,2,2,2,1,1,1,2,1,2,2,2,1,2,1,1,2,2,2,1,2,2,1,2,2,1,2,1,1,1,1,2,1,2,1,1,1,2,2,1,70,success,yes,1,loss,no_conjunction,high,high,jacket,Ford,B,WTA_certainty,1
+pqdwo,,2,2,1,1,1,2,1,2,2,2,1,2,2,1,1,2,2,2,2,2,1,2,2,2,1,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,70,success,yes,1,loss,conjunction,low,high,calculator,Germany,A,WTA_certainty,1
+9vwzo,65,1,2,1,1,2,2,1,1,2,2,1,2,2,2,1,1,1,1,2,2,2,2,2,2,1,1,2,2,2,1,2,2,2,2,1,2,2,1,2,1,30,success,yes,2,gain,no_conjunction,low,high,jacket,Germany,B,WTA_certainty,2
+rzj8b,,2,1,2,2,2,2,2,1,1,2,2,2,2,2,2,1,1,1,1,2,1,2,2,1,1,1,2,2,1,2,2,2,2,2,2,1,2,2,2,2,70,failure,no,1,gain,conjunction,low,low,jacket,Germany,A,WTP_certainty,1
+c0p1j,,1,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,1,1,2,2,1,2,2,2,2,2,2,2,2,1,1,2,70,failure,yes,1,loss,conjunction,low,high,jacket,Ford,A,WTP_non_certainty,2
+0xhxd,81,2,2,2,1,1,2,2,1,1,1,1,2,1,2,2,2,1,1,2,2,1,1,2,2,2,2,1,2,2,1,1,2,1,2,1,2,2,1,2,1,30,failure,no,1,loss,conjunction,high,high,jacket,Ford,B,WTA_certainty,1
+ibsjm,80,2,1,2,2,1,2,2,1,2,2,2,2,1,2,2,2,2,1,1,2,2,2,2,2,1,2,2,2,2,2,1,1,2,2,2,2,2,2,1,2,30,failure,no,1,gain,conjunction,low,low,jacket,Germany,C,WTP_non_certainty,1
+7k50n,75,2,1,2,2,2,2,2,2,2,1,2,2,1,2,1,1,1,2,2,1,2,1,1,2,1,1,1,2,1,2,2,2,1,2,1,2,2,2,1,1,30,failure,yes,2,gain,conjunction,low,low,calculator,Germany,C,WTP_certainty,2
+dtsui,49,1,2,2,2,1,1,1,2,1,2,1,1,1,1,1,1,1,1,1,2,2,1,1,1,1,2,1,1,2,1,2,1,2,1,1,1,1,1,1,1,30,failure,yes,1,loss,no_conjunction,low,high,jacket,Ford,C,WTA_certainty,1
+aht1w,,1,2,2,2,1,2,2,2,1,1,2,1,2,2,1,2,1,2,2,2,2,1,2,1,1,1,2,2,2,1,1,2,1,1,1,2,2,1,2,2,70,success,no,2,gain,no_conjunction,low,high,jacket,Ford,A,WTA_certainty,1
+lwvjc,,1,2,1,2,2,2,1,2,2,2,2,2,2,2,2,2,2,1,2,1,1,2,2,2,2,2,1,1,2,2,1,2,1,2,2,1,2,1,2,2,70,failure,yes,1,loss,no_conjunction,low,low,jacket,Germany,B,WTP_non_certainty,2
+v2zfr,,2,1,2,2,2,2,2,2,1,2,2,1,2,1,2,2,2,1,2,2,1,2,1,2,1,2,1,2,2,1,2,1,1,1,2,2,1,2,2,2,70,success,yes,1,gain,conjunction,high,high,calculator,Germany,C,WTP_certainty,1
+pzttc,,1,1,1,2,2,2,2,2,1,1,1,2,1,2,1,2,2,1,1,1,1,2,1,1,1,1,1,2,1,2,1,2,1,2,2,2,1,2,1,2,70,success,no,1,gain,no_conjunction,high,high,jacket,Ford,A,WTA_certainty,1
+c42r9,,2,1,1,1,2,2,2,2,2,2,2,2,1,2,1,2,1,1,2,2,2,1,2,2,2,2,1,1,1,2,2,2,1,2,2,2,2,2,1,1,70,failure,yes,1,gain,no_conjunction,low,high,calculator,Germany,A,WTP_non_certainty,2
+76ux4,,1,1,2,2,2,2,1,2,1,2,2,1,1,2,2,2,1,1,2,2,2,2,2,2,2,2,2,2,2,1,2,2,1,1,2,2,1,2,2,1,70,success,yes,2,loss,no_conjunction,low,high,calculator,Germany,A,WTP_certainty,2
+89ro6,,2,1,2,2,2,1,2,2,2,2,2,1,1,1,1,2,2,1,1,2,1,2,2,2,2,1,1,2,2,1,1,1,2,2,2,2,1,1,2,2,70,failure,no,1,loss,no_conjunction,low,high,calculator,Germany,C,WTA_certainty,1
+oyp87,,1,1,1,2,1,2,1,2,2,2,2,1,2,1,2,1,2,1,1,1,2,2,1,2,1,1,1,2,1,2,1,1,1,2,1,1,1,1,1,1,70,failure,no,2,loss,no_conjunction,high,high,jacket,Ford,A,WTP_certainty,2
+kww3y,30,1,2,1,1,2,1,2,1,1,1,2,2,2,1,2,2,2,1,2,1,1,1,2,1,1,2,2,2,2,2,1,1,2,2,1,2,1,1,1,1,30,failure,yes,2,loss,conjunction,high,low,jacket,Germany,A,WTA_certainty,2
+dw6oq,45,2,2,1,2,1,2,1,2,2,1,2,2,1,2,2,2,1,1,1,2,2,1,1,2,1,1,2,2,1,1,1,2,1,1,1,1,2,1,1,2,30,failure,yes,1,gain,conjunction,low,low,jacket,Ford,B,WTP_non_certainty,2
+o3a2p,81,2,2,2,1,2,1,1,2,2,1,2,1,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,2,1,2,2,2,2,2,1,2,2,2,1,1,30,failure,yes,1,gain,conjunction,high,high,calculator,Germany,B,WTP_certainty,2
+slp0x,90,2,1,1,2,2,1,2,1,1,2,2,2,2,2,2,2,2,2,2,1,2,2,1,2,2,2,1,1,1,2,2,2,2,2,2,2,1,2,2,1,30,failure,yes,2,loss,conjunction,low,high,jacket,Ford,C,WTA_certainty,1
+oscdf,,2,2,1,1,1,1,1,2,1,2,2,2,2,1,1,2,2,1,2,1,1,2,1,1,1,1,2,2,1,2,2,2,2,1,2,1,2,2,2,1,70,success,no,2,loss,conjunction,high,low,jacket,Germany,B,WTP_certainty,1
+nhhpr,30,1,1,1,1,2,1,2,2,2,2,2,2,2,1,1,2,2,1,2,2,1,2,2,1,2,1,2,1,1,2,2,1,2,2,2,2,1,1,2,1,30,success,yes,2,gain,no_conjunction,high,low,calculator,Germany,C,WTP_certainty,1
+bc89d,,2,2,2,2,1,2,2,1,1,2,2,2,1,2,2,2,1,2,2,1,2,2,1,2,2,1,1,1,1,2,2,2,1,1,2,2,1,2,2,1,70,success,no,2,gain,conjunction,low,high,jacket,Ford,C,WTP_non_certainty,1
+906gx,74,1,1,1,1,1,1,2,2,2,1,2,1,2,1,1,1,1,1,2,2,1,1,2,1,1,2,2,2,2,2,1,1,2,2,1,2,1,2,2,1,30,success,yes,1,gain,conjunction,high,low,jacket,Ford,B,WTP_certainty,1
+wz6dl,,1,2,1,2,1,2,2,1,1,1,1,1,1,2,2,1,2,2,1,2,1,1,2,1,1,1,2,2,2,1,2,1,2,2,1,2,2,1,1,1,70,success,yes,1,loss,conjunction,low,high,jacket,Germany,C,WTP_non_certainty,2
+j9v1n,,1,2,1,1,2,2,2,2,2,2,2,1,2,2,2,2,2,2,1,2,2,1,2,2,2,2,2,1,2,2,1,1,2,2,1,1,1,1,2,2,70,success,no,1,loss,conjunction,low,high,jacket,Ford,C,WTA_certainty,2
+293vr,20,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2,1,2,2,1,1,2,2,2,2,2,2,30,success,yes,2,loss,no_conjunction,low,low,calculator,Germany,A,WTP_non_certainty,1
+ilhrp,,2,2,2,1,2,2,2,2,1,1,2,2,1,2,1,1,2,2,1,1,2,2,2,2,1,2,1,1,2,1,2,1,2,2,2,1,2,1,1,2,70,success,yes,1,loss,conjunction,high,high,calculator,Ford,A,WTP_non_certainty,1
+j0fnu,,1,2,2,1,2,2,1,2,2,2,1,2,1,1,2,1,2,2,1,1,2,2,2,1,2,2,1,1,2,2,2,1,2,2,2,2,2,1,2,1,70,failure,no,1,loss,conjunction,high,high,jacket,Ford,A,WTP_certainty,2
+uv0ng,,1,2,2,1,2,2,2,1,2,2,1,1,2,2,2,1,2,1,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2,2,1,2,2,2,70,success,no,1,gain,no_conjunction,high,low,jacket,Ford,B,WTP_certainty,1
+bicf2,40,2,2,2,1,1,1,2,1,2,2,2,1,2,1,2,2,1,2,2,1,2,1,2,1,2,1,1,2,2,2,2,2,1,1,1,2,1,2,1,1,30,success,no,1,gain,conjunction,high,high,jacket,Germany,B,WTA_certainty,2
+56vwl,30,2,2,1,2,2,1,1,2,1,1,2,2,1,1,1,1,1,1,2,2,1,2,2,2,2,2,1,2,2,2,1,2,1,2,2,1,1,2,2,2,30,failure,no,1,loss,conjunction,high,high,calculator,Germany,C,WTP_certainty,2
+wwm84,30,2,2,2,2,2,2,2,2,2,2,2,2,1,2,2,1,2,2,2,1,2,2,2,1,2,2,2,2,2,2,1,2,2,1,2,2,2,1,2,2,30,failure,no,2,gain,conjunction,high,low,calculator,Ford,A,WTP_certainty,2
+n2pn8,30,2,1,2,1,1,1,1,1,2,2,1,2,2,2,2,1,2,2,1,2,1,2,2,2,1,2,2,1,1,2,1,1,2,1,1,1,1,2,1,2,30,success,no,2,gain,no_conjunction,high,low,jacket,Ford,A,WTA_certainty,1
+1njfu,,2,1,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,2,1,2,2,2,2,2,2,2,1,1,1,2,2,2,1,1,2,2,1,1,2,2,70,success,no,1,loss,conjunction,high,low,jacket,Ford,B,WTA_certainty,1
+hpbis,,2,1,2,2,2,1,1,1,1,1,2,2,1,2,2,2,2,1,1,2,2,1,1,1,2,2,1,2,1,1,1,2,2,2,2,1,2,2,1,2,70,failure,yes,2,gain,conjunction,low,high,calculator,Ford,B,WTP_non_certainty,2
+kficb,,1,1,2,1,2,1,2,1,2,1,1,2,1,1,2,1,1,1,2,2,1,1,1,2,2,1,2,2,1,1,1,1,1,2,1,1,1,1,1,1,70,failure,no,2,gain,conjunction,low,low,calculator,Ford,A,WTA_certainty,1
+wsyy4,,1,2,2,2,2,2,1,2,1,1,2,2,2,1,2,1,2,1,1,2,2,2,2,2,2,1,1,2,2,2,2,1,2,2,2,2,2,1,1,1,70,success,no,1,loss,no_conjunction,high,low,jacket,Germany,A,WTP_certainty,1
+v1vbi,70,2,2,1,1,2,1,1,2,2,1,1,2,1,2,2,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,1,1,2,1,2,1,2,1,30,success,no,1,gain,no_conjunction,high,low,calculator,Germany,A,WTP_non_certainty,2
+q31p6,,2,1,2,2,1,2,1,2,1,2,1,1,1,1,2,1,2,1,1,1,1,1,1,2,1,1,1,1,2,2,1,2,2,2,2,2,1,2,2,2,70,failure,no,1,gain,conjunction,low,low,calculator,Ford,C,WTP_non_certainty,1
+anjsc,,1,2,1,2,1,1,2,1,2,1,1,1,1,2,1,1,1,1,2,1,2,2,2,2,1,2,2,1,1,1,1,2,1,2,1,1,1,2,1,2,70,failure,no,1,gain,no_conjunction,high,high,jacket,Germany,B,WTP_certainty,1
+0di48,30,2,2,1,2,2,1,1,2,2,2,1,2,1,2,2,2,2,1,2,1,1,2,2,2,2,2,1,1,2,2,2,2,2,1,1,2,2,2,2,2,30,success,no,1,loss,conjunction,high,low,jacket,Ford,C,WTP_certainty,2
+t2677,60,2,1,1,1,2,2,2,2,1,2,1,2,2,1,1,1,2,1,2,2,2,1,2,2,1,2,2,1,2,2,2,2,2,1,2,2,1,2,2,2,30,failure,no,1,gain,no_conjunction,low,low,calculator,Ford,B,WTP_non_certainty,1
+gozwq,,2,1,2,1,1,1,2,1,1,2,1,1,2,2,1,2,1,1,1,1,1,2,2,1,2,1,1,1,1,1,1,1,1,2,2,2,2,1,2,2,70,success,no,2,gain,no_conjunction,high,low,calculator,Ford,A,WTP_certainty,2
+8fkgi,60,2,1,2,1,2,2,1,2,1,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,1,1,2,1,2,1,2,2,2,2,1,1,2,1,30,success,yes,1,gain,no_conjunction,low,high,calculator,Germany,A,WTA_certainty,2
+q2hse,61,2,2,2,2,1,2,1,2,1,2,2,2,1,1,2,2,1,2,1,2,2,2,2,2,1,2,1,1,2,2,1,2,1,2,2,2,1,2,2,2,30,success,yes,2,loss,no_conjunction,low,high,calculator,Ford,B,WTP_certainty,1
+0cy1x,30,2,2,2,2,1,2,2,2,2,2,1,2,1,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,1,1,2,2,2,2,1,2,2,2,2,30,failure,no,2,gain,conjunction,high,low,calculator,Ford,B,WTP_non_certainty,1
+hwot5,19,1,2,2,2,1,1,1,1,1,1,2,2,1,1,2,2,1,1,2,2,1,1,1,2,2,1,1,2,1,2,2,1,2,2,2,2,1,2,1,2,30,failure,no,1,loss,conjunction,high,low,jacket,Ford,B,WTP_certainty,1
+1z7bb,30,2,2,2,2,2,1,2,1,2,2,2,2,1,2,1,1,2,1,2,2,2,1,1,2,2,2,2,2,2,1,1,1,2,2,1,2,2,2,2,1,30,success,no,1,gain,conjunction,high,high,calculator,Ford,A,WTP_non_certainty,2
+0ifq6,,1,2,2,2,2,1,2,2,2,2,2,2,1,2,2,2,1,2,1,2,1,1,2,2,1,1,2,2,2,2,2,1,2,1,2,2,2,1,1,2,70,failure,yes,2,loss,no_conjunction,low,high,jacket,Ford,A,WTA_certainty,1
+d5yrm,,1,1,2,1,1,1,2,1,1,1,1,1,1,2,1,1,2,1,2,1,1,1,1,1,1,1,2,1,1,2,1,2,2,1,1,1,2,1,1,1,70,success,no,1,loss,no_conjunction,low,high,jacket,Ford,B,WTP_non_certainty,1
+we66f,,1,1,2,1,2,2,1,1,1,1,2,1,1,1,1,1,1,1,1,1,2,2,2,1,2,2,1,1,2,2,1,2,1,2,2,2,1,1,1,2,70,success,no,2,gain,no_conjunction,low,low,calculator,Ford,B,WTP_certainty,1
+ir48j,,1,1,1,2,1,1,2,1,1,2,1,2,1,1,1,2,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,2,1,1,2,1,1,1,1,1,70,success,yes,2,loss,conjunction,low,high,calculator,Germany,B,WTP_non_certainty,1
+17cwz,50,2,1,1,1,1,1,2,2,2,2,2,2,2,1,1,2,2,1,2,2,1,1,2,1,2,2,1,1,1,1,2,1,1,1,2,1,2,2,2,2,30,failure,no,1,gain,conjunction,low,low,jacket,Ford,C,WTP_certainty,1
+ltop8,75,2,1,2,1,2,1,1,2,1,1,2,1,1,2,2,1,2,1,1,2,2,1,1,2,2,2,1,1,1,1,1,1,1,1,1,1,1,2,2,1,30,failure,no,2,loss,conjunction,low,high,jacket,Germany,C,WTP_certainty,1
+j9t67,,2,1,2,2,2,1,2,1,1,2,1,2,2,2,2,1,1,2,2,2,1,2,2,2,2,1,2,2,2,2,1,2,2,2,1,1,2,2,2,2,70,failure,no,1,loss,conjunction,low,low,jacket,Germany,C,WTP_non_certainty,1
+tcget,58,1,1,1,2,1,1,1,1,2,2,2,1,2,1,2,1,1,1,1,2,2,1,1,1,2,1,1,1,2,2,1,1,1,1,1,2,1,1,1,1,30,success,yes,2,gain,no_conjunction,low,high,jacket,Germany,C,WTP_certainty,2
+1o3dm,30,1,2,2,2,1,2,1,1,2,2,1,1,1,2,2,2,1,1,1,1,2,1,1,1,1,1,2,1,1,2,1,1,1,1,1,1,2,1,2,1,30,success,no,2,loss,no_conjunction,low,high,jacket,Germany,B,WTA_certainty,2
+7hiu4,,2,2,2,2,1,1,2,2,2,2,2,2,1,1,2,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,1,2,1,2,1,1,2,1,2,2,70,failure,yes,2,loss,no_conjunction,low,low,calculator,Germany,C,WTP_certainty,1
+ofe7w,,2,1,1,1,2,2,1,1,2,1,2,2,1,1,1,2,1,2,1,2,2,2,2,2,1,1,2,1,2,1,1,1,1,1,1,1,1,2,1,1,70,failure,yes,2,loss,no_conjunction,low,high,calculator,Germany,A,WTP_non_certainty,1
+sh3z4,,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2,1,2,2,1,2,2,1,2,1,1,2,1,2,1,2,2,2,1,70,failure,yes,2,gain,conjunction,low,high,calculator,Ford,B,WTP_non_certainty,2
+aev6a,,2,2,2,2,1,1,2,2,1,2,2,2,2,1,1,2,1,2,1,2,1,2,1,2,1,2,2,1,1,2,2,1,2,2,2,2,1,2,2,2,70,failure,yes,2,loss,conjunction,high,low,calculator,Germany,A,WTP_non_certainty,1
+3biuj,,2,2,2,2,2,2,2,2,2,1,2,2,1,2,2,2,1,1,2,2,2,1,2,2,1,2,1,2,1,2,2,1,2,1,1,2,2,2,2,2,70,success,no,1,loss,no_conjunction,low,low,calculator,Germany,B,WTA_certainty,1
+vqz6r,30,2,2,1,2,1,2,1,1,2,2,2,1,2,2,1,1,2,2,1,2,2,2,1,2,2,2,2,1,2,2,1,2,1,1,2,2,1,2,1,1,30,success,no,2,loss,no_conjunction,high,high,jacket,Germany,A,WTP_non_certainty,1
+f5cp3,80,2,1,1,2,2,2,2,1,1,1,2,2,2,2,2,2,2,1,1,2,2,1,2,2,2,2,2,2,2,1,2,1,2,2,1,1,1,2,2,1,30,failure,yes,2,gain,conjunction,high,low,calculator,Germany,C,WTP_non_certainty,1
+4th4n,80,1,1,1,1,1,1,1,1,1,1,2,1,1,2,1,2,2,2,1,2,2,2,1,1,1,2,1,1,2,1,2,1,2,1,1,1,1,1,1,1,30,success,yes,2,loss,conjunction,low,high,calculator,Germany,B,WTP_non_certainty,2
+l3bok,,2,2,1,1,2,2,2,1,2,2,2,2,1,1,2,2,2,1,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,1,2,1,1,2,2,2,70,failure,no,1,loss,conjunction,low,high,jacket,Germany,B,WTP_certainty,1
+o33bd,30,2,1,2,2,1,1,2,1,2,1,2,2,1,2,1,1,1,2,2,1,1,1,1,2,2,2,1,2,2,1,2,1,1,1,2,1,1,2,2,2,30,failure,yes,2,gain,no_conjunction,low,low,calculator,Germany,C,WTP_non_certainty,2
+qe5iw,30,2,2,2,1,2,1,2,2,2,1,1,2,2,2,1,2,2,2,2,1,2,1,2,2,2,2,1,2,2,2,1,1,1,2,2,2,2,2,2,2,30,success,yes,2,loss,conjunction,high,high,calculator,Ford,C,WTP_certainty,2
+mfgtj,82,1,2,2,1,1,1,2,2,1,1,2,2,2,1,1,1,1,2,2,2,2,2,2,2,1,2,2,2,1,2,1,2,1,2,1,2,1,1,2,1,30,failure,yes,2,gain,no_conjunction,high,low,jacket,Ford,C,WTP_non_certainty,1
+o9fsx,,2,1,1,1,1,1,1,1,2,2,1,2,2,1,2,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,2,1,2,1,1,1,1,1,1,70,failure,yes,1,loss,no_conjunction,high,low,calculator,Ford,B,WTA_certainty,2
+g24p8,,2,1,1,2,2,2,2,2,2,1,2,1,2,2,1,2,2,2,1,1,1,2,2,1,1,2,2,2,1,1,2,2,2,2,1,2,2,1,2,2,70,success,yes,2,gain,conjunction,low,low,jacket,Germany,A,WTA_certainty,2

@@ -1,0 +1,1353 @@
+person_id,Need for closure _1,Need for closure _2,Need for closure _3,Need for closure _4,Need for closure _5,Need for closure _6,Need for closure _7,Need for closure _8,Need for closure _9,Need for closure _10,Need for closure _11,Need for closure _12,Need for closure _13,Need for closure _14,Need for closure _15,Spendthrift ,Q32,Q33,Q34,Beck Depression 1 _1,Beck Depression 1 _2,Beck Depression 1 _3,Beck Depression 1 _4,D2_1,D2_2,D2_3,D2_4,D3_1,D3_2,D3_3,D3_4,D4_1,D4_2,D4_3,D4_4,D5_1,D5_2,D5_3,D5_4,D6_1,D6_2,D6_3,D6_4,D7_1,D7_2,D7_3,D7_4,D8_1,D8_2,D8_3,D8_4,D10_1,D10_2,D10_3,D10_4,D11_1,D11_2,D11_3,D11_4,D12_1,D12_2,D12_3,D12_4,D13_1,D13_2,D13_3,D13_4,D14_1,D14_2,D14_3,D14_4,D15_1,D15_2,D15_3,D15_4,D16_1,D16_2,D16_3,D16_4,D17_1,D17_2,D17_3,D17_4,D18_1,D18_2,D18_3,D18_4,D19_1,D19_2,D19_3,D19_4,D20_1,D20_2,D20_3,D20_4,D21_1,D21_2,D21_3,D21_4,weight loss,Need for uniqueness _1,Need for uniqueness _2,Need for uniqueness _3,Need for uniqueness _4,Need for uniqueness _5,Need for uniqueness _6,Need for uniqueness _7,Need for uniqueness _8,Need for uniqueness _9,Need for uniqueness _10,Need for uniqueness _11,Need for uniqueness _12,Self-Monitoring_1,Self-Monitoring_2,Self-Monitoring_3,Self-Monitoring_4,Self-Monitoring_5,Self-Monitoring_6,Self-Monitoring_7,Self-Monitoring_8,Self-Monitoring_9,Self-Monitoring_10,Self-Monitoring_11,Self-Monitoring_12,Self-Monitoring_13,Self-Conc. Clarity _1,Self-Conc. Clarity _2,Self-Conc. Clarity _3,Self-Conc. Clarity _4,Self-Conc. Clarity _5,Self-Conc. Clarity _6,Self-Conc. Clarity _7,Self-Conc. Clarity _8,Self-Conc. Clarity _9,Self-Conc. Clarity _10,Self-Conc. Clarity _11,Self-Conc. Clarity _12,Regulatory Focus _1,Regulatory Focus _2,Regulatory Focus _3,Regulatory Focus _4,Regulatory Focus _5,Regulatory Focus _6,Regulatory Focus _7,Regulatory Focus _8,Regulatory Focus _9,Regulatory Focus _10,Maximization_1,Maximization_2,Maximization_3,Maximization_4,Maximization_5,Maximization_6,Wason Selection _1,Wason Selection _2,Wason Selection _3,Wason Selection _4,Dictator,Q275_1,Q275_2,Q275_3,Q275_4,Q275_5,Q275_6,Q171,Q174,Q177,Q172,Q175,Q178,Q173,Q176,Q179,Q189,Q190,Q191,Q198_1,Q198_2,Q198_3,Q198_4,Q198_5,Q198_6,Q198_7,Q198_8,Q198_9,Q198_10,Q203_1,Q203_2,Q203_3,Q203_4,Q203_5,Q203_6,Denominator neglect ,1_choice questions,2_choice questions,3_choice questions,4_choice questions,5_choice questions,6_choice questions,7_choice questions,8_choice questions,9_choice questions,10_choice questions,11_choice questions,12_choice questions,13_choice questions,14_choice questions,15_choice questions,16_choice questions,17_choice questions,18_choice questions,19_choice questions,20_choice questions,21_choice questions,22_choice questions,23_choice questions,24_choice questions,25_choice questions,26_choice questions,27_choice questions,28_choice questions,29_choice questions,30_choice questions,31_choice questions,32_choice questions,33_choice questions,34_choice questions,35_choice questions,36_choice questions,37_choice questions,38_choice questions,39_choice questions,40_choice questions
+person_id,"Please indicate your agreement with each of the following
+statements about yourself. - I don’t like situations that are uncertain.","Please indicate your agreement with each of the following
+statements about yourself. - I dislike questions which could be answered in many different ways.","Please indicate your agreement with each of the following
+statements about yourself. - I find that a well ordered life with regular hours suits my temperament.","Please indicate your agreement with each of the following
+statements about yourself. - I feel uncomfortable when I don’t understand the reason why an event occurred in my life.","Please indicate your agreement with each of the following
+statements about yourself. - I feel irritated when one person disagrees with what everyone else in a group believes.","Please indicate your agreement with each of the following
+statements about yourself. - I don’t like to go into a situation without knowing what I can expect from it.","Please indicate your agreement with each of the following
+statements about yourself. - When I have made a decision, I feel relieved.","Please indicate your agreement with each of the following
+statements about yourself. - When I am confronted with a problem, I’m dying to reach a solution very quickly.","Please indicate your agreement with each of the following
+statements about yourself. - I would quickly become impatient and irritated if I would not find a solution to a problem immediately.","Please indicate your agreement with each of the following
+statements about yourself. - I don’t like to be with people who are capable of unexpected actions.","Please indicate your agreement with each of the following
+statements about yourself. - I dislike it when a person’s statement could mean many different things.","Please indicate your agreement with each of the following
+statements about yourself. - I find that establishing a consistent routine enables me to enjoy life more.","Please indicate your agreement with each of the following
+statements about yourself. - I enjoy having a clear and structured mode of life.","Please indicate your agreement with each of the following
+statements about yourself. - I do not usually consult many different opinions before forming my own view.","Please indicate your agreement with each of the following
+statements about yourself. - I dislike unpredictable situations.",Which of the following best describes your spending habits?,"Some people have trouble limiting their spending: they often spend money - for example on clothes, m","Other people have trouble spending money. Perhaps because spending money makes them anxious, they often don't spend money on things they should spend it on. 
+
+How well does the second description fit you? That is, do you have trouble spending money?","Following is a scenario describing the behavior of two shoppers. After reading about each shopper, please answer the question that follows. 
+
+Mr. A is accompanying a good friend who is on a shopping spree at a local mall. When they enter a large department store, Mr. A sees that the store has a ""one-day-only-sale"" where everything is priced 10-60% off. He realizes that he doesn't need anything, yet can't resist and ends up spending almost $100 on stuff.
+
+Mr. B is accompanying a good friend who is on a shopping spree at a local mall. When they enter a large department store, Mr. B sees that the store has a ""one-day-only-sale"" where everything is priced 10-60% off. He figures that he can get great deals on many items that he needs, yet the thought of spending the money keeps him from buying the stuff.
+
+In terms of your own behavior, who are you more similar to, Mr. A or Mr. B?",Beck Depression 1 - I don't feel sad,Beck Depression 1 - I feel sad,Beck Depression 1 - I am sad all the time and I can't snap out of it,Beck Depression 1 - I am so sad or unhappy that I can't stand it,D2 - I am not particularly discouraged about the future,D2 - I feel discouraged about the future,D2 - I feel that I have nothing to look forward to,D2 - I feel that the future is hopeless and that things cannot improve,D3 - I don't feel like a failure,D3 - I feel that I have failed more than the average person,"D3 - As I look back on my life, all I can see is a lot of failures",D3 - I feel I am a complete failure as a person,D4 - I get as much satisfaction out of things as I used to,D4 - I don't enjoy things the way I used to,D4 - I don't get real satisfaction out of anything anymore,D4 - I am dissatisfied or bored with everything,D5 - I don't feel particularly guilty,D5 - I feel guilty a good part of the time,D5 - I feel guilty most of the time,D5 - I feel guilty all the time,D6 - I don't feel I am being punished,D6 - I feel I may be punished,D6 - I expect to be punished,D6 - I feel I am being punished,D7 - I don't feel disappointed in myself,D7 - I feel disappointed in myself,D7 - I am disgusted with myself,D7 - I hate myself,D8 - I don't feel I am worse than anybody else,D8 - I am critical of myself for my weaknesses or mistakes,D8 - I blame myself all the time for my faults,D8 - I blame myself for everything bad that happens,D10 - I don't cry any more than usual,D10 - I cry more than I used to,D10 - I cry all the time now,"D10 - I used to be able to cry, but now I can't cry even though I want to",D11 - I am no more irritated now than I ever am,D11 - I get annoyed or irritated more easily than I used to,D11 - I feel irritated all the time now,D11 - I don't get irrirtted at all by the things that used to irritate me,D12 - I have not lost interest in other people,D12 - I am less interested in other people than I used to be,D12 - I have lost most of my interest in other people,D12 - I have lost all of my interest in other people,D13 - I make decisions about as well as I ever could,D13 - I put off making decisions more than I used to,D13 - I have greater difficulty in making decisions than before,D13 - I can't make decisions at all anymore,D14 - I don't feel that I am worthless,D14 - I don’t consider myself as worthwhile and useful as I used to,D14 - I feel more worthless as compared to other people,D14 - I feel utterly worthless,D15 - I can work about as well as before,D15 - It takes an extra effort to get started at doing something,D15 - I have to push myself very hard to do anything,D15 - I can’t do any work at all,D16 - I can sleep as well as usual,D16 - I don’t sleep as well as usual,D16 - I wake up 1-2 hours earlier than usual and find it hard to get back to sleep,D16 - I wake up several hours earlier than I used to and cannot get back to sleep,D17 - I don’t get more tired than usual,D17 - I get tired more easily than I used to,D17 - I get tired from doing almost anything,D17 - I am too tired to do anything,D18 - My appetite is no worse than usual,D18 - My appetite is not as good as it used to be,D18 - My appetite is much worse now,D18 - I have no appetite at all anymore,"D19 - I haven’t lost much weight, if any, lately",D19 - I have lost more than 5 pounds,D19 - I have lost more than 10 pounds,D19 - I have lost more than 15 pounds,D20 - I am no more worried about my health than usual,D20 - I am worried about physical problems such as aches and pains; or upset stomach; or constipation,D20 - I am very worried about physical problems and it’s hard to think of much else,D20 - I am so worried about my physical problems that I cannot think about anything else,D21 - I have not noticed any recent change in my interest in sex,D21 - I am less interested in sex than I used to be,D21 - I am much less interested in sex now,D21 - I have lost interest in sex completely,I am purposely trying to lose weight by eating less,Here are a number of characteristics that may or may not apply to you. Please indicate next to each statement the extent to which you agree or disagree with that statement. - I often combine possessions in such a way that I create a personal image that cannot be duplicated.,Here are a number of characteristics that may or may not apply to you. Please indicate next to each statement the extent to which you agree or disagree with that statement. - I often try to find a more interesting version of run-of-the-mill products because I enjoy being original.,Here are a number of characteristics that may or may not apply to you. Please indicate next to each statement the extent to which you agree or disagree with that statement. - I actively seek to develop my personal uniqueness by buying special products or brands.,Here are a number of characteristics that may or may not apply to you. Please indicate next to each statement the extent to which you agree or disagree with that statement. - Having an eye for products that are interesting and unusual assists me in establishing a distinctive image.,"Here are a number of characteristics that may or may not apply to you. Please indicate next to each statement the extent to which you agree or disagree with that statement. - When it comes to the products I buy and the situations in which I use them, I have broken customs and rules.",Here are a number of characteristics that may or may not apply to you. Please indicate next to each statement the extent to which you agree or disagree with that statement. - I have often violated the understood rules of my social group regarding what to buy or own.,Here are a number of characteristics that may or may not apply to you. Please indicate next to each statement the extent to which you agree or disagree with that statement. - I have often gone against the understood rules of my social group regarding when and how certain products are properly used.,Here are a number of characteristics that may or may not apply to you. Please indicate next to each statement the extent to which you agree or disagree with that statement. - I enjoy challenging the prevailing taste of people I know by buying something they would not seem to accept.,"Here are a number of characteristics that may or may not apply to you. Please indicate next to each statement the extent to which you agree or disagree with that statement. - When a product I own becomes popular among the general population, I begin to use it less.",Here are a number of characteristics that may or may not apply to you. Please indicate next to each statement the extent to which you agree or disagree with that statement. - I often try to avoid products or brands that I know are bought by the general population.,"Here are a number of characteristics that may or may not apply to you. Please indicate next to each statement the extent to which you agree or disagree with that statement. - As a rule, I dislike products or brands that are customarily bought by everyone.","Here are a number of characteristics that may or may not apply to you. Please indicate next to each statement the extent to which you agree or disagree with that statement. - The more commonplace a product or brand is among the general population, the less interested I am in buying it.","Here are a number of characteristics that may or may not apply to you. Please indicate next to each statement the extent to which that statement is true or false. - In social situations, I have the ability to alter my behavior if I feel that something else is called for.","Here are a number of characteristics that may or may not apply to you. Please indicate next to each statement the extent to which that statement is true or false. - I have the ability to control the way I come across to people, depending on the impression I wish to give them.","Here are a number of characteristics that may or may not apply to you. Please indicate next to each statement the extent to which that statement is true or false. - When I feel that the image I am portraying isn't working, I can readily change it to something that does.",Here are a number of characteristics that may or may not apply to you. Please indicate next to each statement the extent to which that statement is true or false. - I have trouble changing my behavior to suit different people and different situations.,Here are a number of characteristics that may or may not apply to you. Please indicate next to each statement the extent to which that statement is true or false. - I have found that I can adjust my behavior to meet the requirements of any situation I find myself in.,"Here are a number of characteristics that may or may not apply to you. Please indicate next to each statement the extent to which that statement is true or false. - Even when it might be to my advantage, I have difficulty putting up a good front.","Here are a number of characteristics that may or may not apply to you. Please indicate next to each statement the extent to which that statement is true or false. - Once I know what the situation calls for, it's easy for me to regulate my actions accordingly.",Here are a number of characteristics that may or may not apply to you. Please indicate next to each statement the extent to which that statement is true or false. - I am often able to read people's true emotions correctly through their eyes.,"Here are a number of characteristics that may or may not apply to you. Please indicate next to each statement the extent to which that statement is true or false. - In conversations, I am sensitive to even the slightest change in the facial expression of the person I'm conversing with.",Here are a number of characteristics that may or may not apply to you. Please indicate next to each statement the extent to which that statement is true or false. - My powers of intuition are quite good when it comes to understanding others' emotions and motives.,"Here are a number of characteristics that may or may not apply to you. Please indicate next to each statement the extent to which that statement is true or false. - I can usually tell when others consider a joke to be in bad taste, even though they may laugh convincingly.",Here are a number of characteristics that may or may not apply to you. Please indicate next to each statement the extent to which that statement is true or false. - I can usually tell when I've said something inappropriate by reading it in the listener's eyes.,"Here are a number of characteristics that may or may not apply to you. Please indicate next to each statement the extent to which that statement is true or false. - If someone is lying to me, I usually know it at once from that person's manner of expression.","Please indicate your agreement with each of the following
+statements about yourself. - My beliefs about myself often conflict with one another.","Please indicate your agreement with each of the following
+statements about yourself. - On one day I might have one opinion of myself and on another day I might have a different opinion.","Please indicate your agreement with each of the following
+statements about yourself. - I spend a lot of time wondering about what kind of person I really am.","Please indicate your agreement with each of the following
+statements about yourself. - Sometimes I feel that I am not really the person that I appear to be.","Please indicate your agreement with each of the following
+statements about yourself. - When I think about the kind of person I have been in the past, I'm not sure what I was really like.","Please indicate your agreement with each of the following
+statements about yourself. - I seldom experience conflict between the different aspects of my personality.","Please indicate your agreement with each of the following
+statements about yourself. - Sometimes I think I know other people better than I know myself.","Please indicate your agreement with each of the following
+statements about yourself. - My beliefs about myself seem to change very frequently.","Please indicate your agreement with each of the following
+statements about yourself. - If I were asked to describe my personality, my description might end up being different from one day to another day.","Please indicate your agreement with each of the following
+statements about yourself. - Even if I wanted to, I don't think I would tell someone what I'm really like.","Please indicate your agreement with each of the following
+statements about yourself. - In general, I have a clear sense of who I am and what I am.","Please indicate your agreement with each of the following
+statements about yourself. - It is often hard for me to make up my mind about things because I don't really know what I want.",Here are a number of characteristics that may or may not apply to you. Please indicate next to each statement the extent to which it is true or untrue. - I prefer to work without instructions from others,Here are a number of characteristics that may or may not apply to you. Please indicate next to each statement the extent to which it is true or untrue. - Rules and regulations are helpful and necessary for me,"Here are a number of characteristics that may or may not apply to you. Please indicate next to each statement the extent to which it is true or untrue. - For me, it is very important to carry out the obligations placed on me",Here are a number of characteristics that may or may not apply to you. Please indicate next to each statement the extent to which it is true or untrue. - I generally solve problems creatively,Here are a number of characteristics that may or may not apply to you. Please indicate next to each statement the extent to which it is true or untrue. - I’m not bothered about reviewing or checking things really closely,Here are a number of characteristics that may or may not apply to you. Please indicate next to each statement the extent to which it is true or untrue. - I like to do things in a new way,Here are a number of characteristics that may or may not apply to you. Please indicate next to each statement the extent to which it is true or untrue. - I always try to make my work as accurate and error-free as possible,"Here are a number of characteristics that may or may not apply to you. Please indicate next to each statement the extent to which it is true or untrue. - I like trying out lots of different things, and am often successful in doing so",Here are a number of characteristics that may or may not apply to you. Please indicate next to each statement the extent to which it is true or untrue. - It is important to me that my achievements are recognized and valued by other people,Here are a number of characteristics that may or may not apply to you. Please indicate next to each statement the extent to which it is true or untrue. - I often think about what other people expect of me,"Please indicate your agreement with each of the following
+statements about yourself. - When I am in the car listening to the radio, I often check other stations to see if something better is playing, even if I am relatively satisfied with what I’m listening to.","Please indicate your agreement with each of the following
+statements about yourself. - No matter how satisfied I am with my job, it’s only right for me to be on the lookout for better opportunities.","Please indicate your agreement with each of the following
+statements about yourself. - I often find it difficult to shop for a gift for a friend.","Please indicate your agreement with each of the following
+statements about yourself. - When shopping, I have a hard time finding clothing that I really love.","Please indicate your agreement with each of the following
+statements about yourself. - No matter what I do, I have the highest standards for myself.","Please indicate your agreement with each of the following
+statements about yourself. - I never settle for second best.","Imagine you see a number of cards from a set of cards. Each card in the set has a capital letter on one side and a number on the other. Naturally, only one side is visible in each case.
+
+
+
+For the set of cards, a rule has been stated: If there is an A on the letter side of the card, then there is a 3 on the number side.
+
+
+
+Four cards were drawn. Below is the information visible for each card (letter or number). 
+
+Which of the following card(s) would have to be turned over in order to test the truth or falsity of the rule? - A","Imagine you see a number of cards from a set of cards. Each card in the set has a capital letter on one side and a number on the other. Naturally, only one side is visible in each case.
+
+
+
+For the set of cards, a rule has been stated: If there is an A on the letter side of the card, then there is a 3 on the number side.
+
+
+
+Four cards were drawn. Below is the information visible for each card (letter or number). 
+
+Which of the following card(s) would have to be turned over in order to test the truth or falsity of the rule? - F","Imagine you see a number of cards from a set of cards. Each card in the set has a capital letter on one side and a number on the other. Naturally, only one side is visible in each case.
+
+
+
+For the set of cards, a rule has been stated: If there is an A on the letter side of the card, then there is a 3 on the number side.
+
+
+
+Four cards were drawn. Below is the information visible for each card (letter or number). 
+
+Which of the following card(s) would have to be turned over in order to test the truth or falsity of the rule? - 3","Imagine you see a number of cards from a set of cards. Each card in the set has a capital letter on one side and a number on the other. Naturally, only one side is visible in each case.
+
+
+
+For the set of cards, a rule has been stated: If there is an A on the letter side of the card, then there is a 3 on the number side.
+
+
+
+Four cards were drawn. Below is the information visible for each card (letter or number). 
+
+Which of the following card(s) would have to be turned over in order to test the truth or falsity of the rule? - 7","Suppose you were given $5 and had to split the money between yourself and another (anonymous) person. You and you only would decide how to split the money, the other person would need to accept your offer. 
+
+In this scenario, how much would keep for yourself and how much would you send to the other person?","We are now interested in what you were thinking about while deciding how much of the money to keep for yourself and how much to send to another (anonymous) person.
+
+
+
+Any thought is fine; simply list what it was that you were thinking about while answering the questions.
+
+
+
+Below, please write down the first thought that you had in the first box, the second thought you had in the second box, etc. Please write only one idea per box. You should try to write only the thoughts that you were thinking during the task.
+
+
+
+Please state your thoughts concisely...one phrase is sufficient. Ignore spelling, grammar, and punctuation.
+
+
+
+Please be completely honest and list all of thoughts that you had. Don't worry if you don't fill every space. Just write down whatever thoughts you had while making the decision.
+
+
+
+Please list the thoughts you had when deciding how much of the money to keep for yourself and how much to send to another (anonymous) person: - Thought 1","We are now interested in what you were thinking about while deciding how much of the money to keep for yourself and how much to send to another (anonymous) person.
+
+
+
+Any thought is fine; simply list what it was that you were thinking about while answering the questions.
+
+
+
+Below, please write down the first thought that you had in the first box, the second thought you had in the second box, etc. Please write only one idea per box. You should try to write only the thoughts that you were thinking during the task.
+
+
+
+Please state your thoughts concisely...one phrase is sufficient. Ignore spelling, grammar, and punctuation.
+
+
+
+Please be completely honest and list all of thoughts that you had. Don't worry if you don't fill every space. Just write down whatever thoughts you had while making the decision.
+
+
+
+Please list the thoughts you had when deciding how much of the money to keep for yourself and how much to send to another (anonymous) person: - Thought 2","We are now interested in what you were thinking about while deciding how much of the money to keep for yourself and how much to send to another (anonymous) person.
+
+
+
+Any thought is fine; simply list what it was that you were thinking about while answering the questions.
+
+
+
+Below, please write down the first thought that you had in the first box, the second thought you had in the second box, etc. Please write only one idea per box. You should try to write only the thoughts that you were thinking during the task.
+
+
+
+Please state your thoughts concisely...one phrase is sufficient. Ignore spelling, grammar, and punctuation.
+
+
+
+Please be completely honest and list all of thoughts that you had. Don't worry if you don't fill every space. Just write down whatever thoughts you had while making the decision.
+
+
+
+Please list the thoughts you had when deciding how much of the money to keep for yourself and how much to send to another (anonymous) person: - Thought 3","We are now interested in what you were thinking about while deciding how much of the money to keep for yourself and how much to send to another (anonymous) person.
+
+
+
+Any thought is fine; simply list what it was that you were thinking about while answering the questions.
+
+
+
+Below, please write down the first thought that you had in the first box, the second thought you had in the second box, etc. Please write only one idea per box. You should try to write only the thoughts that you were thinking during the task.
+
+
+
+Please state your thoughts concisely...one phrase is sufficient. Ignore spelling, grammar, and punctuation.
+
+
+
+Please be completely honest and list all of thoughts that you had. Don't worry if you don't fill every space. Just write down whatever thoughts you had while making the decision.
+
+
+
+Please list the thoughts you had when deciding how much of the money to keep for yourself and how much to send to another (anonymous) person: - Thought 4","We are now interested in what you were thinking about while deciding how much of the money to keep for yourself and how much to send to another (anonymous) person.
+
+
+
+Any thought is fine; simply list what it was that you were thinking about while answering the questions.
+
+
+
+Below, please write down the first thought that you had in the first box, the second thought you had in the second box, etc. Please write only one idea per box. You should try to write only the thoughts that you were thinking during the task.
+
+
+
+Please state your thoughts concisely...one phrase is sufficient. Ignore spelling, grammar, and punctuation.
+
+
+
+Please be completely honest and list all of thoughts that you had. Don't worry if you don't fill every space. Just write down whatever thoughts you had while making the decision.
+
+
+
+Please list the thoughts you had when deciding how much of the money to keep for yourself and how much to send to another (anonymous) person: - Thought 5","We are now interested in what you were thinking about while deciding how much of the money to keep for yourself and how much to send to another (anonymous) person.
+
+
+
+Any thought is fine; simply list what it was that you were thinking about while answering the questions.
+
+
+
+Below, please write down the first thought that you had in the first box, the second thought you had in the second box, etc. Please write only one idea per box. You should try to write only the thoughts that you were thinking during the task.
+
+
+
+Please state your thoughts concisely...one phrase is sufficient. Ignore spelling, grammar, and punctuation.
+
+
+
+Please be completely honest and list all of thoughts that you had. Don't worry if you don't fill every space. Just write down whatever thoughts you had while making the decision.
+
+
+
+Please list the thoughts you had when deciding how much of the money to keep for yourself and how much to send to another (anonymous) person: - Thought 6","Please rate your level of disagreement or agreement with the following statement: 
+
+""I would find a game that had a 7/36 chance of winning $9 and a 29/36 chance of winning nothing extremely
+attractive.""","Imagine that highway safety experts have determined that a substantial
+number of people are at risk of dying in a type of automobile fire.
+A requirement that every car have a built-in fire extinguisher (estimated
+cost, $300) would save the 150 people who would otherwise
+die every year in this type of automobile fire. 
+
+Rate the following
+statement about yourself: I would be supportive of this
+requirement.","You have recently graduated from university, obtained a good
+job, and are buying a new car. A newly designed seatbelt has just
+become available that would save the lives of the 500 drivers a year
+who are involved in a type of head-on-collision. (Approximately half of
+these fatalities involve drivers who were not at fault.) The newly designed
+seatbelt is not yet standard on most car models. However, it is available
+as a $500 option for the car model that you are ordering. 
+
+How likely is it
+that you would order your new car with this optional seatbelt?","Please rate your level of disagreement or agreement with the following statement: 
+
+""I would find a game that had a 7/36 chance of winning $9 and a 29/36 chance of losing $0.05 extremely
+attractive.""","Imagine that highway safety experts have determined that a substantial
+number of people are at risk of dying in a type of automobile fire.
+A requirement that every car have a built-in fire extinguisher (estimated
+cost, $300) would save 98% of the 150 people who would otherwise
+die every year in this type of automobile fire. 
+
+Rate the following
+statement about yourself: I would be supportive of this
+requirement.","You have recently graduated from university, obtained a good
+job, and are buying a new car. A newly designed seatbelt has just
+become available that would save the lives of 98% of the 500 drivers a year
+who are involved in a type of head-on-collision. (Approximately half of
+these fatalities involve drivers who were not at fault.) The newly designed
+seatbelt is not yet standard on most car models. However, it is available
+as a $500 option for the car model that you are ordering. 
+
+How likely is it
+that you would order your new car with this optional seatbelt?","Please rate your level of disagreement or agreement with the following statement: 
+
+""I would find a game that had a 7/36 chance of winning $9 and a 29/36 chance of losing $0.25 extremely
+attractive.""","Imagine that highway safety experts have determined that a substantial
+number of people are at risk of dying in a type of automobile fire.
+A requirement that every car have a built-in fire extinguisher (estimated
+cost, $300) would save 95% of the 150 people who would otherwise
+die every year in this type of automobile fire. 
+
+Rate the following
+statement about yourself: I would be supportive of this
+requirement.","You have recently graduated from university, obtained a good
+job, and are buying a new car. A newly designed seatbelt has just
+become available that would save the lives of 95% of the 500 drivers a year
+who are involved in a type of head-on-collision. (Approximately half of
+these fatalities involve drivers who were not at fault.) The newly designed
+seatbelt is not yet standard on most car models. However, it is available
+as a $500 option for the car model that you are ordering. 
+
+How likely is it
+that you would order your new car with this optional seatbelt?","Imagine that when you went to the movies last week, you were
+inadvertently exposed to a rare and fatal virus. 
+
+The possibility of
+actually contracting the disease is 1 in 1,000, but once you have the
+illness there is no known cure. 
+
+On the other hand, you can, readily and
+now, be given an injection that stops the development of the illness.
+
+
+Unfortunately, these injections are only available in very small quantities
+and are sold to the highest bidder. 
+
+What is the highest price you
+would be prepared to pay for such an injection? [You can get a long-term,
+low-interest loan if needed.]:","Imagine that a group of research scientists in the School of Medicine
+are running a laboratory experiment on a vaccine for a rare and fatal
+virus. 
+
+The possibility of actually contracting the disease from the
+vaccine is 1 in 1,000, but once you have the disease there is no known
+cure. 
+
+The scientists are seeking volunteers to test the vaccine on. 
+
+What
+is the lowest amount that you would have to be paid before you would
+take part in this experiment?","Imagine that when you went to the movies last week, you were
+inadvertently exposed to a rare and fatal virus. 
+
+The possibility of
+actually contracting the disease is 4 in 1,000, but once you have the
+illness there is no known cure. 
+
+On the other hand, you can, readily and
+now, be given an injection that reduces the possibility of contracting
+the disease to 3 in 1,000. 
+
+Unfortunately, these injections are only
+available in very small quantities and are sold to the highest bidder.
+
+
+What is the highest price you would be prepared to pay for such an
+injection?","Consider the following hypothetical situation: 
+
+A deck with 10 cards is
+randomly shuffled 10 separate times. The 10 cards are composed of 7
+cards with the number “1” on the down side and 3 cards with the
+number “2” on the down side. 
+
+Each time the 10 cards are reshuffled,
+your task is to predict the number on the down side of the top card.
+
+
+Imagine that you will receive $100 for each downside number you
+correctly predict, and that you want to earn as much money as
+possible. 
+
+What would you predict after ... - shuffle #1","Consider the following hypothetical situation: 
+
+A deck with 10 cards is
+randomly shuffled 10 separate times. The 10 cards are composed of 7
+cards with the number “1” on the down side and 3 cards with the
+number “2” on the down side. 
+
+Each time the 10 cards are reshuffled,
+your task is to predict the number on the down side of the top card.
+
+
+Imagine that you will receive $100 for each downside number you
+correctly predict, and that you want to earn as much money as
+possible. 
+
+What would you predict after ... - shuffle #2","Consider the following hypothetical situation: 
+
+A deck with 10 cards is
+randomly shuffled 10 separate times. The 10 cards are composed of 7
+cards with the number “1” on the down side and 3 cards with the
+number “2” on the down side. 
+
+Each time the 10 cards are reshuffled,
+your task is to predict the number on the down side of the top card.
+
+
+Imagine that you will receive $100 for each downside number you
+correctly predict, and that you want to earn as much money as
+possible. 
+
+What would you predict after ... - shuffle #3","Consider the following hypothetical situation: 
+
+A deck with 10 cards is
+randomly shuffled 10 separate times. The 10 cards are composed of 7
+cards with the number “1” on the down side and 3 cards with the
+number “2” on the down side. 
+
+Each time the 10 cards are reshuffled,
+your task is to predict the number on the down side of the top card.
+
+
+Imagine that you will receive $100 for each downside number you
+correctly predict, and that you want to earn as much money as
+possible. 
+
+What would you predict after ... - shuffle #4","Consider the following hypothetical situation: 
+
+A deck with 10 cards is
+randomly shuffled 10 separate times. The 10 cards are composed of 7
+cards with the number “1” on the down side and 3 cards with the
+number “2” on the down side. 
+
+Each time the 10 cards are reshuffled,
+your task is to predict the number on the down side of the top card.
+
+
+Imagine that you will receive $100 for each downside number you
+correctly predict, and that you want to earn as much money as
+possible. 
+
+What would you predict after ... - shuffle #5","Consider the following hypothetical situation: 
+
+A deck with 10 cards is
+randomly shuffled 10 separate times. The 10 cards are composed of 7
+cards with the number “1” on the down side and 3 cards with the
+number “2” on the down side. 
+
+Each time the 10 cards are reshuffled,
+your task is to predict the number on the down side of the top card.
+
+
+Imagine that you will receive $100 for each downside number you
+correctly predict, and that you want to earn as much money as
+possible. 
+
+What would you predict after ... - shuffle #6","Consider the following hypothetical situation: 
+
+A deck with 10 cards is
+randomly shuffled 10 separate times. The 10 cards are composed of 7
+cards with the number “1” on the down side and 3 cards with the
+number “2” on the down side. 
+
+Each time the 10 cards are reshuffled,
+your task is to predict the number on the down side of the top card.
+
+
+Imagine that you will receive $100 for each downside number you
+correctly predict, and that you want to earn as much money as
+possible. 
+
+What would you predict after ... - shuffle #7","Consider the following hypothetical situation: 
+
+A deck with 10 cards is
+randomly shuffled 10 separate times. The 10 cards are composed of 7
+cards with the number “1” on the down side and 3 cards with the
+number “2” on the down side. 
+
+Each time the 10 cards are reshuffled,
+your task is to predict the number on the down side of the top card.
+
+
+Imagine that you will receive $100 for each downside number you
+correctly predict, and that you want to earn as much money as
+possible. 
+
+What would you predict after ... - shuffle #8","Consider the following hypothetical situation: 
+
+A deck with 10 cards is
+randomly shuffled 10 separate times. The 10 cards are composed of 7
+cards with the number “1” on the down side and 3 cards with the
+number “2” on the down side. 
+
+Each time the 10 cards are reshuffled,
+your task is to predict the number on the down side of the top card.
+
+
+Imagine that you will receive $100 for each downside number you
+correctly predict, and that you want to earn as much money as
+possible. 
+
+What would you predict after ... - shuffle #9","Consider the following hypothetical situation: 
+
+A deck with 10 cards is
+randomly shuffled 10 separate times. The 10 cards are composed of 7
+cards with the number “1” on the down side and 3 cards with the
+number “2” on the down side. 
+
+Each time the 10 cards are reshuffled,
+your task is to predict the number on the down side of the top card.
+
+
+Imagine that you will receive $100 for each downside number you
+correctly predict, and that you want to earn as much money as
+possible. 
+
+What would you predict after ... - shuffle #10","Consider the following situation: 
+
+A die with 4 red faces and 2 green
+faces will be rolled 6 times. 
+
+Before each roll you will be asked to
+predict which color (red or green) will show up once the die is rolled.
+
+Which color is most likely to show up after ... - roll #1","Consider the following situation: 
+
+A die with 4 red faces and 2 green
+faces will be rolled 6 times. 
+
+Before each roll you will be asked to
+predict which color (red or green) will show up once the die is rolled.
+
+Which color is most likely to show up after ... - roll #2","Consider the following situation: 
+
+A die with 4 red faces and 2 green
+faces will be rolled 6 times. 
+
+Before each roll you will be asked to
+predict which color (red or green) will show up once the die is rolled.
+
+Which color is most likely to show up after ... - roll #3","Consider the following situation: 
+
+A die with 4 red faces and 2 green
+faces will be rolled 6 times. 
+
+Before each roll you will be asked to
+predict which color (red or green) will show up once the die is rolled.
+
+Which color is most likely to show up after ... - roll #4","Consider the following situation: 
+
+A die with 4 red faces and 2 green
+faces will be rolled 6 times. 
+
+Before each roll you will be asked to
+predict which color (red or green) will show up once the die is rolled.
+
+Which color is most likely to show up after ... - roll #5","Consider the following situation: 
+
+A die with 4 red faces and 2 green
+faces will be rolled 6 times. 
+
+Before each roll you will be asked to
+predict which color (red or green) will show up once the die is rolled.
+
+Which color is most likely to show up after ... - roll #6","Assume that you are presented with two trays of black and white
+marbles, a large tray that contains 100 marbles and a small tray that
+contains 10 marbles. The marbles are spread in a single layer in each
+tray. 
+
+You must draw out one marble (without peeking, of course) from
+either tray. If you draw a black marble you win $2. 
+
+Consider a
+condition in which the small tray contains 1 black marble and 9 white
+marbles, and the large tray contains 8 black marbles and 92 white
+marbles. From
+which tray would you prefer to select a marble in a real situation?","1 - (PLEASE DO NOT REFRESH THIS PAGE)
+QUESTION [CurrentLoopNumber] OF [TotalLoops]:
+
+ 
+
+Please consider the following product category: [Field-2].
+
+ 
+
+Suppose you are in a grocery store, and you see the following product in that category: [Field-3]. 
+
+ 
+
+The product is priced at: 
+
+ Would you or would you not purchase the product?","2 - (PLEASE DO NOT REFRESH THIS PAGE)
+QUESTION [CurrentLoopNumber] OF [TotalLoops]:
+
+ 
+
+Please consider the following product category: [Field-2].
+
+ 
+
+Suppose you are in a grocery store, and you see the following product in that category: [Field-3]. 
+
+ 
+
+The product is priced at: 
+
+ Would you or would you not purchase the product?","3 - (PLEASE DO NOT REFRESH THIS PAGE)
+QUESTION [CurrentLoopNumber] OF [TotalLoops]:
+
+ 
+
+Please consider the following product category: [Field-2].
+
+ 
+
+Suppose you are in a grocery store, and you see the following product in that category: [Field-3]. 
+
+ 
+
+The product is priced at: 
+
+ Would you or would you not purchase the product?","4 - (PLEASE DO NOT REFRESH THIS PAGE)
+QUESTION [CurrentLoopNumber] OF [TotalLoops]:
+
+ 
+
+Please consider the following product category: [Field-2].
+
+ 
+
+Suppose you are in a grocery store, and you see the following product in that category: [Field-3]. 
+
+ 
+
+The product is priced at: 
+
+ Would you or would you not purchase the product?","5 - (PLEASE DO NOT REFRESH THIS PAGE)
+QUESTION [CurrentLoopNumber] OF [TotalLoops]:
+
+ 
+
+Please consider the following product category: [Field-2].
+
+ 
+
+Suppose you are in a grocery store, and you see the following product in that category: [Field-3]. 
+
+ 
+
+The product is priced at: 
+
+ Would you or would you not purchase the product?","6 - (PLEASE DO NOT REFRESH THIS PAGE)
+QUESTION [CurrentLoopNumber] OF [TotalLoops]:
+
+ 
+
+Please consider the following product category: [Field-2].
+
+ 
+
+Suppose you are in a grocery store, and you see the following product in that category: [Field-3]. 
+
+ 
+
+The product is priced at: 
+
+ Would you or would you not purchase the product?","7 - (PLEASE DO NOT REFRESH THIS PAGE)
+QUESTION [CurrentLoopNumber] OF [TotalLoops]:
+
+ 
+
+Please consider the following product category: [Field-2].
+
+ 
+
+Suppose you are in a grocery store, and you see the following product in that category: [Field-3]. 
+
+ 
+
+The product is priced at: 
+
+ Would you or would you not purchase the product?","8 - (PLEASE DO NOT REFRESH THIS PAGE)
+QUESTION [CurrentLoopNumber] OF [TotalLoops]:
+
+ 
+
+Please consider the following product category: [Field-2].
+
+ 
+
+Suppose you are in a grocery store, and you see the following product in that category: [Field-3]. 
+
+ 
+
+The product is priced at: 
+
+ Would you or would you not purchase the product?","9 - (PLEASE DO NOT REFRESH THIS PAGE)
+QUESTION [CurrentLoopNumber] OF [TotalLoops]:
+
+ 
+
+Please consider the following product category: [Field-2].
+
+ 
+
+Suppose you are in a grocery store, and you see the following product in that category: [Field-3]. 
+
+ 
+
+The product is priced at: 
+
+ Would you or would you not purchase the product?","10 - (PLEASE DO NOT REFRESH THIS PAGE)
+QUESTION [CurrentLoopNumber] OF [TotalLoops]:
+
+ 
+
+Please consider the following product category: [Field-2].
+
+ 
+
+Suppose you are in a grocery store, and you see the following product in that category: [Field-3]. 
+
+ 
+
+The product is priced at: 
+
+ Would you or would you not purchase the product?","11 - (PLEASE DO NOT REFRESH THIS PAGE)
+QUESTION [CurrentLoopNumber] OF [TotalLoops]:
+
+ 
+
+Please consider the following product category: [Field-2].
+
+ 
+
+Suppose you are in a grocery store, and you see the following product in that category: [Field-3]. 
+
+ 
+
+The product is priced at: 
+
+ Would you or would you not purchase the product?","12 - (PLEASE DO NOT REFRESH THIS PAGE)
+QUESTION [CurrentLoopNumber] OF [TotalLoops]:
+
+ 
+
+Please consider the following product category: [Field-2].
+
+ 
+
+Suppose you are in a grocery store, and you see the following product in that category: [Field-3]. 
+
+ 
+
+The product is priced at: 
+
+ Would you or would you not purchase the product?","13 - (PLEASE DO NOT REFRESH THIS PAGE)
+QUESTION [CurrentLoopNumber] OF [TotalLoops]:
+
+ 
+
+Please consider the following product category: [Field-2].
+
+ 
+
+Suppose you are in a grocery store, and you see the following product in that category: [Field-3]. 
+
+ 
+
+The product is priced at: 
+
+ Would you or would you not purchase the product?","14 - (PLEASE DO NOT REFRESH THIS PAGE)
+QUESTION [CurrentLoopNumber] OF [TotalLoops]:
+
+ 
+
+Please consider the following product category: [Field-2].
+
+ 
+
+Suppose you are in a grocery store, and you see the following product in that category: [Field-3]. 
+
+ 
+
+The product is priced at: 
+
+ Would you or would you not purchase the product?","15 - (PLEASE DO NOT REFRESH THIS PAGE)
+QUESTION [CurrentLoopNumber] OF [TotalLoops]:
+
+ 
+
+Please consider the following product category: [Field-2].
+
+ 
+
+Suppose you are in a grocery store, and you see the following product in that category: [Field-3]. 
+
+ 
+
+The product is priced at: 
+
+ Would you or would you not purchase the product?","16 - (PLEASE DO NOT REFRESH THIS PAGE)
+QUESTION [CurrentLoopNumber] OF [TotalLoops]:
+
+ 
+
+Please consider the following product category: [Field-2].
+
+ 
+
+Suppose you are in a grocery store, and you see the following product in that category: [Field-3]. 
+
+ 
+
+The product is priced at: 
+
+ Would you or would you not purchase the product?","17 - (PLEASE DO NOT REFRESH THIS PAGE)
+QUESTION [CurrentLoopNumber] OF [TotalLoops]:
+
+ 
+
+Please consider the following product category: [Field-2].
+
+ 
+
+Suppose you are in a grocery store, and you see the following product in that category: [Field-3]. 
+
+ 
+
+The product is priced at: 
+
+ Would you or would you not purchase the product?","18 - (PLEASE DO NOT REFRESH THIS PAGE)
+QUESTION [CurrentLoopNumber] OF [TotalLoops]:
+
+ 
+
+Please consider the following product category: [Field-2].
+
+ 
+
+Suppose you are in a grocery store, and you see the following product in that category: [Field-3]. 
+
+ 
+
+The product is priced at: 
+
+ Would you or would you not purchase the product?","19 - (PLEASE DO NOT REFRESH THIS PAGE)
+QUESTION [CurrentLoopNumber] OF [TotalLoops]:
+
+ 
+
+Please consider the following product category: [Field-2].
+
+ 
+
+Suppose you are in a grocery store, and you see the following product in that category: [Field-3]. 
+
+ 
+
+The product is priced at: 
+
+ Would you or would you not purchase the product?","20 - (PLEASE DO NOT REFRESH THIS PAGE)
+QUESTION [CurrentLoopNumber] OF [TotalLoops]:
+
+ 
+
+Please consider the following product category: [Field-2].
+
+ 
+
+Suppose you are in a grocery store, and you see the following product in that category: [Field-3]. 
+
+ 
+
+The product is priced at: 
+
+ Would you or would you not purchase the product?","21 - (PLEASE DO NOT REFRESH THIS PAGE)
+QUESTION [CurrentLoopNumber] OF [TotalLoops]:
+
+ 
+
+Please consider the following product category: [Field-2].
+
+ 
+
+Suppose you are in a grocery store, and you see the following product in that category: [Field-3]. 
+
+ 
+
+The product is priced at: 
+
+ Would you or would you not purchase the product?","22 - (PLEASE DO NOT REFRESH THIS PAGE)
+QUESTION [CurrentLoopNumber] OF [TotalLoops]:
+
+ 
+
+Please consider the following product category: [Field-2].
+
+ 
+
+Suppose you are in a grocery store, and you see the following product in that category: [Field-3]. 
+
+ 
+
+The product is priced at: 
+
+ Would you or would you not purchase the product?","23 - (PLEASE DO NOT REFRESH THIS PAGE)
+QUESTION [CurrentLoopNumber] OF [TotalLoops]:
+
+ 
+
+Please consider the following product category: [Field-2].
+
+ 
+
+Suppose you are in a grocery store, and you see the following product in that category: [Field-3]. 
+
+ 
+
+The product is priced at: 
+
+ Would you or would you not purchase the product?","24 - (PLEASE DO NOT REFRESH THIS PAGE)
+QUESTION [CurrentLoopNumber] OF [TotalLoops]:
+
+ 
+
+Please consider the following product category: [Field-2].
+
+ 
+
+Suppose you are in a grocery store, and you see the following product in that category: [Field-3]. 
+
+ 
+
+The product is priced at: 
+
+ Would you or would you not purchase the product?","25 - (PLEASE DO NOT REFRESH THIS PAGE)
+QUESTION [CurrentLoopNumber] OF [TotalLoops]:
+
+ 
+
+Please consider the following product category: [Field-2].
+
+ 
+
+Suppose you are in a grocery store, and you see the following product in that category: [Field-3]. 
+
+ 
+
+The product is priced at: 
+
+ Would you or would you not purchase the product?","26 - (PLEASE DO NOT REFRESH THIS PAGE)
+QUESTION [CurrentLoopNumber] OF [TotalLoops]:
+
+ 
+
+Please consider the following product category: [Field-2].
+
+ 
+
+Suppose you are in a grocery store, and you see the following product in that category: [Field-3]. 
+
+ 
+
+The product is priced at: 
+
+ Would you or would you not purchase the product?","27 - (PLEASE DO NOT REFRESH THIS PAGE)
+QUESTION [CurrentLoopNumber] OF [TotalLoops]:
+
+ 
+
+Please consider the following product category: [Field-2].
+
+ 
+
+Suppose you are in a grocery store, and you see the following product in that category: [Field-3]. 
+
+ 
+
+The product is priced at: 
+
+ Would you or would you not purchase the product?","28 - (PLEASE DO NOT REFRESH THIS PAGE)
+QUESTION [CurrentLoopNumber] OF [TotalLoops]:
+
+ 
+
+Please consider the following product category: [Field-2].
+
+ 
+
+Suppose you are in a grocery store, and you see the following product in that category: [Field-3]. 
+
+ 
+
+The product is priced at: 
+
+ Would you or would you not purchase the product?","29 - (PLEASE DO NOT REFRESH THIS PAGE)
+QUESTION [CurrentLoopNumber] OF [TotalLoops]:
+
+ 
+
+Please consider the following product category: [Field-2].
+
+ 
+
+Suppose you are in a grocery store, and you see the following product in that category: [Field-3]. 
+
+ 
+
+The product is priced at: 
+
+ Would you or would you not purchase the product?","30 - (PLEASE DO NOT REFRESH THIS PAGE)
+QUESTION [CurrentLoopNumber] OF [TotalLoops]:
+
+ 
+
+Please consider the following product category: [Field-2].
+
+ 
+
+Suppose you are in a grocery store, and you see the following product in that category: [Field-3]. 
+
+ 
+
+The product is priced at: 
+
+ Would you or would you not purchase the product?","31 - (PLEASE DO NOT REFRESH THIS PAGE)
+QUESTION [CurrentLoopNumber] OF [TotalLoops]:
+
+ 
+
+Please consider the following product category: [Field-2].
+
+ 
+
+Suppose you are in a grocery store, and you see the following product in that category: [Field-3]. 
+
+ 
+
+The product is priced at: 
+
+ Would you or would you not purchase the product?","32 - (PLEASE DO NOT REFRESH THIS PAGE)
+QUESTION [CurrentLoopNumber] OF [TotalLoops]:
+
+ 
+
+Please consider the following product category: [Field-2].
+
+ 
+
+Suppose you are in a grocery store, and you see the following product in that category: [Field-3]. 
+
+ 
+
+The product is priced at: 
+
+ Would you or would you not purchase the product?","33 - (PLEASE DO NOT REFRESH THIS PAGE)
+QUESTION [CurrentLoopNumber] OF [TotalLoops]:
+
+ 
+
+Please consider the following product category: [Field-2].
+
+ 
+
+Suppose you are in a grocery store, and you see the following product in that category: [Field-3]. 
+
+ 
+
+The product is priced at: 
+
+ Would you or would you not purchase the product?","34 - (PLEASE DO NOT REFRESH THIS PAGE)
+QUESTION [CurrentLoopNumber] OF [TotalLoops]:
+
+ 
+
+Please consider the following product category: [Field-2].
+
+ 
+
+Suppose you are in a grocery store, and you see the following product in that category: [Field-3]. 
+
+ 
+
+The product is priced at: 
+
+ Would you or would you not purchase the product?","35 - (PLEASE DO NOT REFRESH THIS PAGE)
+QUESTION [CurrentLoopNumber] OF [TotalLoops]:
+
+ 
+
+Please consider the following product category: [Field-2].
+
+ 
+
+Suppose you are in a grocery store, and you see the following product in that category: [Field-3]. 
+
+ 
+
+The product is priced at: 
+
+ Would you or would you not purchase the product?","36 - (PLEASE DO NOT REFRESH THIS PAGE)
+QUESTION [CurrentLoopNumber] OF [TotalLoops]:
+
+ 
+
+Please consider the following product category: [Field-2].
+
+ 
+
+Suppose you are in a grocery store, and you see the following product in that category: [Field-3]. 
+
+ 
+
+The product is priced at: 
+
+ Would you or would you not purchase the product?","37 - (PLEASE DO NOT REFRESH THIS PAGE)
+QUESTION [CurrentLoopNumber] OF [TotalLoops]:
+
+ 
+
+Please consider the following product category: [Field-2].
+
+ 
+
+Suppose you are in a grocery store, and you see the following product in that category: [Field-3]. 
+
+ 
+
+The product is priced at: 
+
+ Would you or would you not purchase the product?","38 - (PLEASE DO NOT REFRESH THIS PAGE)
+QUESTION [CurrentLoopNumber] OF [TotalLoops]:
+
+ 
+
+Please consider the following product category: [Field-2].
+
+ 
+
+Suppose you are in a grocery store, and you see the following product in that category: [Field-3]. 
+
+ 
+
+The product is priced at: 
+
+ Would you or would you not purchase the product?","39 - (PLEASE DO NOT REFRESH THIS PAGE)
+QUESTION [CurrentLoopNumber] OF [TotalLoops]:
+
+ 
+
+Please consider the following product category: [Field-2].
+
+ 
+
+Suppose you are in a grocery store, and you see the following product in that category: [Field-3]. 
+
+ 
+
+The product is priced at: 
+
+ Would you or would you not purchase the product?","40 - (PLEASE DO NOT REFRESH THIS PAGE)
+QUESTION [CurrentLoopNumber] OF [TotalLoops]:
+
+ 
+
+Please consider the following product category: [Field-2].
+
+ 
+
+Suppose you are in a grocery store, and you see the following product in that category: [Field-3]. 
+
+ 
+
+The product is priced at: 
+
+ Would you or would you not purchase the product?"
+,"{""ImportId"":""QID238_1""}","{""ImportId"":""QID238_2""}","{""ImportId"":""QID238_3""}","{""ImportId"":""QID238_4""}","{""ImportId"":""QID238_5""}","{""ImportId"":""QID238_6""}","{""ImportId"":""QID238_7""}","{""ImportId"":""QID238_8""}","{""ImportId"":""QID238_9""}","{""ImportId"":""QID238_10""}","{""ImportId"":""QID238_11""}","{""ImportId"":""QID238_12""}","{""ImportId"":""QID238_21""}","{""ImportId"":""QID238_22""}","{""ImportId"":""QID238_23""}","{""ImportId"":""QID31""}","{""ImportId"":""QID32""}","{""ImportId"":""QID33""}","{""ImportId"":""QID34""}","{""ImportId"":""QID126"",""choiceId"":""1""}","{""ImportId"":""QID126"",""choiceId"":""2""}","{""ImportId"":""QID126"",""choiceId"":""3""}","{""ImportId"":""QID126"",""choiceId"":""4""}","{""ImportId"":""QID128"",""choiceId"":""1""}","{""ImportId"":""QID128"",""choiceId"":""2""}","{""ImportId"":""QID128"",""choiceId"":""3""}","{""ImportId"":""QID128"",""choiceId"":""4""}","{""ImportId"":""QID129"",""choiceId"":""1""}","{""ImportId"":""QID129"",""choiceId"":""2""}","{""ImportId"":""QID129"",""choiceId"":""3""}","{""ImportId"":""QID129"",""choiceId"":""4""}","{""ImportId"":""QID130"",""choiceId"":""1""}","{""ImportId"":""QID130"",""choiceId"":""2""}","{""ImportId"":""QID130"",""choiceId"":""3""}","{""ImportId"":""QID130"",""choiceId"":""4""}","{""ImportId"":""QID131"",""choiceId"":""1""}","{""ImportId"":""QID131"",""choiceId"":""2""}","{""ImportId"":""QID131"",""choiceId"":""3""}","{""ImportId"":""QID131"",""choiceId"":""4""}","{""ImportId"":""QID132"",""choiceId"":""1""}","{""ImportId"":""QID132"",""choiceId"":""2""}","{""ImportId"":""QID132"",""choiceId"":""3""}","{""ImportId"":""QID132"",""choiceId"":""4""}","{""ImportId"":""QID133"",""choiceId"":""1""}","{""ImportId"":""QID133"",""choiceId"":""2""}","{""ImportId"":""QID133"",""choiceId"":""3""}","{""ImportId"":""QID133"",""choiceId"":""4""}","{""ImportId"":""QID134"",""choiceId"":""1""}","{""ImportId"":""QID134"",""choiceId"":""2""}","{""ImportId"":""QID134"",""choiceId"":""3""}","{""ImportId"":""QID134"",""choiceId"":""4""}","{""ImportId"":""QID136"",""choiceId"":""1""}","{""ImportId"":""QID136"",""choiceId"":""2""}","{""ImportId"":""QID136"",""choiceId"":""3""}","{""ImportId"":""QID136"",""choiceId"":""4""}","{""ImportId"":""QID137"",""choiceId"":""1""}","{""ImportId"":""QID137"",""choiceId"":""2""}","{""ImportId"":""QID137"",""choiceId"":""3""}","{""ImportId"":""QID137"",""choiceId"":""4""}","{""ImportId"":""QID138"",""choiceId"":""1""}","{""ImportId"":""QID138"",""choiceId"":""2""}","{""ImportId"":""QID138"",""choiceId"":""3""}","{""ImportId"":""QID138"",""choiceId"":""4""}","{""ImportId"":""QID139"",""choiceId"":""1""}","{""ImportId"":""QID139"",""choiceId"":""2""}","{""ImportId"":""QID139"",""choiceId"":""3""}","{""ImportId"":""QID139"",""choiceId"":""4""}","{""ImportId"":""QID140"",""choiceId"":""1""}","{""ImportId"":""QID140"",""choiceId"":""2""}","{""ImportId"":""QID140"",""choiceId"":""3""}","{""ImportId"":""QID140"",""choiceId"":""4""}","{""ImportId"":""QID141"",""choiceId"":""1""}","{""ImportId"":""QID141"",""choiceId"":""2""}","{""ImportId"":""QID141"",""choiceId"":""3""}","{""ImportId"":""QID141"",""choiceId"":""4""}","{""ImportId"":""QID142"",""choiceId"":""1""}","{""ImportId"":""QID142"",""choiceId"":""2""}","{""ImportId"":""QID142"",""choiceId"":""3""}","{""ImportId"":""QID142"",""choiceId"":""4""}","{""ImportId"":""QID143"",""choiceId"":""1""}","{""ImportId"":""QID143"",""choiceId"":""2""}","{""ImportId"":""QID143"",""choiceId"":""3""}","{""ImportId"":""QID143"",""choiceId"":""4""}","{""ImportId"":""QID144"",""choiceId"":""1""}","{""ImportId"":""QID144"",""choiceId"":""2""}","{""ImportId"":""QID144"",""choiceId"":""3""}","{""ImportId"":""QID144"",""choiceId"":""4""}","{""ImportId"":""QID145"",""choiceId"":""1""}","{""ImportId"":""QID145"",""choiceId"":""2""}","{""ImportId"":""QID145"",""choiceId"":""3""}","{""ImportId"":""QID145"",""choiceId"":""4""}","{""ImportId"":""QID146"",""choiceId"":""1""}","{""ImportId"":""QID146"",""choiceId"":""2""}","{""ImportId"":""QID146"",""choiceId"":""3""}","{""ImportId"":""QID146"",""choiceId"":""4""}","{""ImportId"":""QID147"",""choiceId"":""1""}","{""ImportId"":""QID147"",""choiceId"":""2""}","{""ImportId"":""QID147"",""choiceId"":""3""}","{""ImportId"":""QID147"",""choiceId"":""4""}","{""ImportId"":""QID148""}","{""ImportId"":""QID234_1""}","{""ImportId"":""QID234_2""}","{""ImportId"":""QID234_3""}","{""ImportId"":""QID234_4""}","{""ImportId"":""QID234_5""}","{""ImportId"":""QID234_6""}","{""ImportId"":""QID234_7""}","{""ImportId"":""QID234_12""}","{""ImportId"":""QID234_8""}","{""ImportId"":""QID234_9""}","{""ImportId"":""QID234_10""}","{""ImportId"":""QID234_11""}","{""ImportId"":""QID236_1""}","{""ImportId"":""QID236_2""}","{""ImportId"":""QID236_3""}","{""ImportId"":""QID236_4""}","{""ImportId"":""QID236_5""}","{""ImportId"":""QID236_6""}","{""ImportId"":""QID236_7""}","{""ImportId"":""QID236_8""}","{""ImportId"":""QID236_9""}","{""ImportId"":""QID236_10""}","{""ImportId"":""QID236_11""}","{""ImportId"":""QID236_12""}","{""ImportId"":""QID236_13""}","{""ImportId"":""QID237_1""}","{""ImportId"":""QID237_2""}","{""ImportId"":""QID237_3""}","{""ImportId"":""QID237_4""}","{""ImportId"":""QID237_5""}","{""ImportId"":""QID237_6""}","{""ImportId"":""QID237_7""}","{""ImportId"":""QID237_8""}","{""ImportId"":""QID237_9""}","{""ImportId"":""QID237_10""}","{""ImportId"":""QID237_11""}","{""ImportId"":""QID237_12""}","{""ImportId"":""QID28_1""}","{""ImportId"":""QID28_2""}","{""ImportId"":""QID28_3""}","{""ImportId"":""QID28_4""}","{""ImportId"":""QID28_5""}","{""ImportId"":""QID28_6""}","{""ImportId"":""QID28_7""}","{""ImportId"":""QID28_8""}","{""ImportId"":""QID28_9""}","{""ImportId"":""QID28_10""}","{""ImportId"":""QID239_1""}","{""ImportId"":""QID239_2""}","{""ImportId"":""QID239_3""}","{""ImportId"":""QID239_4""}","{""ImportId"":""QID239_5""}","{""ImportId"":""QID239_6""}","{""ImportId"":""QID221"",""choiceId"":""1""}","{""ImportId"":""QID221"",""choiceId"":""2""}","{""ImportId"":""QID221"",""choiceId"":""3""}","{""ImportId"":""QID221"",""choiceId"":""4""}","{""ImportId"":""QID231""}","{""ImportId"":""QID275_1""}","{""ImportId"":""QID275_2""}","{""ImportId"":""QID275_3""}","{""ImportId"":""QID275_4""}","{""ImportId"":""QID275_5""}","{""ImportId"":""QID275_6""}","{""ImportId"":""QID171""}","{""ImportId"":""QID174""}","{""ImportId"":""QID177""}","{""ImportId"":""QID172""}","{""ImportId"":""QID175""}","{""ImportId"":""QID178""}","{""ImportId"":""QID173""}","{""ImportId"":""QID176""}","{""ImportId"":""QID179""}","{""ImportId"":""QID189""}","{""ImportId"":""QID190""}","{""ImportId"":""QID191""}","{""ImportId"":""QID198_1""}","{""ImportId"":""QID198_2""}","{""ImportId"":""QID198_3""}","{""ImportId"":""QID198_4""}","{""ImportId"":""QID198_5""}","{""ImportId"":""QID198_6""}","{""ImportId"":""QID198_7""}","{""ImportId"":""QID198_8""}","{""ImportId"":""QID198_9""}","{""ImportId"":""QID198_10""}","{""ImportId"":""QID203_1""}","{""ImportId"":""QID203_2""}","{""ImportId"":""QID203_3""}","{""ImportId"":""QID203_4""}","{""ImportId"":""QID203_5""}","{""ImportId"":""QID203_6""}","{""ImportId"":""QID196""}","{""ImportId"":""1_QID9""}","{""ImportId"":""2_QID9""}","{""ImportId"":""3_QID9""}","{""ImportId"":""4_QID9""}","{""ImportId"":""5_QID9""}","{""ImportId"":""6_QID9""}","{""ImportId"":""7_QID9""}","{""ImportId"":""8_QID9""}","{""ImportId"":""9_QID9""}","{""ImportId"":""10_QID9""}","{""ImportId"":""11_QID9""}","{""ImportId"":""12_QID9""}","{""ImportId"":""13_QID9""}","{""ImportId"":""14_QID9""}","{""ImportId"":""15_QID9""}","{""ImportId"":""16_QID9""}","{""ImportId"":""17_QID9""}","{""ImportId"":""18_QID9""}","{""ImportId"":""19_QID9""}","{""ImportId"":""20_QID9""}","{""ImportId"":""21_QID9""}","{""ImportId"":""22_QID9""}","{""ImportId"":""23_QID9""}","{""ImportId"":""24_QID9""}","{""ImportId"":""25_QID9""}","{""ImportId"":""26_QID9""}","{""ImportId"":""27_QID9""}","{""ImportId"":""28_QID9""}","{""ImportId"":""29_QID9""}","{""ImportId"":""30_QID9""}","{""ImportId"":""31_QID9""}","{""ImportId"":""32_QID9""}","{""ImportId"":""33_QID9""}","{""ImportId"":""34_QID9""}","{""ImportId"":""35_QID9""}","{""ImportId"":""36_QID9""}","{""ImportId"":""37_QID9""}","{""ImportId"":""38_QID9""}","{""ImportId"":""39_QID9""}","{""ImportId"":""40_QID9""}"
+uo96e,4,4,4,4,2,4,4,4,4,3,4,4,4,4,4,2,2,4,5,1,,,,1,,,,,1,,,1,,,,1,1,,,1,,,,1,,,,1,,,,1,,,,,1,,,,1,,,1,,,,1,,,,1,,,,,1,,,1,,,,,1,,,1,,,,,1,,,1,,,,2,2,4,3,3,3,2,3,2,4,4,4,4,5,5,5,2,5,2,5,5,5,5,5,5,5,2,2,1,2,1,5,1,1,2,2,4,3,2,6,6,6,5,6,6,6,5,5,2,4,4,2,2,2,1,,1,,5,i want to maximize my profits,i need them to accep the offer,they would probably accept a dollar,"something is better than nothing, and I dont think they would decline even a small offer","if i were in their shoes, I would accept a dollar",,4,4,5,,,,,,,5,,,1,1,1,1,1,1,1,1,1,1,,,,,,,1,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2,1,2,2,2,2,2,2,2,1,2,2,2,1,1,1,1,1,2,1
+bm5ba,4,3,4,4,3,4,5,4,3,5,5,4,5,4,5,8,3,2,3,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,1,,,,1,,,,,,,1,1,,,,1,,,,1,,,,1,,,,1,,,,2,3,4,3,3,3,2,2,2,1,3,1,1,5,5,4,1,5,2,5,5,10,5,5,10,10,1,1,3,3,3,4,1,1,1,2,4,2,7,6,7,6,3,5,7,6,5,5,1,3,2,3,5,4,1,,1,,4,Is there a 50/50 choice,The other person has to accept my offer,3 to 2 split seemed fair,,,,,,,,,,2,5,5,,,3,1,2,1,2,1,2,1,2,1,2,,,,,,,1,1,2,2,1,2,1,1,1,2,1,2,2,2,1,2,1,1,1,1,2,1,1,1,1,1,1,2,1,2,1,2,1,2,1,1,1,2,1,1,1
+xj2yb,5,3,5,5,2,5,4,1,1,5,4,5,5,2,5,3,1,3,5,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,2,1,4,1,2,4,4,4,4,4,5,5,5,2,2,2,5,2,4,3,1,1,1,3,2,2,3,1,1,1,1,5,1,1,1,5,4,1,3,7,7,5,7,3,7,3,2,2,3,4,5,5,4,3,1,,,,6,I need the money,I don't care about some anonymous person,,,,,,,,5,1,1,,,,2,,,1,1,1,1,1,1,1,1,1,1,,,,,,,1,2,2,2,2,1,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,1,2,1,2,2
+lwvjc,5,5,5,5,1,5,3,3,3,3,4,5,5,4,5,6,1,3,4,1,,,,,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,1,,,,1,,,,1,,,,1,,,,2,3,4,3,3,4,4,4,4,1,1,1,1,4,5,4,2,5,2,5,4,2,4,5,5,5,1,4,1,1,1,5,1,1,5,3,5,1,6,6,7,6,5,4,7,2,2,6,2,1,2,3,4,4,1,1,1,1,4,I wish they had a $2.50 option,I wonder if it's a real person,What if it really is a real person,,,,,,,3,5,5,,,,,,1,,,,,,,,,,,1,1,1,2,1,2,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,1,2,2,2,1,1,1,2,2,1,2,2,2,2,1,2
+bbrrv,4,3,4,2,2,4,5,4,4,4,5,4,5,2,4,8,4,1,3,1,,,,1,,,,,1,,,,1,,,1,,,,1,,,,1,,,,,1,,,1,,,,,1,,,,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,2,4,2,2,4,2,2,4,4,1,2,2,2,5,4,5,2,5,3,5,4,5,5,4,4,3,2,4,5,4,2,2,1,2,3,5,4,2,5,6,5,5,3,5,5,4,3,3,4,5,2,2,3,1,1,,,,4,Can't send half.,Can do 3.,I picked 3 because I get to decide.,,,,3,1,1,,,,,,,,,2,,,,,,,,,,,1,1,1,2,2,2,2,2,2,2,1,1,2,1,2,1,2,2,2,1,2,1,2,2,2,2,2,2,1,2,1,2,2,2,2,2,1,2,2,2,2,1,1,2,1,2,1
+3wglb,4,3,5,3,5,4,5,5,5,3,4,5,5,3,4,6,1,1,1,1,,,,,1,,,1,,,,,1,,,,1,,,1,1,,,,1,,,,1,,,1,,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,1,,,,1,,,,1,,,,,1,,,1,1,1,1,1,1,1,1,1,1,2,1,2,5,5,5,2,10,1,10,10,5,5,5,5,4,1,2,2,1,1,2,1,1,1,2,5,3,4,4,5,3,3,3,7,4,3,5,3,2,5,5,5,2,1,,1,,4,I want to be fair,There isn’t an option to be completely fairr,I’ll be as fair as possible ,,,,,,,1,5,6,,,,2,,,1,2,1,2,1,2,1,2,1,2,,,,,,,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,2,2,1,1,2,2,1,1,1,1,2,1,1,2,1,1,1,1,1,2,1,1
+ofe7w,3,2,3,4,2,3,4,4,4,2,2,3,3,1,2,5,3,2,2,1,,,,,1,,,1,,,,1,,,,1,,,,1,,,,,1,,,,1,,,1,,,,,1,,,1,,,,,1,,,1,1,,,1,1,,,,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,2,2,4,3,3,2,2,2,4,3,2,2,3,4,4,4,3,4,3,5,4,5,5,5,5,4,2,3,1,1,2,4,2,1,2,1,5,2,5,3,6,6,6,6,7,5,5,5,4,3,4,4,4,4,1,,1,,4,fairness,being charitable,I want to retain some of the money,,,,4,4,4,,,,,,,,,2,1,1,1,2,2,1,1,2,1,1,,,,,,,1,2,2,2,1,1,1,1,1,1,2,2,2,1,1,2,2,1,1,1,1,2,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,2,1,1,1
+qn6ki,4,3,2,4,2,4,2,4,4,3,3,2,4,2,4,7,3,2,3,,1,,,,1,1,,1,,,,,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,,1,,,1,,,,1,,,,,1,,,,1,,,,1,,,1,,,,1,,,,1,,,,1,,,,1,1,3,3,2,2,2,2,2,2,3,2,2,4,4,5,5,4,5,5,5,4,5,4,4,4,1,1,1,2,1,1,1,1,2,1,1,1,5,3,3,6,5,5,4,6,5,6,2,3,4,4,2,2,1,,1,,4,I wanted to be fair,THere's no even option,I'll tilt it slightly towards myself but I wish I could split this evenly,,,,5,5,6,,,,,,,,,1,1,1,1,1,1,1,1,1,1,1,,,,,,,1,2,2,2,2,1,1,2,2,2,1,2,2,2,2,2,2,2,2,1,2,2,2,2,2,1,1,2,1,1,1,1,2,2,1,2,2,2,1,2,2
+amf2x,5,5,5,5,4,5,4,4,4,5,5,5,5,5,5,4,2,4,4,,1,,,,,1,,,1,,,,,1,,,1,,,,1,,,,1,,,,,1,,,1,,,,,1,,,,1,,,1,,,,,1,,,,1,,,,,1,,1,,,,1,,,1,,,,,1,,,,,,1,1,2,2,1,3,2,3,2,2,4,4,3,4,2,3,3,5,4,5,3,4,4,4,5,4,5,2,2,1,2,2,4,2,2,1,2,4,2,6,3,7,3,2,1,7,2,3,6,4,5,5,4,4,4,,,1,,4,BILLS,GROCERIES,FAMILY,GAS,EXTRAS,NEEDS,,,,,,,4,5,6,4,,,,,,,,,,,,,1,2,2,1,1,1,1,2,1,2,2,2,1,2,2,2,2,2,2,2,1,1,2,1,1,1,2,1,2,1,1,2,1,2,2,1,2,2,2,2,1,1,1,2,2,1,1
+ztc36,5,4,5,4,1,5,5,3,1,4,5,5,5,4,5,6,3,2,2,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,2,4,4,4,5,3,2,3,4,3,2,2,2,3,4,3,4,5,4,4,5,2,10,10,10,5,1,1,1,1,1,4,1,1,1,1,5,1,6,7,7,7,1,6,7,7,6,7,3,3,1,1,5,4,1,,1,,4,I wanted to be fair,I wanted to try to equal,I thought about my needs,,,,5,5,5,,,,,,,3,,,2,2,2,1,1,1,1,1,1,1,,,,,,,1,1,1,1,1,1,1,2,1,2,1,1,2,2,1,1,2,1,2,1,2,2,1,1,2,1,1,2,2,1,1,1,2,2,1,1,1,1,1,2,1
+kms82,3,3,2,3,2,4,4,2,2,4,4,2,2,2,3,5,3,4,3,,1,1,,,1,1,1,,1,1,,,1,1,,,,1,1,,,1,1,,1,1,,1,1,1,,,,,1,,1,,,,1,1,,1,1,1,,1,1,1,1,,1,1,,,1,1,1,,1,1,,1,1,1,1,1,1,,,,1,1,1,,1,1,1,1,5,5,4,5,4,5,4,3,2,4,4,3,3,3,2,5,2,4,3,3,4,3,5,5,5,5,5,4,5,4,1,5,4,3,4,3,4,4,4,6,5,2,4,6,3,2,5,4,3,5,5,2,2,1,,1,,4,How much I need the $$,How much I think they need the $$,"Why isntt there a way to split it evenly?, is the 1s thing I thought",,,,,,,2,4,6,,,,,10,,2,1,2,2,1,1,1,1,2,1,,,,,,,2,2,2,2,2,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,2,1,2,2,1,2,2,2,1,2,1,1,2,2
+i2m95,5,2,3,4,4,4,5,2,3,5,3,4,4,5,5,8,2,3,4,,1,,,,1,,,,,,1,,,1,,,1,,,,1,,,,1,1,,,1,,,1,,,,1,,,,,,1,,,1,,,,,1,,1,,,,,,,1,1,,,,,1,,,,,,1,,1,,,,,,1,1,1,5,3,4,1,1,1,1,3,5,5,5,4,4,3,2,5,1,5,5,5,10,10,4,5,4,5,1,3,5,4,2,3,4,2,3,2,3,4,5,4,2,4,6,5,5,7,5,3,1,4,1,1,,,1,,6,The other person is MAGA,The other person is a fascist boomer,"I dealt with a Republican yesterday, this is probably a Republican","Everyone is out for themselves, I should be out for myself for a change","If it was the other way around, the other person would keep the entire $5",Don't be a chump,4,2,4,,,,,,,,2,,1,1,1,1,1,1,1,1,1,1,,,,,,,1,2,2,1,2,1,2,2,2,1,2,2,2,2,1,1,2,1,2,2,2,2,2,2,2,1,2,2,2,2,1,1,2,2,1,2,1,2,1,1,2
+v4cye,5,4,4,5,4,5,4,4,3,5,4,5,5,3,5,5,2,2,2,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,,,1,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,2,3,3,4,4,2,1,2,2,1,1,1,1,5,5,4,2,5,2,5,3,2,5,4,5,4,1,3,1,1,2,3,1,1,2,1,5,1,2,6,7,6,1,5,7,5,6,4,2,5,1,1,4,3,,,1,,4,being fair,being helpful,carefulnest,loyailty,being nice to someone,being usefull,1,5,6,,,,,,,4,,,1,1,2,1,2,1,1,1,2,1,,,,,,,2,1,2,2,1,1,2,1,1,1,1,1,2,2,1,2,2,2,2,1,1,2,1,2,2,1,1,2,2,1,1,2,2,2,1,1,1,2,1,1,1
+7o17s,5,5,4,4,4,4,2,5,4,4,5,5,4,4,4,6,2,2,2,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,1,,,,,1,,,1,,,,1,,,,1,,,,1,,,,2,2,4,3,3,4,3,3,2,2,4,4,4,5,5,4,2,4,2,5,3,3,3,4,4,3,2,4,1,1,2,3,1,1,3,2,4,2,6,4,7,5,1,4,6,4,6,4,4,4,1,1,4,4,1,,1,,4,Wanted something for myself,Didn't want to be too greedy,Didn't want to be too generous,Thought other person might need the money,,,1,5,5,,,,,,,,,4,,,,,,,,,,,1,1,1,1,1,1,1,2,2,2,2,2,2,2,1,2,2,2,1,1,1,2,1,1,2,1,2,1,2,2,2,1,2,2,1,2,1,2,2,2,2,1,2,2,2,1,2
+a6adz,5,4,4,5,3,3,2,3,4,4,4,3,5,3,5,4,2,2,4,1,,,,1,,,,1,,,,1,,,,,1,,,1,1,,,,1,,,1,,,,1,,,,1,1,,,,1,1,,1,1,,,1,,,,1,1,,,1,1,,,,1,1,1,,1,,,1,,,,,1,,,,1,1,,2,3,2,4,3,4,4,3,4,4,3,4,3,4,5,3,5,4,4,4,5,5,5,4,4,5,4,3,2,2,3,4,1,1,3,3,4,2,3,6,6,5,5,5,7,5,6,3,2,4,1,1,3,3,1,,,,5,How much is fair to give to others?,It is unconscionable to give nothing to others.,I want to have more than other people.,,,,,,,4,4,3,,,,,,2,1,1,2,1,1,2,2,1,1,1,,,,,,,1,2,2,2,2,2,2,1,2,2,2,1,2,2,2,2,1,1,2,1,2,2,2,1,1,2,1,1,2,2,1,2,2,1,2,1,2,2,1,2,2
+293vr,5,5,5,4,5,5,5,3,1,3,4,5,5,5,5,9,3,1,1,,1,,,,1,,,,,1,,,,1,,,1,,,1,,,,,1,,,,1,1,,,1,,,,,,1,,1,,,,,1,,,1,,,,,1,,,1,,,,,1,,1,,,,1,,,,1,,,,,,,1,1,5,2,1,1,1,1,1,1,1,1,1,1,4,1,1,1,1,4,4,3,3,5,5,5,3,5,5,1,4,4,1,1,1,4,4,4,4,6,6,7,4,7,6,6,6,6,5,5,1,5,5,3,3,,1,,1,3,they,needed,money,more ,groceries,bills,1,5,6,,,,,,,,,2,1,2,2,1,2,2,1,1,2,2,,,,,,,1,2,2,2,2,1,2,2,2,2,2,2,2,2,1,2,2,2,1,2,2,2,2,2,2,2,2,1,2,2,1,2,2,2,2,1,2,2,2,2,2
+y78ay,4,2,4,4,4,4,4,4,3,2,3,4,4,1,2,5,2,3,4,1,,,,,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,2,2,4,4,4,1,1,1,1,1,3,2,3,5,5,4,2,4,2,4,5,5,5,5,5,5,1,1,1,1,3,4,1,1,2,1,4,2,2,6,6,6,5,6,7,6,6,5,2,4,2,2,3,2,1,,1,,4,What prevents me from keeping it all?,If I give the person zero what leverage do they have?,"It's only five bucks, why not split it?",,,,,,,2,4,5,,,,,,3,1,1,1,1,1,1,1,1,1,1,,,,,,,1,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,1,1,2,2,2,2,1,1,2,2,1,1,2,2,2,2,1
+c9e9n,2,4,4,5,3,5,4,4,5,4,4,4,5,2,4,8,3,2,4,1,,,,1,,,,1,,,,1,,,,,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,,1,,,1,,,,1,,,,,1,,,1,5,2,4,5,1,4,1,4,1,2,1,1,2,5,10,2,5,5,10,5,5,10,5,4,10,4,5,4,2,2,1,5,2,2,4,5,2,6,7,5,7,5,7,5,6,7,3,5,1,2,4,5,4,1,,,,6,I was thinking what the other person would choose,I was thinking the choice of the other person,I was thinking about how the other person would feel,,,,,,,2,4,6,,,,,2,,,,,,,,,,,,1,1,2,1,2,1,1,2,1,1,1,2,2,1,2,1,1,2,1,1,1,1,1,2,2,1,2,1,1,1,1,2,2,1,1,1,1,1,1,1,1,2,1,1,2,2,2
+axvvp,5,1,4,5,1,5,4,5,4,5,2,4,2,4,5,10,4,2,1,,1,,,,1,,,1,,,,,1,,,1,,,,1,,,,,1,,,,1,,,1,,,,,1,,,,1,,,1,,,,1,,,,,1,,,1,,,,,1,,,1,,,,1,,,,1,,,,1,,,,2,5,5,5,5,4,4,3,1,1,1,1,1,10,5,4,2,5,2,5,5,5,5,5,5,2,1,1,3,1,1,4,1,1,1,2,4,4,2,6,6,7,3,6,6,6,5,6,4,1,2,5,3,1,1,,1,,4,"the other person won't know the total, so should be happy with 2.",I feel selfish,I need the money,what will the researcher think of me,,,1,4,6,,,,,,,,9,,,,,,,,,,,,1,1,2,2,1,1,2,2,2,1,2,1,1,2,2,2,2,2,2,2,2,2,2,1,1,2,2,2,1,1,2,2,2,2,2,2,1,1,2,1,2,1,1,2,1,2,2
+hetd5,1,1,1,1,3,1,1,5,1,1,1,1,1,5,1,4,1,3,4,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,2,1,1,1,1,3,3,3,1,1,1,1,1,5,5,5,1,5,1,5,5,5,5,5,5,4,1,1,1,1,1,5,1,1,1,1,5,1,5,4,6,6,6,5,6,5,1,1,1,2,3,1,3,2,,,1,,3,fairness,sharing,helping,equality,community,pleasing,2,4,3,,,,,,,1,,,1,1,1,1,1,1,1,1,1,1,,,,,,,1,2,2,2,2,1,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,2,1,2,2,2,1,2,1,1,2,2,2
+9duy2,4.0,2.0,4.0,4.0,3.0,4.0,4.0,4.0,1.0,4.0,4.0,4.0,5.0,2.0,4.0,7.0,3.0,3.0,3.0,1.0,,,,1.0,,,,1.0,,,,1.0,,,,1.0,,,,1.0,,,,1.0,,,,1.0,,,,1.0,,,,1.0,,,,1.0,,,,1.0,,,,1.0,,,,1.0,,,,,1.0,,,1.0,,,,1.0,,,,1.0,,,,1.0,,,,1.0,,,,1.0,3.0,4.0,4.0,4.0,2.0,3.0,4.0,4.0,2.0,4.0,5.0,4.0,5.0,5.0,4.0,2.0,5.0,3.0,5.0,5.0,3.0,4.0,5.0,4.0,4.0,1.0,1.0,1.0,1.0,3.0,5.0,1.0,1.0,1.0,1.0,5.0,1.0,3.0,5.0,5.0,5.0,1.0,5.0,7.0,5.0,6.0,3.0,2.0,4.0,1.0,4.0,4.0,2.0,1.0,,,,4.0,I was thinking,I want to be as clos 50/50,"as possible, however",I wasn't given that option,so 60/40 it is.,,,,,2.0,5.0,5.0,,,,,10.0,,,,,,,,,,,,1.0,1.0,2.0,1.0,1.0,2.0,2.0,2.0,1.0,2.0,2.0,1.0,1.0,2.0,2.0,1.0,2.0,1.0,2.0,1.0,2.0,2.0,2.0,2.0,1.0,2.0,2.0,2.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,2.0,1.0,2.0,1.0,1.0,1.0,1.0,1.0,2.0,2.0,2.0,2.0
+sv357,5,5,4,5,5,4,5,2,4,5,4,4,5,5,4,8,3,2,4,1,,,,1,,,,,1,,,,1,,,1,,,,1,,,,,1,,,1,1,,,1,,,,,1,,,,1,,,1,,,,,1,,,,1,,,1,,,,,1,,,1,,,,1,,,,1,,,,,1,,,1,2,1,1,2,2,4,4,2,1,1,2,1,3,2,2,10,2,4,5,3,3,4,10,5,3,4,5,4,5,2,1,2,4,4,4,2,5,3,6,6,2,6,3,7,3,5,6,2,1,5,4,4,2,1,,,,4,I wanted to be fair,I wondered what I should do,I decided to send them a little more,,,,,,,,,,2,5,5,,3,,,,,,,,,,,,1,1,2,2,1,1,2,2,2,2,2,2,2,1,1,1,2,2,2,2,1,2,2,1,2,2,2,1,2,1,1,2,2,2,1,2,1,1,2,2,2,1,1,1,2,1,2
+arxcr,3.0,2.0,4.0,2.0,2.0,3.0,3.0,3.0,2.0,3.0,3.0,4.0,4.0,3.0,3.0,4.0,2.0,2.0,3.0,1.0,,,,1.0,,,,1.0,,,,1.0,,,,1.0,,,,1.0,,,,1.0,,,,1.0,,,,1.0,,,,1.0,,,,1.0,,,,1.0,,,,1.0,,,,1.0,,,,1.0,,,,1.0,,,,1.0,,,,1.0,,,,1.0,,,,1.0,,,,2.0,2.0,3.0,3.0,3.0,2.0,2.0,2.0,3.0,2.0,2.0,3.0,3.0,3.0,3.0,3.0,4.0,3.0,3.0,3.0,3.0,3.0,4.0,4.0,4.0,3.0,2.0,2.0,3.0,2.0,2.0,4.0,2.0,2.0,2.0,3.0,4.0,2.0,4.0,5.0,6.0,5.0,3.0,4.0,6.0,5.0,4.0,4.0,2.0,3.0,3.0,2.0,4.0,3.0,1.0,,,1.0,6.0,Who is this other person,Why should I give this person money,What choice maximizes my holdings,,,,4.0,3.0,4.0,,,,,,,1.0,,,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,,,,,,,1.0,1.0,2.0,2.0,2.0,2.0,2.0,2.0,1.0,1.0,2.0,2.0,1.0,2.0,2.0,2.0,2.0,1.0,2.0,1.0,1.0,2.0,2.0,1.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,1.0,1.0,1.0,1.0,2.0,1.0,2.0
+0cy1x,2,2,4,1,2,4,1,1,1,2,2,4,4,2,2,5,2,3,4,1,,,,,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,,1,,,2,1,2,1,2,2,2,2,1,1,1,2,1,4,3,2,4,2,4,4,2,2,2,4,2,2,2,1,2,1,2,4,1,1,4,2,5,1,4,5,6,4,7,4,7,5,2,3,1,2,4,4,2,1,1,,1,1,3,I believe in equity,There were an odd amount of dollars to split so I offerred the higher cut to the other person.,,,,,,,,1,5,5,,,,,,2,1,1,1,1,1,1,1,1,1,1,,,,,,,1,1,2,2,2,1,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,1,2,2,2,1,2,1,2,2
+pw1a2,4,2,5,2,1,4,1,1,1,4,1,5,5,4,5,2,1,4,4,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,2,1,1,1,1,1,1,1,3,1,1,1,1,2,2,2,5,2,5,3,5,4,4,4,4,3,1,1,1,1,1,5,1,1,1,1,5,1,2,5,5,7,3,5,5,6,2,2,1,4,1,1,3,2,1,,,1,6,Who are they?,Are they real?,Are they rich?,I could use the $5,,,,,,5,1,5,,,,2,,,,,,,,,,,,,1,1,1,1,1,1,1,2,2,2,2,1,2,2,1,2,2,2,2,2,2,2,1,1,1,2,2,2,1,1,1,2,2,2,1,2,1,1,2,2,2,2,2,2,2,1,1
+bhiml,2,4,2,2,2,2,4,4,4,2,2,1,2,2,2,8,3,1,2,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,2,2,4,2,4,2,2,1,2,1,2,2,2,5,5,5,2,5,2,5,10,5,5,5,10,5,2,1,2,2,2,4,2,1,1,2,4,1,5,3,6,6,2,5,6,6,7,3,2,2,4,2,4,4,,1,,,3,keep less,give more,equal amount,impress others,be curtious,be kind,,,,4,5,6,,,,,,2,1,1,1,1,1,1,1,1,1,1,,,,,,,2,2,2,2,1,2,2,1,2,2,1,2,2,2,1,2,2,1,2,1,1,2,2,2,2,2,1,2,1,2,2,2,2,2,2,1,2,1,2,1,1
+kzigb,4,5,4,4,3,4,5,4,2,3,4,4,2,4,4,4,2,3,4,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,,1,,,1,,,,1,,,,1,,,,1,,,,,,1,,2,2,3,1,2,2,4,3,2,2,4,4,4,4,4,4,3,5,3,4,4,5,3,4,5,4,2,1,1,2,1,4,2,1,1,4,5,1,3,4,6,4,6,3,7,5,5,4,5,3,4,5,3,2,1,1,1,1,3,I am in a good financial position.,This person might need the money more than me.,I do want to have some money though,"I've been broke before, better save for a rainy day",,,,,,,,,2,4,5,,9,,,,,,,,,,,,1,1,2,1,1,2,1,2,2,2,2,2,1,2,2,2,2,2,2,2,2,1,2,1,2,1,1,2,2,1,2,2,2,2,1,2,1,2,2,2,2,1,1,1,1,2,1
+sw55g,4,4,2,4,1,4,4,4,3,3,4,3,3,4,3,6,3,3,4,,1,,,,1,,,1,1,,,,1,,,1,1,,,1,1,,,,1,,,,1,1,,,1,,,,1,,,,1,1,,,,1,,1,1,,,,1,1,,,1,,,,1,1,1,1,1,1,1,1,,,,,1,1,,,1,,,2,4,3,2,3,4,1,1,4,1,3,4,4,10,4,3,4,5,2,5,5,5,4,5,5,4,5,4,3,3,4,2,5,3,3,2,4,4,6,4,6,6,6,5,6,5,2,6,1,2,3,4,4,1,1,,1,,4,How much would an even split be,There is not an option for half to each,I hope I don't look selfish giving myself a little more,Maybe I should have taken the $2,I should have kept $4,"No, I'm not that kind of selfish person",,,,3,5,6,,,,,10,,,,,,,,,,,,1,1,1,1,1,1,2,2,2,2,2,1,2,2,1,1,2,2,1,2,2,2,1,2,1,2,2,2,1,2,2,1,2,2,2,1,1,2,1,2,2,2,2,1,1,2,1
+3uy58,4,4,3,2,2,2,4,4,3,2,2,4,4,2,2,5,2,3,2,1,,,,1,,,,,1,,,,1,,,,1,,,1,,,,,1,,,,1,,,,1,,,1,,,,1,,,,1,,,,,1,,,1,,,,1,,,,,1,,,1,,,,1,,,,,1,,,1,,,,2,1,1,1,1,1,1,1,1,1,1,3,2,4,5,2,3,5,2,5,4,4,3,5,5,5,4,2,4,4,2,1,3,2,1,4,4,2,5,6,7,5,6,5,7,5,2,4,1,3,4,4,4,2,1,,1,,4,My first thought was how to be fair ,I thought there are so many choices to consider,I thought it wrong to take it all,I needed to be fair to myself,i was satisfied with what I chose,I was happy with my decision,,,,4,5,6,,,,,3,,1,1,2,1,1,1,2,1,2,1,,,,,,,2,1,1,1,1,2,1,2,1,1,1,2,1,2,1,2,2,1,1,2,1,1,1,1,1,1,1,2,1,1,1,2,2,2,1,1,1,2,1,1,1
+y2ysu,1,1,3,4,1,2,3,4,1,3,1,2,2,5,1,6,2,2,4,1,,,,,,1,,1,,,,1,,,,1,,,,,1,,,,1,,,,1,,,1,,,,1,,,,,1,,,1,,,,,,1,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,1,,,,1,1,1,1,1,1,1,1,1,2,2,2,2,3,3,1,3,3,3,4,4,3,4,4,5,4,1,1,1,1,1,1,1,1,1,3,5,1,7,2,7,5,1,4,7,5,2,1,2,3,5,3,3,1,,1,,,4,it was fair,what others would do,what i would expect,,,,,,,,,,5,4,4,,6,,,,,,,,,,,,1,1,1,1,1,1,1,2,2,2,2,2,1,2,1,1,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,2,1,2,2,1,2,2,2,2,1,2,1,2,1,2
+x23wu,2,2,4,1,2,2,4,2,1,2,2,4,4,1,2,4,2,2,2,1,,,,,1,,,1,,,,,1,,,1,,,,1,,,,,1,,,,1,,,1,,,,,1,,,1,,,,,1,,,,1,,,,1,,,,,1,,,1,,,,1,,,1,,,,,1,,,,1,,,1,4,3,4,4,2,4,2,2,4,5,4,4,4,5,3,4,10,1,10,4,5,4,10,5,4,1,1,1,1,1,5,1,1,1,2,5,1,3,7,7,6,2,5,7,7,5,2,1,4,4,2,5,4,1,,1,,4,Fair,equal,unbiased,communitarian,advantage,equity,1,4,4,,,,,,,,5,,2,2,1,1,2,1,1,2,1,1,,,,,,,2,2,2,2,1,2,1,1,1,2,2,2,2,1,1,1,2,1,1,2,1,1,2,1,1,2,1,1,2,2,1,1,1,2,1,1,2,1,1,1,2
+906gx,4,3,4,3,4,3,4,3,4,3,3,4,3,3,4,7,3,2,1,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,2,4,3,4,3,3,4,3,4,3,4,3,4,5,4,5,4,5,4,3,5,4,5,4,3,5,4,3,4,3,4,3,4,3,4,3,4,3,3,6,7,5,2,5,4,5,4,5,4,3,4,3,4,4,,,1,,4,The situation of the person,He\She may be in need of it,I don not need to be greedy,My personality,Beside is just $5 no need to cheat,it happens,,,,4,3,4,,,,9,,,2,1,2,1,2,1,2,2,1,1,,,,,,,2,1,2,2,2,2,2,1,1,1,1,2,1,1,2,2,1,1,2,2,1,1,2,1,1,1,1,2,1,2,2,2,2,2,1,1,1,1,2,1,1
+1z7bb,4,2,3,4,1,5,5,2,1,5,4,3,3,2,4,8,3,2,4,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,2,2,2,2,2,5,3,4,2,1,1,1,1,10,4,5,2,4,3,5,10,10,5,10,10,5,1,1,1,2,1,5,1,1,1,1,5,1,4,6,6,5,7,6,7,5,6,4,4,4,5,5,3,2,1,,,,4,What is the fairest amount?,Should I take an extra dollar for myself?,Which amount is most reasonable?  ,,,,1,1,3,,,,,,,,,1,,,,,,,,,,,1,1,1,1,1,1,1,2,2,2,2,2,2,1,2,1,2,2,2,2,1,1,2,2,2,2,1,2,2,1,2,2,2,2,2,1,2,2,2,1,1,1,1,2,1,2,2
+ahyp7,5,3,3,5,4,5,5,5,5,5,3,3,5,5,4,6,2,2,1,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,4,4,4,3,2,1,2,2,2,1,1,1,10,1,1,1,2,4,4,5,5,5,10,10,4,2,2,1,1,1,1,1,1,1,1,5,5,3,7,6,7,7,6,7,7,7,6,5,2,5,2,5,5,1,,1,,5,How much do i actually need right now,Would the other person appreciate getting more,Is it fair to keep more for myself,What if they really need this money,Should i split it evenly,Am i overthinking this,,,,,,,5,5,6,,2,,,,,,,,,,,,1,1,1,1,2,2,2,1,2,1,2,1,2,2,1,2,2,2,1,1,1,2,2,2,1,1,1,1,2,1,1,2,1,2,1,1,1,1,2,2,1,1,1,1,2,1,1
+212kx,5,4,5,4,5,5,5,4,5,4,5,5,5,5,5,3,2,4,5,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,1,,,,1,,,,1,,,,,1,,,,1,,,,1,,,1,,,,1,,,,,1,,,1,,,,2,1,2,1,1,3,3,2,2,2,2,2,2,5,4,4,3,4,3,5,5,5,5,10,10,4,1,1,1,1,4,5,2,1,1,1,5,1,6,6,7,3,3,3,6,7,6,7,1,2,4,4,3,2,1,,,,4,split it even. 50/50,"wow, there is no even choice",I want the better half,I don't want too much,"I take 3, close to 50/50",he should be grateful,,,,5,2,1,,,,,7,,1,1,1,1,1,1,1,1,1,1,,,,,,,1,2,2,1,2,2,2,1,1,1,1,1,1,1,2,2,1,1,1,2,2,2,1,2,2,2,2,2,1,1,1,1,1,2,2,1,2,1,1,2,1
+2bpor,5,4,5,4,4,5,4,4,4,5,5,5,5,4,5,1,1,5,5,,1,,,,,1,,,,,1,,1,,,1,,,,1,,,,,1,,,,1,,,1,,,,,1,1,,,,1,,,1,,,,,,1,,1,,,1,,,,,1,1,,1,,,,1,,,,1,,,,1,,,,2,2,2,2,3,3,2,2,3,2,2,2,2,3,2,2,5,3,5,2,2,3,3,5,5,2,2,2,1,2,2,4,1,2,1,1,4,2,2,7,5,3,3,2,5,2,2,4,2,4,4,5,3,3,1,,1,,4,where's the 2.50/2.50 split,okay whatever just go with 3/2,,,,,,,,1,5,5,,,,,,2,,,,,,,,,,,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2,1,2,2,2,2,2,2,2,1,1,2,2,2,1,2,2,2,2,2
+8fkgi,2,2,4,2,2,3,4,4,3,2,2,3,3,5,2,4,2,4,4,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,2,2,3,2,3,2,2,2,2,2,2,1,2,4,4,4,2,4,2,4,4,4,5,4,4,4,2,2,1,2,2,4,2,2,2,2,4,2,4,5,6,4,6,,7,6,3,2,2,4,4,4,4,4,1,,,1,6,how much money I would receive,it the other person had to accept the offer,I wanted to receive the most possible,,,,2,4,4,,,,,,,,8,,,,,,,,,,,,1,1,1,1,1,1,2,2,2,2,2,2,2,2,1,2,1,2,2,1,2,2,2,1,2,2,2,1,1,1,2,2,2,2,1,2,1,2,2,2,2,1,1,1,1,2,1
+ha6bv,3,2,3,2,2,2,3,2,2,2,2,3,2,2,3,3,2,3,4,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,2,3,4,2,3,4,3,4,4,3,2,2,2,4,3,2,3,5,4,5,2,2,2,5,5,2,2,2,2,1,2,2,1,1,1,1,5,1,2,6,6,6,6,5,6,6,5,5,2,3,2,2,3,2,1,,,,3,unexpected gift,friendship,nice things,good people,smile,God is great,,,,,,,4,4,6,,,2,,,,,,,,,,,1,1,2,1,1,2,2,2,2,2,2,2,2,2,1,1,2,1,2,2,1,2,2,2,2,1,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,1,1,1,1,2,1
+t8dkc,4,2,4,4,3,3,4,5,4,2,3,4,5,3,3,6,2,2,4,1,,,,1,,,,1,,,,,1,,,,1,,,,1,,,1,,,,1,,,,1,,,,1,,,,,1,,,1,,,,1,,,,,1,,,,1,,,,1,,,1,,,,1,,,,1,,,,,1,,,2,2,3,1,3,1,1,1,1,2,3,2,2,5,3,4,2,5,2,5,3,2,3,4,4,3,1,4,4,4,1,4,2,1,2,3,4,2,4,5,6,6,4,5,7,4,4,5,3,4,4,2,3,3,1,,,,3,Has to be a good offer,They can accept it,"They get more, they'll say yes",$2 is better than nothing,,,,,,,,,2,4,3,,9,,,,,,,,,,,,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,2,1,2,2,2,2,2,2,2,2,1,1,1,1,2,1,2,2,2,2,2,2,2,2,2,2,1,1,1,1,2,2
+5puzl,2,1,4,3,2,5,3,2,2,3,2,3,4,1,2,3,1,3,4,1,,,,1,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,,1,,,1,,,,1,,,,,1,,,1,,,,1,1,3,1,1,3,3,2,4,1,1,1,1,4,5,4,2,5,3,5,3,3,3,4,3,3,1,1,1,1,1,5,1,1,1,1,5,1,5,4,7,5,6,7,7,6,5,3,1,4,5,3,5,4,1,,,,4,What's fair?,What's most equitable?,I can't do an exactly even split.,I will take the slight advantage.,I could just keep it all.,"No, I'll split it.",1,5,6,,,,,,,,9,,1,1,1,1,1,1,1,1,1,1,,,,,,,1,1,1,2,1,2,2,1,1,1,2,1,2,2,2,2,2,1,2,1,2,1,1,1,1,2,1,2,2,2,1,1,1,2,1,1,1,1,2,1,1
+y2eke,5,5,5,4,1,4,4,5,3,5,5,5,5,4,5,4,1,3,4,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,,,1,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,2,1,1,1,1,3,3,3,1,1,1,1,1,1,1,1,10,1,10,1,1,1,1,2,2,2,1,1,1,1,1,5,1,1,1,2,5,1,1,7,5,1,1,1,6,1,1,1,1,3,5,1,1,2,1,1,1,1,4,fairness,,,,,,,,,1,5,2,,,,,,1,,,,,,,,,,,1,1,1,1,1,1,1,2,2,2,1,2,2,2,1,2,1,2,1,2,2,1,2,1,1,1,1,1,1,1,1,2,2,2,2,1,2,2,2,2,2,1,1,2,2,2,2
+dy25d,4,4,4,4,3,3,4,4,4,3,3,4,4,3,4,7,3,3,4,1,,,,,1,,,,1,,,,1,,,,1,,,1,,,,1,,,,,1,,,1,,,,,1,,,1,,,,,1,,,1,,,,,1,,,,,1,,,1,,,1,,,,1,,,,,1,,,1,,,,2,3,4,3,2,3,2,2,2,3,2,2,3,4,4,3,3,3,3,4,3,3,3,5,4,4,4,4,4,4,4,2,3,4,4,4,2,3,5,4,4,5,4,4,5,4,5,5,4,3,4,3,3,3,,1,,1,4,fair,greedy,right,bad,spend,,1,5,6,,,,,,,,4,,2,1,1,1,2,1,2,2,1,1,,,,,,,2,2,2,2,2,2,2,2,2,1,2,2,2,2,1,1,1,1,2,2,2,2,2,1,1,1,2,2,2,2,1,2,1,2,1,1,1,2,2,1,1
+qu2by,4,4,1,5,3,4,4,5,5,4,5,2,2,3,5,4,3,3,4,,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,1,,,,1,,,,1,,,,1,,,,2,1,1,2,1,5,5,5,1,1,2,1,2,5,4,4,3,4,3,5,10,10,5,10,10,5,1,1,1,1,1,4,1,1,1,1,5,3,5,6,7,6,2,6,6,5,7,6,2,3,2,2,4,1,,,1,,4,I am in control.,"If there is an uneven split, it should be in my favor.",I didn't want to keep all of it.,,,,2,4,6,,,,,,,,,10,1,1,1,1,1,1,1,1,1,1,,,,,,,1,1,2,1,2,1,1,1,1,2,1,2,2,2,2,1,2,2,2,2,2,2,2,1,2,2,1,2,2,2,2,2,1,2,2,1,1,1,2,2,1
+aht1w,5,3,4,5,2,4,5,5,4,4,3,5,5,3,4,8,3,2,2,,1,,,,,1,,,,,1,,,1,,,,1,,,,1,,,,1,,,,1,,,1,,,,1,,,,1,,,,1,,,,,1,,,,1,,,1,,,,1,,,1,,,,1,,,,,,1,,1,,,,2,3,3,2,2,1,2,3,2,1,1,1,1,4,2,2,2,2,10,2,3,4,2,4,4,4,4,3,5,5,4,1,2,4,3,5,2,4,5,7,6,6,2,5,6,2,4,7,1,2,5,5,3,2,,1,,1,4,the fairness of the results,how the results would make the other user feel,,,,,2,5,6,,,,,,,,2,,1,2,2,2,1,1,2,2,2,1,,,,,,,1,2,1,2,1,2,2,2,2,1,1,1,1,1,1,2,2,1,1,1,1,1,1,2,1,1,1,2,1,1,1,1,2,2,1,1,1,2,1,2,1
+g0rj9,4,5,4,4,5,4,5,4,3,3,4,4,4,4,5,9,4,2,2,1,,,,1,,,,,,1,,,1,,,1,,,,1,,,,,1,,,,1,,,,,,1,,1,,,,1,,,,,1,,1,,,,,1,,,,,1,,,1,,,1,,,,1,,,,1,,,,,,,1,2,4,4,4,4,5,4,5,5,5,5,4,4,5,5,5,3,5,4,5,5,5,5,4,4,4,2,4,4,4,4,4,3,3,5,2,3,4,6,5,6,4,4,4,6,5,6,6,5,4,4,5,5,4,1,,,,4,why do I have to share,ill give half,they don't have half,I'll keep 3,give 2,alright give 2 keep 3,,,,,,,2,5,6,,4,,,,,,,,,,,,1,1,1,2,1,1,1,2,1,2,2,1,1,2,2,2,1,2,1,2,1,2,1,1,1,1,1,1,2,2,1,1,2,2,2,1,1,2,1,2,1,1,1,2,1,2,1
+wz6dl,4,5,4,5,4,5,4,4,5,4,5,4,4,5,5,1,1,2,5,,,,1,,1,1,1,,,1,1,,1,1,1,,1,,,1,,,,,1,,,,,1,1,1,,,,,,1,,,1,1,,,1,,,,1,,,,1,1,,,,1,1,,,1,,,1,1,,1,,,,,,1,1,,,1,1,2,4,5,4,4,2,2,2,1,5,4,5,5,5,4,10,3,10,4,5,4,5,4,5,5,5,4,5,4,5,4,5,3,4,5,4,2,3,2,6,5,6,6,6,7,6,2,1,1,5,4,5,5,5,,,1,,5,If I should take it all,What the person thinks even if I dont care,What the money may mean to the person,If tables turn will they send me any?,,,,,,,,,2,4,1,,,2,,,,,,,,,,,1,1,1,2,1,2,2,2,1,2,1,1,2,1,2,1,1,2,2,2,1,2,2,1,1,1,2,1,1,1,2,1,1,2,1,2,2,2,2,2,1,1,2,1,2,2,1
+c0p1j,1,4,4,5,2,5,4,5,5,5,4,3,3,4,5,3,1,1,5,,1,,,,1,,,,1,,,,,,1,,1,,,1,,,,,1,,,,,1,,,1,,,1,,,,,,1,,1,1,,,,,1,,,,1,,,,1,,,,1,,,1,,,,1,,,,,1,,,,1,,2,4,5,2,3,1,1,1,1,4,1,5,4,4,4,2,5,4,2,4,10,10,10,10,10,10,5,5,5,5,5,1,3,3,4,2,2,4,6,2,7,7,1,6,7,5,1,7,5,5,1,5,1,1,1,,,,4,Be fair,Split as equally as possible,I need money,It is only right to share,,,2,4,1,,,,,,,,,1,,,,,,,,,,,1,1,1,2,2,1,1,2,2,2,2,2,1,2,2,2,1,2,2,2,2,1,2,2,2,2,1,2,2,1,2,2,2,2,2,1,1,2,2,2,1,1,1,2,2,2,1
+twpda,3,2,4,4,1,2,4,2,1,3,3,2,4,2,3,6,2,3,3,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,2,3,3,4,4,3,2,2,3,3,3,3,3,5,5,5,5,5,2,5,5,5,5,5,5,5,1,1,1,1,1,1,1,1,3,1,5,1,4,5,5,6,4,4,6,6,6,4,1,1,1,1,5,5,1,,1,,4,generosity,status,age,,,,1,4,4,,,,,,,4,,,1,1,1,1,1,2,2,2,2,2,,,,,,,2,2,2,2,1,2,2,1,1,2,2,1,1,2,1,2,2,2,1,1,1,1,1,1,1,2,1,2,1,1,1,2,2,2,1,1,1,2,1,1,2
+33a05,4,4,3,4,3,4,3,4,3,5,4,3,3,2,4,6,2,2,2,,1,,,1,,,,,1,,,1,,,,1,,,,1,,,,,1,,,,1,,,,1,,,,1,,,,,1,,,,1,,,1,,,,1,,,,1,,,,,1,,1,,,,1,,,,1,,,,,,,1,1,1,1,3,1,1,1,1,1,1,1,1,1,1,1,1,5,4,3,3,5,5,5,5,5,5,4,4,4,4,4,1,3,4,2,2,2,4,4,4,6,2,6,2,7,5,2,6,2,2,5,3,4,3,1,,1,,4,fair,equal,kind,,,,1,4,1,,,,,,,,10,,1,1,1,1,1,1,1,1,1,1,,,,,,,1,2,2,2,2,2,1,1,1,1,1,1,2,2,2,1,2,1,2,2,1,2,1,2,2,1,2,2,1,1,1,2,2,2,2,1,2,2,1,2,2
+lspv3,5,5,4,3,4,4,4,5,4,3,4,5,4,5,5,5,3,3,4,1,,,,,1,,,1,,,,,1,,,1,,,,1,,,,,1,,,,1,,,1,,,,1,,,,1,,,,1,,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,,1,,,1,,,1,,,1,3,4,4,4,1,2,4,5,2,2,2,4,4,5,4,1,4,3,3,5,5,5,4,5,5,3,4,2,2,2,4,4,3,2,4,4,2,3,5,6,6,2,5,7,6,6,5,2,5,4,5,3,2,1,,1,,4,fairness,wanted to keep it all,how much does the other person need money?,,,,,,,,,,4,5,5,7,,,,,,,,,,,,,1,1,1,1,2,2,2,1,1,2,2,1,1,1,2,2,1,2,1,1,2,1,2,2,2,2,2,2,1,1,2,1,1,1,2,1,1,1,2,2,1,1,1,1,2,2,2
+g89mx,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,6,3,3,3,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,2,3,3,3,3,3,3,3,3,3,3,3,3,4,4,4,4,4,4,4,4,4,4,4,4,4,3,3,3,3,3,3,3,3,3,3,3,3,4,4,4,4,4,4,4,4,4,4,3,3,3,3,3,3,1,,1,,6,hypothetial ,money,splitting money,scenario,annoymous,interesting,,,,3,3,3,,,,1,,,,,,,,,,,,,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+oyp87,5,5,5,5,4,5,5,5,5,5,5,5,5,2,5,5,1,3,3,,,1,,,1,,,,1,,,1,,,,,,,1,,,,1,,1,,,,,,1,,,1,,,1,,,,1,,,,1,,,,,1,,,1,,,,,1,,,,1,,,1,,,,,,1,,1,,,,1,,,1,3,5,4,5,2,2,2,2,4,4,4,4,5,4,2,4,3,5,4,5,5,10,10,10,10,3,3,4,4,4,4,5,2,1,4,2,3,4,5,7,7,7,4,7,7,2,3,4,1,1,4,4,2,,,,,3,needs of other person,better to give,dont be selfish,someone needs it more,It could be someones meal,its fair,2,5,3,,,,,,,2,,,,,,,,,,,,,1,1,1,1,2,2,1,2,2,2,2,1,1,2,1,1,1,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,1,1,1,2,2,2,1,1,1,1,2,1,1
+bc0tc,4.0,3.0,4.0,3.0,3.0,2.0,4.0,3.0,2.0,3.0,4.0,4.0,4.0,3.0,3.0,4.0,2.0,4.0,4.0,1.0,,,,1.0,,,,1.0,,,,1.0,,,,1.0,,,,1.0,,,,1.0,,,,1.0,,,,1.0,,,,,1.0,,,1.0,,,,1.0,,,,1.0,,,,1.0,,,,1.0,,,,1.0,,,,1.0,,,,1.0,,,,,1.0,,,1.0,,,,2.0,3.0,4.0,4.0,4.0,4.0,5.0,5.0,4.0,3.0,3.0,3.0,4.0,4.0,4.0,4.0,3.0,4.0,4.0,4.0,5.0,5.0,5.0,5.0,5.0,4.0,2.0,2.0,1.0,1.0,2.0,4.0,3.0,3.0,2.0,1.0,4.0,3.0,3.0,5.0,5.0,7.0,2.0,5.0,6.0,6.0,6.0,5.0,2.0,2.0,2.0,2.0,4.0,4.0,1.0,,1.0,,4.0,fairness,equality,need,,,,1.0,5.0,5.0,,,,,,,,7.0,,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,,,,,,,1.0,1.0,2.0,2.0,1.0,2.0,2.0,2.0,2.0,1.0,2.0,2.0,2.0,2.0,2.0,2.0,1.0,2.0,2.0,1.0,1.0,2.0,1.0,2.0,2.0,2.0,1.0,2.0,2.0,1.0,2.0,1.0,1.0,2.0,2.0,1.0,2.0,2.0,2.0,1.0,2.0
+89ro6,5,5,5,5,2,5,3,2,2,5,5,5,5,2,5,6,2,1,3,1,,,,1,,,,1,,,,,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,1,,,,,1,,,1,,,,,1,,,1,,,,1,,,,1,,,,1,,,,2,1,1,1,1,1,1,1,1,1,1,1,1,4,4,3,5,3,3,4,2,2,4,3,4,2,1,1,1,1,1,1,1,1,1,1,5,1,4,6,6,5,2,4,6,4,4,5,1,3,1,1,4,3,1,,1,,3,"I wanted to be fair , and since there was no way to divide the money equally, I wanted to give them the most . ",I had the thought that maybe the other person could use the  money more than me and I wanted to help .,I felt it would be very selfish to keep the money for myself,,,,,,,,,,1,5,6,,10,,1,1,1,1,1,1,1,1,1,1,,,,,,,2,1,2,2,1,2,2,2,2,2,1,2,2,2,2,1,2,1,1,2,2,2,2,2,1,1,2,2,1,1,1,2,2,2,2,1,1,1,1,2,2
+kvy1a,4,2,4,4,3,4,4,5,5,3,3,3,3,2,3,6,2,2,4,,1,,,,1,,,,1,,,,,1,,1,,,,1,,,,1,,,,,1,,,1,,,,,,1,,,1,,,,1,,,1,1,,,,1,,,,1,1,,,1,,,1,,,,1,,,,,1,,,1,1,,,1,3,4,3,3,4,3,3,2,4,3,3,3,4,4,4,2,4,3,4,5,10,4,5,5,4,4,4,4,3,2,2,2,2,2,3,4,2,5,5,6,6,3,5,5,6,6,6,5,3,2,2,4,3,1,,1,,4,That if I was lucky to get 5 bucks then I should spread the wealth. ,That if i gave the other person 2/5ths then they would accept it over a lower amount..,That theothe rpersonwould be grateful and accept.,,,,2,5,5,,,,,,,,2,,,,,,,,,,,,1,1,1,1,2,2,2,1,1,1,2,1,1,1,2,2,2,2,1,2,1,2,2,1,2,1,1,2,2,1,1,1,2,2,1,1,1,1,2,2,1,1,2,1,2,2,2
+t6mgm,5,4,3,2,2,5,4,4,3,4,5,3,5,4,5,6,4,2,3,1,,,,,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,,,,1,1,,,,,,1,,1,,,,1,,,,,1,,,1,1,,,1,,,,,1,,,,1,,,1,,,,,,1,,2,4,3,4,4,2,2,2,4,5,5,5,3,5,5,10,10,5,2,3,3,3,5,4,5,5,2,2,4,1,2,2,2,1,3,4,5,2,4,7,7,7,7,5,7,6,7,6,4,3,2,4,4,5,1,,1,,4,Helping the other person,he is a good fellow,showing empathy,brotherly love,sympathizing with the other person,i really dont need so much,,,,2,5,6,,,,,1,,2,2,2,2,2,1,1,1,1,1,,,,,,,1,2,1,2,2,1,2,1,1,1,1,2,2,1,2,1,2,2,2,2,1,1,1,2,1,2,1,2,1,1,1,1,2,1,1,1,1,2,2,1,1
+f76v0,4,4,4,3,3,4,4,4,3,4,4,4,4,4,4,5,2,4,4,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,2,1,1,1,1,1,1,1,1,1,1,1,1,4,4,3,3,4,2,2,3,3,2,3,4,3,1,1,1,1,1,1,1,1,1,1,1,1,5,4,5,5,5,4,5,3,5,4,1,1,2,4,3,3,1,,1,,6,Why share?,,,,,,,,,2,4,2,,,,,4,,,,,,,,,,,,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,1,2,1,2,2,2,2,1,2,2,2,2,2,2,2,1,2,2,1,2,1,2,1,2,2,2,2,2,2,2,1
+wxbai,4,3,4,4,4,4,4,3,2,2,2,4,4,2,3,3,2,3,5,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,1,,,,,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,2,2,4,3,2,3,3,3,4,3,5,5,5,5,5,5,2,5,2,5,3,4,5,5,5,4,1,4,3,2,3,4,2,1,2,2,5,2,3,5,6,5,2,4,6,5,4,3,2,4,2,2,4,4,1,,,,4,paying it forward,karma,if the tables were turned I would hope they would do the same,,,,,,,,,,4,5,5,3,,,1,1,2,1,1,2,1,1,1,2,,,,,,,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2,2
+2vz3n,5,4,5,3,5,5,5,4,3,5,4,5,5,2,5,5,2,3,3,1,,,,1,,,,1,,,,,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,1,,,,1,,,,,1,,,,1,,,,1,,,1,,,,1,,,,1,,,,,1,,,1,1,4,3,4,3,3,4,4,1,1,1,1,2,3,2,5,2,5,3,3,5,4,5,5,4,1,2,2,1,2,4,4,2,1,1,4,1,2,6,7,6,2,5,6,5,4,5,3,3,4,2,5,3,,1,,1,4,Being fair with the amounts that were split so that i didn't get it all.,Trying to give the other person enough so that they would be fine with what I kept. ,"Making sure I kept enough, but that the other person also had spome money in return. ",,,,,,,3,5,4,,,,,,2,1,1,2,1,2,1,1,1,2,1,,,,,,,2,2,1,2,2,2,1,2,1,1,1,1,2,2,1,2,1,1,2,2,1,1,2,1,1,1,1,2,1,1,1,1,2,2,2,1,1,1,1,1,1
+v20pc,3,4,4,3,3,4,2,2,2,2,3,4,4,3,4,5,2,3,4,1,,,,,1,,,1,,,,,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,,1,,,1,,,,,1,,,,1,,,,,,1,,1,,,,1,,,1,,,,,1,,,,1,,,2,2,2,2,2,3,2,3,2,2,2,2,2,4,4,3,3,4,4,3,4,3,3,4,5,4,2,2,2,2,2,4,2,2,2,2,4,2,6,5,6,6,6,4,7,5,4,4,2,2,2,3,3,2,,1,1,,4,equal,fair,right,,,,2,5,4,,,,,,,,10,,,,,,,,,,,,1,1,1,1,1,1,1,1,2,2,2,2,1,2,2,2,1,1,1,2,1,2,2,1,2,2,2,2,1,1,1,1,2,2,1,1,1,2,2,2,1,1,1,1,1,1,1
+0ifq6,5,5,3,5,1,5,1,4,4,5,5,3,3,4,5,6,2,3,4,,1,,,,1,1,1,1,,1,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,,,1,,1,,,,1,,,,,1,,,1,,,,,1,,,1,,,,1,,,,1,,,,1,,,,1,1,1,1,1,4,3,1,3,1,1,1,1,4,4,4,3,4,3,4,1,1,2,1,1,1,1,1,1,1,2,5,1,1,1,1,5,1,6,4,4,1,3,1,5,2,1,1,1,5,5,5,1,1,1,,1,,6,I don't care about anyone else.,I look out for myself only.,$5 is alot of money.,,,,1,1,4,,,,,,,,10,,1,1,1,1,1,1,2,1,1,1,,,,,,,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,1,2,1,2,1,2,2,1,2,2,2,2,1,1,1,2,2
+d8l9i,4,3,2,4,2,4,5,5,4,4,5,3,4,2,4,1,2,3,4,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,2,2,3,1,4,2,2,3,4,4,4,4,2,2,2,2,4,2,2,4,5,4,4,5,5,5,1,1,1,1,1,4,1,1,2,3,4,2,6,4,6,7,5,6,7,6,2,4,4,4,4,2,5,5,1,,1,,3,Nice,Fair,generous,honest,,,,,,2,1,1,,,,,,1,,,,,,,,,,,1,1,1,1,2,2,2,2,2,2,1,2,2,1,2,2,1,1,2,2,2,2,2,1,1,2,2,2,1,1,1,1,2,2,1,1,1,1,2,2,1,1,1,2,1,1,1
+3biuj,4,4,5,5,3,4,3,2,1,3,4,5,5,3,4,4,2,3,4,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,2,5,4,3,4,4,3,4,2,1,1,1,1,5,5,5,3,5,2,5,3,4,4,4,4,5,1,1,1,1,1,5,1,1,1,1,5,1,4,6,7,5,1,4,7,5,3,5,4,4,1,5,5,4,1,,1,,4,What would I think if I was the other person?,How much should I share?,Would I feel comfortable keeping all of it?,I can't give the other person half.,,,,,,2,4,4,,,,,10,,1,1,1,1,1,1,1,2,2,2,,,,,,,1,2,1,2,2,2,2,2,2,2,1,1,2,2,2,2,2,2,2,1,2,1,1,1,2,1,2,2,2,2,1,2,2,2,2,1,1,2,2,2,2
+aev6a,5,4,5,5,4,5,5,4,4,4,4,5,5,4,5,2,2,4,5,,1,,,,,1,,,1,,,1,,,,,1,,,1,,,,,1,,,,1,,,1,,,,,1,,,,,1,,1,,,,,,1,,1,,,,,,1,,1,,,,1,,,,1,,,,1,,,,1,,,,1,1,1,1,1,1,1,1,1,2,1,1,2,5,4,4,3,4,3,4,2,1,2,5,4,2,1,1,1,1,1,5,1,1,1,1,5,1,7,5,7,2,1,1,7,2,1,2,1,4,2,2,1,1,1,,1,,6,i want to choose the fair 2.50/2.50 choice,the researcher does not want to give me the option of an even split,the other person is anonymous so i don't need to be fair,,,,4,5,6,,,,,,,,,1,1,1,1,2,1,1,2,1,1,1,,,,,,,1,2,2,2,1,2,2,1,1,2,2,1,2,2,2,1,2,2,2,1,2,2,2,2,2,2,1,2,2,2,1,1,1,2,1,1,1,1,2,1,1
+lfhm6,4,4,4,5,1,5,5,5,1,5,5,4,4,4,5,6,3,3,3,1,,,,1,,,,1,,,,,1,,,1,,,,1,,,,1,,,,,1,,,1,,,,1,,,,,1,,,1,,,,1,,,,1,,,,,1,,,,1,,,1,,,,1,1,,,,1,,,,1,,,1,2,3,3,2,1,1,1,1,1,1,1,1,4,5,5,1,5,2,5,3,5,4,5,5,3,1,1,1,1,2,4,1,1,1,2,5,1,5,6,7,6,7,5,7,6,5,5,2,4,1,1,4,3,1,,1,,4,fairness,other paty is known or unknown,any consequences,,,,,,,4,5,6,,,,,,3,,,,,,,,,,,1,1,2,2,1,1,1,2,2,2,2,1,2,1,1,1,1,1,2,1,1,2,1,1,2,1,2,2,2,2,2,1,1,2,1,2,1,1,1,2,1,1,1,1,1,1,1
+zgz4t,4,2,3,4,1,4,5,4,2,3,4,4,4,4,3,8,4,3,3,1,1,,,1,,,,1,,,,,1,,,,1,,,1,,,,1,,,,,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,3,4,4,5,1,1,1,2,2,2,2,2,10,10,10,1,10,2,5,5,10,10,10,10,5,4,4,4,4,3,2,2,4,4,3,4,4,3,6,6,6,7,5,7,7,6,7,4,2,2,4,5,4,1,,1,,4,Keeping things even,Because it is not an even number I give slightly more to myself,The reason I thought this way because I'm the decision maker so I get the higher cut lol,But in general I wanted it to be split down the middle if that was my option,It's nice to surprise someone with money,If I wasn't so broke I'd give the whole amount,,,,2,5,6,,,,,,1,,,,,,,,,,,1,1,1,1,2,1,1,2,2,2,2,1,2,2,2,2,2,2,2,2,1,2,2,2,1,1,1,2,2,2,1,1,2,2,2,2,2,1,2,2,2,1,1,2,1,2,2
+u41kq,4,2,2,2,2,4,2,2,1,2,4,2,3,4,4,3,1,3,4,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,1,,,,1,,,,2,4,2,1,1,2,1,4,1,1,1,1,1,10,10,10,1,10,1,5,1,5,5,5,2,5,1,1,1,1,1,5,1,1,1,1,5,2,3,5,7,7,1,5,3,7,1,3,2,1,2,2,4,2,,1,,1,3,wonder if there are even amounts to give and keep,wonder if they need it,split it would be best,,,,1,1,6,,,,,,,2,,,,,,,,,,,,,1,1,1,2,1,2,2,2,2,2,2,2,1,2,1,2,1,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,1,2,2,2,2,1,2,2,2,2
+t4ldc,3,4,2,2,2,4,4,3,3,4,4,3,2,2,4,7,3,2,2,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,2,5,5,5,5,5,4,4,2,3,3,3,3,5,5,5,2,5,3,5,5,5,5,4,4,5,4,4,2,2,4,2,4,2,2,2,4,4,4,5,6,6,2,6,6,6,6,5,2,2,2,2,4,4,1,,1,,4,Fairness,Kind,Generous,,,,,,,,,,3,5,5,,9,,1,1,1,2,1,1,1,2,1,1,,,,,,,2,2,1,2,2,2,2,2,1,1,1,1,2,2,1,2,2,1,1,2,2,1,2,1,2,2,1,1,2,1,1,1,2,2,1,1,1,2,2,2,1
+jex85,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,3,2,2,,1,,,,1,,,,1,,,,1,,,1,,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,1,,,,,1,,,,1,,,,1,,,,1,,,1,,,,1,,,,1,1,,,1,,,,1,2,2,2,2,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,2,2,2,5,5,5,5,5,4,5,5,4,4,4,4,4,4,4,2,,1,,,4,fair,no option to split even,wouldn't stiff them,best option,feels ok,what is right,,,,2,5,6,,,,,,3,,,,,,,,,,,1,1,1,1,1,1,2,1,2,2,2,2,2,2,1,1,2,2,2,2,2,1,2,1,2,2,2,1,1,2,1,2,2,2,1,2,1,2,2,2,2,1,2,2,1,2,2
+tv81i,4,3,4,4,4,3,3,4,4,4,3,4,4,3,4,1,1,4,5,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,2,2,1,2,4,4,3,3,2,1,2,2,5,4,5,1,5,2,5,5,5,5,10,10,5,1,1,2,1,1,2,1,1,1,2,1,1,3,4,5,6,2,4,6,5,6,5,1,2,1,2,3,2,1,,,,4,being fair,not being stupid,looking out a bit for myself.,worry about what other people think.,offering something to other.,,,,,4,5,6,,,,3,,,,,,,,,,,,,1,1,1,1,1,1,1,2,1,2,2,2,2,2,1,2,2,1,2,2,2,2,2,2,2,1,2,1,2,2,2,2,1,2,2,2,1,1,2,2,1,1,1,1,1,2,2
+3d56s,4,5,5,5,5,5,4,4,1,1,5,5,5,1,4,6,2,2,2,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,2,4,5,5,5,1,1,1,1,2,1,1,2,10,5,5,2,5,2,5,4,4,4,5,5,4,1,1,1,1,1,5,1,1,1,1,5,1,2,6,7,,1,6,7,7,6,2,1,4,1,1,5,4,1,,,,4,I wanted to be fair,They should be happy with getting anything,,,,,,,,,,,1,5,6,,10,,1,1,1,1,1,1,1,1,1,1,,,,,,,1,2,2,2,2,2,2,2,1,2,1,2,2,1,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2,1,1,2,2,2,2,1,2,2,2,2,2
+ez9fl,5,4,4,4,1,3,3,4,2,3,3,2,2,3,5,8,4,2,2,1,,,,,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,1,,,,1,,,,1,,,,1,,,1,,,,1,,,,,1,,,1,4,5,5,5,5,5,5,4,4,4,4,5,5,5,4,5,5,2,10,5,5,5,4,2,4,1,1,1,1,2,1,1,1,1,1,1,1,6,5,4,7,3,7,7,7,1,1,2,5,4,4,4,4,,,1,,5,need,necessity,generous,thoughtfulness,selfish,selfishness,,,,2,4,3,,,,,6,,1,2,2,1,1,2,2,1,1,1,,,,,,,1,2,2,2,2,1,2,2,2,2,2,1,2,2,2,2,2,2,1,2,1,2,2,2,2,1,1,2,2,2,2,1,2,2,1,1,1,2,2,1,1
+ltop8,5,3,5,5,3,5,5,3,3,5,4,5,5,2,4,3,2,4,4,,1,,,,1,,,1,,,,1,,,,1,,,,,1,,,,1,,,1,,,,1,,,,,1,,,,,1,,1,,,,1,,,,,1,,,,1,,,,,1,,1,,,,1,,,,,,1,,,1,,,1,2,4,3,3,1,1,2,3,2,3,2,2,4,4,3,3,4,3,3,5,5,5,5,5,10,2,3,3,4,3,3,2,1,3,2,5,2,3,6,6,5,6,6,6,6,5,5,2,3,3,4,4,4,1,,,,5,I want to have more,I don't know this person,I would feel guilty for keeping it all,,,,,,,,,,4,5,5,3,,,1,1,1,1,1,2,1,1,2,1,,,,,,,1,2,1,2,1,2,2,2,1,2,1,2,2,2,1,2,1,1,2,1,1,1,1,1,1,2,1,2,2,2,1,2,2,1,1,1,1,2,1,2,2
+wfreb,3,5,3,5,2,3,2,2,1,3,5,3,3,3,2,3,1,4,5,,1,,,1,,,,,1,,,,1,,,1,,,,,1,,,,1,,,1,,,,1,,,,1,,,,,1,,,1,,,,,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,1,3,3,3,3,1,1,1,1,1,1,1,1,5,5,4,3,5,3,5,10,5,5,5,10,2,2,2,1,2,1,4,1,1,2,1,4,1,4,6,6,4,1,4,7,4,1,6,5,5,2,2,2,2,1,,1,,3,I want to be fair,I want to do right by the other person,I want to do what God would approve of,,,,1,5,1,,,,,,,,10,,,,,,,,,,,,1,1,2,1,1,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,2,1,2,2,2,1,2,1,2,1,2,2,1,2,2,1,2,2
+fz8wa,4,2,5,5,4,4,3,5,4,1,1,5,5,2,4,9,4,3,4,,1,,,1,,,,,1,,,1,1,,,,1,,,1,,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,,1,,2,1,1,1,1,4,1,1,1,1,1,1,1,5,5,5,2,5,2,4,4,4,4,5,4,4,2,5,1,2,2,1,5,2,4,1,4,5,5,3,6,5,2,3,7,7,6,5,1,5,5,5,4,1,1,,,,5,It would be nice to split the money evenly with the other person.,"However, I really need as much money as I can get right now.","Nevertheless, I still wanted to give the person something.","For that reason, I gave that person $1.",They might be glad to get that dollar.,,,,,4,5,4,,,,3,,,,,,,,,,,,,1,1,1,1,1,1,1,2,1,2,2,2,2,1,2,1,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,1,2,1,2,2,2,2
+q31p6,2,2,3,2,3,2,3,3,2,2,2,3,3,1,2,4,2,3,4,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,1,,,,2,2,2,2,2,3,3,3,2,1,2,2,2,5,4,4,2,4,3,5,4,4,4,5,5,5,1,1,2,1,1,5,1,1,1,1,5,1,4,5,6,4,5,4,6,5,4,4,2,2,2,1,4,3,1,,,1,4,what's the least amount i would accept if I was the other person,,,,,,,,,,,,5,5,5,,,2,2,2,1,1,1,2,2,2,1,1,,,,,,,1,2,2,2,2,2,1,2,2,1,1,2,2,1,2,1,2,2,2,1,2,1,1,1,1,1,1,2,1,1,1,2,2,2,1,1,1,1,1,1,1
+8bg18,3,2,3,2,2,4,5,4,3,2,3,4,4,1,3,6,3,3,3,1,,,,1,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,2,4,3,4,3,4,2,2,3,3,3,4,5,5,4,2,4,2,5,5,4,4,4,4,4,3,3,2,2,4,4,1,1,1,1,4,4,4,5,7,5,2,6,6,4,4,5,1,4,4,5,3,1,1,,,,4,What is fair? ,Can I split this evenly?,I should try to split evenly.,I will give as close to fair as possible.,Treat others the way you want to be treated.,,,,,1,5,6,,,,,10,,1,1,1,1,1,1,1,1,1,1,,,,,,,2,2,2,2,1,1,2,2,2,1,1,2,2,1,2,2,2,1,2,2,2,2,2,2,1,1,2,2,2,1,1,1,2,2,2,1,2,1,2,2,2
+o1zc3,4,2,3,3,1,3,5,3,1,2,1,4,4,1,3,5,2,2,4,,1,,,1,,,,,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,2,4,4,4,1,1,1,1,1,1,1,1,3,3,1,3,4,3,5,1,4,2,4,5,4,2,1,1,1,1,1,1,1,1,1,5,2,3,7,7,6,1,5,6,5,4,4,3,4,3,3,3,2,1,,,1,3,being fair ,giving more,helpful,,,,,,,,,,3,4,3,,,2,1,1,2,2,1,1,1,1,2,2,,,,,,,1,1,1,1,1,2,1,2,2,1,1,2,2,2,2,2,1,1,1,2,2,1,2,1,1,1,1,2,2,2,1,1,2,2,1,1,1,1,1,2,1
+nz9w1,4,3,4,2,2,2,4,4,2,2,3,4,4,3,2,6,3,3,3,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,,,1,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,2,4,5,5,5,1,1,1,1,2,2,2,2,5,5,5,3,5,2,5,4,4,5,4,4,5,1,1,1,1,1,1,1,1,1,1,5,1,2,6,6,5,4,5,6,6,6,6,3,5,2,2,4,3,1,,,,4,how much i need to feel comfortable ,should i be generus ,what is fair to give to the other person ,will they appreciate me ,how will i feel if the roles were reserved,"i dont know the other person, so how should i decide",,,,,,,3,3,4,,3,,1,1,1,1,1,1,1,2,2,2,,,,,,,2,2,1,2,2,2,1,1,1,2,2,2,1,1,1,2,2,2,1,2,2,1,1,1,1,2,1,2,2,1,2,1,2,1,2,2,1,1,2,1,1
+bf785,2,1,3,1,1,1,4,4,1,2,1,4,4,1,1,3,2,3,4,1,,,,1,,,,1,,,,,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,2,2,2,2,2,2,2,2,2,1,1,1,1,4,4,3,4,4,5,3,4,4,4,4,4,2,3,2,1,1,1,4,1,1,1,1,4,1,6,3,6,6,2,4,6,6,5,3,1,5,1,2,2,2,1,,1,,4,I wanted to be diplomatic,I wanted to be giving,,,,,5,4,6,,,,,,,,,2,1,1,1,1,1,1,1,1,1,1,,,,,,,1,2,2,2,1,2,2,2,2,2,1,1,2,2,2,2,2,1,2,1,2,2,1,1,1,1,1,2,1,2,1,1,2,2,1,1,1,1,2,1,1
+dw6oq,4,4,4,4,2,4,3,3,3,4,4,4,4,4,4,3,2,4,4,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,1,,,,1,,,,1,,,,,1,,,1,,,,1,,,,,1,,,,1,,,1,,,,1,4,4,3,4,3,2,2,2,2,2,2,2,4,4,4,4,4,3,4,5,5,5,5,5,4,1,1,1,1,1,5,1,1,1,1,5,1,3,6,6,6,2,5,7,6,5,5,2,3,4,2,4,4,1,,1,,3,I want them to accept the offer.,Even if I get a dollar less it is $2 more than I have.,Being more than fair guarantees the offer is accepted.,I think giving $3 is generous.,,,,,,4,4,3,,,,,,2,,,,,,,,,,,1,1,1,1,1,1,1,2,1,1,1,1,1,2,2,2,1,2,2,2,1,2,1,1,1,2,2,1,2,2,1,1,2,2,1,2,1,1,2,1,1,1,2,1,1,2,2
+jqodr,5,5,5,4,3,4,1,3,2,5,5,4,4,2,5,5,2,3,4,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,1,,,,1,,,,1,,,,1,,,,1,3,3,2,3,2,1,2,2,1,1,1,1,4,4,4,2,5,2,4,5,5,4,5,4,5,1,1,3,1,2,3,2,1,2,1,5,1,5,4,6,5,3,4,6,4,3,3,2,5,4,2,4,3,1,,,,5,any amount given deserves thanks,1$ given is 25% charity,my own needs,what will the other person do with the money given,what will I do with my money,what is the origin of this gift,1,1,1,,,,,,,1,,,1,1,1,1,1,1,1,1,1,1,,,,,,,1,2,2,2,1,1,2,2,1,1,2,2,2,2,2,2,1,1,2,2,1,2,1,2,2,1,1,2,1,2,1,1,2,2,1,1,2,2,2,2,1
+stahe,2,2,4,4,4,2,5,5,2,1,2,4,4,5,1,11,5,2,1,,,1,,,,1,,,,,1,,,1,,,,,1,1,,,,,,1,,,,1,,,,,1,,,1,,1,,,,,1,,,,1,,,,,1,,1,,,,,,1,,1,,,,,1,,,,1,,,1,,,,2,3,5,5,5,5,3,5,5,5,5,5,5,5,10,5,2,5,2,5,5,10,5,10,10,5,3,4,5,3,4,2,3,2,4,2,4,2,5,6,7,7,4,6,7,7,4,6,5,4,1,2,4,3,1,,1,,3,what's fair? ,would they accept? ,,,,,,,,,,,5,5,5,2,,,,,,,,,,,,,1,1,1,1,1,1,1,1,1,2,1,1,2,2,2,1,1,1,2,2,2,1,1,1,2,2,1,2,1,2,1,2,1,1,1,1,1,1,2,2,1,1,1,2,1,1,1
+70l1y,4,4,3,5,1,4,5,4,4,5,4,3,3,4,4,5,3,2,2,1,,,,1,,,,1,,,,,1,,,,1,,,,1,,,,1,,,,1,,,1,,,,1,,,,,1,,,1,,,,1,,,,,1,,,1,,,,1,,,,1,,,,1,,,,,1,,,,1,,,1,4,5,5,5,4,5,5,4,3,2,2,2,5,5,4,2,5,2,5,5,10,10,10,5,5,5,5,4,3,2,2,1,5,4,4,4,3,6,5,6,7,7,6,6,7,5,6,5,5,4,3,4,4,1,,1,,6,i need the money,i dont know them,,,,,2,4,3,,,,,,,2,,,1,1,1,1,1,1,1,1,1,1,,,,,,,2,2,2,2,2,2,2,1,2,1,1,2,2,2,1,2,2,2,2,2,1,2,2,1,2,1,2,2,1,2,1,2,2,2,2,1,1,2,2,1,2
+zlfti,4,4,5,3,4,4,5,4,3,5,4,5,5,4,4,6,1,2,4,,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,2,1,2,1,2,1,1,1,1,1,1,1,1,10,10,10,1,10,1,10,4,4,4,5,10,4,1,1,1,1,1,5,1,1,1,1,5,1,4,4,7,5,7,3,7,4,2,5,1,3,2,4,5,4,1,,1,,4,sharing,not being greedy,thinking of others,trying to be fair,,,1,5,4,,,,,,,,,3,,,,,,,,,,,1,2,1,1,1,2,2,2,2,2,1,2,2,1,2,1,2,2,1,1,2,2,1,2,1,1,2,2,2,2,2,1,1,2,1,2,1,2,2,2,2,1,2,1,1,2,1
+o33bd,4,3,2,4,2,5,4,4,4,3,4,2,2,5,4,8,4,2,2,,1,,,,,1,,,,,1,,1,,,,,1,,,1,1,,,,,1,,,1,,1,,,,,1,,,,1,,,1,,,,,,,1,,,1,,,1,,,1,,,,1,,,,1,,,,,,1,,,,,1,1,1,1,1,1,1,1,1,1,1,1,1,1,5,5,5,2,5,2,5,4,4,4,5,5,4,4,3,3,4,4,3,5,2,2,4,3,3,5,5,4,2,7,2,4,5,1,3,4,5,5,4,1,1,1,,,,4,Keep more for myself,Share,,,,,,,,,,,3,3,3,,,2,,,,,,,,,,,1,1,2,1,1,2,2,2,2,2,2,2,2,2,1,2,2,2,2,1,2,1,2,1,2,2,1,1,2,2,1,2,1,2,1,1,1,2,2,2,2,1,1,2,2,1,1
+8ij30,5,4,4,3,2,5,3,4,3,4,3,4,4,2,4,7,3,2,3,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,2,1,2,2,3,2,1,2,2,2,2,2,2,4,4,3,2,3,3,4,3,5,5,5,5,3,2,2,1,3,2,4,4,1,2,2,4,3,3,5,7,7,2,4,6,6,5,3,2,4,4,4,3,3,1,,,,4,Try to be fair,split as evenly as possible,thought about giving it all to the other,,,,,,,5,4,6,,,,,10,,,,,,,,,,,,1,1,2,1,1,2,1,2,2,2,1,1,1,2,2,2,2,2,2,2,1,1,2,1,1,1,2,2,2,2,1,2,2,2,2,2,1,1,2,2,1,1,1,2,2,1,2
+hwot5,5,3,3,5,3,5,3,5,5,5,4,4,5,3,5,6,3,3,3,,1,,,,1,1,1,,1,,,1,,,,,1,,,,,,1,,1,,,,1,,,1,,,,,1,,,,1,,,1,,,,,1,,,,1,,,,1,,,,1,,,1,,,,1,,,,1,,,,,1,,,2,4,3,5,4,1,1,1,1,2,2,2,2,5,4,2,3,5,2,3,4,5,4,10,5,4,3,3,1,5,2,2,4,4,3,3,3,3,2,7,5,1,3,4,6,3,5,3,3,3,5,3,1,3,1,,1,,4,Not trying to be selfish when giving,Thinking about the other persons feelings,It's generous to offer a portion,Not offering may think that you're stingy,Being greedy when it comes to not allocating makes you feel incompetent ,,,,,1,3,3,,,,1,,,1,2,2,2,1,2,1,2,1,1,,,,,,,1,1,2,2,1,1,2,1,1,1,1,2,2,2,2,1,2,2,2,1,1,2,2,2,1,1,1,2,2,1,1,2,2,2,2,2,1,1,2,2,2
+ln91z,4,2,2,2,2,4,4,5,4,2,4,2,2,2,2,8,3,2,4,1,,,,1,,,,,1,1,,1,,,,,1,,,1,,,,,1,,,1,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,2,4,4,2,4,1,1,1,1,1,1,1,2,5,5,5,1,5,1,5,5,5,5,10,10,5,1,1,1,1,1,1,1,1,1,1,5,1,6,5,6,5,1,5,7,5,2,2,4,4,4,5,4,4,1,,,,4,what is fair,no way to split evenly,I can take $1 more,they get $1 less,close to fair,"given the choices, I picked the best one",1,4,5,,,,,,,3,,,,,,,,,,,,,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,1,2,1,2,2,2,2,1,2,2,2,2,2,2,2,1,2,2,2,2,1,2,2,2,2,1,2,2,1,1,1
+uk2vf,4,2,4,4,1,4,5,3,1,4,4,4,4,4,4,3,2,2,2,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,,1,,,,1,,,,,1,,1,,,,1,,,,,1,,,,1,,,1,3,4,2,4,2,1,1,1,4,4,4,2,10,5,5,2,10,2,10,10,10,10,10,10,10,1,2,1,1,1,4,1,1,1,1,5,1,5,5,7,7,2,6,7,6,7,6,4,2,2,3,2,1,1,,1,,4,want to be equal,exactly equal not possible,split almost equal,value myself over anonymous person,keep slightly more for me,,5,5,6,,,,,,,4,,,1,1,1,1,1,1,1,1,1,1,,,,,,,1,2,2,2,1,2,2,1,1,1,1,2,2,2,2,2,2,1,1,1,1,2,2,1,2,1,2,2,2,1,1,2,2,2,2,1,2,2,2,2,2
+njkpj,3,4,4,1,1,3,3,2,1,3,4,4,4,4,3,1,1,5,5,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,1,,,,1,,,,1,,,,1,,,,2,1,1,1,1,1,1,1,1,1,1,1,1,5,5,4,2,5,2,5,3,3,2,4,3,3,1,1,1,1,1,1,1,1,1,1,5,1,4,5,7,7,7,5,6,7,4,1,1,4,1,1,4,1,1,,,,6,Keep the most for myself.,,,,,,1,1,1,,,,,,,1,,,,,,,,,,,,,1,1,1,1,1,1,1,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,2,1,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,2
+l8eqt,2,1,4,2,1,1,4,2,2,2,1,4,4,2,1,5,2,3,3,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,2,4,4,4,5,3,4,4,5,3,2,2,2,10,5,10,2,10,1,5,5,10,5,4,5,4,2,1,1,1,3,4,2,1,1,1,5,2,6,5,7,7,5,6,7,6,3,4,1,1,1,2,5,4,1,,1,,4,Wanted to share,Wanted to keep some,Wanted to be generous,Wondered about the other person,Wondered if I was giving enough,Wondered if I should give it all,1,5,6,,,,,,,5,,,1,1,1,1,1,1,1,1,1,1,,,,,,,1,1,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,2,1,2,2,2,1,1,2,2,1,1,1,1,2,1,1
+qw4hl,5,4,5,4,2,4,4,4,4,4,5,5,5,4,4,3,2,3,4,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,,,1,2,1,1,1,1,1,1,1,1,1,1,1,1,5,4,5,2,5,3,5,4,4,4,5,5,5,2,2,1,2,2,4,2,1,2,2,2,2,3,6,6,5,5,3,6,5,3,2,1,4,5,2,4,4,1,,,,6,I need the money,I do not know the finances of the other person,I have a greedy disposition,,,,,,,,,,1,5,5,,4,,,,,,,,,,,,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,1,2,2,2,2,2,1,1,1,2,2
+56vwl,2,4,5,2,4,4,4,3,2,2,2,4,4,2,4,9,4,2,2,,,1,,,1,1,,,,1,,1,,,,,,1,,,1,1,,,1,1,,,1,1,1,,1,,,,1,1,,,1,1,,,1,,,,,1,,,1,,,1,,,,,1,1,,1,,,,1,,,,1,,,,,,1,,1,5,5,5,5,2,1,1,2,4,4,3,4,5,5,5,2,10,2,5,10,10,10,10,10,5,4,2,4,4,5,2,3,2,4,4,2,4,2,6,6,5,2,5,7,3,3,6,2,4,4,4,4,2,1,,,,4,I want to be fair,I want to get the most while also being fair,I worry that the other person will think I'm greedy or selfish,I don't want the other person to lose faith in people because of me,I would split evenly if I could,I wouldn't want to split evenly but I would if I could,,,,,,,4,5,5,4,,,,,,,,,,,,,1,1,2,1,1,2,1,2,2,2,2,2,1,1,1,2,1,2,2,2,2,2,2,2,2,1,2,2,1,2,1,1,1,2,2,1,1,1,1,2,1,1,1,1,2,2,1
+slp0x,3,3,4,3,2,3,4,3,1,2,2,5,5,3,2,6,2,3,3,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,,,1,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,2,3,4,4,4,1,1,1,1,2,3,3,3,2,4,2,3,4,2,4,4,5,5,5,5,5,1,3,1,2,2,3,2,2,2,2,4,1,2,6,6,6,2,6,6,5,5,5,2,4,1,2,4,4,1,,1,,4,I thought of dividing the money halfway,because there was no the halfway option i decided to take the largest share,,,,,,,,,,,4,4,5,,6,,2,1,1,1,2,1,1,2,1,1,,,,,,,1,2,2,1,2,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,1,2,2,2,1,2,2,2,2,2,1
+7ub3z,4,4,4,5,5,5,4,5,4,3,2,4,4,2,4,3,2,2,4,1,,,,,1,,,1,,,,1,,,,1,,,,1,,,,,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,,1,,,1,,,,1,,,,,1,,,1,,,,1,,,,1,3,5,5,5,4,5,5,5,3,2,2,3,10,10,10,1,10,4,10,5,10,10,5,10,5,4,4,3,3,3,4,1,2,3,4,5,2,4,7,7,7,6,6,7,6,7,5,3,5,3,2,5,4,1,,,,5,Generosity,Free money,Kindness,Benevolent,Would like the same thing too,Surprise,3,5,5,,,,,,,,,2,,,,,,,,,,,1,1,2,2,1,1,1,2,1,1,1,1,2,2,2,2,1,2,2,2,2,2,2,1,1,2,1,2,2,1,1,2,1,2,1,1,1,2,1,2,2,2,1,2,1,2,2
+7hiu4,4,1,5,4,1,4,2,4,2,2,1,4,3,2,4,11,4,1,1,1,,,,1,,,,,1,,,,1,,,1,,,,1,,,,,1,,,,,1,,1,,,,,1,,,,,1,,1,,,,1,,,,,1,,,1,,,,1,,,,,,1,,1,,,,,1,,,,,1,,2,2,1,3,3,1,1,1,1,1,1,1,1,5,5,4,2,5,2,5,4,5,5,5,5,5,5,5,5,5,4,2,5,5,4,5,5,5,2,7,6,6,,2,6,6,1,6,4,1,3,2,3,2,1,,1,,4,money,trust,share,fairness,selfishness,settle,,,,,,,4,5,6,1,,,1,1,1,1,1,1,1,1,1,1,,,,,,,1,2,2,2,2,1,1,2,1,1,2,2,1,2,1,1,2,2,2,2,1,1,2,2,2,2,2,2,1,1,1,1,1,1,2,1,1,2,1,1,2
+7e5rr,4.0,3.0,5.0,2.0,3.0,4.0,3.0,4.0,2.0,5.0,3.0,5.0,5.0,2.0,5.0,6.0,3.0,2.0,3.0,1.0,,,,,1.0,,,1.0,,,,,1.0,,,1.0,,,,1.0,,,,,1.0,,,,1.0,1.0,,1.0,,,,1.0,,,,,1.0,1.0,,1.0,,,,1.0,,,,1.0,,,,,1.0,1.0,,1.0,,,,1.0,,,,1.0,,,,1.0,,,,1.0,,,,2.0,4.0,3.0,2.0,4.0,1.0,1.0,1.0,1.0,1.0,1.0,2.0,1.0,4.0,4.0,2.0,2.0,5.0,2.0,5.0,4.0,5.0,5.0,4.0,5.0,4.0,1.0,4.0,1.0,1.0,1.0,5.0,1.0,1.0,2.0,4.0,5.0,1.0,4.0,5.0,7.0,6.0,6.0,4.0,5.0,4.0,2.0,1.0,2.0,4.0,1.0,1.0,4.0,4.0,1.0,,1.0,,4.0,how much do I want for myself,should I be greedy,should I be fair,,,,3.0,4.0,5.0,,,,,,,4.0,,,,,,,,,,,,,1.0,1.0,1.0,2.0,1.0,2.0,1.0,2.0,1.0,1.0,2.0,1.0,2.0,1.0,2.0,1.0,2.0,1.0,2.0,2.0,1.0,2.0,2.0,2.0,1.0,1.0,1.0,1.0,1.0,2.0,1.0,2.0,2.0,2.0,2.0,1.0,2.0,1.0,2.0,1.0,1.0,1.0,1.0,1.0,1.0,2.0,2.0
+g00ic,4,2,4,4,2,1,4,4,4,2,4,4,5,2,4,5,3,3,4,,1,,,,1,,,1,,,,,1,,,,1,,,1,,,,,1,,,,1,,,1,,,,,1,,,,1,,,1,,,,1,,,,,1,,,,1,,,,1,,,1,,,,1,,,,,1,,,1,,,,2,2,3,4,4,2,2,2,3,2,2,2,3,4,4,3,4,4,4,4,4,4,4,4,4,5,4,5,4,4,3,4,4,5,5,4,2,5,2,5,6,5,2,4,6,5,4,6,2,4,2,2,5,4,1,,1,,3,How do I keep this fair,I wonder if I should take an extra dollar,Its more important to divide somewhat equally,I will take 1 less dollar,,,,,,,,,2,4,4,2,,,,,,,,,,,,,1,1,1,2,1,1,2,2,2,2,2,2,2,1,1,1,1,1,2,2,2,2,2,2,1,1,2,1,2,2,1,1,1,2,2,1,1,1,2,2,2,1,1,2,1,1,1
+kww3y,5,2,5,4,4,5,5,3,2,3,4,5,5,2,4,2,1,4,4,,1,,,,,1,,,,1,,,1,,,1,,,,,,,1,,,1,,,,1,,1,,,,,1,,,,1,,,,1,,,,,1,,,1,,,,1,,,,,1,,,,1,,1,,,,,1,,,1,,,,2,2,5,4,4,3,1,2,4,5,4,5,5,5,5,4,2,4,2,5,4,5,4,5,5,3,2,2,1,2,4,4,3,2,4,1,4,5,3,7,5,4,1,3,7,5,6,6,4,5,4,5,3,1,1,,,,4,if the person would accept the amount I given,if I should give them the higher amount to better my odds,if I i only gave them a small amount would they still accept it,,,,2,3,2,,,,,,,,10,,,,,,,,,,,,1,1,1,2,2,1,1,2,1,1,2,2,2,2,2,2,1,2,2,2,1,2,1,1,2,1,2,1,1,2,2,1,2,2,2,1,1,2,1,2,1,1,2,2,1,1,1
+t3mwb,5,4,5,5,4,5,5,5,5,5,5,5,5,4,5,4,3,3,4,1,,,,,1,,,1,,,,,1,,,1,1,,,1,,,,1,,,,,1,,,,1,,,,1,,,,1,,,,1,,,1,,,,,1,,,1,,,,,1,,,,1,,,,,1,,,1,,,,1,,,1,1,1,2,2,1,1,1,1,1,1,1,1,10,3,3,1,5,2,10,10,10,10,10,5,4,2,4,2,2,1,5,1,1,1,3,5,3,4,7,7,4,7,2,7,2,6,5,5,1,3,1,5,3,1,,,,4,Fairness for both of us.,Generosity in trying to be fair.,Objectivity.,Kindness for another person.,Being acceptable to the other person.,I wanted to be a decent person.,,,,1,4,6,,,,,,5,,,,,,,,,,,1,2,1,1,2,1,2,2,1,2,2,2,2,2,1,1,2,2,2,2,1,2,1,1,2,2,1,1,1,2,1,1,2,2,2,2,1,1,2,1,1,1,1,2,2,2,1
+dtsui,5,3,4,3,1,5,4,2,3,3,3,4,3,2,2,5,3,3,3,,1,,,1,1,,,1,,,,,,1,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,1,,,,1,,,,1,,,,,,1,,,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,2,3,3,4,3,1,1,1,1,3,3,3,4,5,4,4,4,4,3,5,5,4,5,5,5,5,4,2,3,4,1,4,4,1,1,3,1,1,2,6,6,4,6,4,6,6,6,4,4,5,1,1,5,5,1,,,,4,sharing ,equally shared,caring,fair,,,,,,,,,4,2,4,,3,,1,1,2,2,2,2,2,2,2,2,,,,,,,1,1,1,1,2,1,1,1,2,2,1,1,1,1,2,2,1,1,2,1,1,1,1,1,1,2,2,2,1,2,1,1,2,1,1,1,1,2,1,1,1
+rzj8b,4,4,4,2,2,4,3,5,4,3,4,4,4,5,4,4,2,3,4,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,2,1,1,1,1,1,1,1,1,1,1,1,1,4,2,2,4,4,2,4,3,4,5,5,4,3,1,1,1,1,1,3,1,1,1,1,5,2,2,7,6,7,4,2,7,3,5,6,1,1,1,2,5,3,1,,1,,4,desire to share,wanting to keep a bit more for myself,wanting to be more or less fair,,,,3,4,5,,,,,,,3,,,1,1,2,1,1,2,1,1,2,1,,,,,,,1,2,2,2,2,1,2,2,1,1,2,2,1,2,2,2,1,2,2,2,2,2,1,1,2,2,1,2,2,2,1,1,2,2,1,1,1,1,2,1,2
+k7iif,5,2,5,3,1,5,4,4,1,2,4,5,5,4,4,3,2,3,3,1,,,,1,,,,1,1,,,,1,,,1,,,,1,,,,,1,,,1,,,,,1,,,,1,,,1,,,,,1,,,1,,,,1,,,,,1,1,,,1,,,1,,,,1,,,,,1,,,,,1,,1,4,4,3,4,2,3,4,1,1,4,4,4,4,3,3,3,4,3,5,4,4,4,2,4,4,5,4,4,5,4,2,2,2,2,4,4,5,5,5,7,5,5,3,7,5,2,6,2,4,2,5,4,2,1,,1,,4,I wanted to split it equally,I wondered if the other person was someone I know or a stranger,I wondered if they knew about the money,"Since I couldn't split it equally, I decided to keep more for myself",,,,,,,,,4,1,2,2,,,,,,,,,,,,,1,1,2,1,2,1,2,2,2,2,2,2,2,2,1,2,1,1,2,1,1,2,2,2,2,2,2,2,2,1,1,2,2,2,2,2,2,1,2,2,2,1,1,2,2,2,1
+1vec3,5,4,5,4,1,4,4,4,4,3,4,1,4,4,4,7,3,3,5,1,,,,1,,,,,,1,,,1,,,1,,,,,1,,,,1,,,,,1,,1,,,,1,,,,1,,,,1,1,,,,1,,,1,,,,1,,,,,1,,,1,,,,1,,,,,1,,,1,,,,2,1,1,1,1,1,1,1,1,1,3,1,1,2,2,2,2,2,5,2,4,4,5,4,2,5,2,4,1,1,1,3,4,2,1,4,4,4,3,3,5,4,5,3,5,3,4,2,1,3,4,5,2,1,,,1,,4,Equal,giving ,selfless ,sharing ,caring ,helping,,,,,,,3,1,1,,10,,1,2,2,2,1,1,1,2,2,2,,,,,,,2,2,2,2,2,2,2,1,1,2,2,2,1,2,2,2,1,2,2,2,2,2,1,2,2,1,1,2,2,2,1,1,2,2,2,1,2,2,1,2,2
+dg0ss,5,4,5,4,4,5,4,2,2,5,4,5,5,4,5,3,2,4,5,,1,,,,1,,,,1,,,,,1,,1,,,,1,,,,,1,,,1,,,,,,1,,,,1,,,,,1,,,1,,1,,,,,,1,,1,,,,,1,,,1,,,,1,,,,1,,,,,,1,,2,2,2,2,3,4,2,2,3,1,2,2,2,5,4,2,5,3,4,4,1,1,2,4,4,2,2,2,1,2,2,3,1,2,3,2,4,4,7,5,6,5,2,2,6,3,2,2,3,2,5,4,2,1,1,1,1,1,4,be fair,don't short-change yourself,half should be an option,,,,1,4,1,,,,,,,,9,,,,,,,,,,,,1,1,1,1,1,1,1,2,2,2,1,2,1,1,1,1,1,2,2,2,2,2,2,2,1,1,1,2,1,1,2,2,1,2,2,2,2,1,2,2,1,1,2,2,2,2,1
+0di48,4,3,4,4,2,4,5,4,3,4,3,4,4,4,4,9,4,1,1,1,,,,1,,,,1,,,,,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,1,,,,1,,,,1,,,,,1,,,1,,,,,1,,,1,,,,1,,,,1,,,,2,1,1,3,3,1,2,2,2,5,4,4,4,5,5,5,4,5,3,4,4,4,5,5,5,5,1,2,1,1,1,4,3,1,1,3,5,2,4,6,6,5,1,5,6,6,2,2,3,4,3,1,5,4,1,1,,,4,I wanted to be honest ,I wanted to be fair,I wanted to be morally right,,,,,,,,,,4,5,5,10,,,,,,,,,,,,,1,1,2,1,1,1,2,2,2,2,2,2,2,2,2,2,2,1,2,1,2,2,2,1,1,2,2,2,2,1,1,1,2,2,2,2,1,1,2,2,2,1,1,1,2,2,2
+7ge54,5,3,4,4,4,5,3,2,2,2,3,4,4,2,5,5,2,3,4,,1,,,,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,,1,,,1,,,,1,,,,1,,,,1,,,,,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,2,4,4,4,4,3,2,2,2,1,2,2,2,4,4,4,3,4,3,4,5,4,3,5,5,3,1,1,1,1,1,5,1,1,1,2,4,1,6,6,6,5,5,5,3,3,3,3,4,5,2,3,2,2,1,,,,4,They would probably screw me over,I will be nice,"I would prefer an equal split, but it isn't an option",I should be greedy,,,,,,,,,4,5,3,3,,,1,1,1,2,1,1,1,1,1,1,,,,,,,2,2,2,2,2,2,2,1,1,1,1,2,1,2,2,2,2,1,2,2,2,2,1,2,1,1,1,2,2,2,1,1,2,2,1,1,1,2,1,2,2
+mxuqf,4,4,4,4,4,5,4,5,5,4,4,5,5,4,5,6,3,3,2,1,,,,1,,,,1,,,,,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,,1,,,1,,,,1,,,,,1,,,,1,,,,1,,,1,,,,1,1,,,,1,,,,1,,,1,1,2,2,2,1,1,1,1,1,1,1,1,5,5,4,2,5,2,5,2,3,3,5,5,4,1,2,1,1,1,5,2,1,2,1,5,2,3,5,7,4,7,4,7,5,5,5,4,4,5,4,4,4,1,,1,,1,they need it more,bless someone else,don't be selfish,,,,,,,,,,4,5,5,3,,,1,1,1,2,1,1,2,1,1,2,,,,,,,1,1,1,2,1,1,2,2,1,1,1,1,2,2,2,2,1,1,2,1,1,1,2,2,1,2,2,1,2,1,1,1,1,1,1,1,1,1,2,2,1
+sa9ho,5,5,3,3,1,4,5,3,1,5,5,3,3,2,5,5,1,2,4,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,,1,,,1,,,,1,,,,1,,,,2,3,5,2,4,2,2,2,3,4,4,4,4,4,4,4,3,5,2,5,4,4,5,5,4,4,1,1,1,1,1,5,1,1,1,3,5,1,7,3,7,7,1,6,7,6,4,5,3,4,3,4,4,4,1,,1,,3,"I didn't have the $5 to start with, it was given to  me.",I can make someone else happy by giving them some money.,"If I keep some of the money myself, I'll still come out ahead even if I give some away.",There is no option to evenly split the money.,I'll still be happy with $2 more than I had at the beginning.,The other person will be happy that I gave them $3.,,,,3,5,6,,,,,10,,,,,,,,,,,,1,1,1,1,2,2,1,2,2,2,2,1,1,1,2,2,1,2,2,2,2,2,1,1,1,1,2,1,2,2,2,2,1,2,2,1,1,2,2,2,1,1,1,2,1,2,2
+uv0ng,3,3,3,3,3,4,3,3,3,4,3,3,3,4,3,5,3,3,4,1,,,,,1,,,,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,2,3,2,2,3,3,2,2,3,3,3,3,3,3,4,3,2,3,3,4,4,2,4,4,4,3,2,3,2,1,1,4,1,1,1,4,4,3,4,5,4,3,4,3,4,4,4,4,2,3,4,3,2,2,1,,,,4,half,equal,meh,,,,,,,2,4,3,,,,3,,,1,1,1,1,2,2,1,1,1,1,,,,,,,1,2,2,2,2,2,2,2,2,1,2,2,1,2,1,2,2,1,2,2,2,2,2,2,2,2,2,2,2,1,2,1,2,2,2,1,1,2,2,2,1
+evqeq,4,2,2,2,2,4,4,4,2,2,2,2,2,2,2,5,2,3,2,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,1,,1,,,,1,,,,1,,,,1,,,,1,,,,2,2,2,1,1,3,4,2,2,2,2,2,2,5,4,3,3,4,2,4,4,5,4,4,5,3,2,2,1,1,1,5,2,1,2,2,5,2,4,5,6,6,3,5,7,6,5,5,1,3,2,2,5,4,1,,,,3,I don't need the money,The other person may need the money,I don't want to give everything away,I can do whatever I want,I want to be a generous person,I want to be a practical person,,,,4,5,6,,,,,10,,1,1,1,1,1,1,1,1,1,1,,,,,,,1,2,2,2,2,2,2,2,1,2,2,2,1,2,2,2,2,1,2,2,2,2,1,2,2,2,1,2,2,2,1,2,2,2,2,1,1,2,1,1,2
+7vnea,5,5,5,4,3,5,5,5,3,5,4,5,5,4,5,4,2,3,4,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,1,,,,1,,,,1,,,,1,,,,2,3,4,2,4,1,3,3,1,2,2,2,2,5,5,4,5,5,2,5,5,5,4,5,5,4,1,1,1,1,4,5,2,1,1,4,5,2,5,5,6,6,6,6,6,6,5,5,4,5,2,2,4,3,1,,1,,4,Needs approval,Unable to split,Be fair as possible,,,,,,,,,,3,2,2,,10,,,,,,,,,,,,1,1,1,1,2,2,1,1,1,2,1,2,1,2,2,1,2,2,1,2,2,1,2,2,1,2,2,2,1,2,2,2,2,2,2,1,1,2,1,1,1,2,1,2,2,1,2
+meqhr,4,2,4,4,3,5,5,4,3,4,3,4,4,1,4,7,3,2,2,,1,,,,1,,,,1,1,,,1,,,1,,,,1,1,,,,1,,,1,1,,,1,,,,1,,,,,,1,1,,,1,,,,1,,1,,,,,,1,,,1,,,,1,,,,,,1,,1,,,1,,,,2,3,4,4,4,3,1,1,1,2,2,1,2,10,10,10,1,10,3,5,10,4,10,5,10,10,4,5,5,4,3,2,2,4,4,2,4,4,6,5,6,5,2,4,6,5,5,6,4,4,4,5,5,2,,,1,,4,fairness,balance ,who deserves more,,,,,,,4,4,4,,,,,9,,1,1,2,1,2,1,1,2,1,1,,,,,,,2,2,2,2,2,1,2,1,1,2,2,1,1,1,1,1,2,2,1,1,1,1,1,2,1,1,1,2,1,2,1,1,1,2,1,1,1,2,1,1,1
+6qe7v,3,2,4,3,2,3,4,3,2,2,2,4,4,2,4,6,3,2,3,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,1,2,1,1,3,2,2,2,1,3,2,1,2,4,4,5,2,5,2,5,4,3,4,4,4,5,2,1,1,1,1,5,1,1,2,3,5,3,3,6,5,7,3,4,6,6,4,4,3,3,2,2,3,1,1,1,1,1,3,I want to be fair with how I split the money,"It would be more virtuous to give more to others, and keep less for myself","I'm okay with giving the slightly larger ""half"" to the other person",My needs will be taken care of regardless of how much money I keep,,,2,4,4,,,,,,,,6,,,,,,,,,,,,1,1,1,1,1,1,1,2,1,2,2,2,2,1,2,2,2,1,2,1,2,2,2,2,2,2,1,2,2,1,1,1,1,2,1,2,1,1,2,2,2,1,1,2,1,2,2
+bicf2,4,4,5,4,4,5,4,4,5,4,5,4,4,2,5,3,2,4,4,,1,,,1,,,,,,1,,,1,,,1,,,,1,,,,1,,,,,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,,,1,,2,4,3,4,4,5,4,4,4,3,4,4,2,5,4,5,5,4,3,3,4,5,5,4,5,5,4,3,4,4,3,4,3,4,3,4,5,2,6,6,6,7,6,7,6,6,7,6,2,4,2,2,2,2,1,,,1,5,fair share ,anonymity,personal needs,kindness ,trust,,,,,5,5,5,,,,,4,,,,,,,,,,,,1,1,1,1,2,2,1,1,1,2,2,2,2,1,2,1,2,1,2,2,2,2,2,1,2,1,2,1,1,1,1,2,1,2,1,2,1,2,2,2,2,2,2,1,2,2,1
+a8aho,4,1,4,4,2,4,3,2,1,4,1,4,4,1,3,3,2,4,4,1,,,,,1,,,,,1,,1,,,,,1,,,,1,,,,1,,,,1,,,1,,,,1,,,,1,,,,1,,,,,1,,,1,,,,,,1,,1,,,,1,,,,1,,,,1,,,,1,,,,2,2,2,2,3,1,1,1,1,1,1,1,1,5,4,4,2,4,3,5,5,5,5,5,5,4,4,4,2,2,2,2,1,2,2,2,4,2,3,5,6,7,5,6,6,6,4,3,1,4,1,2,3,2,1,,1,,4,I want to be as fair as possible,I should look out for myself first,,,,,1,5,5,,,,,,,,,2,1,1,1,1,1,1,1,1,1,1,,,,,,,1,1,1,2,1,1,2,1,1,1,2,2,2,2,1,2,2,1,2,1,2,1,1,2,1,1,1,2,1,2,1,1,2,2,1,1,1,2,1,1,2
+k8gd7,3,3,4,3,3,3,4,4,4,3,3,3,4,3,4,3,2,3,3,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,2,5,4,3,4,3,3,4,4,3,3,4,3,3,4,4,4,3,2,3,4,4,3,2,5,5,3,3,3,3,3,2,4,3,3,2,3,5,5,4,5,3,4,6,4,4,4,4,3,3,3,4,3,4,,,1,,2,Is it fair to keep more for myself,How much will the other person expect to receive?,Would they be generous if they were in my position,How would I feel if I were on the receiving end?,What’s the smartest way to balance fairness and self-interest?,Does this decision reflect my values?,,,,3,3,4,,,,3,,,,,,,,,,,,,1,2,1,2,1,2,1,1,2,1,1,1,1,2,2,2,1,2,1,1,2,1,2,1,2,1,2,1,2,1,2,1,2,2,1,1,2,2,1,2,1,2,2,1,1,2,2
+rkkav,5,4,4,5,2,5,3,5,4,5,5,5,4,2,5,3,2,4,4,,1,,,,,,1,,,,1,,,1,,,,1,,,,,1,,1,,,,,1,,1,,,,,1,,,,,1,,1,,,,,,1,,,1,,,,,,1,,,1,,1,,,,1,,,,1,,,,1,,,,1,1,1,1,2,1,1,1,1,1,1,1,1,5,4,5,2,5,2,10,4,4,3,5,10,1,4,1,2,4,4,3,3,1,1,1,4,1,2,6,7,6,1,5,7,5,6,7,1,5,5,2,1,1,1,,,,4,Being fair,Putting myself before a stranger,,,,,2,5,6,,,,,,,10,,,1,1,1,1,1,1,1,1,1,1,,,,,,,1,2,2,1,1,2,2,2,2,1,1,1,1,2,2,2,2,1,1,1,2,2,1,2,1,1,2,2,2,2,1,2,2,2,2,1,1,1,2,2,1
+n2pn8,5,4,3,4,1,5,4,2,2,5,5,3,3,2,5,7,3,2,2,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,1,,,,1,,,,1,,,,,1,,,,1,,,1,,,,1,,,,,1,,,1,,,,1,1,1,1,1,2,2,1,1,1,1,1,1,3,3,3,4,3,4,3,3,3,3,3,3,3,4,4,2,4,3,3,2,3,4,4,3,4,5,5,3,6,2,4,5,4,2,2,1,4,5,3,1,1,1,,,,4,get close to even split without giving my self less than the other person,,,,,,5,4,4,,,,,,,,7,,1,1,1,1,1,1,1,1,1,1,,,,,,,1,2,2,2,2,2,2,1,1,2,1,2,2,1,2,1,2,1,2,1,1,2,1,2,2,2,2,1,2,2,2,1,1,1,2,2,1,1,2,2,1
+z2bfu,4,4,4,4,1,4,4,3,2,4,4,4,4,3,4,4,2,3,4,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,1,,,,1,,,,1,,,,1,,,,,1,,,1,4,3,2,3,3,2,2,2,2,2,2,2,4,4,2,3,4,2,4,4,3,4,5,4,4,1,1,1,1,1,5,1,1,1,1,5,1,4,6,6,5,3,4,6,5,2,2,2,2,1,1,4,2,1,,1,,4,I wanted to be fair to the other person.,I would have divided the money equally if given that option,I wondered who the other person was.,,,,1,5,6,,,,,,,5,,,1,1,1,2,1,1,1,2,1,2,,,,,,,1,2,2,2,2,2,2,2,1,2,1,2,2,2,2,2,2,1,2,2,1,2,2,1,2,1,2,2,1,2,1,1,2,2,1,1,2,2,1,2,1
+8r5lt,3,2,3,1,2,3,4,4,4,3,2,4,3,2,2,5,2,3,2,1,,,,1,,,,,1,,,,1,,,1,,,,1,,,,,1,,,,1,,,,,,1,1,,,,,1,,,1,,,,,1,,,1,,,,,,1,,1,,,,1,,,,1,,,,,1,,,1,,,,1,3,2,1,1,1,1,1,1,1,1,1,1,5,10,5,2,4,2,5,10,5,10,5,5,10,2,2,2,4,2,5,3,2,2,5,4,2,5,4,5,6,7,4,6,6,3,3,5,4,2,2,4,4,1,,,1,4,There's no way to split it 50/50,More for me then,,,,,,,,,,,3,5,4,3,,,1,1,2,2,1,1,2,1,1,1,,,,,,,1,2,1,2,1,2,2,2,1,1,1,1,1,2,2,2,2,1,1,1,1,2,2,1,2,1,1,1,1,1,1,2,2,1,2,1,2,2,2,1,1
+ncyc2,4,4,3,1,1,4,4,5,3,4,4,3,4,2,3,5,2,2,3,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,1,,,,,1,,,1,,,,1,,,,1,,,,1,,,,1,1,3,2,4,3,3,2,1,1,1,2,2,4,4,4,2,4,1,5,5,5,3,5,4,3,1,1,1,1,1,4,2,1,1,2,5,3,5,6,6,6,3,6,6,6,6,4,5,2,3,4,3,2,1,,1,,3,wanting to think of others,fairness,otherness,selflessness,they need it more than me,,,,,,,,2,2,4,,,1,,,,,,,,,,,1,2,1,2,1,2,1,1,2,2,2,2,2,2,1,2,2,2,2,2,2,2,1,1,2,2,1,2,1,1,2,2,2,2,1,1,1,2,2,2,2,1,2,2,2,2,1
+ayss6,4,1,4,4,4,4,2,5,4,2,2,2,3,2,2,7,3,3,2,1,,,,1,,,,1,,,,,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,1,1,,,1,,,,1,,,,1,,,,,1,,,,1,,,,1,,,1,,,,1,,,,1,,,,2,4,3,3,4,2,1,1,1,2,1,4,4,5,4,3,3,4,3,3,4,4,3,3,5,5,4,3,4,4,3,3,4,4,1,1,5,2,4,3,6,6,6,6,6,6,6,4,5,4,4,3,4,2,1,,,1,4,fairness,split,being nice,Not to be cheap,sharing,kindness,1,3,5,,,,,,,,,2,2,2,2,2,2,2,2,2,2,2,,,,,,,1,2,2,2,1,2,2,1,1,1,2,1,2,2,1,2,2,1,1,2,1,2,2,2,1,1,1,2,1,2,1,1,2,2,1,2,2,1,2,1,2
+xhlgi,5,4,5,4,4,5,4,4,4,5,4,5,5,2,5,4,2,4,4,,1,,,,1,1,1,1,,,,,1,,,1,,,,1,1,,,1,,,,,1,,,1,,,,,1,,,,,1,,,1,,,,1,,,,1,,,,1,,,1,,,,,1,,,1,,,,,1,,,,,1,,2,4,4,4,4,2,1,1,1,2,2,1,2,5,5,4,3,5,3,4,10,5,5,10,5,5,1,1,1,1,1,5,1,1,2,1,5,2,7,5,6,3,6,2,6,4,2,3,2,1,2,1,4,2,1,,1,,4,what is fair,what I need,try to be honest,,,,1,5,5,,,,,,,4,,,,,,,,,,,,,1,1,1,2,1,1,2,2,2,2,1,2,1,2,2,2,1,2,1,2,1,2,1,1,2,2,2,2,2,2,1,2,2,2,1,2,1,2,2,1,1,1,2,2,2,2,1
+anjsc,5,3,5,5,5,3,5,5,5,4,5,4,5,3,3,9,3,4,4,1,,,,1,,,,1,,1,,,1,,,,,,1,1,,,,1,,,,1,,,,1,1,,,1,,,,1,,,,1,,,,1,,,,,1,,,,,1,,,,1,,1,,,,1,,,,1,,,,1,,,,2,3,4,3,5,5,3,5,5,4,5,5,5,10,4,10,5,5,10,5,10,4,10,10,10,10,5,5,4,5,3,5,4,2,5,4,5,5,7,7,7,7,7,4,6,5,7,7,5,5,5,2,5,5,,,1,,6,Selfish,Mine,Money,Greedy,,,,,,2,4,3,,,,4,,,1,1,2,1,2,2,2,2,1,1,,,,,,,1,1,1,1,1,1,2,2,1,1,1,1,2,1,1,1,1,2,1,1,1,1,1,2,1,1,1,2,1,1,2,1,1,2,1,1,2,1,1,2,1
+we66f,5,5,5,1,1,5,5,1,4,3,2,5,5,1,5,1,1,1,3,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,,1,,,1,,,1,,,,1,,,,,1,,,1,,,,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,5,2,5,2,1,1,1,4,2,2,1,1,1,1,1,5,1,1,1,3,5,1,1,7,7,6,1,3,7,4,1,1,1,1,1,1,4,4,1,,,,3,I wanted to be fair,I didn't want to be viewed as a cheapskate or cheater,I wanted to make sure the other person was happy,I wish there'd been an even split of $2.50 apiece,I would rather someone else be happier than myself,I am selfless instead of selfish,,,,1,5,6,,,,5,,,1,1,1,2,1,2,1,2,1,1,,,,,,,1,2,1,2,2,1,1,1,2,2,1,1,1,1,1,2,2,1,1,2,2,1,1,2,1,2,2,2,1,2,1,2,2,2,1,1,1,1,2,1,2
+ssiwx,4,4,3,4,4,4,3,2,2,3,3,4,4,1,3,4,2,3,4,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,1,,,,,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,1,,,,1,,,,1,,,,1,,,,2,5,5,4,4,3,3,3,3,2,2,2,2,5,5,4,2,4,4,4,5,5,5,5,5,4,1,1,1,1,1,5,1,1,1,1,5,1,5,5,7,7,2,6,7,7,5,5,1,4,1,2,5,4,1,,,,4,try to be fair,don't be greedy,share equally,I'd like to give exactly half but not an option,,,1,4,4,,,,,,,,4,,,,,,,,,,,,1,1,2,1,2,1,1,2,2,2,2,2,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,2,2,2,1,1,2,2,1,1,1,1,1,1,2
+oscdf,4,4,4,4,4,4,4,4,3,4,4,4,4,2,4,6,3,3,4,1,,,,1,,,,1,,,,,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,1,2,3,3,2,2,2,3,2,2,1,2,4,4,4,3,4,3,4,5,5,5,5,5,5,1,1,1,1,1,5,1,1,1,1,5,1,4,5,6,5,5,5,6,4,4,5,2,3,2,2,4,3,1,,1,,4,I would try to be fair,I thought I should get the most since I am making the decision,They would have to accept,I don't want to be rude,,,,,,2,5,6,,,,2,,,1,1,1,1,1,1,1,1,1,1,,,,,,,1,2,2,2,2,2,2,1,1,2,1,1,2,1,1,2,1,2,2,2,2,2,1,2,2,2,2,2,1,2,1,2,2,2,1,2,1,2,1,1,1
+17cwz,3,4,4,4,1,3,4,3,2,3,4,4,4,5,3,6,3,3,2,,1,,,1,,,,,1,,,,1,,,1,1,,,1,,,,1,1,,,1,1,,,1,1,,,1,1,,,,,1,,1,1,,,1,1,,,,1,,,1,,,,,1,,,1,1,,,,,,1,1,,,,1,,1,,2,3,2,2,4,1,5,4,4,5,5,5,4,5,5,5,3,5,2,5,4,10,4,4,10,4,5,5,5,5,5,2,4,5,5,1,4,1,6,3,6,7,4,7,5,4,1,6,1,4,1,4,4,2,1,,,1,4,Sharing,equality,fairness,giving,helping,community ,,,,,,,2,5,6,4,,,1,1,1,1,1,1,1,1,1,1,,,,,,,1,1,2,2,2,2,2,2,1,1,1,2,2,2,1,2,2,1,2,1,1,2,1,2,2,1,2,2,2,2,1,2,2,2,1,1,1,2,2,1,2
+uir5g,4,5,5,5,4,4,5,5,4,2,3,5,5,4,4,3,2,4,4,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,,1,,,,1,,,1,,,,1,,,,1,,,,1,,,,2,2,1,1,1,1,1,2,1,1,1,1,1,10,10,10,2,5,2,5,10,10,10,5,5,5,2,1,5,2,4,3,2,3,2,1,5,2,5,4,6,6,6,5,6,5,5,4,3,4,3,3,4,4,1,,,,4,I wanted to do $2.50 each,For equality and fairness,Selfishly I chose to take more,no regrets though,In life fairness is key to me,though the world at large is not fair,,,,,,,4,5,4,,,2,1,1,1,1,1,1,1,1,1,1,,,,,,,2,2,2,2,1,1,2,2,2,2,2,1,2,2,1,2,2,1,1,1,2,1,2,2,1,2,1,2,1,1,1,1,2,2,1,1,1,2,1,2,1
+lclop,5,2,5,5,3,5,4,5,4,4,4,5,5,4,5,2,2,3,4,,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,,1,,,,1,,,,1,,,1,,,,1,,,,1,,,,,1,,,,1,,,1,,,,,1,,,,1,,,,,,1,2,2,2,1,4,2,4,2,1,1,2,3,1,5,5,5,2,5,2,5,5,10,10,5,5,10,1,2,4,1,1,4,1,1,1,1,5,1,3,5,7,6,6,5,7,5,2,5,5,4,1,4,4,4,1,,1,,4,What would the other person do.,What is fair.,What would I expect if the roles were reversed.,,,,,,,,,,1,5,5,,7,,,,,,,,,,,,1,1,1,2,1,2,1,1,2,2,2,2,2,2,1,2,1,2,2,2,1,1,2,2,2,1,2,2,2,2,2,2,2,2,1,2,1,1,2,2,2,2,1,2,1,1,2
+gozwq,5,4,5,5,4,4,4,2,4,5,4,4,2,3,5,2,1,3,5,,1,,,,1,,,,1,,,,1,,,,1,,,,,,1,,1,,,,,1,,,1,,,,1,,,,1,,,,1,,,,,1,,,1,,,1,,,,,1,,,,1,,,,1,,,1,,,,,1,,,1,4,4,2,4,2,2,2,2,2,2,2,2,5,4,4,4,5,4,5,4,2,5,5,5,5,3,5,4,3,4,4,4,1,2,1,4,4,2,6,6,3,7,3,7,4,4,5,4,4,5,5,4,2,1,,1,,4,I want to be fair.,What would I want or accept?,This would be the best deal.,I hope they accept my offer.,,,1,4,5,,,,,,,3,,,,,,,,,,,,,1,1,2,1,2,1,1,2,2,2,1,2,1,1,2,2,1,2,1,2,2,2,2,2,1,2,2,2,2,2,1,1,2,2,2,2,1,2,2,2,1,2,1,1,2,2,2
+afrls,4,4,2,4,2,4,4,3,1,4,5,3,2,3,4,7,2,3,5,1,,,,1,,,,1,,,,,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,,,1,,,1,,,1,,,,,1,,,1,,,,,1,,,,1,,,1,,,,,1,,,,,1,,2,3,1,1,1,1,1,1,1,1,2,1,1,4,4,4,3,4,3,5,3,5,4,5,4,5,1,1,1,1,1,1,1,1,1,2,5,4,4,6,7,5,2,4,7,2,2,3,4,3,4,4,4,3,1,,1,,6,i want the money,other player would do the same,some guilt for being selfish,,,,,,,,,,5,4,4,3,,,,,,,,,,,,,1,1,1,1,1,1,1,2,1,2,2,1,1,1,2,1,1,1,1,2,2,1,1,1,2,1,2,2,1,2,1,1,1,2,2,2,1,1,2,2,1,1,1,1,1,2,1
+o3a2p,5,5,5,3,2,4,4,4,4,5,5,5,5,4,5,4,1,4,4,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,3,4,3,4,3,2,2,2,4,3,4,4,4,3,1,5,2,1,1,4,5,3,5,4,3,2,2,2,2,3,5,4,2,1,2,4,1,3,6,6,5,4,5,7,5,3,3,2,2,1,5,4,2,1,,1,,4,being fair,getting my share,splitting the oney evenly,,,,,,,2,2,3,,,,2,,,,,,,,,,,,,1,1,1,1,2,2,1,2,2,2,2,2,2,2,2,2,2,1,2,2,2,2,1,1,2,1,2,2,2,1,1,2,2,2,1,2,2,2,2,2,1,1,2,2,1,2,2
+1o3dm,4,4,1,2,1,2,4,2,1,2,2,1,1,1,4,4,2,3,4,,,1,,,1,,,,1,,,,,1,,,1,,,,1,,,,1,,,1,,,,1,,,,,1,,,,,1,,,1,,,,1,,,,1,,,,,1,,,1,,,1,,,,1,,,,,1,,,,1,,,2,2,3,2,2,3,3,2,2,1,1,1,1,4,4,3,3,4,3,5,4,4,4,5,5,4,2,4,2,1,2,2,2,1,1,1,4,4,5,5,6,6,2,5,6,5,5,5,2,5,4,2,2,2,1,,1,,4,how is this fair to me,how is this fair to the other person,what amount is an agreeable compromise,,,,,,,4,5,5,,,,,5,,,,,,,,,,,,1,1,2,1,2,1,2,1,1,1,1,1,1,2,2,2,1,1,1,2,1,1,1,1,2,1,1,2,1,1,1,2,1,2,2,2,1,2,2,1,1,1,1,2,1,1,1
+uy2vm,4,3,4,3,2,2,5,5,5,3,3,4,4,3,3,8,3,2,4,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,1,1,1,1,1,1,1,1,1,1,1,1,5,5,5,2,5,2,2,5,10,10,5,5,4,3,3,2,2,2,3,2,2,3,3,4,2,6,3,5,5,3,3,6,4,6,6,4,1,4,4,4,4,1,,1,,4,fairness,being fair,debt,,,,4,5,4,,,,,,,,,2,2,2,2,1,1,1,1,1,1,1,,,,,,,2,1,1,2,1,2,1,2,1,1,1,1,1,2,1,1,1,1,2,1,1,1,1,1,2,1,1,2,2,2,1,1,2,2,1,1,2,2,2,2,1
+7k50n,4,3,4,5,2,4,4,4,2,5,3,4,4,2,4,7,3,2,2,,1,,,,,1,,,,1,,,1,,,,1,,,,1,,,,,1,,,,1,,1,,,,,1,,,,,1,,,,1,,,,1,,,,1,,,1,,,,,1,,1,,,,1,,,,,1,,,,,1,,2,3,4,4,4,3,3,3,4,3,3,3,4,4,4,4,3,4,3,4,4,4,4,5,5,4,2,2,4,2,2,3,3,2,2,3,3,2,3,5,5,4,2,4,6,3,4,4,1,3,3,4,2,2,,,1,,6,I don't know the person so it doesn't matter,What would the other person do in my shoes?,,,,,,,,,,,4,2,3,1,,,,,,,,,,,,,1,1,2,1,2,1,1,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,1,1,1,2,2,1,1,1,1,2,2,1,2,1,1,1,2,1,2,1,2,1,2,2
+wwm84,3,2,2,1,1,3,4,2,1,3,3,3,2,2,2,5,2,3,4,1,,,,1,,,,,1,,,,1,,,,1,,,1,,,,,1,,,,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,1,,,,,1,,,1,,,,,1,,,1,,,,1,,,,2,3,4,2,2,1,4,4,2,3,4,4,4,4,3,3,3,4,4,3,4,5,4,4,4,4,2,3,3,2,2,2,3,2,2,4,4,2,5,4,6,5,5,4,5,4,2,2,4,4,4,4,3,2,1,,1,,1,$5 is nothing,I would like to give it to someone who might appreciate it more.,,,,,1,3,3,,,,,,,3,,,,,,,,,,,,,1,1,2,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2,1,1,2,2,2,2,2,2,1,2,2,2,2,1,2,2,2,2,2
+d3vke,1,1,5,1,1,1,5,5,5,1,1,5,5,1,1,6,3,3,1,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,2,1,1,1,1,1,1,1,1,1,1,1,1,3,10,4,1,10,1,4,1,10,10,10,10,10,1,1,1,1,1,1,1,1,1,1,5,1,1,7,7,7,4,7,7,7,4,4,1,1,1,1,5,1,,,1,,6,i was thinking of not splitting it,i was thinking of myself,i did not know them so why give them anything,,,,,,,3,3,4,,,,3,,,,,,,,,,,,,1,2,1,2,1,2,2,1,1,2,2,1,1,1,2,2,1,2,2,1,1,2,2,2,1,2,2,1,1,1,1,1,2,2,1,2,1,1,2,2,1,1,1,1,1,2,2
+4kx6v,3,2,3,3,2,2,3,2,1,2,3,3,2,4,2,6,3,2,3,1,,,,1,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,1,,,,1,,,,1,,,,2,2,2,2,3,1,1,1,1,1,1,1,1,3,3,2,2,3,2,3,2,2,2,3,4,3,2,2,2,1,1,5,1,1,1,1,5,1,5,3,6,5,3,4,6,4,4,5,1,1,1,1,1,2,1,,1,,1,I might not need the money,The other person might need the money,$5 is not a lot to give up,$5 could help them along with something,,,,,,,,,1,4,3,1,,,1,1,1,1,1,2,2,2,2,2,,,,,,,1,2,2,2,2,2,1,1,2,1,1,2,1,2,2,2,1,2,2,2,2,2,1,2,1,2,2,1,2,2,1,1,2,2,1,2,2,2,1,1,1
+f60ro,5,4,5,4,4,5,4,5,4,5,5,4,5,3,4,6,3,3,5,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,,,1,,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,,1,,,1,4,5,4,5,3,2,4,5,5,4,5,4,10,5,10,4,5,5,10,5,10,5,10,5,5,2,4,3,2,3,4,5,4,1,4,5,3,1,7,6,7,3,7,6,7,6,7,5,4,3,4,5,5,,,1,,4,More money for myself,Equity,Honest,Sincere,Polite,Truthful,,,,4,5,6,,,,4,,,,,,,,,,,,,2,2,1,1,2,2,2,1,2,1,2,1,2,1,1,1,1,1,2,1,2,1,1,1,1,1,2,2,2,1,1,1,1,1,1,1,1,1,2,1,1,1,1,2,2,2,1
+j9t67,4,5,4,1,3,2,4,2,2,5,4,4,4,4,4,5,2,4,2,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,1,,,,,1,,,1,,,,,1,,,,1,,,,1,,,1,,,,1,,,,,1,,,,1,,,2,2,5,4,4,1,3,4,4,1,2,4,2,5,4,4,2,5,3,4,4,3,4,2,4,2,3,2,1,3,4,3,2,2,1,5,5,3,4,5,6,6,2,6,6,5,6,6,4,3,5,4,4,5,1,,1,,4,split it 50-50,if no one is around keep it all,should i give more to the other person than myself,,,,,,,,,,4,4,4,,,1,1,1,1,2,1,1,2,1,2,1,,,,,,,1,2,2,2,2,2,2,1,1,2,1,2,1,2,2,2,2,2,2,2,2,2,2,2,1,1,2,2,1,1,1,2,2,2,2,1,2,1,2,2,1
+wsyy4,2,2,3,2,2,2,1,2,1,2,2,2,2,1,2,7,3,1,2,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,1,,,,1,,,,1,1,1,1,1,1,1,1,1,1,1,1,1,5,4,4,2,10,10,10,3,1,3,1,2,1,1,1,1,1,1,5,1,1,1,1,5,1,2,6,5,6,7,5,7,5,4,1,1,1,1,1,2,1,1,,,,4,I want it to be fair,I want it to be even/equal,"It can't be exactly equal, so since I am making the decision I should get the extra dollar.",I think it is fair,,,1,5,6,,,,,,,3,,,1,1,1,1,1,1,1,1,1,1,,,,,,,1,2,2,2,2,2,2,2,2,2,2,2,2,1,1,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,2,1,2,1,2,2,1
+hfvpz,5,3,5,4,2,3,5,4,2,5,3,5,5,5,5,7,3,3,5,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,2,3,2,4,2,2,2,2,2,2,2,2,5,5,5,2,5,2,5,5,4,5,10,10,10,1,1,1,1,1,5,1,1,1,1,5,1,4,1,7,4,2,3,7,3,3,2,1,1,1,4,3,2,1,,,,3,giving is receiving,I get less now but more later,make the person happy,,,,5,5,6,,,,,,,,,2,,,,,,,,,,,1,1,2,1,1,2,2,1,1,2,2,1,2,1,1,1,1,2,1,2,1,2,1,1,1,1,1,2,1,2,2,1,2,1,2,1,1,2,2,2,1,2,2,2,2,1,1
+o3lxf,5,5,5,5,4,5,4,4,3,3,5,5,5,2,5,3,2,4,4,,1,,,,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,2,2,4,3,3,2,1,2,2,3,1,1,2,4,4,2,5,2,5,3,4,4,4,3,3,2,2,1,1,1,1,4,1,1,1,3,5,2,5,4,5,5,6,2,6,5,4,4,4,3,4,4,4,4,1,,1,,6,i'm poor,$5 is a lot to me,I would for sure put the $5 to good use,$5 is a cheap meal,,,2,3,3,,,,,,,,7,,1,1,1,1,1,1,1,1,1,1,,,,,,,1,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,1,1,2,1,2,2,2,2,1,2,2,2,2,1,1,2,2,2,1,1,1,2,1,1,1
+9o70p,4,5,4,5,3,4,4,4,4,4,5,4,4,1,4,8,3,3,2,,1,1,,,1,1,,,1,,,,1,,,1,,,,1,,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,1,1,,,1,1,,,1,,,,1,1,,,1,,,1,,,,,1,,,1,,,,2,3,4,3,4,3,4,4,4,1,1,2,2,4,4,4,4,4,4,4,2,3,2,2,2,3,2,2,3,4,5,2,1,2,2,2,2,4,3,5,6,4,2,7,7,5,4,7,1,5,5,5,5,4,1,,1,,4,selfishness,need,guilt,regret,,,1,5,6,,,,,,,,,1,,,,,,,,,,,1,1,1,1,2,2,1,2,2,2,2,2,2,2,2,2,1,2,2,2,2,1,2,2,2,2,2,1,2,1,1,1,2,1,2,1,1,2,2,2,2,1,1,2,1,2,2
+q2hse,4,4,4,5,4,3,4,4,2,4,4,3,3,2,3,6,2,3,5,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,,1,,,1,,,,1,,,,2,2,2,2,2,2,2,2,2,2,2,2,2,5,4,2,4,4,4,4,2,3,2,5,4,2,2,3,2,2,4,4,2,2,4,2,4,2,4,5,6,4,2,5,5,6,5,4,2,4,2,2,3,2,1,,,,5,I want to give something to otherguy.,Not give too much.,One dollar is fine.,,,,,,,4,1,2,,,,1,,,1,2,1,2,1,2,1,2,1,2,,,,,,,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2,1,2,1,1,2,2,2,2,2,1,2,1,1,2,2,2,1,1,2,2,2,2
+v1vbi,3,1,1,1,1,4,5,5,4,2,3,3,3,5,2,5,2,2,4,,1,,,,1,1,,,1,,,1,,,,1,,,,,,,1,,1,,,1,,,,,1,,,,1,,,,1,,,1,,,,,1,,,1,,,,1,,,,1,,,,1,,,,,1,,,1,,,,1,,,,2,1,1,1,1,3,5,5,5,5,4,1,5,5,5,4,1,5,2,5,5,4,10,5,10,5,3,4,2,1,1,3,1,1,1,1,4,2,5,3,5,6,6,5,6,6,4,4,4,5,1,3,3,1,1,,1,,4,sharing is caring ,give a little bit ,we can all get in on the good times,,,,3,4,4,,,,,,,,,1,,,,,,,,,,,1,1,2,1,2,1,2,2,2,2,1,1,2,1,2,2,2,1,2,1,2,2,1,1,2,1,2,2,1,2,1,1,2,2,1,2,1,2,1,2,1,1,1,1,2,1,1
+nhhpr,5,5,5,5,4,5,5,5,5,5,5,5,5,2,5,6,3,3,3,1,,,,,1,,1,1,,,,,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,,1,,,,1,,,1,,,,1,,,,,1,,,,1,1,1,1,,,,1,,,,1,,,,1,,,,1,1,1,3,1,1,1,1,1,1,1,1,1,5,3,4,2,5,3,5,4,5,5,5,5,4,1,1,1,1,1,5,1,1,1,1,5,4,1,7,7,5,1,2,7,4,4,6,3,4,4,4,5,5,1,,1,,5,I want to keep as much for myself as possible.,I still want to give something to the other person.,,,,,,,,,,,2,5,6,4,,,1,1,1,1,1,1,1,2,2,2,,,,,,,1,1,2,2,2,1,2,2,1,2,2,1,2,1,2,1,2,2,2,1,2,2,1,2,2,2,1,2,2,2,1,1,2,2,1,1,2,1,2,1,1
+j0fnu,2,1,4,2,2,2,4,4,4,3,2,4,4,2,2,5,2,2,5,1,,,,1,,,,1,,,,1,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,1,,,1,1,,,1,,,,1,,,,1,,,,1,,,,1,1,,,1,,,,1,,,,1,1,,,1,,,,1,2,2,2,2,1,1,1,3,2,2,1,1,5,5,5,2,5,2,5,5,5,4,5,4,4,1,1,1,1,1,5,3,1,1,2,5,1,4,5,6,5,3,4,6,5,5,5,1,3,3,2,4,4,1,,1,,4,justice,my family,invest,generous,their family,value,2,4,5,,,,,,,2,,,,,,,,,,,,,1,1,1,1,1,1,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,2,1,2,1,2,1,1,1,1,1,2,2,1,2,1,1,2,2,1,1,2,2,2,2,2
+bc9lg,4,4,4,2,2,4,3,2,1,2,4,4,4,2,4,3,2,3,4,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,,1,,,1,,,1,,,,1,,,,1,,,,,1,,,2,2,4,2,2,4,4,4,2,2,2,2,2,5,10,5,2,5,2,5,5,5,5,5,5,5,4,2,2,2,2,4,2,2,1,4,5,2,3,5,6,6,2,5,7,6,3,3,2,5,2,2,4,2,1,,1,,4,fair,must reach agreement,generous,obnoxious,greed,,,,,5,5,4,,,,,,1,1,1,1,1,1,1,1,1,1,1,,,,,,,1,2,1,2,2,2,2,1,2,2,1,2,1,2,2,1,2,2,1,2,1,2,2,2,2,1,2,2,2,1,1,2,1,2,2,1,1,1,1,2,1
+8ka4n,4,3,3,2,3,2,3,2,3,1,2,3,4,1,1,7,3,2,3,,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,,1,,,,1,,,1,,,,1,,,,1,,,,2,4,3,3,3,2,3,2,4,3,3,2,2,5,4,4,5,4,5,5,5,4,5,5,5,5,4,3,4,4,3,3,4,3,4,4,3,4,7,6,6,6,4,6,4,4,4,5,3,2,3,3,4,2,1,,,1,5,I would like to be fair,put myself in their shoes,give them something,,,,,,,,,,2,4,4,,2,,,,,,,,,,,,1,1,1,1,1,1,1,2,2,1,2,1,2,1,2,2,2,1,1,2,1,1,2,1,2,2,2,1,2,1,1,2,2,2,1,2,1,2,2,2,2,1,2,2,1,1,1
+pqdwo,4,4,4,4,5,4,5,4,4,4,4,4,4,4,4,5,3,3,4,1,,,,,1,,,1,,,,,1,,,1,,,,1,,,,,1,,,,1,,,1,,,,1,,,,,1,,,1,,,,,1,,,,1,,,1,,,,,,1,,1,,,,1,,,,,1,,,,1,,,2,2,2,2,1,1,1,1,1,2,1,1,2,4,4,4,3,4,3,3,4,4,4,5,5,4,2,1,1,1,1,4,1,1,1,2,4,1,6,7,6,5,5,3,6,4,5,5,5,4,1,1,4,2,1,,1,,6,I want the most money possible,No one will know my choice,I wonder if I know the person,Will there be more money to share later,I wish it were more money,I don't really want to make the decision,1,4,5,,,,,,,,9,,1,1,1,1,1,1,1,1,1,2,,,,,,,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,2,1,2,2,2,2,2,2,2,2,2,1,1,1,2,1,2,2
+oct5j,4,2,4,3,2,3,4,4,3,3,2,5,5,3,3,4,2,2,2,1,,,,1,,,,1,,,,,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,1,,,,1,,,,,1,,,,1,,,,1,,,1,,,,1,,,,1,,,,,,,1,1,2,4,2,3,1,1,1,1,1,1,1,1,1,1,1,1,1,2,4,4,4,5,5,5,4,1,1,1,1,1,5,1,1,1,1,5,3,4,5,7,6,7,4,7,5,4,4,2,3,1,4,3,4,1,,1,,4,fairness,thoughtful,selfish,need,nice,sharing,1,5,5,,,,,,,3,,,1,1,1,1,1,1,1,1,1,1,,,,,,,1,1,2,1,2,2,1,2,2,1,2,2,2,2,2,2,2,1,2,1,2,2,2,1,2,2,2,2,2,2,1,2,2,2,2,1,2,2,2,2,2
+r82fi,4,5,4,4,4,4,5,5,4,4,5,5,5,4,4,10,4,2,2,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,,1,,,1,,,,,1,,,,1,,,1,,,,1,2,4,4,4,2,2,1,2,1,1,1,1,5,4,4,2,5,2,5,5,4,5,4,4,5,2,2,1,1,1,4,1,1,2,2,4,1,7,3,6,6,1,6,7,7,5,3,1,4,5,5,4,4,1,,1,,4,How much it was total I could keep,who the other person was,if I should be greedy or generous ,how I could make it the most fair,what will I gain in the end,how much do i need the money,,,,4,5,6,,,,,9,,,,,,,,,,,,1,1,1,1,2,2,1,2,2,2,2,2,2,2,2,2,2,2,1,2,1,2,1,1,2,2,2,2,2,1,1,2,2,2,1,2,1,2,1,2,1,1,1,2,1,2,2
+t3qe4,4,4,5,3,2,5,4,2,1,4,4,5,5,1,5,2,1,4,5,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,2,2,1,1,1,1,1,1,1,1,2,2,2,2,2,2,5,2,4,2,5,5,5,5,5,3,1,1,1,1,1,5,1,1,1,2,5,1,3,6,6,4,5,3,6,3,2,3,1,1,4,2,2,1,1,,1,,4,I want to share equally,Since I can't share equally I keep a little more for myself,I want the other person to get something as well.,,,,,,,,,,1,4,5,,,2,,,,,,,,,,,1,1,2,1,1,2,1,2,2,2,1,1,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2,1,2,2,1,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,1
+cnx9d,4,3,5,4,2,5,2,4,2,5,3,5,5,2,5,4,2,3,4,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,2,2,3,4,4,2,2,2,1,2,1,2,2,5,4,4,2,5,2,5,5,5,10,4,5,5,1,1,2,1,1,4,2,1,1,1,5,1,3,5,5,6,2,3,6,5,5,6,2,1,1,1,2,2,1,,,,4,What is the fair thing to do,what would I want if I was the person,I wonder if they are nice,would I like them,,,,,,,,,4,5,5,,,2,1,1,1,1,2,1,1,1,2,1,,,,,,,1,2,2,2,2,1,2,2,1,2,1,2,1,2,2,2,2,2,2,2,1,2,2,2,2,2,1,2,2,2,1,1,2,2,1,1,1,1,1,2,2
+c42r9,2,2,1,2,1,2,3,2,2,2,2,1,1,2,2,5,2,3,3,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,,,1,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,1,,,,1,,,,,1,,,1,,,,2,2,3,2,3,2,1,2,1,1,1,1,1,4,4,3,3,4,3,4,5,4,5,4,5,5,2,2,1,1,2,4,2,2,2,2,4,2,6,4,6,6,3,6,7,6,2,3,1,3,2,2,3,2,1,,1,,4,no half dollars,what is fair,"since, I don't have a half dollar I'll take 3",,,,2,3,4,,,,,,,,,1,,,,,,,,,,,1,1,1,1,1,1,1,2,1,1,2,2,2,2,2,1,2,2,2,2,1,2,2,1,2,1,2,1,1,2,2,2,2,2,2,1,1,2,2,1,1,1,1,1,2,1,1
+j9v1n,4,4,2,4,2,5,4,4,4,5,4,4,4,2,4,8,3,3,4,,1,,,,1,,,,,1,,,1,,,,1,,,1,,,,,1,,,1,,,,,1,,,,,1,,,1,,,,,1,,,1,,,,,1,,,1,,,,1,,,,,1,,,,,1,,1,,,,1,,,1,2,1,1,2,2,4,1,1,2,1,1,1,2,1,1,10,1,4,2,4,4,4,5,5,5,4,4,4,4,4,2,2,4,2,4,3,4,5,5,6,6,1,5,7,5,5,5,1,4,5,5,4,1,1,,1,,3,don't be greedy,give more than you take,they might need more,,,,,,,,,,1,5,5,,3,,,,,,,,,,,,1,1,2,1,2,1,2,1,2,2,2,1,2,2,2,1,1,2,1,2,2,2,2,2,1,2,1,2,1,1,1,2,2,2,2,2,1,1,1,2,1,1,2,2,1,2,1
+iueq4,4,3,4,4,1,3,4,5,1,2,1,4,5,2,4,6,3,3,3,,,1,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,,,1,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,1,1,,,1,,,,1,3,4,3,4,1,2,4,2,3,2,1,2,5,5,1,2,5,2,1,3,2,3,4,5,5,2,3,2,2,2,1,2,1,2,1,5,2,4,6,5,6,5,6,7,5,6,7,4,4,1,2,4,3,,1,,,4,equity ,equality,fairness,respect ,modest ,sober ,,,,,,,3,5,4,4,,,,,,,,,,,,,1,1,1,1,2,2,1,1,2,1,2,2,2,2,1,2,1,2,1,1,1,2,1,2,1,2,1,2,2,2,1,2,2,1,1,2,1,1,2,2,1,2,1,1,1,2,1
+r11kw,5,5,5,5,5,5,5,5,5,5,5,5,5,4,5,3,2,3,5,1,,,,,,,1,1,,,,,1,,,1,,,,,,,1,,1,,,,,1,,1,,,,,1,,,,,1,,,,1,,1,,,,,1,,,,,1,,,,1,,,1,,,1,,,,,1,,,,,1,,1,1,1,1,1,3,4,1,4,5,5,5,5,10,5,10,2,10,3,10,10,10,10,10,10,10,3,4,3,4,5,5,3,3,3,5,3,5,5,6,6,4,1,4,7,2,6,6,5,5,5,5,5,4,1,,1,,3,fair,not greedy,thoughtful,sucker,be nice,do what's right,,,,,,,3,5,4,2,,,,,,,,,,,,,1,1,2,1,2,1,2,2,2,1,1,2,2,2,1,1,2,2,2,2,1,1,2,1,1,2,2,1,2,2,2,1,2,2,1,2,1,2,2,2,1,1,1,2,1,2,2
+tcget,3,3,2,3,3,4,4,4,4,3,4,4,3,3,4,6,4,3,4,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,,,1,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,2,4,3,2,3,4,4,4,3,3,4,4,3,4,3,4,4,3,4,2,3,4,4,4,3,4,3,2,3,4,3,3,4,3,4,2,3,4,4,3,5,5,4,4,5,3,4,5,3,3,4,3,3,2,1,,1,,5,4,4,4,4,4,4,,,,,,,2,4,3,3,,,,,,,,,,,,,2,1,1,1,1,2,1,1,1,2,2,2,2,1,1,1,1,1,2,1,2,2,2,2,1,1,1,2,1,1,1,1,1,2,1,1,1,1,2,2,1,1,1,1,1,1,1
+29g1r,4,3,4,5,2,5,4,1,2,3,3,4,4,2,3,4,2,4,4,1,,,,1,,,,,1,,,1,,,,1,,,,1,,,,,1,,,,1,,,1,,,,1,,,,,1,,,,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,2,1,1,2,1,1,1,1,1,1,1,1,1,3,1,1,10,1,5,5,3,2,4,3,4,3,2,2,1,1,5,5,2,1,1,3,4,2,5,6,7,6,6,5,6,4,2,2,1,3,4,4,4,3,1,,1,,3,The money should be divided evenly.,It is only fair to divide the money evenly.,"I'm feeling generous, so I'll offer the larger share.",,,,,,,,,,2,5,5,6,,,1,1,1,1,1,1,1,1,1,1,,,,,,,2,2,2,2,2,2,1,1,2,2,2,2,2,2,2,2,2,1,2,1,2,2,2,2,1,2,1,2,2,2,1,2,2,2,2,1,1,2,1,2,1
+mi5r8,5,1,4,4,1,5,1,4,4,5,1,4,4,2,5,1,1,5,5,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,1,,,,1,,,,1,,,,1,,,,2,1,1,2,1,2,1,4,1,2,4,4,5,1,1,1,10,1,10,1,4,4,4,5,5,10,1,1,1,1,1,5,1,1,1,1,5,1,4,6,7,6,7,4,7,4,1,1,1,4,5,2,5,1,,,1,,1,save yourself  trouble and just part with the money,"I don't like games of ""hope.""",be generous,I don't really need the money desperately,be selfless,giving selflessly always returns to one,,,,,,,1,5,2,1,,,1,1,2,1,1,2,1,2,1,1,,,,,,,1,2,2,2,1,2,2,1,1,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,1,2,2,2,2,1
+sh3z4,4,4,3,5,2,5,4,5,4,3,5,4,4,2,4,4,3,4,4,,1,,,,1,,,1,,,,1,,,,1,,,,1,,,,,1,,,,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,1,,,,1,2,2,2,2,1,2,2,1,2,2,2,2,4,3,2,5,3,5,3,4,4,5,5,4,4,4,5,1,1,1,2,1,3,4,1,5,3,3,5,6,6,1,4,7,4,5,5,4,5,4,2,4,4,1,,1,,4,i'm here to make money,i'll be judged if i'm not generous,i should keep more money for myself,i'd benefit most if i kept all the money,i'm being kind by offering $2,,,,,2,4,2,,,,,,2,,,,,,,,,,,1,1,1,1,1,1,1,1,1,2,1,2,2,2,2,2,2,2,2,2,2,2,1,1,2,2,1,2,2,2,2,2,2,2,2,2,1,1,1,2,2,1,2,1,2,2,1
+byr2v,2,2,4,2,2,3,4,4,2,2,3,4,2,2,2,6,3,3,3,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,,,1,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,2,4,4,4,3,2,3,3,3,2,2,2,2,5,5,5,2,5,2,5,4,4,4,4,4,4,1,1,1,1,1,1,1,1,1,1,5,1,2,6,6,6,6,6,6,6,6,6,3,4,2,2,4,3,1,,,,4,should i be reserved ,will they appreciate whatever they receive ,what is fair to be given out ,how much do i need to myself to feel comfortable ,"i dont know the other oerson, so how should i decide ",what is fair to be given to the person ,3,3,4,,,,,,,,,3,,,,,,,,,,,1,1,1,1,2,2,2,2,1,1,1,1,1,1,2,1,2,1,1,1,1,1,2,2,1,1,1,1,2,2,2,2,1,2,1,2,1,1,1,1,1,2,2,1,2,1,1
+vlxvq,5,5,4,4,1,5,3,1,1,5,5,4,4,1,5,6,3,3,3,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,2,3,4,3,3,5,4,4,4,3,3,2,2,10,10,10,1,10,1,10,5,10,10,10,10,10,1,1,1,1,1,5,1,1,1,3,5,1,4,7,7,7,7,7,7,7,1,1,3,3,1,1,5,5,1,,1,,3,kindness,generousity,karma,friendly,helpful,handsome,,,,1,5,6,,,,,,2,1,1,1,1,1,2,2,2,2,2,,,,,,,2,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,1,2,2,2,2,1,1,2,1,2,2
+t67m6,2,2,2,2,2,4,4,2,2,2,2,4,2,4,2,6,2,2,4,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,2,2,2,2,4,2,2,3,1,2,2,2,5,5,4,3,4,3,4,5,4,5,4,5,4,2,2,1,4,2,4,1,2,3,2,4,2,5,5,6,5,6,4,7,6,3,3,4,4,3,4,4,2,1,,1,,4,Should I keep it all?,Should I be fair?,I should keep the most,Why am I sharing?,This is silly,,,,,1,4,3,,,,,,2,1,1,1,1,1,1,1,2,2,2,,,,,,,2,2,2,2,2,1,2,2,2,2,1,2,2,2,2,2,2,2,2,2,1,1,2,2,1,1,2,2,2,1,1,1,2,2,1,1,2,1,2,1,2
+d5yrm,4,4,4,4,2,4,4,4,2,2,2,4,4,2,4,6,3,2,5,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,2,4,4,4,4,2,2,2,2,2,2,2,2,10,10,10,10,10,10,10,10,10,10,10,10,10,2,2,2,2,2,4,2,2,2,2,5,2,5,,6,6,3,6,6,5,6,5,4,5,2,2,5,5,1,,,1,3,Balance,Equality,Share,Equity,Harmony,Reciprocity,,,,4,5,6,,,,,,9,1,1,1,1,1,1,1,1,1,1,,,,,,,1,1,2,1,1,1,1,1,2,1,1,1,2,2,2,1,2,1,1,1,1,1,1,1,1,2,2,2,2,1,1,1,1,2,1,1,1,2,1,1,1
+9vwzo,4,4,3,5,4,3,4,3,2,2,5,4,4,2,4,3,2,3,4,,1,,,,1,,,1,,,,,1,,,1,,,,1,,,,,1,1,,1,,,,,1,,,,1,,,,1,,,1,,,,1,,,,1,1,,,,1,,,,1,,,1,,,,1,,,,,1,,,1,,,,2,2,1,2,2,2,2,4,3,1,1,3,3,5,4,5,2,5,3,10,4,4,4,5,5,3,4,4,1,2,2,2,1,2,4,2,5,2,5,4,6,3,2,5,7,5,2,3,1,3,2,4,2,1,1,,,,4,sharing is caring,don't be selfish,its ok to keep a little more,,,,,,,1,4,6,,,,,5,,,,,,,,,,,,1,1,1,1,1,1,1,1,2,2,2,2,1,2,1,2,1,1,2,2,2,2,1,2,1,1,2,2,2,2,2,2,2,2,1,2,1,2,2,2,2,1,2,2,2,2,2
+t2677,4,4,5,4,4,4,2,2,2,5,4,5,5,2,5,3,2,4,4,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,1,1,1,1,1,1,1,1,1,1,1,1,4,4,4,3,4,3,4,4,4,4,5,5,3,1,1,1,1,1,5,1,1,1,1,5,1,2,5,6,2,6,2,6,2,5,6,4,5,2,5,2,2,1,,,,4,"I was put in a ""leader"" position, making the decision, so I should get a bit more.","I would likely prefer to split it evenly, but that wasn't an option.",I might need more money than they other person.,"The other person would be understanding if I didn't give more to them than to myself, as long as it wasn't by much.",,,,,,2,5,6,,,,,,4,1,1,2,1,1,1,2,2,1,1,,,,,,,1,2,2,2,2,2,2,2,2,2,2,1,2,1,2,2,1,2,2,2,2,2,2,2,2,1,2,2,2,2,1,2,2,2,1,1,1,1,1,1,1
+2g6k8,4,4,4,4,2,4,4,4,2,2,2,4,4,2,4,6,3,2,5,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,2,4,4,4,4,2,2,2,2,2,2,2,2,10,1,10,10,10,10,10,10,10,10,10,10,10,2,2,2,2,2,4,2,2,2,2,5,2,5,5,6,6,3,6,6,5,6,5,4,5,2,2,5,5,1,,,1,3,Fairness,Generosity,Needs,Benefit,Justice,Distribution,4,5,6,,,,,,,,9,,,,,,,,,,,,1,1,1,1,1,1,1,1,1,2,2,1,1,2,1,1,1,2,2,1,2,1,1,1,1,1,1,1,1,1,1,2,1,2,1,1,1,1,1,1,1,1,1,2,2,2,1
+s6avc,5,5,3,4,4,5,2,3,1,4,5,3,3,2,5,2,2,3,4,1,,,,,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,1,,,,,,,1,,,1,,1,,,,1,,,,1,,,,1,,1,,,1,,,1,,,,,1,,,,1,,,,1,1,1,1,3,3,3,3,3,3,3,3,3,3,3,3,10,10,10,1,10,1,10,10,10,10,5,10,5,1,1,1,1,5,5,3,2,1,1,5,1,5,4,6,6,6,5,7,4,5,4,4,3,2,3,4,4,1,1,,,4,that i'm making the call so i should get a bit more,if there was 2.50 and 2.50 i would split it that way,,,,,,,,3,3,2,,,,1,,,,,,,,,,,,,1,1,2,1,2,2,1,2,2,2,2,2,2,1,1,2,1,2,2,2,2,2,2,1,1,1,2,2,2,2,2,2,1,2,2,2,2,1,2,2,1,1,1,2,1,1,1
+e8ihk,4,4,3,5,2,4,4,3,4,4,4,3,3,1,3,2,2,4,5,,,1,,,,1,,1,,,,,,1,,1,,,,,,1,,,1,,,,1,,,,,1,,,,1,,,,1,,,,1,,,,1,,,1,,,,1,,,,,1,,,,1,,,1,,,,1,,,,,1,,2,4,3,2,4,5,4,4,2,2,2,3,3,3,2,2,4,2,5,3,2,3,3,3,3,2,2,2,1,1,1,1,1,1,1,1,4,2,5,6,6,6,1,5,7,5,3,3,1,1,3,4,5,3,1,,,,3,Split so should they be the one to share with me they would do the same.,,,,,,,,,1,4,5,,,,,,1,,,,,,,,,,,1,1,1,1,1,1,1,2,2,2,2,1,1,1,2,2,2,2,1,1,2,1,2,1,2,2,2,2,2,1,2,2,2,2,1,2,2,2,2,2,2,1,1,1,2,2,2
+00a1r,4,3,4,5,2,4,3,4,4,3,3,4,4,3,4,3,1,4,4,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,,1,,,1,,,,1,,,,1,,,,1,,,,,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,3,3,2,2,4,4,4,3,2,2,2,2,5,5,5,2,5,3,5,4,4,4,5,5,3,2,3,2,2,2,4,2,2,3,2,4,1,5,5,6,5,2,4,6,5,4,5,1,4,4,5,2,3,1,,1,,3,it's better if we both get something,I prefer an even split,This seems fair,,,,,,,,,,1,3,5,3,,,1,1,1,1,1,2,1,1,2,1,,,,,,,2,2,2,2,1,1,2,2,2,1,2,2,1,2,2,2,1,1,2,2,1,1,2,1,1,1,2,2,1,2,1,2,1,2,1,1,2,2,1,1,2
+g24p8,5,4,5,4,3,4,5,4,4,4,4,5,5,5,5,7,3,2,2,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,,1,,,1,,,,1,,,,2,1,1,1,1,1,1,1,1,2,2,2,2,5,5,4,2,5,2,5,4,4,4,5,5,4,1,1,1,1,4,5,1,1,1,1,5,1,2,6,6,3,2,2,7,3,3,2,1,2,2,2,4,2,1,,1,,5,I don't want to be totally greedy,I feel like I should send something to the other person,The other person will probably appreciate the gesture,"Since I'm making the decision, I want the majority of the money",The person won't even know how generous or not generous I was,,2,4,4,,,,,,,,10,,,,,,,,,,,,1,1,1,2,1,1,1,2,1,2,2,2,1,2,2,2,2,1,1,2,2,2,1,1,2,2,1,2,2,1,1,2,2,2,2,2,1,2,2,2,1,1,2,2,2,1,1
+8tr2p,5,4,5,4,3,4,5,4,4,5,4,5,5,4,5,4,2,3,4,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,1,,,,,1,,,1,,,,,1,,,,1,,,1,,,,,1,,,,1,,,,1,,,,1,,,1,,,,1,,,,,1,,,,1,,,1,2,1,2,2,1,1,1,1,3,3,2,2,3,2,3,3,4,2,4,5,4,10,5,5,5,2,2,3,3,3,4,4,4,3,5,4,3,5,6,7,4,2,3,6,2,4,6,4,1,4,4,3,2,1,,1,,4,I wanted to share the money,I thought I should keep a little more since I was making the decision,I thought it was ok for me to keep $1 more since it was a small amount and there wasnt an option to split it evenly,,,,3,2,3,,,,,,,,,3,1,1,1,1,1,1,1,1,1,1,,,,,,,1,1,1,2,1,1,2,1,1,1,2,2,2,2,2,2,2,1,1,1,1,2,1,1,1,2,2,2,1,2,1,1,2,2,1,1,2,2,2,2,1
+cmjtd,3,1,2,1,1,3,3,2,1,2,2,2,2,2,2,3,2,3,4,,1,,,,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,,,1,1,,,,1,,,,1,,,,1,,,,1,,,,,,,1,,,1,,1,,,,1,,,,1,,,,1,,,,2,1,1,1,1,4,3,2,1,1,1,1,1,10,5,5,1,10,1,10,5,5,5,5,5,4,1,1,1,1,1,5,1,1,1,1,5,1,4,4,6,7,2,4,7,7,4,3,1,1,2,1,4,1,1,1,1,1,4,I want an even split,oh there isn't an even split option,I will mildly favor myself since I am the one making the decision,I hope the other person understands,,,,,,2,5,5,,,,2,,,1,1,1,1,1,1,1,1,1,1,,,,,,,1,2,2,2,2,2,2,1,2,1,1,1,2,1,2,2,2,2,2,2,1,1,1,2,2,1,2,2,1,2,1,2,2,2,1,1,1,1,2,2,2
+b9jzt,2.0,2.0,1.0,3.0,2.0,2.0,4.0,4.0,3.0,2.0,2.0,2.0,2.0,3.0,2.0,10.0,4.0,2.0,2.0,,1.0,,,,1.0,,,,,,1.0,,,,1.0,,,1.0,,,,,1.0,,,1.0,,,,1.0,,1.0,,,1.0,,,1.0,,,1.0,1.0,,,,1.0,,,1.0,,,,,1.0,,1.0,,,,,,1.0,,1.0,,,,,1.0,,,,1.0,,,,,1.0,,1.0,3.0,4.0,4.0,4.0,4.0,4.0,4.0,4.0,4.0,4.0,4.0,4.0,4.0,3.0,2.0,5.0,4.0,2.0,3.0,5.0,5.0,4.0,4.0,5.0,4.0,3.0,4.0,4.0,3.0,2.0,2.0,2.0,3.0,4.0,3.0,3.0,4.0,2.0,5.0,6.0,5.0,3.0,4.0,5.0,5.0,3.0,7.0,4.0,3.0,2.0,5.0,2.0,2.0,1.0,,,,4.0,Split means half,Half of $5 is $2.50,No option for $2.50 ,I'll take 3 and give the other person 2,,,,,,4.0,4.0,4.0,,,,,,3.0,,,,,,,,,,,1.0,1.0,1.0,1.0,1.0,1.0,1.0,2.0,1.0,2.0,1.0,2.0,1.0,2.0,2.0,1.0,1.0,2.0,1.0,2.0,2.0,1.0,1.0,1.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,1.0,2.0,2.0,2.0,1.0,1.0,1.0,1.0,2.0,1.0,1.0,1.0,1.0,1.0,1.0
+2ea2g,4,3,4,4,2,4,4,5,4,4,4,4,4,4,3,3,2,4,2,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,1,,,,,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,1,3,2,2,4,4,3,2,2,2,4,3,5,4,4,2,4,3,4,5,5,5,5,5,3,2,2,1,3,2,4,3,2,2,4,4,2,3,5,6,3,4,4,5,5,6,3,2,4,2,4,4,2,1,,1,,6,do i need to split at all?,will the other person know the rules of the game?,will i see the other person again?,do they have a say in this?,can they choose not to accept?,,,,,2,2,5,,,,,,1,1,1,1,1,1,1,1,1,1,1,,,,,,,1,1,2,1,2,2,1,2,1,2,2,2,1,1,2,2,2,1,1,1,1,2,2,1,1,2,1,2,1,1,1,1,1,1,1,1,1,1,2,2,1
+cmmpb,5,5,5,4,1,4,4,4,1,5,5,4,4,5,5,4,2,3,5,1,,,,,1,,,1,,,,,1,,,,,1,,,,,1,,1,,,,1,,,,1,,,,1,,,,1,1,1,1,,,,1,1,,,,1,,,,,1,1,,1,1,,1,,,,1,,,,1,,,,,1,1,,2,2,4,3,3,4,4,2,1,2,3,3,3,4,5,3,5,3,3,4,4,5,5,5,5,3,3,4,4,3,5,4,1,2,4,4,5,1,2,5,6,6,2,4,6,4,5,4,1,4,2,2,2,1,1,,1,,4,whats fair,all for me,whats fair,more for me,whats fair,more for me,,,,,,,1,5,6,2,,,1,1,1,1,1,2,2,2,2,2,,,,,,,2,2,2,2,2,2,1,1,2,2,1,1,1,2,2,1,2,1,2,2,1,1,1,2,1,2,2,2,1,2,2,1,2,2,1,1,2,2,2,1,1
+bc89d,4,4,4,4,2,4,4,4,2,4,4,4,4,2,5,5,3,2,2,1,,,,,1,,,,1,,,,1,,,1,,,,1,,,,,1,,,,1,,,1,,,,,1,,,,1,,,1,,,,,1,,,,1,,,,1,,,,1,,,1,,,,1,,,,,,1,,,1,,,2,1,2,2,2,2,2,3,2,2,1,2,1,4,3,2,3,4,4,5,4,3,3,4,5,5,2,2,2,1,2,4,2,1,2,2,4,2,4,5,6,6,6,3,6,4,5,3,4,5,2,2,3,4,,1,,,4,be fair,wanted to split but not an option,,,,,,,,,,,5,5,5,,,3,1,1,1,1,1,1,1,1,1,1,,,,,,,2,2,1,2,1,1,1,1,1,2,1,2,2,1,2,2,2,1,2,1,2,2,2,1,2,1,2,2,2,2,1,1,1,2,1,1,2,2,1,1,1
+qe5iw,4,1,4,4,4,4,4,4,5,4,2,4,4,5,5,7,3,3,2,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,1,,,,,1,,,1,,,,1,,,,1,,,,1,,,,1,4,4,4,4,3,2,2,2,2,4,3,4,5,4,3,3,4,3,5,2,3,4,5,4,3,3,2,2,2,2,4,2,2,2,2,4,4,6,5,7,6,6,7,6,5,5,5,1,1,4,5,5,4,1,,,,4,"Be fair, split evenly",There is no even split,I will split as evenly as possible. but to whose advantage?,"I will split to my advantage, since it is my money to divide.",,,,,,,,,4,5,6,4,,,,,,,,,,,,,1,1,1,1,1,1,1,2,2,2,2,2,2,1,2,2,2,1,2,2,1,2,2,1,2,1,2,2,2,2,2,2,2,2,1,2,1,2,2,2,1,2,2,2,1,2,2
+hpbis,5,4,3,4,5,5,5,4,4,5,5,4,4,4,5,2,1,4,5,1,,,,1,1,,,1,,,,,1,,,1,,,,1,,,,,1,,,,1,,,1,,,,,1,,,,1,,,1,,,,1,,,,1,,,,1,,,,,1,,,1,,,,1,,,,,1,,,,1,,,2,1,1,1,1,1,1,1,1,1,2,2,1,3,3,3,4,3,4,3,4,4,4,5,4,4,1,1,1,1,1,5,1,1,1,1,5,1,6,3,6,3,2,2,7,2,5,6,1,1,5,5,5,5,1,,1,,4,generous,shoe on other foot,what would someone do for me,close to 50 50,fair,not greedy,,,,5,5,5,,,,,,3,,,,,,,,,,,1,1,1,1,1,1,1,1,2,2,1,2,2,2,2,2,2,2,2,1,2,2,2,1,2,2,2,2,1,1,1,2,2,2,1,2,1,1,2,2,2,1,1,1,2,1,1
+t65ti,2,3,2,2,1,1,2,2,1,1,1,2,2,1,4,4,3,2,5,1,,,,,1,,,,1,,,,1,,,1,,,,,1,,,1,,,,,1,,,1,,,,1,,,,,,1,,,,1,,,1,,,1,,,,,1,,,,1,,,,1,,,1,,,,1,,,,1,,,,2,3,2,2,1,2,3,2,2,3,2,1,2,3,2,3,2,3,2,3,3,4,3,2,2,1,3,2,2,3,2,3,2,2,2,1,1,1,3,3,2,2,3,2,4,2,2,3,2,3,2,2,1,1,1,,1,,6,Maximizing my own bonus,"If there really would be ""another person""",,,,,,,,,,,5,2,5,2,,,1,1,1,1,2,2,2,2,2,2,,,,,,,1,1,2,2,2,2,2,1,2,2,1,2,1,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,1,2,1,2,2,2,2,1,2,2,2,2,1
+l7xza,5,5,5,5,5,5,5,5,5,4,5,5,5,2,5,3,1,1,3,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,1,,,,1,,,1,,,,1,,,,1,,,,,,1,1,1,,,,1,,,,1,,,,1,,,,1,,,,2,1,2,2,1,1,1,1,1,5,5,4,5,5,5,5,2,5,2,10,4,10,10,10,10,10,1,1,1,1,1,1,1,1,1,4,5,1,7,6,7,6,1,3,7,3,6,3,4,2,4,5,5,5,1,,1,,4,fairness,equality,advantage,,,,1,5,1,,,,,,,6,,,2,1,1,2,1,1,1,1,2,1,,,,,,,1,2,2,2,2,2,1,1,2,2,1,2,2,2,1,2,2,2,2,2,1,2,2,1,2,1,2,2,2,2,2,1,1,2,2,1,1,2,2,2,1
+eels5,4,3,3,3,3,4,4,5,3,3,3,3,3,5,4,6,1,3,3,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,3,5,3,3,2,1,3,1,1,4,4,4,1,4,1,4,4,4,4,4,4,4,5,4,4,3,3,1,1,1,3,3,1,1,1,1,1,3,4,7,5,6,4,7,5,1,4,1,4,1,5,4,4,,1,,,4,fair,equally,right,,,,,,,5,5,5,,,,,4,,1,1,1,1,2,2,2,1,1,1,,,,,,,1,2,2,2,1,2,2,1,1,2,1,2,2,2,2,1,2,2,2,1,1,2,1,2,1,1,2,2,1,2,1,2,2,2,2,1,2,2,1,2,1
+0ldjp,3,2,3,4,5,3,2,3,4,5,3,2,3,4,4,6,3,4,4,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,2,3,4,5,4,3,2,3,4,3,2,3,3,4,3,4,5,5,3,4,5,10,5,3,4,5,3,5,5,3,3,3,4,4,3,3,4,5,4,5,6,7,6,4,4,5,6,5,3,4,5,4,4,3,1,,,,2,nice,good,well,calm,well,honest,,,,,,,4,4,5,,,3,,,,,,,,,,,1,2,2,1,1,2,2,2,1,2,1,1,1,1,1,1,1,2,2,1,2,1,1,1,1,2,1,1,1,1,1,1,1,2,1,1,2,1,1,2,1,2,2,2,1,1,1
+pzttc,5,5,5,5,4,5,5,5,4,5,5,5,5,2,5,5,3,3,2,,1,,,,1,,,,,1,,,1,,,,,,1,,1,,,,1,,,,1,1,,1,,,,,1,,,,,1,,1,,,,,,1,,,,1,,,,,1,,1,,,,,1,,1,,,,,,1,,,1,,,1,4,5,4,5,3,2,2,1,2,4,4,4,5,4,4,3,4,3,4,3,4,4,5,4,4,5,5,5,5,5,2,4,3,4,4,2,4,1,6,6,5,2,2,6,5,6,7,4,4,2,2,2,2,1,,,,3,i don't know if they need the money more,one dollar isn't a large difference,It seems a fair way to split the money,i hope that it makes them happy,it feels generous,it felt more fair than keeping more for myself,1,5,5,,,,,,,,4,,1,1,1,1,1,1,1,2,2,2,,,,,,,1,1,1,1,1,1,2,1,2,2,1,1,2,1,2,2,2,2,2,1,2,2,1,1,2,1,1,2,2,2,1,2,2,1,1,1,1,2,2,1,1
+ilhrp,4,4,4,4,3,4,5,4,4,3,4,4,4,4,4,5,2,3,4,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,2,4,3,3,4,4,4,4,3,4,4,4,2,2,2,4,4,4,4,5,4,5,4,5,4,2,2,2,2,2,4,3,2,3,4,3,3,3,5,5,5,3,4,5,3,5,5,4,2,3,2,2,2,1,,1,,3,fairness,nice,equal,even,,,2,4,5,,,,,,,,,1,2,2,2,2,2,2,2,2,2,2,,,,,,,1,2,2,2,2,1,2,2,2,2,1,2,2,2,1,2,2,1,1,1,1,2,1,1,1,2,1,2,1,2,2,1,2,2,1,1,1,1,2,1,1
+ibsjm,4,4,5,3,4,4,4,3,2,3,4,5,5,1,4,3,2,3,4,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,1,,,,1,,,,1,,,,,1,,,1,2,2,2,2,1,1,1,1,1,1,3,3,5,5,4,3,5,2,5,5,4,4,5,5,4,1,1,1,1,1,5,1,1,1,1,5,1,5,6,6,6,2,4,7,3,4,5,1,5,2,2,5,4,1,,1,,4,Fair,Honest,Equal,,,,,,,,,,4,5,5,,,1,1,1,1,1,1,1,1,1,1,1,,,,,,,1,2,2,2,1,2,1,2,1,2,1,2,2,1,1,1,2,1,2,2,1,1,2,2,2,2,1,2,2,1,2,1,2,2,2,1,1,2,2,2,1
+mfgtj,2,2,4,2,2,2,3,2,1,2,2,3,4,3,3,2,2,3,2,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,,1,,,1,,,,1,,,,1,,,,1,,,,1,3,2,2,3,2,2,1,1,1,1,1,1,4,4,3,3,5,3,5,4,5,4,5,5,4,1,1,1,1,1,5,2,1,1,1,5,1,5,4,7,6,7,6,7,6,4,3,2,4,2,3,3,2,1,,1,,3,should be equal,there's no 2.50 option,give the other person more so there's no resentment,,,,,,,,,,2,5,6,,,1,2,2,2,1,1,1,1,1,1,1,,,,,,,1,2,2,2,1,2,1,2,2,1,1,1,1,2,1,2,2,1,1,1,2,2,2,1,2,2,2,2,2,2,1,2,1,1,1,1,1,1,2,1,2
+b8zaq,5,5,4,5,5,5,3,3,2,5,5,4,4,3,5,4,3,4,3,1,,,,,1,,,,1,,,1,,,,1,,,,1,,,,,1,,,1,,,,1,,,,,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,1,,,,1,,,,1,1,,,1,,,,2,2,3,1,2,4,1,1,1,1,1,1,1,10,10,4,3,2,4,4,5,4,5,5,5,5,2,1,1,1,1,4,1,1,1,3,4,1,4,6,5,6,2,4,7,4,3,3,4,5,5,3,4,2,1,,1,,4,there was no option to choose an even split of the money which is just wrong!,,,,,,1,5,5,,,,,,,,,2,1,1,1,1,1,1,1,1,1,1,,,,,,,2,2,2,2,2,1,2,2,2,2,2,1,2,2,2,2,2,1,2,1,2,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,1,2,2,2,2
+6rxfs,4,3,4,5,2,4,2,4,4,4,4,4,4,2,4,4,2,4,4,,1,,,,,1,,,,,1,,1,1,,,1,,,1,,,,,,1,,,,1,,,1,,,,1,,,,1,,,,,1,,,1,,,,,1,,,,1,,,1,,,,1,,,,1,,,,1,,,,,1,,2,1,2,1,1,2,1,1,2,2,1,2,2,3,2,2,4,3,5,3,4,4,4,5,5,2,2,2,3,2,2,4,1,2,2,1,4,4,4,5,5,2,3,3,6,3,2,5,2,5,5,5,1,1,1,,,,6,"If I can keep it all, I might as well.",I don't know this person.,There's no penalty for being selfish.,,,,,,,4,5,5,,,,,2,,1,1,2,1,1,1,2,1,2,1,,,,,,,1,2,2,2,2,2,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2,2,1,1,2,2,2,1,2,2,2,1,2
+wrvfk,5,5,4,5,3,5,4,4,4,4,4,5,4,2,4,3,3,4,4,,1,,,,1,,,1,,,,,1,,,1,,,,1,1,,,1,1,,,1,1,,,1,1,,,,1,,,,1,,,,1,,,,1,,,,1,1,,1,1,,,,1,,,,1,,,1,,,,1,1,,,1,1,,,2,3,4,3,2,3,2,3,2,1,1,1,2,5,5,5,4,4,3,5,4,5,5,10,10,5,4,5,5,3,2,3,4,4,4,1,3,4,7,4,5,5,4,4,6,5,5,6,4,4,5,3,3,3,1,,1,,4,I dont know the other person,Even though I dont know them I'd like to share my money with them,I wouldve liked to split down the middle but that wasnt an option,I hope they are have with the amount I gave them,,,2,4,5,,,,,,,,8,,1,1,2,1,1,2,1,1,2,1,,,,,,,2,1,1,2,2,1,1,1,2,2,1,2,2,2,2,1,2,1,2,1,2,2,1,2,2,1,2,2,1,2,2,1,2,1,1,1,2,2,1,1,2
+1b3hy,5,5,5,5,4,5,4,5,4,5,5,5,5,4,5,7,3,2,1,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,2,1,1,1,1,1,1,1,1,1,1,1,1,4,4,4,3,4,3,4,4,3,3,4,4,4,1,1,1,1,1,5,1,1,1,1,5,1,3,5,7,5,7,5,7,5,6,5,1,1,1,1,4,4,1,,1,,4,Being fair,Being honest,,,,,,,,,,,1,5,6,10,,,1,1,1,2,1,1,1,2,1,2,,,,,,,2,2,2,1,2,2,2,2,2,1,2,1,2,2,1,2,2,1,2,2,2,2,1,2,2,2,2,1,2,2,2,2,2,2,2,2,1,1,2,2,2
+kficb,1,2,4,2,2,1,5,4,2,2,2,4,4,2,1,6,3,3,4,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,1,,,,1,,,,1,5,4,4,4,2,1,2,1,4,3,2,3,5,10,5,1,5,2,5,5,5,5,3,4,5,2,4,4,1,3,2,4,4,4,5,4,4,1,6,7,6,6,5,6,5,6,6,4,5,4,4,4,4,1,,1,,4,gains ,profits ,interest,not loosing ,,,5,5,5,,,,,,,,3,,1,1,1,1,1,1,2,2,2,2,,,,,,,2,1,1,1,2,2,2,2,2,1,1,1,1,1,2,1,1,2,2,1,1,1,1,2,1,1,1,2,1,1,1,1,2,1,1,1,1,1,2,1,1
+egrrg,4,4,3,5,3,4,3,5,5,4,4,4,3,4,5,2,3,4,5,,1,,,,,1,,,,1,,1,,,,,1,,,,,,1,,,1,,,,1,,,1,,,,,1,,,,1,,,,1,,,,,1,,,1,,,,1,,,,1,,,,1,,1,,,,,,1,,,,,1,2,1,1,1,1,3,1,1,1,3,1,1,1,2,2,2,5,2,5,2,2,2,2,1,2,2,1,1,2,2,4,2,2,1,1,5,3,4,2,4,5,5,2,4,3,2,3,3,4,4,4,5,1,2,1,,,,4,Can I keep all of it,I need more money,Why does he need that money,I need to pay the bills,I'm poor,I wish I was rich,,,,5,4,3,,,,,,2,,,,,,,,,,,1,1,2,1,2,1,1,1,2,2,2,1,2,1,2,1,1,2,1,2,2,2,1,1,2,1,1,1,1,1,1,2,2,1,1,1,1,1,2,2,2,1,1,1,2,1,1
+zenjf,2,1,4,2,1,2,2,1,1,1,1,4,3,2,1,6,2,2,3,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,2,3,1,1,1,5,3,3,1,1,5,5,5,2,1,1,5,2,10,1,2,3,2,5,4,1,1,1,1,1,1,5,1,1,1,1,5,1,6,2,4,7,4,5,4,6,1,1,1,4,5,5,4,2,1,1,1,1,4,I prefer 2.5 for each,,,,,,1,5,3,,,,,,,1,,,,,,,,,,,,,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+j8yub,5,5,4,5,3,5,5,5,3,5,5,5,5,4,5,6,3,2,5,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,1,4,2,2,4,1,3,2,4,3,1,2,1,4,3,2,4,2,3,4,1,3,3,2,1,4,1,1,2,1,2,1,3,1,1,2,4,1,7,6,6,4,1,5,7,6,1,1,5,3,5,5,5,2,1,,,,6,I LIKE MONEY,NEED MONEY,I COULD USE THE MONEY,,,,2,3,1,,,,,,,1,,,,,,,,,,,,,1,1,1,1,1,1,2,1,1,2,1,2,1,2,2,1,1,2,1,2,1,2,1,1,1,2,1,1,1,1,1,1,1,2,1,1,1,1,1,2,1,1,1,1,1,1,1
+rf2g7,5,4,5,2,2,4,4,5,5,5,4,5,5,2,5,10,4,1,1,,1,,1,,1,,,,1,,,,1,,1,,1,,,1,,,,,1,,,,,1,,,1,,,,1,,,,,1,,,,1,,,1,,,,,1,,,1,,1,,1,,,1,,,,1,,,,1,,,,,,,1,2,2,2,1,1,1,1,1,1,2,1,1,1,5,5,5,1,5,4,5,3,10,4,3,4,4,4,4,3,4,5,3,3,4,4,4,2,5,6,7,7,3,4,2,7,4,6,7,5,5,5,4,3,2,1,,,,4,saving,cheap,greedy,,,,,,,3,4,5,,,,,4,,,,,,,,,,,,1,1,2,1,1,2,2,1,1,1,2,1,2,1,1,2,1,2,1,2,1,2,1,1,2,1,1,2,2,2,2,2,2,2,2,2,1,2,2,1,2,1,1,2,1,1,1
+4p3l9,5,5,5,2,1,5,4,5,4,2,4,5,5,5,4,3,2,3,4,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,2,1,1,4,4,2,2,3,4,4,2,2,2,5,5,3,2,5,1,5,4,4,4,4,4,4,1,1,1,1,1,5,1,1,1,1,5,1,6,4,6,6,6,6,6,6,1,4,1,1,4,5,4,3,1,,1,,4,as close to an even split as possible,if it can't be even then I get the larger amount,,,,,2,1,2,,,,,,,2,,,,,,,,,,,,,1,1,2,1,1,2,1,1,1,1,2,1,1,2,1,1,1,1,1,1,1,1,2,1,1,1,2,1,1,1,2,2,1,2,1,1,1,2,2,2,2,1,1,2,1,1,1
+yfl6g,1,1,5,1,1,1,1,1,1,3,1,5,5,1,1,1,1,5,5,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,2,4,4,4,4,4,4,4,4,3,3,3,3,10,10,10,1,10,1,10,10,10,10,10,10,10,1,1,1,1,1,5,1,1,1,1,5,1,4,4,7,7,1,7,7,7,5,4,4,5,1,1,5,5,1,,1,,6,I wanted to maximize my own payment.,I do not feel the other person would have shared with me.,I could really use the money.,,,,,,,1,5,6,,,,3,,,1,1,2,1,2,1,1,1,2,1,,,,,,,1,2,1,1,2,1,1,2,1,1,2,2,2,1,2,2,2,2,2,1,1,2,1,2,1,1,2,2,1,2,1,2,1,2,1,1,1,2,1,1,1
+lx6ix,5,3,4,5,3,5,3,4,4,5,5,5,5,5,5,5,2,1,3,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,2,4,3,3,3,2,3,3,2,2,3,4,3,4,10,4,3,5,10,5,4,4,4,10,5,4,1,1,1,1,1,5,1,1,1,1,5,1,6,6,7,6,7,6,7,6,5,5,4,1,2,1,5,5,1,1,1,1,4,I was thinking about fairness.,I was thinking about being generous.,I was thinking about how much the other person needed the money.,,,,,,,1,5,6,,,,3,,,1,1,1,1,1,1,1,1,1,1,,,,,,,1,2,2,2,2,2,2,2,2,1,1,2,1,2,2,2,2,1,1,2,2,2,2,2,1,2,2,2,1,1,1,2,2,2,2,2,2,1,2,1,2
+f5cp3,2,1,3,2,1,2,2,1,2,1,2,4,3,4,1,7,2,2,2,1,,,,,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,,1,,,1,,,,1,,,,1,,,,1,,,,2,1,4,4,3,2,1,1,1,2,2,2,2,4,4,3,4,3,3,4,5,4,4,5,4,5,1,1,1,1,1,5,1,1,1,1,5,1,2,4,6,6,6,7,6,6,7,5,4,5,1,2,4,4,1,,1,,4,I was first thinking of dividing up the money evenly between the two of us,"Since there was no option  to choose $2.50, I decided to keep $3.00 for myself.",I gave myself the slightly larger amount as reward for being the decisionmaker.,,,,,,,,,,4,5,6,,,3,1,1,1,1,2,2,1,2,1,1,,,,,,,2,2,2,2,2,2,1,2,2,2,2,1,2,2,2,2,2,1,2,2,1,2,2,2,2,2,1,2,2,2,1,2,2,2,1,1,1,1,1,1,2
+76ux4,4,1,4,4,2,2,4,4,4,4,4,4,4,1,4,2,2,4,4,1,,,,1,,,,1,,,,,1,,,,1,,,,1,,,,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,,1,,,1,,,,1,,,,,1,,,,1,,,1,1,1,1,2,2,2,2,1,1,2,2,1,5,5,4,4,4,2,4,4,4,4,5,5,4,2,2,1,1,2,1,1,1,1,1,5,1,5,5,6,6,5,6,5,5,5,6,1,1,2,2,4,2,1,,,1,4,Fair,Kind,Thoughtful,equal,trust,hope,5,4,6,,,,,,,1,,,,,,,,,,,,,2,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,1,2,1,2,2,1,1,1,1,2,2,1,1,2,2,1,1,1,1,1,2,2
+mtom9,5.0,5.0,4.0,1.0,4.0,5.0,3.0,4.0,3.0,5.0,5.0,4.0,4.0,3.0,5.0,7.0,2.0,3.0,3.0,1.0,,,,,1.0,,,1.0,,,,,1.0,,,1.0,,,,,1.0,,,1.0,,,,1.0,,,,1.0,,,,1.0,,,,,1.0,,,1.0,,,,1.0,,,,,1.0,,,1.0,,,,1.0,,,,1.0,,,,1.0,,,,,1.0,,,1.0,,,,2.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,5.0,4.0,4.0,2.0,4.0,2.0,4.0,1.0,3.0,2.0,2.0,3.0,3.0,1.0,1.0,1.0,1.0,1.0,4.0,1.0,1.0,1.0,1.0,4.0,1.0,5.0,6.0,6.0,7.0,1.0,5.0,7.0,6.0,5.0,5.0,4.0,5.0,3.0,2.0,4.0,2.0,1.0,,,,4.0,fairness,even,share,,,,,,,,,,4.0,4.0,4.0,2.0,,,,,,,,,,,,,1.0,2.0,1.0,1.0,2.0,1.0,1.0,2.0,2.0,2.0,1.0,1.0,2.0,1.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,1.0,1.0,2.0,1.0,2.0,2.0,1.0,1.0,1.0,1.0,1.0,1.0,2.0,2.0,1.0,2.0,2.0,2.0,2.0,1.0,1.0,1.0,1.0,1.0,1.0
+o9a24,3,3,4,3,2,4,4,4,2,2,3,4,4,3,3,7,2,2,3,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,1,,,,1,,,,,1,,,1,,,,2,2,2,2,2,3,3,2,2,1,1,1,1,4,3,3,3,3,2,3,5,4,5,10,10,5,2,3,2,1,1,4,2,1,1,2,4,1,5,5,7,6,6,6,7,7,5,6,2,3,4,2,5,3,1,,1,,4,fairness,need,,,,,2,5,6,,,,,,,,5,,,,,,,,,,,,1,2,1,1,2,1,1,2,1,2,2,2,1,2,2,1,1,2,1,2,2,1,2,1,1,1,1,1,1,1,1,2,2,2,1,2,2,2,1,2,1,1,1,2,1,2,2
+ir48j,4,4,5,4,4,4,4,4,4,4,4,5,5,2,4,6,2,3,1,,1,,,,1,,,,1,,,,1,,,,1,,,1,,,,,1,,,,1,,,1,,,,,1,,,,1,,,1,,,,1,,,,1,,,,,1,,,,1,,,1,,,,1,,,,,1,,,,,1,,1,1,1,1,1,1,1,1,1,1,1,1,1,5,5,5,1,5,1,5,4,4,4,4,4,3,1,1,1,1,1,5,1,1,1,1,5,1,3,7,7,6,7,4,7,5,5,5,4,4,2,2,4,4,1,,1,,4,I wanted to keep more of the money,I want to offer enough that the other person will accept it,I don't know the other perso,I do not owe a stranger anything in terms of gain,,,,,,5,5,6,,,,,,5,1,1,1,1,1,1,1,1,1,1,,,,,,,1,2,2,2,2,1,2,2,1,1,1,1,2,1,1,2,1,1,1,1,1,2,1,2,1,2,1,2,1,1,1,1,2,1,2,1,1,2,2,2,1
+iyz57,5,5,5,5,2,5,5,5,5,5,5,5,5,3,5,8,3,1,1,1,,,,1,,,,1,,,,,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,,,1,,1,,,1,,,,1,2,2,2,2,2,2,2,2,1,1,1,1,5,5,5,1,5,1,5,4,4,5,5,5,5,1,1,1,1,1,5,1,1,1,1,5,1,3,6,6,3,6,3,6,3,6,6,4,1,1,1,4,1,1,,1,,4,Be Fair,Don't be greedy,"If you don't have a 50 50 choice, then keep the most for myself.",I did the best I could to be fair.,I'm sure I did the right thing.,I treated someone else like I would expect to be treated.,,,,5,5,6,,,,,,2,,,,,,,,,,,1,1,2,1,2,1,2,1,1,2,2,1,2,1,1,1,1,1,1,1,1,2,2,1,1,1,2,1,1,1,1,2,1,1,1,1,1,2,2,2,1,1,1,2,1,2,1
+o9fsx,4,5,4,5,2,4,5,5,4,5,4,3,4,2,4,7,3,2,2,1,,,,1,,,,,1,,,1,,,,,1,,,,,,1,,1,,,,1,,,1,,,,,1,,,1,,,,,,1,,,,1,,1,,,,,,1,,,1,,,1,,,,1,,,,,1,,,1,,,,2,2,4,4,4,2,2,4,4,2,1,2,2,5,4,3,4,5,4,5,4,2,5,4,3,4,4,4,4,2,2,4,2,4,2,4,4,4,3,5,6,5,6,5,6,5,5,6,1,4,2,2,4,4,1,,1,,4,Fairness,Equality ,Winning ,First ,Acceptance,Cash,,,,2,5,5,,,,,4,,,,,,,,,,,,1,1,2,1,2,1,2,1,1,2,2,2,2,2,1,1,1,1,1,2,1,1,2,1,1,1,1,1,1,1,1,2,2,2,1,1,1,1,1,2,1,1,1,2,2,1,2
+vqz6r,4,3,3,3,2,2,4,4,3,4,4,4,4,4,4,6,2,4,4,1,,,,,,1,,1,,,,,1,,,1,,,,1,,,,,1,,,,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,1,,,,,,1,,1,,,,1,,,,,,1,,1,,,,2,4,4,4,4,3,3,3,3,3,3,3,4,5,5,4,4,4,4,4,4,4,4,5,5,4,3,3,2,2,3,4,3,2,2,2,4,3,6,5,5,7,3,6,6,6,6,5,3,3,2,4,4,4,1,,1,,4,selfish,fairness,generosity,protected,I,Thou,1,4,4,,,,,,,,,2,1,1,1,1,1,1,1,2,2,2,,,,,,,2,2,2,2,2,1,2,1,1,2,2,2,1,2,2,1,2,2,2,1,2,2,1,1,2,2,1,2,2,2,1,1,2,2,1,1,1,1,1,2,1
+a53lx,4,4,5,3,4,4,4,2,2,4,4,5,5,2,4,2,2,4,5,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,2,3,4,4,4,3,2,4,1,2,4,3,4,10,10,10,1,10,2,10,4,5,5,10,5,5,1,1,1,1,1,5,2,1,1,2,5,1,6,3,7,6,7,4,6,5,5,3,2,4,2,4,5,2,,,1,,3,fairness of division,getting one less dollar is no big deal,showing generosity,not being greedy,,,,,,,,,1,5,6,,4,,1,1,1,1,1,1,1,1,1,1,,,,,,,2,2,2,2,2,1,2,2,1,1,2,1,1,2,1,2,1,1,2,2,2,2,1,2,2,1,2,2,2,1,2,1,2,2,1,2,1,1,2,1,2
+v2zfr,5,4,4,4,2,4,4,2,4,4,4,5,4,2,5,5,3,3,4,,1,,,,1,,,1,,,,,1,,,1,,,,,1,,,,1,,,1,,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,1,,,,,1,,,1,,,,1,,1,,1,,,,1,,,,1,2,4,2,2,3,2,2,2,2,1,2,2,2,4,4,4,4,2,2,5,5,5,5,5,5,4,4,3,2,2,3,4,2,2,2,4,3,3,5,6,2,5,2,6,2,4,5,1,3,2,2,4,3,1,,,,4,Be fair,person may need money,be a good person,Feel better of myself,I did the right thing,,,,,,,,1,5,3,3,,,1,1,2,2,1,2,1,1,1,1,,,,,,,2,2,1,2,2,2,1,1,2,2,2,2,2,2,1,2,2,1,1,2,1,2,2,2,1,2,2,2,2,2,1,2,2,2,2,2,2,1,1,1,2
+ridfr,4,3,5,4,4,4,5,2,2,4,3,5,4,1,4,2,2,4,5,1,,,,,1,,,,1,,,,1,,,1,,,,1,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,1,,,,1,,,,1,,,,,,1,,1,,,,,1,,,,,1,,,1,,1,,,,1,1,3,1,1,1,1,1,1,2,2,2,3,10,10,5,2,10,2,10,5,10,5,5,10,5,4,4,3,2,4,2,3,3,4,3,4,1,6,6,7,6,3,6,7,6,2,7,4,3,2,3,5,5,1,,,,4,I didn't know them,$2 is better than 0,Things cost too much,Wanted a $2.50 option,How they would feel about getting $2,,,,,,,,1,5,2,,9,,,,,,,,,,,,1,1,2,1,2,1,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,1,2,2,2,1,1,2,2,1,1,1,2,1,2,2
+0xhxd,5,5,5,4,4,5,5,5,5,5,5,5,5,4,5,1,1,2,5,1,,,,,1,,,,,1,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,1,,,,1,,,1,,,,1,,,,1,,,,1,,,,2,2,2,2,2,2,2,2,2,2,2,2,2,5,5,5,5,5,2,5,2,5,5,5,5,2,2,4,2,2,2,4,2,2,4,5,4,2,2,6,6,6,6,6,6,5,6,6,2,5,2,2,4,2,1,,1,,6,I want it all,,,,,,,,,2,4,5,,,,,3,,1,1,1,1,1,1,1,1,1,1,,,,,,,2,2,2,2,2,2,2,2,2,2,1,2,2,2,2,1,2,1,2,2,2,1,2,1,1,1,2,2,2,1,1,1,2,2,1,1,1,2,2,2,2
+bnxw1,4,2,3,3,2,4,4,4,3,3,2,2,4,2,2,7,3,3,4,1,,,,1,,,,1,,,,1,,,,,1,,,1,,,,,1,,,,1,,,1,,,,,1,,,,1,,,1,,,,,1,,,,1,,,,,,1,,1,,,,,1,1,,1,,,,1,,,,1,,,1,2,4,2,2,2,2,2,3,2,2,3,2,4,4,3,2,4,2,4,4,5,5,5,5,5,1,1,1,2,3,2,1,2,1,1,5,1,5,6,6,7,2,5,6,6,3,5,5,1,2,5,3,1,,,1,,4,I want to make sure i get some money,I dont trust anyone else to be fair,i want to share some,I want to make sure I get a little more,it is not right to keep it all,it is not right to give it all away,,,,,,,4,5,6,3,,,,,,,,,,,,,1,1,2,1,1,2,1,2,2,2,2,2,1,2,2,1,1,1,1,2,2,1,1,1,2,2,2,1,1,1,1,1,1,1,1,1,1,1,2,2,1,1,1,2,1,2,1
+1njfu,4,3,4,2,3,5,4,3,4,3,3,4,4,1,4,6,2,3,4,1,,,,1,,,,,1,,,1,,,,,1,,,1,1,,,1,1,,,,1,,,1,,,,1,,,,,1,,,1,1,,,1,,,,1,,,,,1,,,,1,,,1,,,,,1,,,,1,,,,1,,,1,3,2,2,2,3,3,3,3,1,1,1,2,4,4,2,3,4,4,5,5,4,5,4,5,4,3,4,2,3,1,2,1,2,2,2,4,4,4,5,6,5,4,5,4,6,5,5,3,5,4,4,5,4,1,,,,4,Is there an option to split in half?,No there is not a half and half option,I will pick the one closest to that,3 for me 2 for them,,,,,,2,4,5,,,,,10,,1,1,1,1,1,1,1,1,1,1,,,,,,,1,2,2,2,2,2,2,2,2,1,1,2,2,2,2,2,2,2,2,2,2,2,2,1,2,1,2,2,1,2,1,2,2,2,1,2,2,2,2,2,2
+rlkzv,4,4,4,4,3,4,4,4,4,4,5,4,4,4,4,4,2,3,3,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,2,2,2,4,4,2,2,2,2,4,3,4,4,5,5,4,2,5,2,5,4,5,5,4,4,4,2,1,1,1,1,5,1,1,1,2,4,2,6,5,6,6,5,4,4,5,5,5,2,2,4,4,3,3,1,,1,,4,fairness,acceptable,,,,,,,,,,,4,4,5,4,,,,,,,,,,,,,1,1,1,1,1,1,1,2,2,2,2,2,2,2,1,2,2,2,1,2,2,2,1,2,1,2,2,2,1,2,2,2,2,2,2,2,1,2,2,2,1,2,1,1,2,2,2
+n6xqr,4.0,4.0,4.0,4.0,3.0,4.0,4.0,4.0,3.0,4.0,4.0,4.0,4.0,3.0,4.0,4.0,2.0,2.0,3.0,,1.0,,,,1.0,,,1.0,,,,,1.0,,,1.0,,,,1.0,,,,1.0,,,,1.0,,,,,1.0,,,,1.0,,,1.0,,,,1.0,,,,1.0,1.0,,,1.0,,,,,1.0,1.0,,1.0,,,,,1.0,,,1.0,,,,1.0,1.0,,,,1.0,,,1.0,1.0,2.0,1.0,1.0,2.0,1.0,2.0,3.0,3.0,4.0,4.0,4.0,3.0,3.0,2.0,5.0,2.0,4.0,3.0,4.0,4.0,4.0,5.0,5.0,4.0,4.0,5.0,3.0,3.0,3.0,3.0,4.0,2.0,4.0,4.0,4.0,4.0,6.0,4.0,5.0,5.0,3.0,4.0,5.0,5.0,4.0,3.0,2.0,3.0,3.0,3.0,2.0,2.0,1.0,,,,6.0,Do I care about the other?,Let's be greedy,No risk to me means I can take it all,Double check there aren't any catches listed,,,2.0,4.0,3.0,,,,,,,3.0,,,,,,,,,,,,,1.0,1.0,2.0,1.0,1.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,1.0,1.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,1.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,1.0,2.0,1.0,1.0,1.0,2.0,2.0,1.0,1.0,2.0,2.0,2.0,2.0
+4wcis,4,1,4,3,3,4,4,4,3,3,3,3,4,4,4,8,3,2,2,1,,,,,1,,,,1,,,1,,,,,1,,,1,,,,,1,,,,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,2,4,2,2,4,1,1,1,1,2,2,1,1,4,4,3,3,4,2,5,4,5,5,5,4,3,2,2,2,2,2,3,1,1,1,1,4,2,4,5,5,4,7,4,7,5,6,6,3,4,2,1,4,2,1,,,,4,How to split it equally,How much to give the other person so that they would accept the offer,Whether I should give myself more or less,,,,,,,,,,3,2,4,,,2,,,,,,,,,,,1,1,1,1,1,1,1,2,2,2,1,2,1,1,1,1,2,1,1,2,2,2,2,1,1,1,1,2,1,2,1,1,1,2,1,2,1,2,1,1,1,1,1,2,2,2,1
+ighhg,5,1,5,5,2,5,4,5,4,5,4,5,5,4,5,10,4,2,1,1,,,,,,,1,,,1,,,1,,,,1,,,,,,1,,,1,,,,,1,1,,,,,,,1,,,,1,1,,,,,,,1,1,,,,,,1,,,1,,,1,,,,1,,,,1,,,,1,,,,2,3,2,2,1,3,3,3,1,1,1,1,1,3,3,2,5,3,5,3,1,2,1,4,3,1,4,1,2,1,4,2,1,1,1,2,4,4,2,6,6,4,2,3,7,5,6,6,1,5,5,5,1,1,1,,1,,4,I thought about splitting it evenly,I was annoyed that I couldn't split it evenly,I decided I would split if as close to an even split as I could,I thought about keeping the lesser amount but it I couldn't go through with it,I decided it's acceptable if I keep the larger amount because my chance I was the decision-maker,,,,,,,,2,5,6,,5,,1,1,1,1,1,1,1,2,2,2,,,,,,,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,1,1,1,2,2
+i89x5,5,5,5,3,1,5,2,5,3,1,3,5,5,3,4,3,3,3,3,1,,,,,1,,1,,1,,,,,1,,1,,,,1,,,,,1,,,,1,,,1,,,,,1,,,,1,1,,,1,1,,,1,1,,,1,,,,1,,,1,,,,1,,,,1,,,,1,,,,,,1,,2,1,1,1,1,1,1,1,3,1,1,1,1,5,5,3,2,5,1,10,4,4,10,10,5,5,3,2,3,5,2,3,5,1,1,5,4,2,1,5,7,3,7,2,7,4,1,7,1,5,5,5,1,1,1,,1,,3,It has to be equal,Or close to equal,For the person to accept it,,,,3,2,6,,,,,,,2,,,2,1,2,1,2,1,2,1,2,1,,,,,,,2,1,2,2,1,2,1,1,2,1,2,2,1,2,1,2,2,1,1,1,2,1,1,1,1,1,1,2,2,2,1,2,1,2,1,2,1,2,1,1,1
+ek9iq,4,4,5,4,2,4,4,3,3,4,4,4,4,4,4,10,4,2,1,,1,,,,1,,,,,1,,1,,,,,1,,,,1,,,,1,,,,1,,,1,,,,1,,,,1,,,,,1,,,,1,,,,1,,,,,1,,,1,,,1,,,,1,,,,,1,,,1,,,,2,3,3,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,4,4,4,4,4,4,3,3,2,2,4,4,2,3,2,2,4,2,3,6,6,5,2,4,6,5,4,5,2,4,4,4,4,3,1,,1,,4,"fair, would like to do 50/50",can't be entiredly fair so I'll take bit more for myself,I hope the other person is not desperate,"I'm pretty desperated, I hope the other person understands","I've done the best I can, but now I wish I could have done it differently","I should have given the other person 3, and kept 2",1,5,5,,,,,,,,3,,,,,,,,,,,,1,1,2,1,1,2,2,2,2,1,2,1,2,2,2,2,1,1,2,2,2,2,2,1,2,2,2,1,2,1,2,1,1,2,1,2,1,2,2,2,1,1,1,2,1,1,1
+nuaiw,4,2,4,2,1,4,4,3,2,2,2,4,4,4,4,3,2,4,5,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,2,1,1,1,1,2,1,1,1,1,1,1,2,10,4,5,2,5,4,5,2,2,4,4,4,2,4,4,2,2,2,4,1,2,1,1,5,1,4,5,5,6,3,3,5,3,3,5,4,4,4,2,4,2,1,,,,3,I want to split the money relatively evenly,I want to be generous,,,,,2,5,3,,,,,,,,,3,1,1,1,1,1,1,1,1,1,1,,,,,,,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2
+l3bok,4,2,5,3,1,4,4,5,1,2,3,4,5,2,4,8,4,1,2,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,2,1,1,1,1,1,1,1,1,1,1,1,1,4,1,1,5,4,4,4,2,2,3,2,4,4,1,1,1,1,1,4,1,1,1,1,1,1,5,6,7,2,1,3,7,4,4,2,1,1,5,2,4,1,1,,,1,4,I want to be fair and share the money.,"Keeping some for myself is reasonable, but giving some away feels right.","I don’t want to seem greedy, but I also want to keep a fair amount.",,,,,,,4,4,6,,,,5,,,1,1,1,1,1,1,1,1,1,1,,,,,,,1,2,2,1,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,2,1,1,1,2,2,2,1,1,1,2,2,2
+4th4n,4,3,4,3,3,4,4,4,3,2,3,4,4,2,2,8,3,3,1,,1,,,1,,,,1,,,,1,,,,,1,,,1,,,,1,,,,,1,,,1,,,,1,1,,,1,1,,,1,,,,1,,,,1,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,1,1,,,1,4,5,5,5,4,4,4,5,4,4,3,4,5,5,5,3,5,5,5,5,10,5,5,10,5,4,2,3,1,3,2,2,3,2,1,2,2,7,7,7,7,7,5,6,5,6,5,4,4,2,4,4,4,,1,,1,4,How much is enough for me,What are my financial goals,Is this person in need,Will it affect my saving ,Can i afford it ,Am I being fair in my decision,,,,4,5,2,,,,,,4,,,,,,,,,,,1,1,1,1,1,1,2,1,1,1,2,1,2,1,2,1,1,1,2,2,2,2,1,1,1,2,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,2,1,1,1
+x8lvd,5,5,5,5,2,5,5,4,4,2,4,5,5,2,5,7,3,3,1,1,,,,1,,,,,1,,,,1,,,1,,,,1,,,,,1,,,,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,,1,,,1,,,,1,,,,,1,,,,1,,,1,1,1,1,1,1,1,1,1,1,1,1,1,4,4,3,2,4,4,4,4,4,4,5,5,4,4,4,2,4,4,2,2,1,2,2,4,2,2,7,7,5,2,4,7,3,3,7,5,1,4,4,2,2,1,,,,4,being fair,how much do I need,"small amount, no loss to share",helping someone else,why not,like helping others,,,,4,5,6,,,,3,,,,,,,,,,,,,1,1,2,1,2,1,2,2,2,1,2,2,2,2,2,2,2,2,2,1,1,2,2,2,2,2,2,2,2,1,1,2,2,2,1,2,1,2,2,2,1,1,1,2,1,1,2
+7ftdk,5,2,4,4,2,3,4,3,2,4,2,5,4,2,3,6,2,1,4,,1,,,,1,,,,1,,,,1,,,1,,,,1,,,,,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,2,2,3,1,2,2,1,2,1,2,1,1,1,4,5,3,2,5,3,4,3,2,2,4,10,3,2,2,3,1,1,2,1,3,1,2,4,2,3,6,6,5,3,4,7,4,2,5,1,4,3,2,4,3,1,,1,,3,What would be a fair amount between two people,How significant is the difference between the split,,,,,,,,2,5,5,,,,2,,,,,,,,,,,,,1,1,1,1,2,2,1,2,2,2,2,2,1,2,1,1,1,2,1,1,2,2,1,2,1,1,2,2,2,2,2,1,2,2,1,2,2,2,2,1,1,1,1,2,2,2,2
+n0s0f,5.0,1.0,5.0,4.0,1.0,4.0,5.0,5.0,1.0,4.0,1.0,5.0,5.0,1.0,4.0,5.0,2.0,3.0,4.0,1.0,,,,1.0,,,,1.0,,,,,1.0,,,1.0,,,,1.0,,,,1.0,,,,1.0,,,,1.0,,,,,,,1.0,1.0,,,,1.0,,,,1.0,,,,1.0,,,,1.0,,,,1.0,,,,1.0,,,,1.0,,,,1.0,,,,1.0,,,,2.0,5.0,5.0,5.0,5.0,1.0,1.0,2.0,2.0,4.0,5.0,5.0,5.0,4.0,5.0,5.0,3.0,5.0,1.0,10.0,5.0,10.0,10.0,10.0,5.0,10.0,1.0,1.0,1.0,1.0,2.0,1.0,1.0,1.0,1.0,1.0,5.0,1.0,5.0,7.0,7.0,7.0,1.0,6.0,7.0,6.0,5.0,6.0,4.0,4.0,1.0,1.0,5.0,5.0,1.0,,1.0,,4.0,The money I was going to remain with,The total amount of money,The money I should give to the other person which will be fair,,,,,,,1.0,5.0,5.0,,,,5.0,,,,,,,,,,,,,1.0,1.0,2.0,1.0,2.0,1.0,1.0,1.0,1.0,1.0,2.0,2.0,2.0,1.0,1.0,1.0,1.0,1.0,1.0,2.0,1.0,2.0,2.0,1.0,1.0,1.0,2.0,1.0,1.0,1.0,2.0,2.0,1.0,2.0,1.0,1.0,2.0,1.0,2.0,2.0,2.0,2.0,1.0,2.0,1.0,2.0,1.0
+wdfyy,4,4,4,5,2,4,5,4,3,3,4,4,4,1,5,4,2,3,4,1,,,,,1,,,1,,,,,1,,,1,,,,,1,,,1,,,,1,,,,1,,,,1,,,,,1,,,,1,,,1,,,,1,,,,,1,,,,1,,,1,,,,1,,,,1,,,,,1,,,1,4,4,4,4,3,2,2,3,5,4,4,4,4,5,5,4,5,2,4,4,4,5,5,5,4,2,4,4,4,3,3,4,2,1,4,4,4,5,5,5,6,2,6,6,6,4,5,4,4,3,4,3,2,1,,1,,5,its 20%,i don't know the other person,does he/she know what I started with,its more than generous,,,2,4,2,,,,,,,2,,,,,,,,,,,,,2,1,1,1,2,1,1,2,2,2,2,1,1,1,2,1,2,1,2,2,2,1,1,1,1,1,2,1,1,1,2,2,2,2,2,1,1,2,1,1,2,1,2,2,1,2,1
+4wbsc,4,2,4,2,3,4,2,2,2,2,2,4,4,1,3,5,2,3,4,1,,,,1,,,,,1,,,1,,,,,1,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,1,,,,,1,,,1,,,,1,,,,1,,,,1,,,,,1,,,1,2,1,2,3,2,1,2,4,2,2,1,1,4,4,3,4,4,3,4,4,3,4,5,4,2,4,2,2,2,2,4,4,1,2,2,4,2,3,5,6,5,2,2,5,4,5,6,1,2,1,4,3,2,,1,1,,3,I wanted to be fair,I want to make the other person happy,,,,,,,,,,,1,4,6,,,3,1,1,1,1,1,1,1,1,1,1,,,,,,,1,1,2,2,2,1,2,2,2,1,2,1,1,2,1,2,2,1,1,2,2,2,2,2,1,1,1,2,1,1,2,1,1,2,1,1,1,2,1,1,1
