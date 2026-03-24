@@ -1,0 +1,171 @@
+The following is a description of a person.
+
+The person's Big 5 scores are the following:
+score_extraversion = 2.25 (30th percentile)
+score_agreeableness = 3.222 (18th percentile)
+wave1_score_conscientiousness = 3.889 (47th percentile)
+score_openness = 2.5 (5th percentile)
+score_neuroticism = 2.375 (42nd percentile)
+Openness reflects curiosity and receptiveness to new experiences, Conscientiousness indicates self-discipline and goal-directed behavior, Extraversion measures sociability and assertiveness, Agreeableness reflects compassion and cooperativeness, and Neuroticism captures emotional instability and susceptibility to negative emotions. Each score ranges from 1 to 5, and a higher score indicates a greater display of the associated traits.
+
+The person's demographics are the following...
+Geographic region: West (WA, OR, ID, MT, WY, CA, NV, UT, CO, AZ, NM)
+Gender: Male
+Age: 30-49
+Education level: Postgraduate
+Race: Asian
+Citizen of the US: Yes
+Marital status: Never been married
+Religion: Protestant
+Religious attendance: Seldom
+Political affiliation: Republican
+Income: $50,000-$75,000
+Political views: Conservative
+Household size: 1
+Employment status: Retired
+
+The person's need for cognition score is the following:
+score_needforcognition = 3.167 (38th percentile)
+Need for cognition is a personality trait that reflects an individual's tendency to seek out, engage in, and enjoy complex cognitive tasks. The score ranges from 1 to 5, and a higher score indicates a higher need for cognition.
+
+The person's agentic / communal value scores are the following:
+score_agency = 5 (57th percentile)
+score_communion = 5.75 (14th percentile)
+Agency is the meta-concept associated with self-advancement in social hierarchies; communion is the partner concept associated with maintenance of positive relationships. Each score ranges from 1 to 9, and higher values indicate higher propensity for these constructs.
+
+The person's minimalism score is the following:
+score_minimalism = 4.333 (88th percentile)
+The score ranges from 1 to 5, and a higher score indicates a higher preference for minimalism.
+
+The person's basic empathy scale score is the following:
+score_BES = 3.6 (32nd percentile)
+The score ranges from 1 to 5, and a higher score indicates more empathy.
+
+The person's G.R.E.E.N. score is the following:
+score_GREEN = 1.667 (7th percentile)
+The score ranges from 1 to 5, and higher scores indicate a higher affinity for environmentalism.
+
+The person's CRT score is the following:
+crt2_score = 1 (38th percentile)
+The score ranges from 0 to 4, and a higher score indicates a greater ability to suppress an intuitive and spontaneous ("system 1") wrong answer in favor of a reflective and deliberative ("system 2") right answer.
+
+The person's fluid and crystallized intelligence scores are the following:
+score_fluid = 2 (71st percentile)
+score_crystallized = 6 (49th percentile)
+Fluid intelligence is the capacity to reason, solve novel problems, and adapt to new situations independent of prior knowledge, while crystallized intelligence is the accumulation of knowledge, facts, and skills acquired through experience and education. The fluid score ranges from 0 to 6, and the crystallized score ranges from 0 to 20; higher scores indicate better performance.
+
+The person's syllogism score is the following:
+score_syllogism_merged = 9 (82nd percentile)
+The score ranges from 0 to 12, and a higher score indicates a greater ability to solve verbal reasoning problems like "All A are B" and "All B are C" implying "All A are C."
+
+The person's total intelligence scores, overconfidence score, and overplacement score are the following:
+score_actual_total = 18 (63rd percentile)
+score_overconfidence = 17 (78th percentile)
+score_overplacement = 3 (55th percentile)
+The total intelligence score is simply the sum of the person's performances on the aforementioned logic / intelligence questions (ranging from 0 to 42 total correct). The person's overconfidence is the difference between their prediction of their own performance and their actual performance. The person's overplacement is the difference between their prediction of their own performance and their prediction of other respondents' performance.
+
+The person's ultimatum game scores are the following:
+score_ultimatum_sender = 40 (65th percentile)
+score_ultimatum_accepted = 83.333 (70th percentile)
+The sender score is the percent of $5 the person chose to offer another person in the ultimatum game. The receiver score is the percent of offers they accepted, out of a total of 6 offers made in $1 increments from $5 to $0, when acting as the receiver in the game.
+
+The person's mental accounting score is the following:
+score_mentalaccounting = 100 (100th percentile)
+The score ranges from 0 to 100 percent, and higher scores indicate a greater adherence to the principles of mental accounting proposed by Thaler: segregate gains, integrate losses, segregate a small gain from a large loss, and integrate a small loss with a large gain.
+
+The person's social desirability score is the following:
+score_socialdesirability = 3 (31st percentile)
+The score ranges from 0 to 13, and higher scores indicate a greater tendency to respond to questions in a socially desirable way rather than in a truthful way.
+
+The person's secondary conscientiousness score is the following:
+wave2_score_conscientiousness = 7 (53rd percentile)
+This score was computed using a different questionnaire than the Big 5 conscientiousness score reported above, and it ranges from 0 to 8, but it is otherwise similar. Higher scores indicate a greater propensity for conscientiousness.
+
+The person's Beck anxiety score is the following:
+score_anxiety = 2 (25th percentile)
+The score ranges from 0 to 63, and higher scores indicate a higher tendency for anxiety.
+
+The person's individualism vs collectivism scores are the following:
+score_HI = 5 (100th percentile)
+score_HC = 3 (14th percentile)
+score_VI = 2.5 (45th percentile)
+score_VC = 4.25 (74th percentile)
+The Horizontal Individualism (HI) score reflects a person's preference for autonomy and equality, the Horizontal Collectivism (HC) score captures a preference for interdependence and equality, the Vertical Individualism (VI) score indicates a drive for personal achievement and acceptance of hierarchical inequality, and the Vertical Collectivism (VC) score denotes a focus on group loyalty combined with acceptance of hierarchical structures. Each score ranges from 1 to 5, and a higher score indicates a greater preference.
+
+The person's financial literacy score is the following:
+score_finliteracy = 6 (91st percentile)
+The score ranges from 0 to 8, and a higher score indicates the person correctly answered more questions related to general financial literacy.
+
+The person's numeracy score is the following:
+score_numeracy = 7 (80th percentile)
+The score ranges from 0 to 8, and a higher score indicates the person correctly answered more questions related to numeracy.
+
+The person's modus ponens deductive certainty score is the following:
+score_deductive_certainty = 4 (100th percentile)
+The score ranges from 0 to 4, and a higher score indicates the person correctly answered more modus ponens questions.
+
+The person's forward flow score is the following:
+score_forwardflow = 0.84 (68th percentile)
+A higher score indicates the person was able to generate more distant words in a sequence (e.g. "candle -> bee -> sugar" instead of "candle -> fire -> flame"). The actual word chain that the subject generated was the following: snow -> flake -> cereal -> milk -> cow -> black -> white -> christmas -> tree -> lights -> dark -> matter -> legal -> lawyer -> court -> judge -> witness -> stand -> testify -> truth
+
+The person's discount rate and present bias are the following:
+score_discount = 423.028 (71st percentile)
+score_presentbias = 0 (52nd percentile)
+These are implied rates computed from the person's time-value of money preferences. Higher values of the discount rate imply greater impatience. Higher values of present bias imply greater departure from normative economic behavior.
+
+The person's risk aversion score is the following:
+score_riskaversion = 0.228 (71st percentile)
+Higher scores indicate a greater tendency for risk aversion in a choice between a sure-amount and lottery payout.
+
+The person's loss aversion score is the following:
+score_lossaversion = 0.468 (18th percentile)
+Higher scores indicate a greater tendency for loss aversion in a choice between a sure-amount and a lottery payout.
+
+The person's trust game scores are the following:
+score_trustgame_sender = 40 (61st percentile)
+score_trustgame_receiver = 23 (13th percentile)
+The sender score is the percent sent in the trust game (where one player sends money to another, the money is multiplied, and the second player can return some to the first player). The person was asked to list up to 6 thoughts that crossed their mind while playing as the sender and they answered: "i want to keep a minimum amount to make it worthwhile but still send some back as a token of appreciation; i should keep more than i send back; will there be other rounds?; if no other rounds, the money i send back will not have any future consequences ; if they only gave me a small amount, i shouldnt give any back; i forget that the amounts tripled, so maybe i shoudl not have sent back more than what they sent me". The person was then asked to list up to 6 thoughts that crossed their mind while playing as the receiver and they answered: "im a bit confused as to whether the other person was anonymous or not; i may have missed that detail in the description; this is an interesting thought exercise; if there are no potential consequences of my actions on future rounds, then i would likely keep more money; does the other person have expectations of what they'd get back?; lots of thinking and more questions in mind"
+
+The person's regulatory focus scale score is the following:
+score_RFS = 4.4 (24th percentile)
+The score ranges from 1 to 7. Higher scores indicate a stronger orientation toward either promotion or prevention focus, meaning individuals would be more driven by promotional aspirations or more motivated by avoiding losses.
+
+The person's tightwad-spendthrift score is the following:
+score_ST-TW = 11 (48th percentile)
+The score ranges from 4 to 26. Lower scores (4-11) indicate difficulty spending money, while higher scores (19-26) indicate difficulty controlling spending.
+
+The person's Beck depression score is the following:
+score_depression = 3 (27th percentile)
+The score ranges from 0 to 61, and a higher score indicates more depressive behaviors.
+
+The person's need for uniqueness score is the following:
+score_CNFU-S = 2.667 (61st percentile)
+The score ranges from 1 to 5, and higher scores indicate a higher need for uniqueness.
+
+The person's self-monitoring score is the following:
+score_selfmonitor = 2.615 (39th percentile)
+The score ranges from 0 to 5, and higher scores indicate a higher ability to monitor one's own behavior.
+
+The person's self-concept clarity score is the following:
+score_SCC = 3.75 (53rd percentile)
+The score ranges from 1 to 5, and higher scores indicate a greater certainty about the person's own self-concept.
+
+The person's need for closure score is the following:
+score_needforclosure = 3.8 (67th percentile)
+The score ranges from 1 to 5, and higher scores indicate a greater desire for certainty over ambiguity.
+
+The person's maximization scale score is the following:
+score_maximization = 3 (45th percentile)
+The score ranges from 1 to 5, and higher scores indicate a tendency to optimize rather than satisfice when making decisions.
+
+The person's Wason selection score is the following:
+score_wason = 2 (65th percentile)
+The score ranges from 0 to 4, and higher scores indicate better performance on the Wason selection task.
+
+The person's dictator game score is the following:
+score_dictator_sender = 0 (11th percentile)
+This is the percent split sent when the person played the dictator game as the sender. The person was asked to list up to 6 thoughts that crossed their mind when playing this game and they answered: "do i need to split at all?; will the other person know the rules of the game?; will i see the other person again?; do they have a say in this?; can they choose not to accept?"
+
+The person also answered three purely qualitative questions about their concept of self. The person was asked, "Please describe the type of person you aspire to be. That is, write about the traits and behaviors you would like ideally to possess, your ultimate goals for yourself. Please write at least 3 sentences." They answered: "I aspire to be someone with a lot of empathy, and compassion for others.  I also aspire to be someone that is calm, and in control of my emotions.  I want to be someone that is principled, and is well respected."
+The person was then asked the question "Please describe the type of person you ought to be. That is, write about the traits and behaviors attributes that you should or ought to possess, based on your responsibilities and what other people expect from you. Please write at least 3 sentences." They answered: "I ought to be a provider to my family, and someone that is successful as defined by material things.  I ought to have a wife and children.  I ought to be working a 9-5 job until retirement age."
+The person was finally asked the question "Please describe the type of person you actually are. That is, write about the traits and behaviors you actually possess. Please write at least 3 sentences." They answered: "I believe I am a caring person, that has a better ability than others to empatize.  I also believe that I am mostly well respected, but not always.  I am probably not respected by people who define success has having a life of luxury and lots of material things.  I can lose my temper easily, and don't always have good control of my emotions."

@@ -1,0 +1,26 @@
+Current ML-only final-test result
+
+Default model:
+- Calibrated family-aware ML model from build_family_aware_submission.py
+
+Overall score:
+- Correlation: 0.0997
+- Accuracy: 61.1%
+
+Category breakdown:
+- Personal Background: correlation 0.242, accuracy 55.2%
+- Political & Social Views: correlation 0.230, accuracy 35.6%
+- News Sharing Preferences: correlation 0.034, accuracy 71.0%
+- News Sharing Behavior: correlation 0.104, accuracy 67.2%
+- Information Sharing Behavior: correlation 0.035, accuracy 67.0%
+- Media Trust & Accuracy: correlation -0.046, accuracy 76.1%
+
+Comparison model:
+- Residual variant
+- Correlation: 0.0314
+- Accuracy: 59.7%
+
+Conclusion:
+- The calibrated non-residual model is the best current ML-only final-test model.
+- Accuracy is decent, but correlation is weak.
+- The repo is prepared to use Claude blending to improve ranking quality.
