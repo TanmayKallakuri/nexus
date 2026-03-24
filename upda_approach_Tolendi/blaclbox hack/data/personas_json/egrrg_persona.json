@@ -1,0 +1,4933 @@
+[
+  {
+    "ElementType": "Block",
+    "BlockName": "Economic preferences ",
+    "BlockType": "Standard",
+    "Questions": [
+      {
+        "QuestionID": "QID231",
+        "QuestionText": "Suppose you were given $5 and had to split the money between yourself and another (anonymous) person. You and you only would decide how to split the money, the other person would need to accept your offer. In this scenario, how much would keep for yourself and how much would you send to the other person?",
+        "QuestionType": "MC",
+        "Options": [
+          "$0 for myself, $5 to the other person.",
+          "$1 for myself, $4 to the other person.",
+          "$2 for myself, $3 to the other person.",
+          "$3 for myself, $2 to the other person.",
+          "$4 for myself, $1 to the other person.",
+          "$5 for myself, $0 to the other person."
+        ],
+        "Settings": {
+          "Selector": "SAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": 4,
+          "SelectedText": "$3 for myself, $2 to the other person."
+        }
+      },
+      {
+        "QuestionID": "QID275",
+        "QuestionText": "We are now interested in what you were thinking about while deciding how much of the money to keep for yourself and how much to send to another (anonymous) person. Any thought is fine; simply list what it was that you were thinking about while answering the questions. Below, please write down the first thought that you had in the first box, the second thought you had in the second box, etc. Please write only one idea per box. You should try to write only the thoughts that you were thinking during the task. Please state your thoughts concisely...one phrase is sufficient. Ignore spelling, grammar, and punctuation. Please be completely honest and list all of thoughts that you had. Don&#39;t worry if you don&#39;t fill every space. Just write down whatever thoughts you had while making the decision. Please list the thoughts you had when deciding how much of the money to keep for yourself and how much to send to another (anonymous) person :",
+        "QuestionType": "TE",
+        "Rows": [
+          "Thought 1",
+          "Thought 2",
+          "Thought 3",
+          "Thought 4",
+          "Thought 5",
+          "Thought 6"
+        ],
+        "Settings": {
+          "Selector": "FORM",
+          "ForceResponse": "OFF",
+          "ContentType": ""
+        },
+        "Answers": {
+          "Text": [
+            {
+              "Thought 1": "Can I keep all of it"
+            },
+            {
+              "Thought 2": "I need more money"
+            },
+            {
+              "Thought 3": "Why does he need that money"
+            },
+            {
+              "Thought 4": "I need to pay the bills"
+            },
+            {
+              "Thought 5": "I'm poor"
+            },
+            {
+              "Thought 6": "I wish I was rich"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "ElementType": "Block",
+    "BlockName": "Cognitive tests ",
+    "BlockType": "Standard",
+    "Questions": [
+      {
+        "QuestionID": "QID221",
+        "QuestionText": "Imagine you see a number of cards from a set of cards. Each card in the set has a capital letter on one side and a number on the other. Naturally, only one side is visible in each case. For the set of cards, a rule has been stated: If there is an A on the letter side of the card, then there is a 3 on the number side. Four cards were drawn. Below is the information visible for each card (letter or number). Which of the following card(s) would have to be turned over in order to test the truth or falsity of the rule?",
+        "QuestionType": "MC",
+        "Options": [
+          "A",
+          "F",
+          "3",
+          "7"
+        ],
+        "Settings": {
+          "Selector": "MAHR",
+          "SubSelector": "TX",
+          "ForceResponse": "OFF"
+        },
+        "Answers": {
+          "SelectedByPosition": [
+            1
+          ],
+          "SelectedText": [
+            "A"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "ElementType": "Block",
+    "BlockName": "Personality ",
+    "BlockType": "Standard",
+    "Questions": [
+      {
+        "QuestionID": "QID28",
+        "QuestionText": "Here are a number of characteristics that may or may not apply to you. Please indicate next to each statement the extent to which it is true or untrue.",
+        "QuestionType": "Matrix",
+        "Rows": [
+          "I prefer to work without instructions from others",
+          "Rules and regulations are helpful and necessary for me",
+          "For me, it is very important to carry out the obligations placed on me",
+          "I generally solve problems creatively",
+          "I\u2019m not bothered about reviewing or checking things really closely",
+          "I like to do things in a new way",
+          "I always try to make my work as accurate and error-free as possible",
+          "I like trying out lots of different things, and am often successful in doing so",
+          "It is important to me that my achievements are recognized and valued by other people",
+          "I often think about what other people expect of me"
+        ],
+        "Columns": [
+          "Definitely untrue",
+          "Not true",
+          "Probably not true",
+          "Neither true nor untrue",
+          "Probably true",
+          "True",
+          "Definitely true"
+        ],
+        "Settings": {
+          "Selector": "Likert",
+          "SubSelector": "SingleAnswer",
+          "ForceResponse": "OFF"
+        },
+        "Answers": {
+          "SelectedByPosition": [
+            2,
+            4,
+            5,
+            5,
+            2,
+            4,
+            3,
+            2,
+            3,
+            3
+          ],
+          "SelectedText": [
+            "Not true",
+            "Neither true nor untrue",
+            "Probably true",
+            "Probably true",
+            "Not true",
+            "Neither true nor untrue",
+            "Probably not true",
+            "Not true",
+            "Probably not true",
+            "Probably not true"
+          ]
+        }
+      },
+      {
+        "QuestionID": "QID31",
+        "QuestionText": "Which of the following best describes your spending habits?",
+        "QuestionType": "MC",
+        "Options": [
+          "Tightwad (difficulty spending money) 1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "About the same or neither 6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "Spendthrift (difficulty controlling spending) 11"
+        ],
+        "Settings": {
+          "Selector": "SAHR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": 2,
+          "SelectedText": "2"
+        }
+      },
+      {
+        "QuestionID": "QID32",
+        "QuestionText": "Some people have trouble limiting their spending: they often spend money - for example on clothes, meals, vacations - when they would do better not to. How well does the first description fit you? That is, do you have trouble limiting your spending?",
+        "QuestionType": "MC",
+        "Options": [
+          "Never",
+          "Rarely",
+          "Sometimes",
+          "Often",
+          "Always"
+        ],
+        "Settings": {
+          "Selector": "SAHR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": 3,
+          "SelectedText": "Sometimes"
+        }
+      },
+      {
+        "QuestionID": "QID33",
+        "QuestionText": "Other people have trouble spending money. Perhaps because spending money makes them anxious, they often don't spend money on things they should spend it on. How well does the second description fit you? That is, do you have trouble spending money?",
+        "QuestionType": "MC",
+        "Options": [
+          "Never",
+          "Rarely",
+          "Sometimes",
+          "Often",
+          "Always"
+        ],
+        "Settings": {
+          "Selector": "SAHR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": 4,
+          "SelectedText": "Often"
+        }
+      },
+      {
+        "QuestionID": "QID34",
+        "QuestionText": "Following is a scenario describing the behavior of two shoppers. After reading about each shopper, please answer the question that follows. Mr. A is accompanying a good friend who is on a shopping spree at a local mall. When they enter a large department store, Mr. A sees that the store has a \"one-day-only-sale\" where everything is priced 10-60% off. He realizes that he doesn't need anything, yet can't resist and ends up spending almost $100 on stuff. Mr. B is accompanying a good friend who is on a shopping spree at a local mall. When they enter a large department store, Mr. B sees that the store has a \"one-day-only-sale\" where everything is priced 10-60% off. He figures that he can get great deals on many items that he needs, yet the thought of spending the money keeps him from buying the stuff. In terms of your own behavior, who are you more similar to, Mr. A or Mr. B?",
+        "QuestionType": "MC",
+        "Options": [
+          "Mr. A 1",
+          "2",
+          "About the same or neither 3",
+          "4",
+          "Mr. B 5"
+        ],
+        "Settings": {
+          "Selector": "SAHR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": 5,
+          "SelectedText": "Mr. B 5"
+        }
+      },
+      {
+        "QuestionID": "QID127",
+        "QuestionText": "This page contains groups of statements. After reading each group of statements carefully, choose the one statement which best describes the way you have been feeling in the past week, including today . If several statements within a group seem to apply equally well, select each one. Be sure to read all the statements in each group before making your choice .",
+        "QuestionType": "DB",
+        "is_descriptive": true
+      },
+      {
+        "QuestionID": "QID126",
+        "QuestionText": "",
+        "QuestionType": "MC",
+        "Options": [
+          "I don't feel sad",
+          "I feel sad",
+          "I am sad all the time and I can't snap out of it",
+          "I am so sad or unhappy that I can't stand it"
+        ],
+        "Settings": {
+          "Selector": "MAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": [
+            2
+          ],
+          "SelectedText": [
+            "I feel sad"
+          ]
+        }
+      },
+      {
+        "QuestionID": "QID128",
+        "QuestionText": "",
+        "QuestionType": "MC",
+        "Options": [
+          "I am not particularly discouraged about the future",
+          "I feel discouraged about the future",
+          "I feel that I have nothing to look forward to",
+          "I feel that the future is hopeless and that things cannot improve"
+        ],
+        "Settings": {
+          "Selector": "MAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": [
+            3
+          ],
+          "SelectedText": [
+            "I feel that I have nothing to look forward to"
+          ]
+        }
+      },
+      {
+        "QuestionID": "QID129",
+        "QuestionText": "",
+        "QuestionType": "MC",
+        "Options": [
+          "I don't feel like a failure",
+          "I feel that I have failed more than the average person",
+          "As I look back on my life, all I can see is a lot of failures",
+          "I feel I am a complete failure as a person"
+        ],
+        "Settings": {
+          "Selector": "MAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": [
+            3
+          ],
+          "SelectedText": [
+            "As I look back on my life, all I can see is a lot of failures"
+          ]
+        }
+      },
+      {
+        "QuestionID": "QID130",
+        "QuestionText": "",
+        "QuestionType": "MC",
+        "Options": [
+          "I get as much satisfaction out of things as I used to",
+          "I don't enjoy things the way I used to",
+          "I don't get real satisfaction out of anything anymore",
+          "I am dissatisfied or bored with everything"
+        ],
+        "Settings": {
+          "Selector": "MAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": [
+            1
+          ],
+          "SelectedText": [
+            "I get as much satisfaction out of things as I used to"
+          ]
+        }
+      },
+      {
+        "QuestionID": "QID131",
+        "QuestionText": "",
+        "QuestionType": "MC",
+        "Options": [
+          "I don't feel particularly guilty",
+          "I feel guilty a good part of the time",
+          "I feel guilty most of the time",
+          "I feel guilty all the time"
+        ],
+        "Settings": {
+          "Selector": "MAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": [
+            2
+          ],
+          "SelectedText": [
+            "I feel guilty a good part of the time"
+          ]
+        }
+      },
+      {
+        "QuestionID": "QID132",
+        "QuestionText": "",
+        "QuestionType": "MC",
+        "Options": [
+          "I don't feel I am being punished",
+          "I feel I may be punished",
+          "I expect to be punished",
+          "I feel I am being punished"
+        ],
+        "Settings": {
+          "Selector": "MAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": [
+            4
+          ],
+          "SelectedText": [
+            "I feel I am being punished"
+          ]
+        }
+      },
+      {
+        "QuestionID": "QID133",
+        "QuestionText": "",
+        "QuestionType": "MC",
+        "Options": [
+          "I don't feel disappointed in myself",
+          "I feel disappointed in myself",
+          "I am disgusted with myself",
+          "I hate myself"
+        ],
+        "Settings": {
+          "Selector": "MAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": [
+            3
+          ],
+          "SelectedText": [
+            "I am disgusted with myself"
+          ]
+        }
+      },
+      {
+        "QuestionID": "QID134",
+        "QuestionText": "",
+        "QuestionType": "MC",
+        "Options": [
+          "I don't feel I am worse than anybody else",
+          "I am critical of myself for my weaknesses or mistakes",
+          "I blame myself all the time for my faults",
+          "I blame myself for everything bad that happens"
+        ],
+        "Settings": {
+          "Selector": "MAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": [
+            3
+          ],
+          "SelectedText": [
+            "I blame myself all the time for my faults"
+          ]
+        }
+      },
+      {
+        "QuestionID": "QID136",
+        "QuestionText": "",
+        "QuestionType": "MC",
+        "Options": [
+          "I don't cry any more than usual",
+          "I cry more than I used to",
+          "I cry all the time now",
+          "I used to be able to cry, but now I can't cry even though I want to"
+        ],
+        "Settings": {
+          "Selector": "MAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": [
+            2
+          ],
+          "SelectedText": [
+            "I cry more than I used to"
+          ]
+        }
+      },
+      {
+        "QuestionID": "QID137",
+        "QuestionText": "",
+        "QuestionType": "MC",
+        "Options": [
+          "I am no more irritated now than I ever am",
+          "I get annoyed or irritated more easily than I used to",
+          "I feel irritated all the time now",
+          "I don't get irrirtted at all by the things that used to irritate me"
+        ],
+        "Settings": {
+          "Selector": "MAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": [
+            3
+          ],
+          "SelectedText": [
+            "I feel irritated all the time now"
+          ]
+        }
+      },
+      {
+        "QuestionID": "QID138",
+        "QuestionText": "",
+        "QuestionType": "MC",
+        "Options": [
+          "I have not lost interest in other people",
+          "I am less interested in other people than I used to be",
+          "I have lost most of my interest in other people",
+          "I have lost all of my interest in other people"
+        ],
+        "Settings": {
+          "Selector": "MAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": [
+            3
+          ],
+          "SelectedText": [
+            "I have lost most of my interest in other people"
+          ]
+        }
+      },
+      {
+        "QuestionID": "QID139",
+        "QuestionText": "",
+        "QuestionType": "MC",
+        "Options": [
+          "I make decisions about as well as I ever could",
+          "I put off making decisions more than I used to",
+          "I have greater difficulty in making decisions than before",
+          "I can't make decisions at all anymore"
+        ],
+        "Settings": {
+          "Selector": "MAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": [
+            3
+          ],
+          "SelectedText": [
+            "I have greater difficulty in making decisions than before"
+          ]
+        }
+      },
+      {
+        "QuestionID": "QID240",
+        "QuestionText": "After reading each group of statements carefully, choose the one statement which best describes the way you have been feeling in the past week, including today . If several statements within a group seem to apply equally well, select each one. Be sure to read all the statements in each group before making your choice .",
+        "QuestionType": "DB",
+        "is_descriptive": true
+      },
+      {
+        "QuestionID": "QID140",
+        "QuestionText": "",
+        "QuestionType": "MC",
+        "Options": [
+          "I don't feel that I am worthless",
+          "I don\u2019t consider myself as worthwhile and useful as I used to",
+          "I feel more worthless as compared to other people",
+          "I feel utterly worthless"
+        ],
+        "Settings": {
+          "Selector": "MAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": [
+            4
+          ],
+          "SelectedText": [
+            "I feel utterly worthless"
+          ]
+        }
+      },
+      {
+        "QuestionID": "QID141",
+        "QuestionText": "",
+        "QuestionType": "MC",
+        "Options": [
+          "I can work about as well as before",
+          "It takes an extra effort to get started at doing something",
+          "I have to push myself very hard to do anything",
+          "I can\u2019t do any work at all"
+        ],
+        "Settings": {
+          "Selector": "MAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": [
+            3
+          ],
+          "SelectedText": [
+            "I have to push myself very hard to do anything"
+          ]
+        }
+      },
+      {
+        "QuestionID": "QID142",
+        "QuestionText": "",
+        "QuestionType": "MC",
+        "Options": [
+          "I can sleep as well as usual",
+          "I don\u2019t sleep as well as usual",
+          "I wake up 1-2 hours earlier than usual and find it hard to get back to sleep",
+          "I wake up several hours earlier than I used to and cannot get back to sleep"
+        ],
+        "Settings": {
+          "Selector": "MAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": [
+            3
+          ],
+          "SelectedText": [
+            "I wake up 1-2 hours earlier than usual and find it hard to get back to sleep"
+          ]
+        }
+      },
+      {
+        "QuestionID": "QID143",
+        "QuestionText": "",
+        "QuestionType": "MC",
+        "Options": [
+          "I don\u2019t get more tired than usual",
+          "I get tired more easily than I used to",
+          "I get tired from doing almost anything",
+          "I am too tired to do anything"
+        ],
+        "Settings": {
+          "Selector": "MAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": [
+            3
+          ],
+          "SelectedText": [
+            "I get tired from doing almost anything"
+          ]
+        }
+      },
+      {
+        "QuestionID": "QID144",
+        "QuestionText": "",
+        "QuestionType": "MC",
+        "Options": [
+          "My appetite is no worse than usual",
+          "My appetite is not as good as it used to be",
+          "My appetite is much worse now",
+          "I have no appetite at all anymore"
+        ],
+        "Settings": {
+          "Selector": "MAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": [
+            3
+          ],
+          "SelectedText": [
+            "My appetite is much worse now"
+          ]
+        }
+      },
+      {
+        "QuestionID": "QID145",
+        "QuestionText": "",
+        "QuestionType": "MC",
+        "Options": [
+          "I haven\u2019t lost much weight, if any, lately",
+          "I have lost more than 5 pounds",
+          "I have lost more than 10 pounds",
+          "I have lost more than 15 pounds"
+        ],
+        "Settings": {
+          "Selector": "MAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": [
+            1
+          ],
+          "SelectedText": [
+            "I haven\u2019t lost much weight, if any, lately"
+          ]
+        }
+      },
+      {
+        "QuestionID": "QID146",
+        "QuestionText": "",
+        "QuestionType": "MC",
+        "Options": [
+          "I am no more worried about my health than usual",
+          "I am worried about physical problems such as aches and pains; or upset stomach; or constipation",
+          "I am very worried about physical problems and it\u2019s hard to think of much else",
+          "I am so worried about my physical problems that I cannot think about anything else"
+        ],
+        "Settings": {
+          "Selector": "MAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": [
+            3
+          ],
+          "SelectedText": [
+            "I am very worried about physical problems and it\u2019s hard to think of much else"
+          ]
+        }
+      },
+      {
+        "QuestionID": "QID147",
+        "QuestionText": "",
+        "QuestionType": "MC",
+        "Options": [
+          "I have not noticed any recent change in my interest in sex",
+          "I am less interested in sex than I used to be",
+          "I am much less interested in sex now",
+          "I have lost interest in sex completely"
+        ],
+        "Settings": {
+          "Selector": "MAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": [
+            4
+          ],
+          "SelectedText": [
+            "I have lost interest in sex completely"
+          ]
+        }
+      },
+      {
+        "QuestionID": "QID148",
+        "QuestionText": "I am purposely trying to lose weight by eating less",
+        "QuestionType": "MC",
+        "Options": [
+          "Yes",
+          "No"
+        ],
+        "Settings": {
+          "Selector": "SAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": 2,
+          "SelectedText": "No"
+        }
+      },
+      {
+        "QuestionID": "QID234",
+        "QuestionText": "Here are a number of characteristics that may or may not apply to you. Please indicate next to each statement the extent to which you agree or disagree with that statement.",
+        "QuestionType": "Matrix",
+        "Rows": [
+          "I often combine possessions in such a way that I create a personal image that cannot be duplicated.",
+          "I often try to find a more interesting version of run-of-the-mill products because I enjoy being original.",
+          "I actively seek to develop my personal uniqueness by buying special products or brands.",
+          "Having an eye for products that are interesting and unusual assists me in establishing a distinctive image.",
+          "When it comes to the products I buy and the situations in which I use them, I have broken customs and rules.",
+          "I have often violated the understood rules of my social group regarding what to buy or own.",
+          "I have often gone against the understood rules of my social group regarding when and how certain products are properly used.",
+          "I enjoy challenging the prevailing taste of people I know by buying something they would not seem to accept.",
+          "When a product I own becomes popular among the general population, I begin to use it less.",
+          "I often try to avoid products or brands that I know are bought by the general population.",
+          "As a rule, I dislike products or brands that are customarily bought by everyone.",
+          "The more commonplace a product or brand is among the general population, the less interested I am in buying it."
+        ],
+        "Columns": [
+          "Disagree strongly",
+          "Disagree a little",
+          "Neither agree nor disagree",
+          "Agree a little",
+          "Agree strongly"
+        ],
+        "RowsID": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "12",
+          "8",
+          "9",
+          "10",
+          "11"
+        ],
+        "Settings": {
+          "Selector": "Likert",
+          "SubSelector": "SingleAnswer",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": [
+            1,
+            1,
+            1,
+            1,
+            3,
+            1,
+            1,
+            1,
+            3,
+            1,
+            1,
+            1
+          ],
+          "SelectedText": [
+            "Disagree strongly",
+            "Disagree strongly",
+            "Disagree strongly",
+            "Disagree strongly",
+            "Neither agree nor disagree",
+            "Disagree strongly",
+            "Disagree strongly",
+            "Disagree strongly",
+            "Neither agree nor disagree",
+            "Disagree strongly",
+            "Disagree strongly",
+            "Disagree strongly"
+          ]
+        }
+      },
+      {
+        "QuestionID": "QID236",
+        "QuestionText": "Here are a number of characteristics that may or may not apply to you. Please indicate next to each statement the extent to which that statement is true or false.",
+        "QuestionType": "Matrix",
+        "Rows": [
+          "In social situations, I have the ability to alter my behavior if I feel that something else is called for.",
+          "I have the ability to control the way I come across to people, depending on the impression I wish to give them.",
+          "When I feel that the image I am portraying isn't working, I can readily change it to something that does.",
+          "I have trouble changing my behavior to suit different people and different situations.",
+          "I have found that I can adjust my behavior to meet the requirements of any situation I find myself in.",
+          "Even when it might be to my advantage, I have difficulty putting up a good front.",
+          "Once I know what the situation calls for, it's easy for me to regulate my actions accordingly.",
+          "I am often able to read people's true emotions correctly through their eyes.",
+          "In conversations, I am sensitive to even the slightest change in the facial expression of the person I'm conversing with.",
+          "My powers of intuition are quite good when it comes to understanding others' emotions and motives.",
+          "I can usually tell when others consider a joke to be in bad taste, even though they may laugh convincingly.",
+          "I can usually tell when I've said something inappropriate by reading it in the listener's eyes.",
+          "If someone is lying to me, I usually know it at once from that person's manner of expression."
+        ],
+        "Columns": [
+          "Certainly, always false",
+          "Generally false",
+          "Somewhat false, but with exceptions",
+          "Somewhat true, but with exceptions",
+          "Generally true",
+          "Certainly, always true"
+        ],
+        "ColumnsID": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "10"
+        ],
+        "Settings": {
+          "Selector": "Likert",
+          "SubSelector": "SingleAnswer",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": [
+            2,
+            2,
+            2,
+            5,
+            2,
+            5,
+            2,
+            2,
+            2,
+            2,
+            1,
+            2,
+            2
+          ],
+          "SelectedText": [
+            "Generally false",
+            "Generally false",
+            "Generally false",
+            "Generally true",
+            "Generally false",
+            "Generally true",
+            "Generally false",
+            "Generally false",
+            "Generally false",
+            "Generally false",
+            "Certainly, always false",
+            "Generally false",
+            "Generally false"
+          ]
+        }
+      },
+      {
+        "QuestionID": "QID237",
+        "QuestionText": "Please indicate your agreement with each of the following statements about yourself.",
+        "QuestionType": "Matrix",
+        "Rows": [
+          "My beliefs about myself often conflict with one another.",
+          "On one day I might have one opinion of myself and on another day I might have a different opinion.",
+          "I spend a lot of time wondering about what kind of person I really am.",
+          "Sometimes I feel that I am not really the person that I appear to be.",
+          "When I think about the kind of person I have been in the past, I'm not sure what I was really like.",
+          "I seldom experience conflict between the different aspects of my personality.",
+          "Sometimes I think I know other people better than I know myself.",
+          "My beliefs about myself seem to change very frequently.",
+          "If I were asked to describe my personality, my description might end up being different from one day to another day.",
+          "Even if I wanted to, I don't think I would tell someone what I'm really like.",
+          "In general, I have a clear sense of who I am and what I am.",
+          "It is often hard for me to make up my mind about things because I don't really know what I want."
+        ],
+        "Columns": [
+          "Disagree strongly",
+          "Disagree a little",
+          "Neither agree nor disagree",
+          "Agree a little",
+          "Agree strongly"
+        ],
+        "Settings": {
+          "Selector": "Likert",
+          "SubSelector": "SingleAnswer",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": [
+            1,
+            1,
+            2,
+            2,
+            4,
+            2,
+            2,
+            1,
+            1,
+            5,
+            3,
+            4
+          ],
+          "SelectedText": [
+            "Disagree strongly",
+            "Disagree strongly",
+            "Disagree a little",
+            "Disagree a little",
+            "Agree a little",
+            "Disagree a little",
+            "Disagree a little",
+            "Disagree strongly",
+            "Disagree strongly",
+            "Agree strongly",
+            "Neither agree nor disagree",
+            "Agree a little"
+          ]
+        }
+      },
+      {
+        "QuestionID": "QID238",
+        "QuestionText": "Please indicate your agreement with each of the following statements about yourself.",
+        "QuestionType": "Matrix",
+        "Rows": [
+          "I don\u2019t like situations that are uncertain.",
+          "I dislike questions which could be answered in many different ways.",
+          "I find that a well ordered life with regular hours suits my temperament.",
+          "I feel uncomfortable when I don\u2019t understand the reason why an event occurred in my life.",
+          "I feel irritated when one person disagrees with what everyone else in a group believes.",
+          "I don\u2019t like to go into a situation without knowing what I can expect from it.",
+          "When I have made a decision, I feel relieved.",
+          "When I am confronted with a problem, I\u2019m dying to reach a solution very quickly.",
+          "I would quickly become impatient and irritated if I would not find a solution to a problem immediately.",
+          "I don\u2019t like to be with people who are capable of unexpected actions.",
+          "I dislike it when a person\u2019s statement could mean many different things.",
+          "I find that establishing a consistent routine enables me to enjoy life more.",
+          "I enjoy having a clear and structured mode of life.",
+          "I do not usually consult many different opinions before forming my own view.",
+          "I dislike unpredictable situations."
+        ],
+        "Columns": [
+          "Disagree strongly",
+          "Disagree a little",
+          "Neither agree nor disagree",
+          "Agree a little",
+          "Agree strongly"
+        ],
+        "RowsID": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12",
+          "21",
+          "22",
+          "23"
+        ],
+        "Settings": {
+          "Selector": "Likert",
+          "SubSelector": "SingleAnswer",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": [
+            4,
+            4,
+            3,
+            5,
+            3,
+            4,
+            3,
+            5,
+            5,
+            4,
+            4,
+            4,
+            3,
+            4,
+            5
+          ],
+          "SelectedText": [
+            "Agree a little",
+            "Agree a little",
+            "Neither agree nor disagree",
+            "Agree strongly",
+            "Neither agree nor disagree",
+            "Agree a little",
+            "Neither agree nor disagree",
+            "Agree strongly",
+            "Agree strongly",
+            "Agree a little",
+            "Agree a little",
+            "Agree a little",
+            "Neither agree nor disagree",
+            "Agree a little",
+            "Agree strongly"
+          ]
+        }
+      },
+      {
+        "QuestionID": "QID239",
+        "QuestionText": "Please indicate your agreement with each of the following statements about yourself.",
+        "QuestionType": "Matrix",
+        "Rows": [
+          "When I am in the car listening to the radio, I often check other stations to see if something better is playing, even if I am relatively satisfied with what I\u2019m listening to.",
+          "No matter how satisfied I am with my job, it\u2019s only right for me to be on the lookout for better opportunities.",
+          "I often find it difficult to shop for a gift for a friend.",
+          "When shopping, I have a hard time finding clothing that I really love.",
+          "No matter what I do, I have the highest standards for myself.",
+          "I never settle for second best."
+        ],
+        "Columns": [
+          "Disagree strongly",
+          "Disagree a little",
+          "Neither agree nor disagree",
+          "Agree a little",
+          "Agree strongly"
+        ],
+        "Settings": {
+          "Selector": "Likert",
+          "SubSelector": "SingleAnswer",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": [
+            4,
+            4,
+            4,
+            5,
+            1,
+            2
+          ],
+          "SelectedText": [
+            "Agree a little",
+            "Agree a little",
+            "Agree a little",
+            "Agree strongly",
+            "Disagree strongly",
+            "Disagree a little"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "ElementType": "Block",
+    "BlockName": "Economic preferences ",
+    "BlockType": "Standard",
+    "Questions": [
+      {
+        "QuestionID": "QID243",
+        "QuestionText": "The following 6 questions will concern amounts of money you may receive in the future. In particular, these questions will concern amounts of money that you may receive after some delay, for example $5 received in 10 days\u2019 time.",
+        "QuestionType": "DB",
+        "is_descriptive": true
+      },
+      {
+        "QuestionID": "QID84",
+        "QuestionText": "Please choose between the following options. For each line in the list, you must choose between the option on the left and the option on the right. Note that on each line, the option on the left stays the same while the option on the right gets better as one goes down the list. You can select the option you would prefer receiving by clicking on the button next to that option.",
+        "QuestionType": "Matrix",
+        "Rows": [
+          "$6.00 in 6 weeks:$3.00 in 5 weeks",
+          "$6.00 in 6 weeks:$4.00 in 5 weeks",
+          "$6.00 in 6 weeks:$4.50 in 5 weeks",
+          "$6.00 in 6 weeks:$5.00 in 5 weeks",
+          "$6.00 in 6 weeks:$5.25 in 5 weeks",
+          "$6.00 in 6 weeks:$5.50 in 5 weeks",
+          "$6.00 in 6 weeks:$5.75 in 5 weeks",
+          "$6.00 in 6 weeks:$6.00 in 5 weeks",
+          "$6.00 in 6 weeks:$7.00 in 5 weeks"
+        ],
+        "Columns": [
+          "1",
+          "2"
+        ],
+        "RowsID": [
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12"
+        ],
+        "Settings": {
+          "Selector": "Bipolar",
+          "SubSelector": "",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": [
+            1,
+            1,
+            1,
+            1,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "SelectedText": [
+            "1",
+            "1",
+            "1",
+            "1",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2"
+          ]
+        }
+      },
+      {
+        "QuestionID": "QID244",
+        "QuestionText": "Please choose between the following options. For each line in the list, you must choose between the option on the left and the option on the right. Note that on each line, the option on the left stays the same while the option on the right gets better as one goes down the list. You can select the option you would prefer receiving by clicking on the button next to that option.",
+        "QuestionType": "Matrix",
+        "Rows": [
+          "$8.00 in 7 weeks:$4.00 in 6 weeks",
+          "$8.00 in 7 weeks:$5.00 in 6 weeks",
+          "$8.00 in 7 weeks:$6.00 in 6 weeks",
+          "$8.00 in 7 weeks:$6.50 in 6 weeks",
+          "$8.00 in 7 weeks:$7.00 in 6 weeks",
+          "$8.00 in 7 weeks:$7.25 in 6 weeks",
+          "$8.00 in 7 weeks:$7.50 in 6 weeks",
+          "$8.00 in 7 weeks:$7.75 in 6 weeks",
+          "$8.00 in 7 weeks:$8.00 in 6 weeks",
+          "$8.00 in 7 weeks:$9.00 in 6 weeks"
+        ],
+        "Columns": [
+          "1",
+          "2"
+        ],
+        "RowsID": [
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12",
+          "13"
+        ],
+        "Settings": {
+          "Selector": "Bipolar",
+          "SubSelector": "",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            2,
+            2,
+            2,
+            2
+          ],
+          "SelectedText": [
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "2",
+            "2",
+            "2",
+            "2"
+          ]
+        }
+      },
+      {
+        "QuestionID": "QID245",
+        "QuestionText": "Please choose between the following options. For each line in the list, you must choose between the option on the left and the option on the right. Note that on each line, the option on the left stays the same while the option on the right gets better as one goes down the list. You can select the option you would prefer receiving by clicking on the button next to that option.",
+        "QuestionType": "Matrix",
+        "Rows": [
+          "$10.00 in 7 weeks:$5.00 in 5 weeks",
+          "$10.00 in 7 weeks:$6.00 in 5 weeks",
+          "$10.00 in 7 weeks:$7.00 in 5 weeks",
+          "$10.00 in 7 weeks:$8.00 in 5 weeks",
+          "$10.00 in 7 weeks:$8.50 in 5 weeks",
+          "$10.00 in 7 weeks:$9.00 in 5 weeks",
+          "$10.00 in 7 weeks:$9.25 in 5 weeks",
+          "$10.00 in 7 weeks:$9.50 in 5 weeks",
+          "$10.00 in 7 weeks:$9.75 in 5 weeks",
+          "$10.00 in 7 weeks:$10.00 in 5 weeks",
+          "$10.00 in 7 weeks:$11.00 in 5 weeks"
+        ],
+        "Columns": [
+          "1",
+          "2"
+        ],
+        "RowsID": [
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12",
+          "13",
+          "14"
+        ],
+        "Settings": {
+          "Selector": "Bipolar",
+          "SubSelector": "",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            2,
+            2,
+            2
+          ],
+          "SelectedText": [
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "2",
+            "2",
+            "2"
+          ]
+        }
+      },
+      {
+        "QuestionID": "QID246",
+        "QuestionText": "Please choose between the following options. For each line in the list, you must choose between the option on the left and the option on the right. Note that on each line, the option on the left stays the same while the option on the right gets better as one goes down the list. You can select the option you would prefer receiving by clicking on the button next to that option.",
+        "QuestionType": "Matrix",
+        "Rows": [
+          "$6.00 in 1 week:$3.00 now",
+          "$6.00 in 1 week:$4.00 now",
+          "$6.00 in 1 week:$4.50 now",
+          "$6.00 in 1 week:$5.00 now",
+          "$6.00 in 1 week:$5.25 now",
+          "$6.00 in 1 week:$5.50 now",
+          "$6.00 in 1 week:$5.75 now",
+          "$6.00 in 1 week:$6.00 now",
+          "$6.00 in 1 week:$7.00 now"
+        ],
+        "Columns": [
+          "1",
+          "2"
+        ],
+        "RowsID": [
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12"
+        ],
+        "Settings": {
+          "Selector": "Bipolar",
+          "SubSelector": "",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "SelectedText": [
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2"
+          ]
+        }
+      },
+      {
+        "QuestionID": "QID247",
+        "QuestionText": "Please choose between the following options. For each line in the list, you must choose between the option on the left and the option on the right. Note that on each line, the option on the left stays the same while the option on the right gets better as one goes down the list. You can select the option you would prefer receiving by clicking on the button next to that option.",
+        "QuestionType": "Matrix",
+        "Rows": [
+          "$8.00 in 1 week:$4.00 now",
+          "$8.00 in 1 week:$5.00 now",
+          "$8.00 in 1 week:$6.00 now",
+          "$8.00 in 1 week:$6.50 now",
+          "$8.00 in 1 week:$7.00 now",
+          "$8.00 in 1 week:$7.25 now",
+          "$8.00 in 1 week:$7.50 now",
+          "$8.00 in 1 week:$7.75 now",
+          "$8.00 in 1 week:$8.00 now",
+          "$8.00 in 1 week:$9.00 now"
+        ],
+        "Columns": [
+          "1",
+          "2"
+        ],
+        "RowsID": [
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12",
+          "13"
+        ],
+        "Settings": {
+          "Selector": "Bipolar",
+          "SubSelector": "",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": [
+            1,
+            1,
+            1,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "SelectedText": [
+            "1",
+            "1",
+            "1",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2"
+          ]
+        }
+      },
+      {
+        "QuestionID": "QID248",
+        "QuestionText": "Please choose between the following options. For each line in the list, you must choose between the option on the left and the option on the right. Note that on each line, the option on the left stays the same while the option on the right gets better as one goes down the list. You can select the option you would prefer receiving by clicking on the button next to that option.",
+        "QuestionType": "Matrix",
+        "Rows": [
+          "$10.00 in 2 weeks:$5.00 now",
+          "$10.00 in 2 weeks:$6.00 now",
+          "$10.00 in 2 weeks:$7.00 now",
+          "$10.00 in 2 weeks:$8.00 now",
+          "$10.00 in 2 weeks:$8.50 now",
+          "$10.00 in 2 weeks:$9.00 now",
+          "$10.00 in 2 weeks:$9.25 now",
+          "$10.00 in 2 weeks:$9.50 now",
+          "$10.00 in 2 weeks:$9.75 now",
+          "$10.00 in 2 weeks:$10.00 now",
+          "$10.00 in 2 weeks:$11.00 now"
+        ],
+        "Columns": [
+          "1",
+          "2"
+        ],
+        "RowsID": [
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12",
+          "13",
+          "14"
+        ],
+        "Settings": {
+          "Selector": "Bipolar",
+          "SubSelector": "",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "SelectedText": [
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2"
+          ]
+        }
+      },
+      {
+        "QuestionID": "QID249",
+        "QuestionText": "In the next few questions, you will be asked to consider various lottery tickets. These lotteries will be represented in the following way: This lottery ticket has a 60% chance of winning $5 and a 40% chance of winning $3. This is just an illustration, click next to move to the next question.",
+        "QuestionType": "DB",
+        "is_descriptive": true
+      },
+      {
+        "QuestionID": "QID250",
+        "QuestionText": "In this question, the LOTTERY is a 50% chance of winning $6 and a 50% chance of winning $0.  Suppose you are given the option to exchange this lottery for certain amounts of money. Please choose between the following options. For each line in the list, you must choose between the option on the left and the option on the right. Note that on each line, the option on the left stays the same while the option on the right gets better as one goes down the list. You can select the option you would prefer receiving by clicking on the button next to that option.",
+        "QuestionType": "Matrix",
+        "Rows": [
+          "Lottery:$0.50",
+          "Lottery:$1.00",
+          "Lottery:$1.25",
+          "Lottery:$1.50",
+          "Lottery:$1.75",
+          "Lottery:$2.00",
+          "Lottery:$2.25",
+          "Lottery:$2.50",
+          "Lottery:$2.75",
+          "Lottery:$3.00",
+          "Lottery:$3.25",
+          "Lottery:$3.50",
+          "Lottery:$4.00",
+          "Lottery:$5.00"
+        ],
+        "Columns": [
+          "1",
+          "2"
+        ],
+        "Settings": {
+          "Selector": "Bipolar",
+          "SubSelector": "",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "SelectedText": [
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2"
+          ]
+        }
+      },
+      {
+        "QuestionID": "QID251",
+        "QuestionText": "In this question, the LOTTERY is a 50% chance of winning $8 and a 50% chance of winning $2.  Suppose you are given the option to exchange this lottery for certain amounts of money. Please choose between the following options. For each line in the list, you must choose between the option on the left and the option on the right. Note that on each line, the option on the left stays the same while the option on the right gets better as one goes down the list. You can select the option you would prefer receiving by clicking on the button next to that option.",
+        "QuestionType": "Matrix",
+        "Rows": [
+          "Lottery:$2.50",
+          "Lottery:$3.00",
+          "Lottery:$3.25",
+          "Lottery:$3.50",
+          "Lottery:$3.75",
+          "Lottery:$4.00",
+          "Lottery:$4.25",
+          "Lottery:$4.50",
+          "Lottery:$4.75",
+          "Lottery:$5.00",
+          "Lottery:$5.25",
+          "Lottery:$5.50",
+          "Lottery:$6.00",
+          "Lottery:$7.00"
+        ],
+        "Columns": [
+          "1",
+          "2"
+        ],
+        "Settings": {
+          "Selector": "Bipolar",
+          "SubSelector": "",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "SelectedText": [
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2"
+          ]
+        }
+      },
+      {
+        "QuestionID": "QID252",
+        "QuestionText": "In this question, the LOTTERY is a 50% chance of winning $10 and a 50% chance of winning $0.  Suppose you are given the option to exchange this lottery for certain amounts of money. Please choose between the following options. For each line in the list, you must choose between the option on the left and the option on the right. Note that on each line, the option on the left stays the same while the option on the right gets better as one goes down the list. You can select the option you would prefer receiving by clicking on the button next to that option.",
+        "QuestionType": "Matrix",
+        "Rows": [
+          "Lottery:$2.50",
+          "Lottery:$3.00",
+          "Lottery:$3.25",
+          "Lottery:$3.50",
+          "Lottery:$3.75",
+          "Lottery:$4.00",
+          "Lottery:$4.25",
+          "Lottery:$4.50",
+          "Lottery:$4.75",
+          "Lottery:$5.00",
+          "Lottery:$5.25",
+          "Lottery:$5.50",
+          "Lottery:$6.00",
+          "Lottery:$7.00"
+        ],
+        "Columns": [
+          "1",
+          "2"
+        ],
+        "Settings": {
+          "Selector": "Bipolar",
+          "SubSelector": "",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "SelectedText": [
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2"
+          ]
+        }
+      },
+      {
+        "QuestionID": "QID276",
+        "QuestionText": "In this question, the LOTTERY is a 50% chance of LOSING $6 (as indicated by the minus sign before $6) and a 50% chance of winning $0.  Suppose you are given the option to exchange this lottery for certain amounts of money. The alternative also involves losing money, as indicated by the minus sign. Please choose between the following options. For each line in the list, you must choose between the option on the left and the option on the right. Note that on each line, the option on the left stays the same while the option on the right gets better as one goes down the list. You can select the option you would prefer receiving by clicking on the button next to that option.",
+        "QuestionType": "Matrix",
+        "Rows": [
+          "Lottery:-$5.50",
+          "Lottery:-$5.00",
+          "Lottery:-$4.75",
+          "Lottery:-$4.50",
+          "Lottery:-$4.25",
+          "Lottery:-$4.00",
+          "Lottery:-$3.75",
+          "Lottery:-$3.50",
+          "Lottery:-$3.25",
+          "Lottery:-$3.00",
+          "Lottery:-$2.75",
+          "Lottery:-$2.50",
+          "Lottery:-$2.00",
+          "Lottery:-$1.00"
+        ],
+        "Columns": [
+          "1",
+          "2"
+        ],
+        "Settings": {
+          "Selector": "Bipolar",
+          "SubSelector": "",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": [
+            2,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "SelectedText": [
+            "2",
+            "2",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1"
+          ]
+        }
+      },
+      {
+        "QuestionID": "QID277",
+        "QuestionText": "In this question, the LOTTERY is a 50% chance of LOSING $8 and a 50% chance of LOSING $2 (as indicated by the minus sign before $8 and $2).  Suppose you are given the option to exchange this lottery for certain amounts of money. The alternative also involves losing money, as indicated by the minus sign. Please choose between the following options. For each line in the list, you must choose between the option on the left and the option on the right. Note that on each line, the option on the left stays the same while the option on the right gets better as one goes down the list. You can select the option you would prefer receiving by clicking on the button next to that option.",
+        "QuestionType": "Matrix",
+        "Rows": [
+          "Lottery:-$7.50",
+          "Lottery:-$7.00",
+          "Lottery:-$6.75",
+          "Lottery:-$6.50",
+          "Lottery:-$6.25",
+          "Lottery:-$6.00",
+          "Lottery:-$5.75",
+          "Lottery:-$5.50",
+          "Lottery:-$5.25",
+          "Lottery:-$5.00",
+          "Lottery:-$4.75",
+          "Lottery:-$4.50",
+          "Lottery:-$4.00",
+          "Lottery:-$3.00"
+        ],
+        "Columns": [
+          "1",
+          "2"
+        ],
+        "Settings": {
+          "Selector": "Bipolar",
+          "SubSelector": "",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": [
+            2,
+            2,
+            2,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "SelectedText": [
+            "2",
+            "2",
+            "2",
+            "2",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1"
+          ]
+        }
+      },
+      {
+        "QuestionID": "QID278",
+        "QuestionText": "In this question, the LOTTERY is a 50% chance of LOSING $10 (as indicated by the minus sign before $10) and a 50% chance of winning $0.  Suppose you are given the option to exchange this lottery for certain amounts of money. The alternative also involves losing money, as indicated by the minus sign. Please choose between the following options. For each line in the list, you must choose between the option on the left and the option on the right. Note that on each line, the option on the left stays the same while the option on the right gets better as one goes down the list. You can select the option you would prefer receiving by clicking on the button next to that option.",
+        "QuestionType": "Matrix",
+        "Rows": [
+          "Lottery:-$7.50",
+          "Lottery:-$7.00",
+          "Lottery:-$6.75",
+          "Lottery:-$6.50",
+          "Lottery:-$6.25",
+          "Lottery:-$6.00",
+          "Lottery:-$5.75",
+          "Lottery:-$5.50",
+          "Lottery:-$5.25",
+          "Lottery:-$5.00",
+          "Lottery:-$4.75",
+          "Lottery:-$4.50",
+          "Lottery:-$4.00",
+          "Lottery:-$3.00"
+        ],
+        "Columns": [
+          "1",
+          "2"
+        ],
+        "Settings": {
+          "Selector": "Bipolar",
+          "SubSelector": "",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": [
+            2,
+            2,
+            2,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "SelectedText": [
+            "2",
+            "2",
+            "2",
+            "2",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1"
+          ]
+        }
+      },
+      {
+        "QuestionID": "QID279",
+        "QuestionText": "In this question, the LOTTERY is a 50% chance of LOSING $8 (as indicated by the minus sign before $8) and a 50% chance of winning a value x.  Suppose you are given the option to exchange this lottery for the certainty of winning $0. Please choose between the following options. For each line in the list, you must choose between the option on the left and the option on the right. Note that on each line, the option on the left gets better as one goes down the list while the option on the right stays the same. You can select the option you would prefer receiving by clicking on the button next to that option.",
+        "QuestionType": "Matrix",
+        "Rows": [
+          "Lottery with x=$7.00:$0",
+          "Lottery with x=$8.00:$0",
+          "Lottery with x=$9.00:$0",
+          "Lottery with x=$10.00:$0",
+          "Lottery with x=$11.00:$0",
+          "Lottery with x=$12.00:$0",
+          "Lottery with x=$13.00:$0",
+          "Lottery with x=$14.00:$0",
+          "Lottery with x=$15.00:$0",
+          "Lottery with x=$16.00:$0",
+          "Lottery with x=$17.00:$0",
+          "Lottery with x=$18.00:$0",
+          "Lottery with x=$19.00:$0",
+          "Lottery with x=$20.00:$0"
+        ],
+        "Columns": [
+          "1",
+          "2"
+        ],
+        "Settings": {
+          "Selector": "Bipolar",
+          "SubSelector": "",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "SelectedText": [
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1"
+          ]
+        }
+      },
+      {
+        "QuestionID": "QID117",
+        "QuestionText": "Suppose you were given $5 and had to decide how much of this money to keep for yourself and how much to send to another (anonymous) person. Any amount you send to the other person would then be tripled. That is, if you send $1, this becomes $3. If you send $2, this becomes $6, etc. Then, the other person would have to decide how much of that money to keep and how much to return to you. That is, if you send $1, this would become $3 and the other person would have to decide how much of this $3 to keep for themself and how much to send back to you. In this scenario, how much would keep for yourself and how much would you send to the other person?",
+        "QuestionType": "MC",
+        "Options": [
+          "I would keep $0 for myself and send $5 to the other person.",
+          "I would keep $1 for myself and send $4 to the other person.",
+          "I would keep $2 for myself and send $3 to the other person.",
+          "I would keep $3 for myself and send $2 to the other person.",
+          "I would keep $4 for myself and send $1 to the other person.",
+          "I would keep $5 for myself and send $0 to the other person."
+        ],
+        "Settings": {
+          "Selector": "SAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": 1,
+          "SelectedText": "I would keep $0 for myself and send $5 to the other person."
+        }
+      },
+      {
+        "QuestionID": "QID118",
+        "QuestionText": "Suppose now that you are playing this game as the other person, i.e., the receiver. For each amount that you may receive, how much would you keep for yourself and how much would send back to the other person? If the person sends me $5 (which would become $15):",
+        "QuestionType": "MC",
+        "Options": [
+          "I would keep $0 for myself and send $15 to the other person.",
+          "I would keep $1 for myself and send $14 to the other person.",
+          "I would keep $2 for myself and send $13 to the other person.",
+          "I would keep $3 for myself and send $12 to the other person.",
+          "I would keep $4 for myself and send $11 to the other person.",
+          "I would keep $5 for myself and send $10 to the other person.",
+          "I would keep $6 for myself and send $9 to the other person.",
+          "I would keep $7 for myself and send $8 to the other person.",
+          "I would keep $8 for myself and send $7 to the other person.",
+          "I would keep $9 for myself and send $6 to the other person.",
+          "I would keep $10 for myself and send $5 to the other person.",
+          "I would keep $11 for myself and send $4 to the other person.",
+          "I would keep $12 for myself and send $3 to the other person.",
+          "I would keep $13 for myself and send $2 to the other person.",
+          "I would keep $14 for myself and send $1 to the other person.",
+          "I would keep $15 for myself and send $0 to the other person."
+        ],
+        "Settings": {
+          "Selector": "SAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": 16,
+          "SelectedText": "I would keep $15 for myself and send $0 to the other person."
+        }
+      },
+      {
+        "QuestionID": "QID119",
+        "QuestionText": "If the person sends me $4 (which would become $12):",
+        "QuestionType": "MC",
+        "Options": [
+          "I would keep $0 for myself and send $12 to the other person.",
+          "I would keep $1 for myself and send $11 to the other person.",
+          "I would keep $2 for myself and send $10 to the other person.",
+          "I would keep $3 for myself and send $9 to the other person.",
+          "I would keep $4 for myself and send $8 to the other person.",
+          "I would keep $5 for myself and send $7 to the other person.",
+          "I would keep $6 for myself and send $6 to the other person.",
+          "I would keep $7 for myself and send $5 to the other person.",
+          "I would keep $8 for myself and send $4 to the other person.",
+          "I would keep $9 for myself and send $3 to the other person.",
+          "I would keep $10 for myself and send $2 to the other person.",
+          "I would keep $11 for myself and send $1 to the other person.",
+          "I would keep $12 for myself and send $0 to the other person."
+        ],
+        "Settings": {
+          "Selector": "SAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": 12,
+          "SelectedText": "I would keep $11 for myself and send $1 to the other person."
+        }
+      },
+      {
+        "QuestionID": "QID120",
+        "QuestionText": "If the person sends me $3 (which would become $9):",
+        "QuestionType": "MC",
+        "Options": [
+          "I would keep $0 for myself and send $9 to the other person.",
+          "I would keep $1 for myself and send $8 to the other person.",
+          "I would keep $2 for myself and send $7 to the other person.",
+          "I would keep $3 for myself and send $6 to the other person.",
+          "I would keep $4 for myself and send $5 to the other person.",
+          "I would keep $5 for myself and send $4 to the other person.",
+          "I would keep $6 for myself and send $3 to the other person.",
+          "I would keep $7 for myself and send $2 to the other person.",
+          "I would keep $8 for myself and send $1 to the other person.",
+          "I would keep $9 for myself and send $0 to the other person."
+        ],
+        "Settings": {
+          "Selector": "SAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": 10,
+          "SelectedText": "I would keep $9 for myself and send $0 to the other person."
+        }
+      },
+      {
+        "QuestionID": "QID121",
+        "QuestionText": "If the person sends me $2 (which would become $6):",
+        "QuestionType": "MC",
+        "Options": [
+          "I would keep $0 for myself and send $6 to the other person.",
+          "I would keep $1 for myself and send $5 to the other person.",
+          "I would keep $2 for myself and send $4 to the other person.",
+          "I would keep $3 for myself and send $3 to the other person.",
+          "I would keep $4 for myself and send $2 to the other person.",
+          "I would keep $5 for myself and send $1 to the other person.",
+          "I would keep $6 for myself and send $0 to the other person."
+        ],
+        "Settings": {
+          "Selector": "SAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": 6,
+          "SelectedText": "I would keep $5 for myself and send $1 to the other person."
+        }
+      },
+      {
+        "QuestionID": "QID122",
+        "QuestionText": "If the person sends me $1 (which would become $3):",
+        "QuestionType": "MC",
+        "Options": [
+          "I would keep $0 for myself and send $3 to the other person.",
+          "I would keep $1 for myself and send $2 to the other person.",
+          "I would keep $2 for myself and send $1 to the other person.",
+          "I would keep $3 for myself and send $0 to the other person."
+        ],
+        "Settings": {
+          "Selector": "SAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": 4,
+          "SelectedText": "I would keep $3 for myself and send $0 to the other person."
+        }
+      },
+      {
+        "QuestionID": "QID271",
+        "QuestionText": "We are now interested in what you were thinking about while deciding how much of the money to keep for yourself and how much to send to another (anonymous) person, and when deciding how much would you keep for yourself and how much would send back to the other person. Any thought is fine; simply list what it was that you were thinking about while answering the questions. Below, please write down the first thought that you had in the first box, the second thought you had in the second box, etc. Please write only one idea per box. You should try to write only the thoughts that you were thinking during the task. Please state your thoughts concisely...one phrase is sufficient. Ignore spelling, grammar, and punctuation. Please be completely honest and list all of thoughts that you had. Don't worry if you don't fill every space. Just write down whatever thoughts you had while making the decision. First, please list the thoughts you had when deciding how much of the money to keep for yourself and how much to send to another (anonymous) person:",
+        "QuestionType": "TE",
+        "Rows": [
+          "Thought 1",
+          "Thought 2",
+          "Thought 3",
+          "Thought 4",
+          "Thought 5",
+          "Thought 6"
+        ],
+        "RowsID": [
+          "1",
+          "11",
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "Settings": {
+          "Selector": "FORM",
+          "ForceResponse": "OFF",
+          "ContentType": ""
+        },
+        "Answers": {
+          "Text": [
+            {
+              "Thought 1": "why does he need that money"
+            },
+            {
+              "Thought 2": "will I get it back"
+            },
+            {
+              "Thought 3": "is he even trust worthy"
+            },
+            {
+              "Thought 4": "I'm not good with money"
+            },
+            {
+              "Thought 5": "I'm gonna waste it"
+            },
+            {
+              "Thought 6": "I wish I got more money"
+            }
+          ]
+        }
+      },
+      {
+        "QuestionID": "QID272",
+        "QuestionText": "Second, please list the thoughts you had when deciding how much would you keep for yourself and how much would send back to the other person:",
+        "QuestionType": "TE",
+        "Rows": [
+          "Thought 1",
+          "Thought 2",
+          "Thought 3",
+          "Thought 4",
+          "Thought 5",
+          "Thought 6"
+        ],
+        "Settings": {
+          "Selector": "FORM",
+          "ForceResponse": "OFF",
+          "ContentType": ""
+        },
+        "Answers": {
+          "Text": [
+            {
+              "Thought 1": "Why does he need it?"
+            },
+            {
+              "Thought 2": "I prefer to keep it"
+            },
+            {
+              "Thought 3": "I need this money more"
+            },
+            {
+              "Thought 4": "I'm struggling"
+            },
+            {
+              "Thought 5": "I need money for food"
+            },
+            {
+              "Thought 6": "will he give me something?"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "ElementType": "Block",
+    "BlockName": "Economic preferences - intro ",
+    "BlockType": "Standard",
+    "Questions": [
+      {
+        "QuestionID": "QID242",
+        "QuestionText": "In this section, you will be asked various questions about your opinions and preferences. In order to help you pace yourself, the \"next\" button will appear only after a few seconds in each question.",
+        "QuestionType": "DB",
+        "is_descriptive": true
+      }
+    ]
+  },
+  {
+    "ElementType": "Block",
+    "BlockName": "Forward Flow",
+    "BlockType": "Standard",
+    "Questions": [
+      {
+        "QuestionID": "QID10",
+        "QuestionText": "On this page, starting with the word toaster, your job is to write down the next word that follows in your mind from the previous word. Please put down only single words, and do not use proper nouns (such as names, brands, etc.). There is no right or wrong answer, just write the words as they come to your mind.",
+        "QuestionType": "TE",
+        "Rows": [
+          "word 1",
+          "word 2",
+          "word 3",
+          "word 4",
+          "word 5",
+          "word 6",
+          "word 7",
+          "word 8",
+          "word 9",
+          "word 10",
+          "word 11",
+          "word 12",
+          "word 13",
+          "word 14",
+          "word 15",
+          "word 16",
+          "word 17",
+          "word 18",
+          "word 19",
+          "word 20"
+        ],
+        "Answers": {
+          "Text": [
+            {
+              "word 1": "toaster"
+            },
+            {
+              "word 2": "bread"
+            },
+            {
+              "word 3": "butter"
+            },
+            {
+              "word 4": "cheese"
+            },
+            {
+              "word 5": "sandwich"
+            },
+            {
+              "word 6": "eggs"
+            },
+            {
+              "word 7": "breakfast"
+            },
+            {
+              "word 8": "ice cream"
+            },
+            {
+              "word 9": "milk"
+            },
+            {
+              "word 10": "dessert"
+            },
+            {
+              "word 11": "desert"
+            },
+            {
+              "word 12": "camel"
+            },
+            {
+              "word 13": "cactus"
+            },
+            {
+              "word 14": "sand"
+            },
+            {
+              "word 15": "sandcastle"
+            },
+            {
+              "word 16": "beach"
+            },
+            {
+              "word 17": "castle"
+            },
+            {
+              "word 18": "dragon"
+            },
+            {
+              "word 19": "knight"
+            },
+            {
+              "word 20": "princess"
+            }
+          ]
+        },
+        "Settings": {
+          "Selector": "FORM",
+          "ForceResponse": "ON",
+          "ContentType": ""
+        }
+      }
+    ]
+  },
+  {
+    "ElementType": "Block",
+    "BlockName": "Cognitive tests ",
+    "BlockType": "Standard",
+    "Questions": [
+      {
+        "QuestionID": "QID241",
+        "QuestionText": "You are now going to answer 20 questions that will test your financial literacy as well as your performance on various cognitive tests.",
+        "QuestionType": "DB",
+        "is_descriptive": true
+      },
+      {
+        "QuestionID": "QID36",
+        "QuestionText": "Do you think that the following statement is true or false? \"A 15-year mortgage typically requires higher monthly payments than a 30-year mortgage, but the total interest paid over the life of the loan will be less.\"",
+        "QuestionType": "MC",
+        "Options": [
+          "True",
+          "False"
+        ],
+        "Settings": {
+          "Selector": "SAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": 1,
+          "SelectedText": "True"
+        }
+      },
+      {
+        "QuestionID": "QID37",
+        "QuestionText": "Imagine that the interest rate on your saving account was 1% per year and inflation was 2% per year. After 1 year, would you be able to buy:",
+        "QuestionType": "MC",
+        "Options": [
+          "More than today with the money on this account",
+          "Exactly the same as today with the money in this account",
+          "Less than today with the money in this account",
+          "Do not know"
+        ],
+        "Settings": {
+          "Selector": "SAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": 2,
+          "SelectedText": "Exactly the same as today with the money in this account"
+        }
+      },
+      {
+        "QuestionID": "QID38",
+        "QuestionText": "Normally, which asset described below displays the highest fluctuations over time?",
+        "QuestionType": "MC",
+        "Options": [
+          "Savings account",
+          "Stocks",
+          "Bonds",
+          "Do not know"
+        ],
+        "Settings": {
+          "Selector": "SAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "OFF"
+        },
+        "Answers": {
+          "SelectedByPosition": 2,
+          "SelectedText": "Stocks"
+        }
+      },
+      {
+        "QuestionID": "QID39",
+        "QuestionText": "Do you think that the following statement is true or false? \"If you were to invest $1,000 in a stock mutual fund, it would be possible to have less than $1,000 when you withdraw your money.\"",
+        "QuestionType": "MC",
+        "Options": [
+          "True",
+          "False"
+        ],
+        "Settings": {
+          "Selector": "SAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": 1,
+          "SelectedText": "True"
+        }
+      },
+      {
+        "QuestionID": "QID40",
+        "QuestionText": "When an investor spreads their money among different assets, the risk of losing a lot of money:",
+        "QuestionType": "MC",
+        "Options": [
+          "Increases",
+          "Decreases",
+          "Stays the same",
+          "Do not know"
+        ],
+        "Settings": {
+          "Selector": "SAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "OFF"
+        },
+        "Answers": {
+          "SelectedByPosition": 2,
+          "SelectedText": "Decreases"
+        }
+      },
+      {
+        "QuestionID": "QID41",
+        "QuestionText": "Considering a long time period (for example 10 or 20 years), which asset described below normally gives the highest return?",
+        "QuestionType": "MC",
+        "Options": [
+          "Savings account",
+          "Stocks",
+          "Bonds",
+          "Do not know"
+        ],
+        "Settings": {
+          "Selector": "SAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "OFF"
+        },
+        "Answers": {
+          "SelectedByPosition": 3,
+          "SelectedText": "Bonds"
+        }
+      },
+      {
+        "QuestionID": "QID42",
+        "QuestionText": "Do you think that the following statement is true or false? \"After age 70 and a half, you have to withdraw at least some money from your 401(k) plan or IRA.\"",
+        "QuestionType": "MC",
+        "Options": [
+          "True",
+          "False"
+        ],
+        "Settings": {
+          "Selector": "SAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": 1,
+          "SelectedText": "True"
+        }
+      },
+      {
+        "QuestionID": "QID43",
+        "QuestionText": "Suppose you owe $3,000 on your credit card. You pay a minimum payment of $30 each month. At an Annual Percentage Rate of 12% (or 1% per month), how many years would it take to eliminate your credit card debt if you made no additional new charges? Enter a number of years, or \"never\" if the debt will never be eliminated.",
+        "QuestionType": "TE",
+        "Settings": {
+          "Selector": "SL",
+          "ForceResponse": "ON",
+          "ContentType": ""
+        },
+        "Answers": {
+          "Text": "10"
+        }
+      },
+      {
+        "QuestionID": "QID44",
+        "QuestionText": "Imagine that we roll a fair, six-sided die 1,000 times. Out of 1,000 rolls, how many times do you think the die would come up as an even number? Which is the most likely outcome? Enter a number from 0 to 1,000.",
+        "QuestionType": "TE",
+        "Settings": {
+          "Selector": "SL",
+          "ForceResponse": "ON",
+          "ContentType": "ValidNumber"
+        },
+        "Answers": {
+          "Text": "500"
+        }
+      },
+      {
+        "QuestionID": "QID45",
+        "QuestionText": "In the BIG BUCKS LOTTERY, the chance of winning a $10.00 prize is 1%. What is your best guess about how many people would win a $10.00 prize if 1,000 people each buy a single ticket from BIG BUCKS? Enter a number from 0 to 1,000.",
+        "QuestionType": "TE",
+        "Settings": {
+          "Selector": "SL",
+          "ForceResponse": "ON",
+          "ContentType": "ValidNumber"
+        },
+        "Answers": {
+          "Text": "100"
+        }
+      },
+      {
+        "QuestionID": "QID46",
+        "QuestionText": "If the chance of getting a disease is 20 out of 100, this would be the same as having a [blank]% chance of getting the disease. Enter a percentage from 0 to 100.",
+        "QuestionType": "TE",
+        "Settings": {
+          "Selector": "SL",
+          "ForceResponse": "ON",
+          "ContentType": "ValidNumber"
+        },
+        "Answers": {
+          "Text": "25"
+        }
+      },
+      {
+        "QuestionID": "QID47",
+        "QuestionText": "In the ACME PUBLISHING SWEEPSTAKES, the chance of winning a car is 1 in 1,000. What percent of tickets of ACME PUBLISHING SWEEPSTAKES win a car? Enter a percentage from 0 to 100.",
+        "QuestionType": "TE",
+        "Settings": {
+          "Selector": "SL",
+          "ForceResponse": "ON",
+          "ContentType": "ValidNumber"
+        },
+        "Answers": {
+          "Text": "10"
+        }
+      },
+      {
+        "QuestionID": "QID48",
+        "QuestionText": "If the chance of getting a disease is 10%, how many people would be expected to get the disease out of 1,000? Enter a number from 0 to 1,000.",
+        "QuestionType": "TE",
+        "Settings": {
+          "Selector": "SL",
+          "ForceResponse": "ON",
+          "ContentType": "ValidNumber"
+        },
+        "Answers": {
+          "Text": "100"
+        }
+      },
+      {
+        "QuestionID": "QID49",
+        "QuestionText": "If it takes 5 machines 5 minutes to make 5 widgets, how long would it take 100 machines to make 100 widgets? Enter a number of minutes.",
+        "QuestionType": "TE",
+        "Settings": {
+          "Selector": "SL",
+          "ForceResponse": "ON",
+          "ContentType": "ValidNumber"
+        },
+        "Answers": {
+          "Text": "5"
+        }
+      },
+      {
+        "QuestionID": "QID50",
+        "QuestionText": "A bat and ball cost $1.10 in total. The bat costs $1.00 more than the ball. How much does the ball cost? Enter a number in dollars.",
+        "QuestionType": "TE",
+        "Settings": {
+          "Selector": "SL",
+          "ForceResponse": "ON",
+          "ContentType": "ValidNumber"
+        },
+        "Answers": {
+          "Text": "0.1"
+        }
+      },
+      {
+        "QuestionID": "QID51",
+        "QuestionText": "In a lake, there is a patch of lily pads. Every day, the patch doubles in size. If it takes 48 days for the patch to cover the entire lake, how long would it take for the patch to cover half of the lake? Enter a number of days.",
+        "QuestionType": "TE",
+        "Settings": {
+          "Selector": "SL",
+          "ForceResponse": "ON",
+          "ContentType": "ValidNumber"
+        },
+        "Answers": {
+          "Text": "24"
+        }
+      },
+      {
+        "QuestionID": "QID217",
+        "QuestionText": "You are now going to receive a series of four problems. You must decide whether the stated conclusion follows logically from the premises or not. You must suppose that the premises are all true and limit yourself only to the information contained in these premises. Premise 1: If there is a postal strike, then unemployment will double. Premise 2: There is a postal strike. Conclusion: Unemployment will double. Does the conclusion follow logically from the premises ?",
+        "QuestionType": "MC",
+        "Options": [
+          "Yes",
+          "No"
+        ],
+        "Settings": {
+          "Selector": "SAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": 1,
+          "SelectedText": "Yes"
+        }
+      },
+      {
+        "QuestionID": "QID218",
+        "QuestionText": "Premise 1: If the winter is harsh, then there will be a flu epidemic. Premise 2: The winter is harsh. Conclusion: There will be a flu epidemic. Does the conclusion follow logically from the premises ?",
+        "QuestionType": "MC",
+        "Options": [
+          "Yes",
+          "No"
+        ],
+        "Settings": {
+          "Selector": "SAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": 1,
+          "SelectedText": "Yes"
+        }
+      },
+      {
+        "QuestionID": "QID219",
+        "QuestionText": "Premise 1: If a car is a Honda, then it is expensive. Premise 2: A car is a Honda. Conclusion: The car is expensive. Does the conclusion follow logically from the premises ?",
+        "QuestionType": "MC",
+        "Options": [
+          "Yes",
+          "No"
+        ],
+        "Settings": {
+          "Selector": "SAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": 1,
+          "SelectedText": "Yes"
+        }
+      },
+      {
+        "QuestionID": "QID220",
+        "QuestionText": "Premise 1: If a person eats hamburgers, then they will get cancer. Premise 2: A person eats hamburgers. Conclusion: The person will get cancer. Does the conclusion follow logically from the premises ?",
+        "QuestionType": "MC",
+        "Options": [
+          "Yes",
+          "No"
+        ],
+        "Settings": {
+          "Selector": "SAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": 1,
+          "SelectedText": "Yes"
+        }
+      }
+    ]
+  },
+  {
+    "ElementType": "Block",
+    "BlockName": "Personality ",
+    "BlockType": "Standard",
+    "Questions": [
+      {
+        "QuestionID": "QID285",
+        "QuestionText": "In this section we will ask you a few questions about your personality. In order to help you pace yourself, the \"next\" button will appear only after a few seconds in each question.",
+        "QuestionType": "DB",
+        "is_descriptive": true
+      },
+      {
+        "QuestionID": "QID27",
+        "QuestionText": "Listed below are a number of statements concerning personal attributes and traits. Read each item and decide whether the statement is true or false as it pertains to your personally.",
+        "QuestionType": "Matrix",
+        "Rows": [
+          "It is sometimes hard for me to go on with my work if I am not encouraged",
+          "I sometimes feel resentful when I don't get my way",
+          "On a few occasions, I have given up doing something because I thought too little of my ability",
+          "There have been times when I felt like rebelling against people in authority even though I knew they were right",
+          "No matter who I'm talking to, I'm always a good listener",
+          "There have been occasions when I took advantage of someone",
+          "I'm always willing to admit when I make a mistake",
+          "I sometimes try to get even rather than forgive and forget",
+          "I am always courteous, even to people who are disagreeable",
+          "I have never been irked when people expressed ideas different from my own",
+          "There have been times when I was quite jealous of the good fortune of others",
+          "I am sometimes irritated by people who ask favors of me",
+          "I have never deliberately said something that hurt someone's feelings"
+        ],
+        "Columns": [
+          "FALSE",
+          "TRUE"
+        ],
+        "Settings": {
+          "Selector": "Likert",
+          "SubSelector": "SingleAnswer",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": [
+            2,
+            2,
+            2,
+            1,
+            1,
+            1,
+            2,
+            2,
+            1,
+            1,
+            1,
+            1,
+            2
+          ],
+          "SelectedText": [
+            "TRUE",
+            "TRUE",
+            "TRUE",
+            "FALSE",
+            "FALSE",
+            "FALSE",
+            "TRUE",
+            "TRUE",
+            "FALSE",
+            "FALSE",
+            "FALSE",
+            "FALSE",
+            "TRUE"
+          ]
+        }
+      },
+      {
+        "QuestionID": "QID30",
+        "QuestionText": "Following are a number of characteristics that may or may not apply to you. Please indicate next to each statement the extent to which that statement accurately or inaccurately describes you.",
+        "QuestionType": "Matrix",
+        "Rows": [
+          "Organized",
+          "Efficient",
+          "Systematic",
+          "Practical",
+          "Disorganized",
+          "Sloppy",
+          "Inefficient",
+          "Careless"
+        ],
+        "Columns": [
+          "Extremely inaccurate 1",
+          "2",
+          "3",
+          "4",
+          "Neither inaccurate nor accurate 5",
+          "6",
+          "7",
+          "8",
+          "Extremely accurate 9"
+        ],
+        "Settings": {
+          "Selector": "Likert",
+          "SubSelector": "SingleAnswer",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": [
+            2,
+            5,
+            5,
+            3,
+            9,
+            8,
+            4,
+            6
+          ],
+          "SelectedText": [
+            "2",
+            "Neither inaccurate nor accurate 5",
+            "Neither inaccurate nor accurate 5",
+            "3",
+            "Extremely accurate 9",
+            "8",
+            "4",
+            "6"
+          ]
+        }
+      },
+      {
+        "QuestionID": "QID125",
+        "QuestionText": "How much have you been bothered by each of the following symptoms over the past week?",
+        "QuestionType": "Matrix",
+        "Rows": [
+          "Numbness or tingling",
+          "Feeling hot",
+          "Wobbliness in legs",
+          "Unable to relax",
+          "Fear of the worst happening",
+          "Dizzy or lightheaded",
+          "Unsteady",
+          "Terrified",
+          "Nervous",
+          "Feeling of choking",
+          "Hands trembling",
+          "Shaky",
+          "Fear of losing control",
+          "Difficulty breathing",
+          "Fear of dying",
+          "Scared",
+          "Indigestion or discomfort in abdomen",
+          "Faint",
+          "Face flushed",
+          "Sweating (not due to heat)",
+          "Heart pounding or racing"
+        ],
+        "Columns": [
+          "Not at all 0",
+          "1",
+          "2",
+          "Severely - I barely could stand it 3"
+        ],
+        "Settings": {
+          "Selector": "Likert",
+          "SubSelector": "SingleAnswer",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": [
+            1,
+            2,
+            2,
+            4,
+            3,
+            3,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            3,
+            2,
+            3,
+            2,
+            2,
+            1,
+            1,
+            1,
+            2
+          ],
+          "SelectedText": [
+            "Not at all 0",
+            "1",
+            "1",
+            "Severely - I barely could stand it 3",
+            "2",
+            "2",
+            "1",
+            "Not at all 0",
+            "Not at all 0",
+            "Not at all 0",
+            "Not at all 0",
+            "Not at all 0",
+            "2",
+            "1",
+            "2",
+            "1",
+            "1",
+            "Not at all 0",
+            "Not at all 0",
+            "Not at all 0",
+            "1"
+          ]
+        }
+      },
+      {
+        "QuestionID": "QID233",
+        "QuestionText": "Following are a number of characteristics that may or may not apply to you. Please indicate next to each statement the extent to which you agree or disagree with that statement.",
+        "QuestionType": "Matrix",
+        "Rows": [
+          "I'd rather depend on myself than others",
+          "I rely on myself most of the time, I rarely rely on others",
+          "I often do my own thing",
+          "My personal identity, independent of others, is very important to me",
+          "It is important for me to do my job better than the others",
+          "Winning is everything",
+          "Competition is the law of nature",
+          "When another person does better than I do, I get tense and aroused",
+          "If a co-worker gets a prize, I would feel proud",
+          "The well-being of my coworkers is important to me",
+          "To me, pleasure is spending time with others",
+          "I feel good when I cooperate with others",
+          "Parents and children must stay together as much as possible",
+          "It is my duty to take care of my family, even when I have to sacrifice what I want",
+          "Family members should stick together, no matter what sacrifices are required",
+          "It is important to me that I respect the decision made by my groups"
+        ],
+        "Columns": [
+          "Disagree strongly",
+          "Disagree a little",
+          "Neither agree nor disagree",
+          "Agree a little",
+          "Agree strongy"
+        ],
+        "Settings": {
+          "Selector": "Likert",
+          "SubSelector": "SingleAnswer",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": [
+            2,
+            5,
+            4,
+            3,
+            3,
+            5,
+            5,
+            3,
+            1,
+            1,
+            2,
+            2,
+            4,
+            2,
+            1,
+            2
+          ],
+          "SelectedText": [
+            "Disagree a little",
+            "Agree strongy",
+            "Agree a little",
+            "Neither agree nor disagree",
+            "Neither agree nor disagree",
+            "Agree strongy",
+            "Agree strongy",
+            "Neither agree nor disagree",
+            "Disagree strongly",
+            "Disagree strongly",
+            "Disagree a little",
+            "Disagree a little",
+            "Agree a little",
+            "Disagree a little",
+            "Disagree strongly",
+            "Disagree a little"
+          ]
+        }
+      },
+      {
+        "QuestionID": "QID268",
+        "QuestionText": "In this task we would like you to write about the type of person you aspire to be vs. the person you ought to be vs. the person you actually are. 1. Please describe the type of person you aspire to be. That is, write about the traits and behaviors you would like ideally to possess, your ultimate goals for yourself. Please write at least 3 sentences.",
+        "QuestionType": "TE",
+        "Settings": {
+          "Selector": "ML",
+          "ForceResponse": "ON",
+          "ContentType": ""
+        },
+        "Answers": {
+          "Text": "I would like to be healthy and in good shape. I would like to be wealthy. I would like to be powerful."
+        }
+      },
+      {
+        "QuestionID": "QID269",
+        "QuestionText": "2. Please describe the type of person you ought to be . That is, write about the traits and behaviors attributes that you should or ought to possess, based on your responsibilities and what other people expect from you. Please write at least 3 sentences.",
+        "QuestionType": "TE",
+        "Settings": {
+          "Selector": "ML",
+          "ForceResponse": "ON",
+          "ContentType": ""
+        },
+        "Answers": {
+          "Text": "I need to dedicated and not lose focus so easily. I need to be more frugal with my money and not spend it on stupid stuff. I need to determined in order to succeed."
+        }
+      },
+      {
+        "QuestionID": "QID270",
+        "QuestionText": "3. Please describe the type of person you actually are . That is, write about the traits and behaviors you actually possess. Please write at least 3 sentences.",
+        "QuestionType": "TE",
+        "Settings": {
+          "Selector": "ML",
+          "ForceResponse": "ON",
+          "ContentType": ""
+        },
+        "Answers": {
+          "Text": "I lack attention and very compulsive acting on a whim and it caused a lot of mistakes in my life. I am not happy where I right right now. I am lazy and depressed most days."
+        }
+      }
+    ]
+  },
+  {
+    "ElementType": "Block",
+    "BlockName": "Economic preferences ",
+    "BlockType": "Standard",
+    "Questions": [
+      {
+        "QuestionID": "QID224",
+        "QuestionText": "Suppose you were given $5 and had to offer to another (anonymous) person a way to split the money. You would propose how much of this money to keep for yourself and how much to send them. Then, the other person would have to decide whether or not to accept your offer. If they accept your offer, you would each receive the amount specified in your offer. If they reject your offer, you would both receive nothing. In this scenario, how much would propose to keep for yourself and how much would you propose to send to the other person?",
+        "QuestionType": "MC",
+        "Options": [
+          "$0 for myself, $5 to the other person.",
+          "$1 for myself, $4 to the other person.",
+          "$2 for myself, $3 to the other person.",
+          "$3 for myself, $2 to the other person.",
+          "$4 for myself, $1 to the other person.",
+          "$5 for myself, $0 to the other person."
+        ],
+        "Settings": {
+          "Selector": "SAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": 6,
+          "SelectedText": "$5 for myself, $0 to the other person."
+        }
+      },
+      {
+        "QuestionID": "QID225",
+        "QuestionText": "Suppose now that you are playing this game as the other person, i.e., the receiver. For each offer made by the sender, would you accept or reject the offer? If the person offers to keep $0 for themselves and send me $5:",
+        "QuestionType": "MC",
+        "Options": [
+          "I would accept the offer: $0 for other, $5 for me",
+          "I would reject the offer: $0 for both"
+        ],
+        "Settings": {
+          "Selector": "SAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": 1,
+          "SelectedText": "I would accept the offer: $0 for other, $5 for me"
+        }
+      },
+      {
+        "QuestionID": "QID226",
+        "QuestionText": "If the person offers to keep $1 for themselves and send me $4:",
+        "QuestionType": "MC",
+        "Options": [
+          "I would accept the offer: $1 for other, $4 for me",
+          "I would reject the offer: $0 for both"
+        ],
+        "Settings": {
+          "Selector": "SAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": 1,
+          "SelectedText": "I would accept the offer: $1 for other, $4 for me"
+        }
+      },
+      {
+        "QuestionID": "QID227",
+        "QuestionText": "If the person offers to keep $2 for themselves and send me $3:",
+        "QuestionType": "MC",
+        "Options": [
+          "I would accept the offer: $2 for other, $3 for me",
+          "I would reject the offer: $0 for both"
+        ],
+        "Settings": {
+          "Selector": "SAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": 1,
+          "SelectedText": "I would accept the offer: $2 for other, $3 for me"
+        }
+      },
+      {
+        "QuestionID": "QID228",
+        "QuestionText": "If the person offers to keep $3 for themselves and send me $2:",
+        "QuestionType": "MC",
+        "Options": [
+          "I would accept the offer: $3 for other, $2 for me",
+          "I would reject the offer: $0 for both"
+        ],
+        "Settings": {
+          "Selector": "SAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": 1,
+          "SelectedText": "I would accept the offer: $3 for other, $2 for me"
+        }
+      },
+      {
+        "QuestionID": "QID229",
+        "QuestionText": "If the person offers to keep $4 for themselves and send me $1:",
+        "QuestionType": "MC",
+        "Options": [
+          "I would accept the offer: $4 for other, $1 for me",
+          "I would reject the offer: $0 for both"
+        ],
+        "Settings": {
+          "Selector": "SAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": 1,
+          "SelectedText": "I would accept the offer: $4 for other, $1 for me"
+        }
+      },
+      {
+        "QuestionID": "QID230",
+        "QuestionText": "If the person offers to keep $5 for themselves and send me $0:",
+        "QuestionType": "MC",
+        "Options": [
+          "I would accept the offer: $5 for other, $0 for me",
+          "I would reject the offer: $0 for both"
+        ],
+        "Settings": {
+          "Selector": "SAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": 2,
+          "SelectedText": "I would reject the offer: $0 for both"
+        }
+      },
+      {
+        "QuestionID": "QID149",
+        "QuestionText": "Person A was given tickets to lotteries involving the World Series. They won $50 in one lottery and $25 in the other. Person B was given a ticket to a single, larger World Series lottery. They won $75. Who was happier?",
+        "QuestionType": "MC",
+        "Options": [
+          "Person A",
+          "Person B"
+        ],
+        "Settings": {
+          "Selector": "SAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": 2,
+          "SelectedText": "Person B"
+        }
+      },
+      {
+        "QuestionID": "QID150",
+        "QuestionText": "Person A received a letter from the IRS saying that they made a minor arithmetical mistake on their tax return and owed $100. They received a similar letter the same day from their state income tax authority saying they owed $50. There were no other repercussions from either mistake. Person B received a letter from the IRS saying that they made a minor arithmetical mistake on their tax return and owed $150. There were no other repercussions from either mistake. Who was more upset?",
+        "QuestionType": "MC",
+        "Options": [
+          "Person A",
+          "Person B"
+        ],
+        "Settings": {
+          "Selector": "SAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": 2,
+          "SelectedText": "Person B"
+        }
+      },
+      {
+        "QuestionID": "QID151",
+        "QuestionText": "Person A bought their first New York State lottery ticket and won $100. Also, in a freak accident, they damaged the rug in their apartment and had to pay the landlord $80. Person B bought their first New York State lottery ticket and won $20. Who was happier?",
+        "QuestionType": "MC",
+        "Options": [
+          "Person A",
+          "Person B"
+        ],
+        "Settings": {
+          "Selector": "SAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": 2,
+          "SelectedText": "Person B"
+        }
+      },
+      {
+        "QuestionID": "QID152",
+        "QuestionText": "Person A's car was damaged in a parking lot. They had to spend $200 to repair the damage. The same day the car was damaged, they won $25 in the office football pool. Person B's car was damaged in a parking lot. They had to spend $175 to repair the damage. Who was more upset?",
+        "QuestionType": "MC",
+        "Options": [
+          "Person A",
+          "Person B"
+        ],
+        "Settings": {
+          "Selector": "SAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": 1,
+          "SelectedText": "Person A"
+        }
+      }
+    ]
+  },
+  {
+    "ElementType": "Block",
+    "BlockName": "Economic preferences - intro ",
+    "BlockType": "Standard",
+    "Questions": [
+      {
+        "QuestionID": "QID266",
+        "QuestionText": "In this final section, you will be asked various questions about your opinions and preferences. In order to help you pace yourself, the \"next\" button will appear only after a few seconds in each question.",
+        "QuestionType": "DB",
+        "is_descriptive": true
+      }
+    ]
+  },
+  {
+    "ElementType": "Block",
+    "BlockName": "Cognitive tests ",
+    "BlockType": "Standard",
+    "Questions": [
+      {
+        "QuestionID": "QID241",
+        "QuestionText": "In this section, you will answer a series of 42 questions that will test your performance on various cognitive tests.",
+        "QuestionType": "DB",
+        "is_descriptive": true
+      },
+      {
+        "QuestionID": "QID52",
+        "QuestionText": "Emily\u2019s father has three daughters. The first two are named April and May. What is the third daughter\u2019s name?",
+        "QuestionType": "TE",
+        "Settings": {
+          "Selector": "SL",
+          "ForceResponse": "ON",
+          "ContentType": ""
+        },
+        "Answers": {
+          "Text": "May"
+        }
+      },
+      {
+        "QuestionID": "QID53",
+        "QuestionText": "How many cubic feet of dirt are there in a hole that is 3\u2019 deep x 3\u2019 wide x 3\u2019 long? Enter a number of cubic feet.",
+        "QuestionType": "TE",
+        "Settings": {
+          "Selector": "SL",
+          "ForceResponse": "ON",
+          "ContentType": "ValidNumber"
+        },
+        "Answers": {
+          "Text": "27"
+        }
+      },
+      {
+        "QuestionID": "QID54",
+        "QuestionText": "If you\u2019re running a race and you pass the person in second place, what place are you in? Enter a number.",
+        "QuestionType": "TE",
+        "Settings": {
+          "Selector": "SL",
+          "ForceResponse": "ON",
+          "ContentType": "ValidNumber"
+        },
+        "Answers": {
+          "Text": "3"
+        }
+      },
+      {
+        "QuestionID": "QID55",
+        "QuestionText": "A farmer had 15 sheep and all but 8 died. How many are left? Enter a number",
+        "QuestionType": "TE",
+        "Settings": {
+          "Selector": "SL",
+          "ForceResponse": "ON",
+          "ContentType": "ValidNumber"
+        },
+        "Answers": {
+          "Text": "7"
+        }
+      },
+      {
+        "QuestionID": "QID56",
+        "QuestionText": "Please indicate which is the best answer to solve the puzzle below. \n\nPuzzle Grid (3x3 Matrix)\n\nEach cell in a 3x3 matrix contains a circle with an arrow pointing in one of four directions (up, down, left, right) and sometimes includes a diagonal or horizontal/vertical line inside the circle. We'll label the grid as follows:\n\nTop row (Row 1):\n  Cell 1-1: Plain circle with arrow pointing up.\n  Cell 1-2: Plain circle with arrow pointing right.\n  Cell 1-3: Plain circle with arrow pointing down.\n\nMiddle row (Row 2):\n  Cell 2-1: Circle with a horizontal line, arrow pointing left.\n  Cell 2-2: Circle with a horizontal line, arrow pointing up.\n  Cell 2-3: Circle with a horizontal line, arrow pointing right.\n\nBottom row (Row 3):\n  Cell 3-1: Circle with a diagonal line from top-left to bottom-right, arrow pointing down.\n  Cell 3-2: Circle with a diagonal line from top-left to bottom-right, arrow pointing left.\n  Cell 3-3: Missing (marked with a question mark \u2013 this is what we are trying to determine).\n\nAnswer Choices (Labeled A to F):\n  Each option consists of a circle, possibly with an internal line, and an arrow in a particular direction.\n  A: Circle with horizontal line, arrow pointing up.\n  B: Circle with diagonal line (top-left to bottom-right), arrow pointing left.\n  C: Plain circle, arrow pointing left.\n  D: Circle with diagonal line (top-left to bottom-right), arrow pointing right.\n  E: Circle with diagonal line (top-left to bottom-right), arrow pointing down.\n  F: Plain circle, arrow pointing up-right (diagonal).\n",
+        "QuestionType": "MC",
+        "Options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F"
+        ],
+        "Settings": {
+          "Selector": "SAHR",
+          "SubSelector": "TX",
+          "ForceResponse": "OFF"
+        },
+        "Answers": {
+          "SelectedByPosition": 4,
+          "SelectedText": "D"
+        }
+      },
+      {
+        "QuestionID": "QID57",
+        "QuestionText": "Please indicate which is the best answer to complete the figure below.\n\nSTRUCTURE OF THE IMAGE:\nThe image is a 3x3 grid of figures (3 rows, 3 columns), with a six-option answer key (A-F) shown below the grid. The bottom-right cell of the 3x3 grid has a question mark (?) indicating a missing figure that needs to be deduced.\n\nEach figure in the grid consists of a main geometric shape (e.g., circle, square, triangle, etc.) and often one or more smaller shapes (e.g., small circles, squares, or stars) placed beside or inside it. Shapes are typically split into black and white sections, often diagonally or horizontally.\n\nGRID CONTENT:\nFirst Row (Top Row):\n  First Cell: A tall rectangle divided diagonally from top-left to bottom-right (left half black, right white). A small white circle sits above it.\n  Second Cell: A square divided diagonally from bottom-left to top-right (bottom-left black, top-right white). A small black circle sits to the left of the square.\n  Third Cell: A tall rectangle, identical to the first, with a small white circle below the rectangle.\n\nSecond Row (Middle Row):\n  First Cell: A circle split horizontally in half (top half black, bottom half white). A small white star is on the right side.\n  Second Cell: A circle split vertically in half (left half black, right white). A small white star is above it.\n  Third Cell: A circle, again split horizontally (same as first), with the white star now on the left side.\n\nThird Row (Bottom Row):\n  First Cell: A vertical diamond shape split diagonally (top half white, bottom black). A small white square is to the left of the diamond.\n  Second Cell: A right-pointing triangle split diagonally (left half black, right white). A small white square is below the triangle.\n  Third Cell: A question mark (this is the missing figure to be deduced).\n\nANSWER OPTIONS (A\u2013F):\n  Each option is a figure with a main shape and a small white square positioned around it:\n  A: Diamond shape (top white, bottom black), with square to the left.\n  B: Right-pointing triangle (top black, bottom white), square below.\n  C: Diamond shape (top white, bottom black), square on right.\n  D: Right-pointing triangle (top white, bottom black), square below.\n  E: Diamond shape (top black, bottom white), no small square.\n  F: Right-pointing triangle (top black, bottom white), square on left.\n",
+        "QuestionType": "MC",
+        "Options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F"
+        ],
+        "Settings": {
+          "Selector": "SAHR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": 1,
+          "SelectedText": "A"
+        }
+      },
+      {
+        "QuestionID": "QID58",
+        "QuestionText": "Please indicate which is the best answer to complete the puzzle below.\nPuzzle Description:\n\nThe puzzle is a 3x3 grid of black and white squares, each containing a distinct symbol or shape. The goal is to determine which symbol best completes the missing square (marked by a question mark ?) in the third column of the third row.\n\nGrid Layout:\nEach cell has a black or white background, and a central shape with a contrasting color (either black or white). Here's the layout of the 3x3 grid, row by row:\n\nRow 1:\n  Cell 1: White circle with a black horizontal rectangle inside (centered).\n  Cell 2: Black background with a white cross shape; inside the cross is a black diamond.\n  Cell 3: White square with a black star in the center.\n\nRow 2:\n  Cell 1: Black background with a white square outline; inside is a black diamond.\n  Cell 2: White background with a black circle containing a white star.\n  Cell 3: White background with a question mark ? indicating the missing piece.\n\nRow 3:\n  Cell 1: Black background with a white cross shape; inside the cross is a black star.\n  Cell 2: White square with a black square inside.\n  Cell 3: Black background with a white diamond.\n\nAnswer Choices (Labeled A\u2013F):\n  Each choice is a black or white square with a symbol inside. Here's a breakdown:\n  A: Black background with a white cross; black diamond inside.\n  B: White background with a black cross; white diamond inside.\n  C: Black background with a white square; white star inside.\n  D: White background with a black cross; black square inside.\n  E: Black background with a white cross; black star inside.\n  F: Black circle with a white square inside.\n",
+        "QuestionType": "MC",
+        "Options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F"
+        ],
+        "Settings": {
+          "Selector": "SAHR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": 2,
+          "SelectedText": "B"
+        }
+      },
+      {
+        "QuestionID": "QID59",
+        "QuestionText": "All the cubes below have a different image on each side. Select the choice that could represent a rotation of the cube labeled X\n\nMain Cube (X)\nCube X shows three visible faces, each with a distinct symbol:\n  Top face: A thick black plus sign with round ends on each arm (a sort of \"medical cross\" shape).\n  Front-left face: A Y-shaped structure with three round nodes at the ends of each branch.\n  Front-right face: A vertical line with rounded dots at both ends (like a thick vertical barbell).\n\nOptions (A to H)\nEach of the options (A through H) shows a cube with three visible faces, each displaying a symbol. The goal is to determine which of these could be a rotation of Cube X \u2014 meaning it shows the same three symbols in any orientation, but without showing any new or different symbols.\n\nOption A\n  Top: Same plus sign as X.\n  Front-left: Same Y-shaped symbol as X.\n  Front-right: An oval with an outline (not seen on X).\n\nOption B\n  Top: A six-armed asterisk or snowflake shape (not seen on X).\n  Front-left: Same vertical barbell symbol as X.\n  Front-right: Oval (not on X).\n\nOption C\n  Top: Six-armed asterisk (not on X).\n  Front-left: Oval (not on X).\n  Front-right: Y-shape (same as on X).\n\nOption D\n  A box saying: \"None of the cubes could be a rotation.\"\n\nOption E\n  Top: Six-armed asterisk (not on X).\n  Front-left: Vertical barbell (same as X).\n  Front-right: An X shape with rounded ends (not on X).\n\nOption F\n  Top: Same plus sign as X.\n  Front-left: Vertical barbell (same as X).\n  Front-right: Oval (not on X).\n\nOption G\n  Top: Vertical barbell (same as X).\n  Front-left: Y-shape (same as X).\n  Front-right: X-shape with rounded ends (not on X).\n\nOption H\n  A box saying: \"I do not know the solution.\"\n",
+        "QuestionType": "MC",
+        "Options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F",
+          "G",
+          "H"
+        ],
+        "Settings": {
+          "Selector": "SAHR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": 6,
+          "SelectedText": "F"
+        }
+      },
+      {
+        "QuestionID": "QID60",
+        "QuestionText": "All the cubes below have a different image on each side. Select the choice that could represent a rotation of the cube labeled X\n\nDescription of Cube X:\nCube X has three visible faces, each with a different image:\n  Top face: a plus-shaped black symbol, with dots at the ends of each arm.\n  Left face: a Y-shaped black symbol with rounded ends.\n  Right face: a vertical bar with dots at both ends (like a dumbbell).\n\nOptions:\nEach option (A to H) shows a cube with three visible faces. Only one may be a valid rotation of Cube X. Some options also include:\n  D: A box with the text: \"None of the cubes could be a rotation.\"\n  H: A box with the text: \"I do not know the solution.\"\n\nHere are the visible faces for each cube:\nOption A:\n  Top: bar with rounded ends (not vertical)\n  Left: Y-shaped figure\n  Right: Asterisk-like starburst symbol\n\nOption B:\n  Top: Y-shaped figure\n  Left: Asterisk/starburst\n  Right: Vertical bar with dots at ends (like Cube X)\n\nOption C:\n  Top: Asterisk/starburst\n  Left: Vertical bar with dots\n  Right: X-shaped figure\n\nOption E:\n  Top: Y-shaped figure\n  Left: Hollow oval ring\n  Right: X-shaped figure\n\nOption F:\n  Top: Asterisk/starburst\n  Left: Vertical bar with dots\n  Right: Hollow oval ring\n\nOption G:\n  Top: Asterisk/starburst\n  Left: Hollow oval ring\n  Right: Y-shaped figure\n",
+        "QuestionType": "MC",
+        "Options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F",
+          "G",
+          "H"
+        ],
+        "Settings": {
+          "Selector": "SAHR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": 4,
+          "SelectedText": "D"
+        }
+      },
+      {
+        "QuestionID": "QID61",
+        "QuestionText": "All the cubes below have a different image on each side. Select the choice that could represent a rotation of the cube labeled X\n\nThe Task: You are given a cube labeled X and asked to find which one of the other cubes (A\u2013C, E\u2013G) could be a rotation of cube X. This means that the cube has the same symbols on the same faces, just oriented differently.\n\nCube X Description: Cube X shows three visible faces, each with a different symbol:\n  A face with a plus-sign made of thick black bars, arranged diagonally (like an \"X\").\n  A face with a Y-shaped symbol with thick dots at the ends.\n  A face with a dumbbell-shaped symbol (a short line with dots at both ends).\n\nAnswer Choices:\n  Cube A: Shows:\n    The dumbbell.\n    The plus/X symbol.\n    The Y-shape.\n\n  Cube B: Shows:\n    The plus/X symbol.\n    The dumbbell.\n    A thick circle or ring (not on Cube X).\n\n  Cube C: Shows:\n    A different, more complex starburst-like symbol (not on Cube X).\n    The dumbbell.\n    The circle/ring.\n\n  Cube D: States: \"None of the cubes could be a rotation.\"\n\n  Cube E: Shows:\n    A complex starburst.\n    The plus/X symbol.\n    The dumbbell.\n\n  Cube F: Shows:\n    A starburst symbol.\n    The Y-shape.\n    The circle/ring.\n\n  Cube G: Shows:\n    The dumbbell.\n    A starburst.\n    The plus/X symbol.\n\n  Cube H: States: \"I do not know the solution.\"",
+        "QuestionType": "MC",
+        "Options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F",
+          "G",
+          "H"
+        ],
+        "Settings": {
+          "Selector": "SAHR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": 3,
+          "SelectedText": "C"
+        }
+      },
+      {
+        "QuestionID": "QID62",
+        "QuestionText": "Each of the 10 questions in the next task consists of a word in capital letters, followed by five words as the answer options. Please select the word that is most nearly the SAME in meaning as the word in capital letters (the synonym ). Some of the questions may be challenging. Please complete them to the best of your ability. If you have no idea, please take your best guess. Click &ldquo;Next&rdquo; to go on to the first question.",
+        "QuestionType": "DB",
+        "is_descriptive": true
+      },
+      {
+        "QuestionID": "QID63",
+        "QuestionText": "Synonym: Select the word that is most nearly the same in meaning as CONCUR",
+        "QuestionType": "MC",
+        "Options": [
+          "acquiesce",
+          "extricate",
+          "divulge",
+          "concoct",
+          "ransack"
+        ],
+        "Settings": {
+          "Selector": "SAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": 2,
+          "SelectedText": "extricate"
+        }
+      },
+      {
+        "QuestionID": "QID64",
+        "QuestionText": "Synonym: Select the word that is most nearly the same in meaning as CONFISCATE",
+        "QuestionType": "MC",
+        "Options": [
+          "harass",
+          "repulse",
+          "console",
+          "appropriate",
+          "congregate"
+        ],
+        "Settings": {
+          "Selector": "SAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": 4,
+          "SelectedText": "appropriate"
+        }
+      },
+      {
+        "QuestionID": "QID65",
+        "QuestionText": "Synonym: Select the word that is most nearly the same in meaning as SOLICIT",
+        "QuestionType": "MC",
+        "Options": [
+          "purge",
+          "spurn",
+          "entrance",
+          "exert",
+          "beseech"
+        ],
+        "Settings": {
+          "Selector": "SAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": 4,
+          "SelectedText": "exert"
+        }
+      },
+      {
+        "QuestionID": "QID66",
+        "QuestionText": "Synonym: Select the word that is most nearly the same in meaning as FURTIVE",
+        "QuestionType": "MC",
+        "Options": [
+          "ecstatic",
+          "heinous",
+          "stealthy",
+          "flimsy",
+          "facile"
+        ],
+        "Settings": {
+          "Selector": "SAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": 3,
+          "SelectedText": "stealthy"
+        }
+      },
+      {
+        "QuestionID": "QID67",
+        "QuestionText": "Synonym: Select the word that is most nearly the same in meaning as ASTUTE",
+        "QuestionType": "MC",
+        "Options": [
+          "bizarre",
+          "ascetic",
+          "sagacious",
+          "lineal",
+          "irritable"
+        ],
+        "Settings": {
+          "Selector": "SAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": 4,
+          "SelectedText": "lineal"
+        }
+      },
+      {
+        "QuestionID": "QID68",
+        "QuestionText": "Synonym: Select the word that is most nearly the same in meaning as COVET",
+        "QuestionType": "MC",
+        "Options": [
+          "crave",
+          "claim",
+          "avenge",
+          "clutch",
+          "comply"
+        ],
+        "Settings": {
+          "Selector": "SAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": 4,
+          "SelectedText": "clutch"
+        }
+      },
+      {
+        "QuestionID": "QID69",
+        "QuestionText": "Synonym: Select the word that is most nearly the same in meaning as OSCILLATE",
+        "QuestionType": "MC",
+        "Options": [
+          "premeditate",
+          "irradiate",
+          "vacilate",
+          "recapitulate",
+          "furbish"
+        ],
+        "Settings": {
+          "Selector": "SAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": 4,
+          "SelectedText": "recapitulate"
+        }
+      },
+      {
+        "QuestionID": "QID70",
+        "QuestionText": "Synonym: Select the word that is most nearly the same in meaning as INDOLENT",
+        "QuestionType": "MC",
+        "Options": [
+          "contrite",
+          "inexhaustible",
+          "impervious",
+          "arduous",
+          "slothful"
+        ],
+        "Settings": {
+          "Selector": "SAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": 2,
+          "SelectedText": "inexhaustible"
+        }
+      },
+      {
+        "QuestionID": "QID71",
+        "QuestionText": "Synonym: Select the word that is most nearly the same in meaning as DISPARITY",
+        "QuestionType": "MC",
+        "Options": [
+          "despondency",
+          "mediocrity",
+          "serenity",
+          "incongruity",
+          "assiduity"
+        ],
+        "Settings": {
+          "Selector": "SAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": 1,
+          "SelectedText": "despondency"
+        }
+      },
+      {
+        "QuestionID": "QID72",
+        "QuestionText": "Synonym: Select the word that is most nearly the same in meaning as INDIGENT",
+        "QuestionType": "MC",
+        "Options": [
+          "refractory",
+          "fiscal",
+          "destitute",
+          "tolerable",
+          "diligent"
+        ],
+        "Settings": {
+          "Selector": "SAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": 3,
+          "SelectedText": "destitute"
+        }
+      },
+      {
+        "QuestionID": "QID73",
+        "QuestionText": "Each of the 10 questions in the next task consists of a word in capital letters, followed by five words as the answer options. Please select the word that is most nearly the OPPOSITE in meaning as the word in capital letters (the antonym ). Some of the questions may be challenging. Please complete them to the best of your ability. If you have no idea, please take your best guess. Click &ldquo;Next&rdquo; to go on to the first question.",
+        "QuestionType": "DB",
+        "is_descriptive": true
+      },
+      {
+        "QuestionID": "QID74",
+        "QuestionText": "Antonym: Select the word that is most nearly the opposite in meaning to SATED",
+        "QuestionType": "MC",
+        "Options": [
+          "famished",
+          "finished",
+          "finicky",
+          "fulfilled",
+          "fortunate"
+        ],
+        "Settings": {
+          "Selector": "SAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": 3,
+          "SelectedText": "finicky"
+        }
+      },
+      {
+        "QuestionID": "QID75",
+        "QuestionText": "Antonym: Select the word that is most nearly the opposite in meaning to COMPLAISANT",
+        "QuestionType": "MC",
+        "Options": [
+          "distasteful",
+          "egoistical",
+          "alone",
+          "ugly",
+          "recalcitrant"
+        ],
+        "Settings": {
+          "Selector": "SAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": 5,
+          "SelectedText": "recalcitrant"
+        }
+      },
+      {
+        "QuestionID": "QID76",
+        "QuestionText": "Antonym: Select the word that is most nearly the opposite in meaning to ALOOF",
+        "QuestionType": "MC",
+        "Options": [
+          "happy",
+          "deadly",
+          "gregarious",
+          "manly",
+          "varied"
+        ],
+        "Settings": {
+          "Selector": "SAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": 2,
+          "SelectedText": "deadly"
+        }
+      },
+      {
+        "QuestionID": "QID77",
+        "QuestionText": "Antonym: Select the word that is most nearly the opposite in meaning to ABOMINATE",
+        "QuestionType": "MC",
+        "Options": [
+          "adore",
+          "despair",
+          "abate",
+          "deplore",
+          "attach"
+        ],
+        "Settings": {
+          "Selector": "SAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": 1,
+          "SelectedText": "adore"
+        }
+      },
+      {
+        "QuestionID": "QID78",
+        "QuestionText": "Antonym: Select the word that is most nearly the opposite in meaning to VERBOSE",
+        "QuestionType": "MC",
+        "Options": [
+          "garrulous",
+          "magnificent",
+          "grandiloquent",
+          "taciturn",
+          "calculating"
+        ],
+        "Settings": {
+          "Selector": "SAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": 1,
+          "SelectedText": "garrulous"
+        }
+      },
+      {
+        "QuestionID": "QID79",
+        "QuestionText": "Antonym: Select the word that is most nearly the opposite in meaning to DEARTH",
+        "QuestionType": "MC",
+        "Options": [
+          "birth",
+          "brevity",
+          "abundance",
+          "splendor",
+          "renaissance"
+        ],
+        "Settings": {
+          "Selector": "SAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": 3,
+          "SelectedText": "abundance"
+        }
+      },
+      {
+        "QuestionID": "QID81",
+        "QuestionText": "Antonym: Select the word that is most nearly the opposite in meaning to CORPULENT",
+        "QuestionType": "MC",
+        "Options": [
+          "sallow",
+          "affiliated",
+          "emaciated",
+          "entrepreneur",
+          "anemic"
+        ],
+        "Settings": {
+          "Selector": "SAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": 2,
+          "SelectedText": "affiliated"
+        }
+      },
+      {
+        "QuestionID": "QID82",
+        "QuestionText": "Antonym: Select the word that is most nearly the opposite in meaning to GERMANE",
+        "QuestionType": "MC",
+        "Options": [
+          "teutonic",
+          "healthful",
+          "irrelevant",
+          "massive",
+          "puny"
+        ],
+        "Settings": {
+          "Selector": "SAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": 5,
+          "SelectedText": "puny"
+        }
+      },
+      {
+        "QuestionID": "QID83",
+        "QuestionText": "Antonym: Select the word that is most nearly the opposite in meaning to VACUOUS",
+        "QuestionType": "MC",
+        "Options": [
+          "bankrupt",
+          "loose",
+          "livid",
+          "superficial",
+          "profound"
+        ],
+        "Settings": {
+          "Selector": "SAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": 5,
+          "SelectedText": "profound"
+        }
+      },
+      {
+        "QuestionID": "QID80",
+        "QuestionText": "Antonym: Select the word that is most nearly the opposite in meaning to SPORADIC",
+        "QuestionType": "MC",
+        "Options": [
+          "germinal",
+          "antiseptic",
+          "incessant",
+          "summery",
+          "wintry"
+        ],
+        "Settings": {
+          "Selector": "SAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": 4,
+          "SelectedText": "summery"
+        }
+      },
+      {
+        "QuestionID": "QID278",
+        "QuestionText": "Suppose that it is true that: All the XAR's are YOF's. With this in mind, answer the following questions. If a glock is a XAR, you can say:",
+        "QuestionType": "MC",
+        "Options": [
+          "that it is certain that the glock is a YOF",
+          "that it is certain that the glock is not a YOF",
+          "that it is not certain whether the glock is a YOF or not"
+        ],
+        "Settings": {
+          "Selector": "SAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": 1,
+          "SelectedText": "that it is certain that the glock is a YOF"
+        }
+      },
+      {
+        "QuestionID": "QID268",
+        "QuestionText": "If a glock is not a XAR, you can say:",
+        "QuestionType": "MC",
+        "Options": [
+          "that it is certain that the glock is a YOF",
+          "that it is certain that the glock is not a YOF",
+          "that it is not certain whether the glock is a YOF or not"
+        ],
+        "Settings": {
+          "Selector": "SAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": 2,
+          "SelectedText": "that it is certain that the glock is not a YOF"
+        }
+      },
+      {
+        "QuestionID": "QID269",
+        "QuestionText": "If a koy is a YOF, you can say:",
+        "QuestionType": "MC",
+        "Options": [
+          "that it is certain that the koy is a XAR",
+          "that it is certain that the koy is not a XAR",
+          "that it is not certain whether the koy is a XAR or not"
+        ],
+        "Settings": {
+          "Selector": "SAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": 1,
+          "SelectedText": "that it is certain that the koy is a XAR"
+        }
+      },
+      {
+        "QuestionID": "QID270",
+        "QuestionText": "If a koy is not a YOF, you can say:",
+        "QuestionType": "MC",
+        "Options": [
+          "that it is certain that the koy is a XAR",
+          "that it is certain that the koy is not a XAR",
+          "that it is not certain whether the koy is a XAR or not"
+        ],
+        "Settings": {
+          "Selector": "SAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": 2,
+          "SelectedText": "that it is certain that the koy is not a XAR"
+        }
+      },
+      {
+        "QuestionID": "QID279",
+        "QuestionText": "You are now going to receive a series of eight problems. You must decide whether the stated conclusion follows logically from the premises or not. You must suppose that the premises are all true and limit yourself only to the information contained in these premises. Premise 1: All things that are smoked are good for the health. Premise 2: Cigarettes are smoked. Conclusion: Cigarettes are good for the health. Does the conclusion follow logically from the premises ?",
+        "QuestionType": "MC",
+        "Options": [
+          "Yes",
+          "No"
+        ],
+        "Settings": {
+          "Selector": "SAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": 1,
+          "SelectedText": "Yes"
+        }
+      },
+      {
+        "QuestionID": "QID271",
+        "QuestionText": "Premise 1: All animals love water. Premise 2: Plants do not love water. Conclusion: Plants are not animals. Does the conclusion follow logically from the premises ?",
+        "QuestionType": "MC",
+        "Options": [
+          "Yes",
+          "No"
+        ],
+        "Settings": {
+          "Selector": "SAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": 1,
+          "SelectedText": "Yes"
+        }
+      },
+      {
+        "QuestionID": "QID272",
+        "QuestionText": "Premise 1: All animals with four legs are dangerous. Premise 2: Poodles are not dangerous. Conclusion: Poodles do not have four legs. Does the conclusion follow logically from the premises ?",
+        "QuestionType": "MC",
+        "Options": [
+          "Yes",
+          "No"
+        ],
+        "Settings": {
+          "Selector": "SAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": 2,
+          "SelectedText": "No"
+        }
+      },
+      {
+        "QuestionID": "QID273",
+        "QuestionText": "Premise 1: All eastern countries are communist. Premise 2: China is not an eastern country. Conclusion: China is not communist. Does the conclusion follow logically from the premises ?",
+        "QuestionType": "MC",
+        "Options": [
+          "Yes",
+          "No"
+        ],
+        "Settings": {
+          "Selector": "SAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": 2,
+          "SelectedText": "No"
+        }
+      },
+      {
+        "QuestionID": "QID274",
+        "QuestionText": "Premise 1: All flowers have petals. Premise 2: Roses have petals. Conclusion: Roses are flowers. Does the conclusion follow logically from the premises ?",
+        "QuestionType": "MC",
+        "Options": [
+          "Yes",
+          "No"
+        ],
+        "Settings": {
+          "Selector": "SAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": 1,
+          "SelectedText": "Yes"
+        }
+      },
+      {
+        "QuestionID": "QID275",
+        "QuestionText": "Premise 1: All mammals swim. Premise 2: Whales are mammals. Conclusion: Whales swim. Does the conclusion follow logically from the premises ?",
+        "QuestionType": "MC",
+        "Options": [
+          "Yes",
+          "No"
+        ],
+        "Settings": {
+          "Selector": "SAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": 1,
+          "SelectedText": "Yes"
+        }
+      },
+      {
+        "QuestionID": "QID276",
+        "QuestionText": "Premise 1: All unemployed people are poor. Premise 2: Rockefeller is not unemployed. Conclusion: Rockefeller is not poor. Does the conclusion follow logically from the premises ?",
+        "QuestionType": "MC",
+        "Options": [
+          "Yes",
+          "No"
+        ],
+        "Settings": {
+          "Selector": "SAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": 2,
+          "SelectedText": "No"
+        }
+      },
+      {
+        "QuestionID": "QID277",
+        "QuestionText": "Premise I: All things that have a motor need oil. Premise 2: Bicycles need oil. Conclusion: Bicycles have motors. Does the conclusion follow logically from the premises ?",
+        "QuestionType": "MC",
+        "Options": [
+          "Yes",
+          "No"
+        ],
+        "Settings": {
+          "Selector": "SAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": 2,
+          "SelectedText": "No"
+        }
+      },
+      {
+        "QuestionID": "QID123",
+        "QuestionText": "You just answered 42 questions that measured your performance on various cognitive tests. How many of these questions do you think you answered correctly? Enter a whole number between 0 and 42.",
+        "QuestionType": "TE",
+        "Settings": {
+          "Selector": "SL",
+          "ForceResponse": "ON",
+          "ContentType": "ValidNumber"
+        },
+        "Answers": {
+          "Text": "35"
+        }
+      },
+      {
+        "QuestionID": "QID124",
+        "QuestionText": "How many of these questions do you think you people from a representative sample of the US adult population would answer correctly, on average? Enter a number between 0 and 42.",
+        "QuestionType": "TE",
+        "Settings": {
+          "Selector": "SL",
+          "ForceResponse": "ON",
+          "ContentType": "ValidNumber"
+        },
+        "Answers": {
+          "Text": "40"
+        }
+      },
+      {
+        "QuestionID": "QID265",
+        "QuestionText": "This completes this section. You will now move on to the next section.",
+        "QuestionType": "DB",
+        "is_descriptive": true
+      }
+    ]
+  },
+  {
+    "ElementType": "Block",
+    "BlockName": "Personality ",
+    "BlockType": "Standard",
+    "Questions": [
+      {
+        "QuestionID": "QID260",
+        "QuestionText": "In this section we will ask you a few questions about your personality. In order to help you pace yourself, the \"next\" button will appear only after a few seconds in each question.",
+        "QuestionType": "DB",
+        "is_descriptive": true
+      },
+      {
+        "QuestionID": "QID25",
+        "QuestionText": "Here are a number of characteristics that may or may not apply to you. Please indicate next to each statement the extent to which you agree or disagree with that statement. I see myself as someone who...",
+        "QuestionType": "Matrix",
+        "Rows": [
+          "Is talkative",
+          "Tends to find fault with others",
+          "Does a thorough job",
+          "Is depressed, blue",
+          "Is original, comes up with new ideas",
+          "Is reserved",
+          "Is helpful and unselfish with others",
+          "Can be somewhat careless",
+          "Is relaxed, handles stress well",
+          "Is curious about many different things",
+          "Is full of energy",
+          "Starts quarrels with others",
+          "Is a reliable worker",
+          "Can be tense",
+          "Is ingenious, a deep thinker",
+          "Generates a lot of enthusiasm",
+          "Has a forgiving nature",
+          "Tends to be disorganized",
+          "Worries a lot",
+          "Has an active imagination",
+          "Tends to be quiet",
+          "Is generally trusting",
+          "Tends to be lazy",
+          "Is emotionally stable, not easily upset",
+          "Is inventive",
+          "Has an assertive personality",
+          "Can be cold and aloof",
+          "Perseveres until the task is finished",
+          "Can be moody",
+          "Values artistic, aesthetic experiences",
+          "Is sometimes shy, inhibited",
+          "Is considerate and kind to almost everyone",
+          "Does things efficiently",
+          "Remains calm in tense situations",
+          "Prefers work that is routine",
+          "Is outgoing, sociable",
+          "Is sometimes rude to others",
+          "Makes plans and follows through with them",
+          "Gets nervous easily",
+          "Likes to reflect, play with ideas",
+          "Has few artistic interests",
+          "Likes to cooperate with others",
+          "Is easily distracted",
+          "Is sophisticated in art, music, or literature"
+        ],
+        "Columns": [
+          "Disagree strongly",
+          "Disagree a little",
+          "Neither agree nor disagree",
+          "Agree a little",
+          "Agree strongly"
+        ],
+        "Settings": {
+          "Selector": "Likert",
+          "SubSelector": "SingleAnswer",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": [
+            1,
+            4,
+            1,
+            5,
+            4,
+            3,
+            3,
+            4,
+            2,
+            4,
+            3,
+            2,
+            3,
+            3,
+            3,
+            3,
+            2,
+            5,
+            5,
+            4,
+            5,
+            4,
+            4,
+            3,
+            4,
+            1,
+            2,
+            1,
+            2,
+            5,
+            5,
+            3,
+            3,
+            1,
+            1,
+            1,
+            3,
+            1,
+            5,
+            4,
+            1,
+            2,
+            5,
+            5
+          ],
+          "SelectedText": [
+            "Disagree strongly",
+            "Agree a little",
+            "Disagree strongly",
+            "Agree strongly",
+            "Agree a little",
+            "Neither agree nor disagree",
+            "Neither agree nor disagree",
+            "Agree a little",
+            "Disagree a little",
+            "Agree a little",
+            "Neither agree nor disagree",
+            "Disagree a little",
+            "Neither agree nor disagree",
+            "Neither agree nor disagree",
+            "Neither agree nor disagree",
+            "Neither agree nor disagree",
+            "Disagree a little",
+            "Agree strongly",
+            "Agree strongly",
+            "Agree a little",
+            "Agree strongly",
+            "Agree a little",
+            "Agree a little",
+            "Neither agree nor disagree",
+            "Agree a little",
+            "Disagree strongly",
+            "Disagree a little",
+            "Disagree strongly",
+            "Disagree a little",
+            "Agree strongly",
+            "Agree strongly",
+            "Neither agree nor disagree",
+            "Neither agree nor disagree",
+            "Disagree strongly",
+            "Disagree strongly",
+            "Disagree strongly",
+            "Neither agree nor disagree",
+            "Disagree strongly",
+            "Agree strongly",
+            "Agree a little",
+            "Disagree strongly",
+            "Disagree a little",
+            "Agree strongly",
+            "Agree strongly"
+          ]
+        }
+      },
+      {
+        "QuestionID": "QID26",
+        "QuestionText": "Here are a number of characteristics that may or may not apply to you. Please indicate next to each statement the extent to which you agree or disagree with that statement.",
+        "QuestionType": "Matrix",
+        "Rows": [
+          "I would prefer complex to simple problems",
+          "I like to have the responsibility of handling a situation that requires a lot of thinking",
+          "Thinking is not my idea of fun",
+          "I would rather do something that requires little thought than something that is sure to challenge my thinking abilities",
+          "I try to anticipate and avoid situations where there is likely chance I will have to think in depth about something",
+          "I find satisfaction in deliberating hard and for long hours",
+          "I only think as hard as I have to",
+          "I prefer to think about small, daily projects to long-term ones",
+          "I like tasks that require little thought once I've learned them",
+          "The idea of relying on thought to make my way to the top appeals to me",
+          "I really enjoy a task that involves coming up with new solutions to problems",
+          "Learning new ways to think doesn't excite me very much",
+          "I prefer my life to be filled with puzzles that I must solve",
+          "The notion of thinking abstractly appeals to me",
+          "I would prefer a task that is intellectual, difficult, and important to one that is somewhat important but does not require too much thought",
+          "I feel relief rather than satisfaction after completing a task that requires a lot of mental effort",
+          "It's enough for me that something gets the job done; I don't care how or why it works",
+          "I usually end up deliberating about issues even when they do not affect me personally"
+        ],
+        "Columns": [
+          "Disagree strongly",
+          "Disagree a little",
+          "Neither agree nor disagree",
+          "Agree a little",
+          "Agree strongly"
+        ],
+        "Settings": {
+          "Selector": "Likert",
+          "SubSelector": "SingleAnswer",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": [
+            1,
+            1,
+            3,
+            4,
+            4,
+            2,
+            4,
+            4,
+            5,
+            4,
+            2,
+            4,
+            2,
+            3,
+            1,
+            4,
+            3,
+            4
+          ],
+          "SelectedText": [
+            "Disagree strongly",
+            "Disagree strongly",
+            "Neither agree nor disagree",
+            "Agree a little",
+            "Agree a little",
+            "Disagree a little",
+            "Agree a little",
+            "Agree a little",
+            "Agree strongly",
+            "Agree a little",
+            "Disagree a little",
+            "Agree a little",
+            "Disagree a little",
+            "Neither agree nor disagree",
+            "Disagree strongly",
+            "Agree a little",
+            "Neither agree nor disagree",
+            "Agree a little"
+          ]
+        }
+      },
+      {
+        "QuestionID": "QID29",
+        "QuestionText": "Below are 24 different values that people rate of different importance in their lives. FIRST READ THROUGH THE LIST to familiarize yourself with all the values. While reading over the list, consider which ones tend to be most important to you and which tend to be least important to you. After familiarizing yourself with the list, rate the relative importance of each value to you as \u201cA GUIDING PRINCIPLE IN MY LIFE.\u201d It is important to spread your ratings out as best you can\u2014be sure to use some numbers in the lower range, some in the middle range, and some in the higher range. Avoid using too many similar numbers. Work fairly quickly.",
+        "QuestionType": "Matrix",
+        "Rows": [
+          "WEALTH (financially successful, prosperous)",
+          "PLEASURE (having one\u2019s fill of life\u2019s pleasures and enjoyments)",
+          "FORGIVENESS (pardoning others\u2019 faults, being merciful)",
+          "INFLUENCE (having impact, influencing people and events)",
+          "TRUST (being true to one\u2019s word, assuming good in others)",
+          "COMPETENCE (displaying mastery, being capable, effective)",
+          "HUMILITY (appreciating others, being modest about oneself)",
+          "ACHIEVEMENT (reaching lofty goals)",
+          "ALTRUISM (helping others in need)",
+          "AMBITION (high aspirations, seizing opportunities)",
+          "LOYALTY (being faithful to friends, family, and group)",
+          "POLITENESS (courtesy, good manners)",
+          "POWER (control over others, dominance)",
+          "HARMONY (good relations, balance, wholeness)",
+          "EXCITEMENT (seeking adventure, risk, an exciting lifestyle)",
+          "HONESTY (being genuine, sincere)",
+          "COMPASSION (caring for others, displaying kindness)",
+          "STATUS (high rank, wide respect)",
+          "CIVILITY (being considerate and respectful toward others)",
+          "AUTONOMY (independent, free of others' control)",
+          "EQUALITY (human rights and equal opportunity for all)",
+          "RECOGNITION (becoming notable, famous, or admired)",
+          "TRADITION (showing respect for family and cultural values)",
+          "SUPERIORITY (defeating the competition, standing on top)"
+        ],
+        "Columns": [
+          "Not Important to me 1",
+          "2",
+          "3",
+          "4",
+          "Quite Important to me 5",
+          "6",
+          "7",
+          "8",
+          "Highly Important to me 9"
+        ],
+        "Settings": {
+          "Selector": "Likert",
+          "SubSelector": "SingleAnswer",
+          "ForceResponse": "OFF"
+        },
+        "Answers": {
+          "SelectedByPosition": [
+            5,
+            8,
+            1,
+            7,
+            7,
+            8,
+            4,
+            8,
+            7,
+            9,
+            3,
+            4,
+            9,
+            3,
+            7,
+            5,
+            4,
+            1,
+            4,
+            5,
+            1,
+            1,
+            7,
+            2
+          ],
+          "SelectedText": [
+            "Quite Important to me 5",
+            "8",
+            "Not Important to me 1",
+            "7",
+            "7",
+            "8",
+            "4",
+            "8",
+            "7",
+            "Highly Important to me 9",
+            "3",
+            "4",
+            "Highly Important to me 9",
+            "3",
+            "7",
+            "Quite Important to me 5",
+            "4",
+            "Not Important to me 1",
+            "4",
+            "Quite Important to me 5",
+            "Not Important to me 1",
+            "Not Important to me 1",
+            "7",
+            "2"
+          ]
+        }
+      },
+      {
+        "QuestionID": "QID35",
+        "QuestionText": "Please indicate your agreement with each of the following statements about yourself.",
+        "QuestionType": "Matrix",
+        "Rows": [
+          "I avoid accumulating lots of stuff",
+          "I restrict the number of things I own",
+          "\u201cLess is more\u201d when it comes to owning things",
+          "I actively avoid acquiring excess possessions",
+          "I am drawn to visually sparse environments",
+          "I prefer simplicity in design",
+          "I keep the aesthetic in my home very sparse",
+          "I prefer leaving spaces visually empty over filling them",
+          "I am mindful of what I own",
+          "The selection of things I own has been carefully curated",
+          "It is important to me to be thoughtful about what I choose to own",
+          "My belongings are mindfully selected"
+        ],
+        "Columns": [
+          "Disagree strongly",
+          "Disagree a little",
+          "Neither agree nor disagree",
+          "Agree a little",
+          "Agree strongly"
+        ],
+        "Settings": {
+          "Selector": "Likert",
+          "SubSelector": "SingleAnswer",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": [
+            3,
+            2,
+            4,
+            4,
+            4,
+            5,
+            2,
+            5,
+            2,
+            1,
+            3,
+            2
+          ],
+          "SelectedText": [
+            "Neither agree nor disagree",
+            "Disagree a little",
+            "Agree a little",
+            "Agree a little",
+            "Agree a little",
+            "Agree strongly",
+            "Disagree a little",
+            "Agree strongly",
+            "Disagree a little",
+            "Disagree strongly",
+            "Neither agree nor disagree",
+            "Disagree a little"
+          ]
+        }
+      },
+      {
+        "QuestionID": "QID232",
+        "QuestionText": "Please indicate your agreement with each of the following statements about yourself.",
+        "QuestionType": "Matrix",
+        "Rows": [
+          "My friends\u2019 emotions don\u2019t affect me much.",
+          "After being with a friend who is sad about something, I usually feel sad.",
+          "I can understand my friend\u2019s happiness when she/he does well at something.",
+          "I get frightened when I watch characters in a good scary movie.",
+          "I get caught up in other people\u2019s feelings easily.",
+          "I find it hard to know when my friends are frightened.",
+          "I don\u2019t become sad when I see other people crying.",
+          "Other people\u2019s feelings don\u2019t bother me at all.",
+          "When someone is feeling down I can usually understand how they feel.",
+          "I can usually work out when my friends are scared.",
+          "I often become sad when watching sad things on TV or in films.",
+          "I can often understand how people are feeling even before they tell me.",
+          "Seeing a person who has been angered has no effect on my feelings.",
+          "I can usually work out when people are cheerful.",
+          "I tend to feel scared when I am with friends who are afraid.",
+          "I can usually realize quickly when a friend is angry.",
+          "I often get swept up in my friends\u2019 feelings.",
+          "My friend\u2019s unhappiness doesn\u2019t make me feel anything.",
+          "I am not usually aware of my friends\u2019 feelings.",
+          "I have trouble figuring out when my friends are happy."
+        ],
+        "Columns": [
+          "Disagree strongly",
+          "Disagree a little",
+          "Neither agree nor disagree",
+          "Agree a little",
+          "Agree strongly"
+        ],
+        "Settings": {
+          "Selector": "Likert",
+          "SubSelector": "SingleAnswer",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": [
+            2,
+            1,
+            2,
+            1,
+            2,
+            2,
+            4,
+            3,
+            2,
+            2,
+            3,
+            1,
+            4,
+            3,
+            2,
+            1,
+            2,
+            2,
+            3,
+            3
+          ],
+          "SelectedText": [
+            "Disagree a little",
+            "Disagree strongly",
+            "Disagree a little",
+            "Disagree strongly",
+            "Disagree a little",
+            "Disagree a little",
+            "Agree a little",
+            "Neither agree nor disagree",
+            "Disagree a little",
+            "Disagree a little",
+            "Neither agree nor disagree",
+            "Disagree strongly",
+            "Agree a little",
+            "Neither agree nor disagree",
+            "Disagree a little",
+            "Disagree strongly",
+            "Disagree a little",
+            "Disagree a little",
+            "Neither agree nor disagree",
+            "Neither agree nor disagree"
+          ]
+        }
+      },
+      {
+        "QuestionID": "QID235",
+        "QuestionText": "Here are a number of characteristics that may or may not apply to you. Please indicate next to each statement the extent to which you agree or disagree with that statement.",
+        "QuestionType": "Matrix",
+        "Rows": [
+          "It is important to me that the products I use do not harm the environment.",
+          "I consider the potential environmental impact of my actions when making many of my decisions.",
+          "My purchase habits are affected by my concern for our environment.",
+          "I am concerned about wasting the resources of our planet.",
+          "I would describe myself as environmentally responsible.",
+          "I am willing to be inconvenienced in order to take actions that are more environmentally friendly."
+        ],
+        "Columns": [
+          "Disagree strongly",
+          "Disagree a little",
+          "Neither agree nor disagree",
+          "Agree a little",
+          "Agree strongly"
+        ],
+        "Settings": {
+          "Selector": "Likert",
+          "SubSelector": "SingleAnswer",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": [
+            3,
+            3,
+            2,
+            2,
+            1,
+            2
+          ],
+          "SelectedText": [
+            "Neither agree nor disagree",
+            "Neither agree nor disagree",
+            "Disagree a little",
+            "Disagree a little",
+            "Disagree strongly",
+            "Disagree a little"
+          ]
+        }
+      },
+      {
+        "QuestionID": "QID262",
+        "QuestionText": "This completes this section. You will now move on to the next section.",
+        "QuestionType": "DB",
+        "is_descriptive": true
+      }
+    ]
+  },
+  {
+    "ElementType": "Block",
+    "BlockName": "Demographics",
+    "BlockType": "Standard",
+    "Questions": [
+      {
+        "QuestionID": "QID11",
+        "QuestionText": "Which part of the United States do you currently live in?",
+        "QuestionType": "MC",
+        "Options": [
+          "Northeast (PA, NY, NJ, RI, CT, MA, VT, NH, ME)",
+          "Midwest (ND, SD, NE, KS, MN, IA, MO, WI, IL, MI, IN, OH)",
+          "South (TX, OK, AR, LA, KY, TN, MS, AL, WV, DC, MD, DE, VA, NC, SC, GA, FL)",
+          "West (WA, OR, ID, MT, WY, CA, NV, UT, CO, AZ, NM)",
+          "Pacific (HI, AK)"
+        ],
+        "Settings": {
+          "Selector": "SAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": 2,
+          "SelectedText": "Midwest (ND, SD, NE, KS, MN, IA, MO, WI, IL, MI, IN, OH)"
+        }
+      },
+      {
+        "QuestionID": "QID12",
+        "QuestionText": "What is the sex that you were assigned at birth?",
+        "QuestionType": "MC",
+        "Options": [
+          "Male",
+          "Female"
+        ],
+        "Settings": {
+          "Selector": "SAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": 1,
+          "SelectedText": "Male"
+        }
+      },
+      {
+        "QuestionID": "QID13",
+        "QuestionText": "How old are you?",
+        "QuestionType": "MC",
+        "Options": [
+          "18-29",
+          "30-49",
+          "50-64",
+          "65+"
+        ],
+        "Settings": {
+          "Selector": "SAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": 1,
+          "SelectedText": "18-29"
+        }
+      },
+      {
+        "QuestionID": "QID14",
+        "QuestionText": "What is the highest level of schooling or degree that you have completed?",
+        "QuestionType": "MC",
+        "Options": [
+          "Less than high school",
+          "High school graduate",
+          "Some college, no degree",
+          "Associate's degree",
+          "College graduate/some postgrad",
+          "Postgraduate"
+        ],
+        "Settings": {
+          "Selector": "SAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": 2,
+          "SelectedText": "High school graduate"
+        }
+      },
+      {
+        "QuestionID": "QID15",
+        "QuestionText": "What is your race or origin?",
+        "QuestionType": "MC",
+        "Options": [
+          "White",
+          "Black",
+          "Asian",
+          "Hispanic",
+          "Other"
+        ],
+        "Settings": {
+          "Selector": "SAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": 1,
+          "SelectedText": "White"
+        }
+      },
+      {
+        "QuestionID": "QID16",
+        "QuestionText": "Are you a citizen of the United States?",
+        "QuestionType": "MC",
+        "Options": [
+          "Yes",
+          "No"
+        ],
+        "Settings": {
+          "Selector": "SAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": 1,
+          "SelectedText": "Yes"
+        }
+      },
+      {
+        "QuestionID": "QID17",
+        "QuestionText": "Which of these best describes you?",
+        "QuestionType": "MC",
+        "Options": [
+          "Married",
+          "Living with a partner",
+          "Divorced",
+          "Separated",
+          "Widowed",
+          "Never been married"
+        ],
+        "Settings": {
+          "Selector": "SAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": 6,
+          "SelectedText": "Never been married"
+        }
+      },
+      {
+        "QuestionID": "QID18",
+        "QuestionText": "What is your present religion, if any?",
+        "QuestionType": "MC",
+        "Options": [
+          "Protestant",
+          "Roman Catholic",
+          "Mormon",
+          "Orthodox",
+          "Jewish",
+          "Muslim",
+          "Buddhist",
+          "Hindu",
+          "Atheist",
+          "Agnostic",
+          "Other",
+          "Nothing in particular"
+        ],
+        "Settings": {
+          "Selector": "SAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": 1,
+          "SelectedText": "Protestant"
+        }
+      },
+      {
+        "QuestionID": "QID19",
+        "QuestionText": "Aside from weddings and funerals, how often do you attend religious services?",
+        "QuestionType": "MC",
+        "Options": [
+          "More than once a week",
+          "Once a week",
+          "Once or twice a month",
+          "A few times a year",
+          "Seldom",
+          "Never"
+        ],
+        "Settings": {
+          "Selector": "SAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": 2,
+          "SelectedText": "Once a week"
+        }
+      },
+      {
+        "QuestionID": "QID20",
+        "QuestionText": "In politics today, do you consider yourself a",
+        "QuestionType": "MC",
+        "Options": [
+          "Republican",
+          "Democrat",
+          "Independent",
+          "Something else"
+        ],
+        "Settings": {
+          "Selector": "SAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": 1,
+          "SelectedText": "Republican"
+        }
+      },
+      {
+        "QuestionID": "QID21",
+        "QuestionText": "Last year, what was your total family income from all sources, before taxes?",
+        "QuestionType": "MC",
+        "Options": [
+          "Less than $30,000",
+          "$30,000-$50,000",
+          "$50,000-$75,000",
+          "$75,000-$100,000",
+          "$100,000 or more"
+        ],
+        "Settings": {
+          "Selector": "SAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": 1,
+          "SelectedText": "Less than $30,000"
+        }
+      },
+      {
+        "QuestionID": "QID22",
+        "QuestionText": "In general, would you describe your political views as",
+        "QuestionType": "MC",
+        "Options": [
+          "Very conservative",
+          "Conservative",
+          "Moderate",
+          "Liberal",
+          "Very liberal"
+        ],
+        "Settings": {
+          "Selector": "SAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": 1,
+          "SelectedText": "Very conservative"
+        }
+      },
+      {
+        "QuestionID": "QID23",
+        "QuestionText": "Including yourself, how many people currently live in your household?",
+        "QuestionType": "MC",
+        "Options": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "More than 4"
+        ],
+        "Settings": {
+          "Selector": "SAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": 2,
+          "SelectedText": "2"
+        }
+      },
+      {
+        "QuestionID": "QID24",
+        "QuestionText": "What is your current employment status?",
+        "QuestionType": "MC",
+        "Options": [
+          "Full-time employment",
+          "Part-time employment",
+          "Unemployed",
+          "Self-employed",
+          "Home-maker",
+          "Student",
+          "Retired"
+        ],
+        "Settings": {
+          "Selector": "SAVR",
+          "SubSelector": "TX",
+          "ForceResponse": "ON"
+        },
+        "Answers": {
+          "SelectedByPosition": 3,
+          "SelectedText": "Unemployed"
+        }
+      }
+    ]
+  }
+]
