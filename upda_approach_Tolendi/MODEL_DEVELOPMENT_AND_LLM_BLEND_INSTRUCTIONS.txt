@@ -1,0 +1,569 @@
+MODEL DEVELOPMENT AND LLM BLEND INSTRUCTIONS
+============================================
+
+Goal
+----
+Develop the current respondent-question model into a stronger system that can target:
+
+- Accuracy >= 60%
+- Pearson correlation >= 0.51
+
+without turning the pipeline into a brittle, overfit set of hand-written rules.
+
+
+Current Situation
+-----------------
+What we know from the live API results:
+
+- Pure ML is too weak.
+- ML + LLM is clearly stronger than ML only.
+- Political and social questions already have decent ranking signal, but poor label calibration.
+- Personal background questions have better closeness, but weak between-person differentiation.
+- News sharing is already relatively strong and should not be the main focus.
+
+Main conclusion:
+
+- The biggest weakness is question understanding under distribution shift.
+- The second weakness is treating all response types as the same generic numeric regression problem.
+- The LLM is adding semantic understanding that the ML model is currently missing.
+
+
+Core Principle
+--------------
+Do not keep adding blackbox-question-specific rules forever.
+
+Instead, move toward:
+
+1. better semantic question representations
+2. stronger respondent-history retrieval
+3. question-type-aware modeling
+4. dynamic ML + LLM blending
+5. harder offline validation
+
+
+PART 1 - HOW TO IMPROVE THE ML MODEL
+------------------------------------
+
+Step 1: Upgrade question representation
+---------------------------------------
+Replace the current TF-IDF + SVD question encoder with a stronger sentence embedding model.
+
+Use one embedding for:
+
+- question_text
+- context
+- options
+- combined_question_document = question_text + context + options
+
+Store one dense vector per question.
+
+Why this matters:
+
+- The current model mostly understands words, not meaning.
+- New political or background questions need semantic similarity, not keyword overlap.
+
+Expected gain:
+
+- Better nearest-neighbor question retrieval
+- Better generalization to new question wording
+- Better correlation on unseen questions
+
+
+Step 2: Build stronger nearest-question respondent features
+-----------------------------------------------------------
+For each target question:
+
+1. find top-k most similar historical questions by embedding similarity
+2. for each respondent, retrieve their answers to those neighbor questions
+3. compute:
+   - weighted average answer over neighbors
+   - weighted variance
+   - strongest single-neighbor answer
+   - cluster-level average over semantically similar questions
+
+Important:
+
+- This should be based on semantic embeddings, not only TF-IDF.
+- Use similarity-weighted retrieval.
+- Save neighbor ids and similarities for debugging.
+
+Why this matters:
+
+- The respondents are the same people.
+- Their past answers are the strongest signal if we can connect new questions to the right old questions.
+
+
+Step 3: Split modeling by question type
+---------------------------------------
+Do not use one generic modeling approach for everything.
+
+Create separate heads or model families for:
+
+1. Ordinal attitude questions
+   Example:
+   - trust in press
+   - government responsibility
+   - affirmative action
+
+2. Background / factual ordered questions
+   Example:
+   - employment last week
+   - financial satisfaction
+   - father's education
+
+3. Election behavior / political choice questions
+   Example:
+   - voted in 2020
+   - Biden vs Trump
+
+4. News-sharing / lifestyle questions
+   Example:
+   - social sharing / liking behavior
+
+Recommended handling:
+
+- ordinal items: ordinal regression or regression + learned thresholds
+- binary / vote questions: classification
+- "choice with abstain / didn't vote / don't know": multi-stage prediction
+
+
+Step 4: Add a DK / nonresponse gate
+-----------------------------------
+Many blackbox-style questions include:
+
+- Don't know
+- Can't remember
+- Didn't vote
+- Ineligible
+
+Do not model those as just a high-number label.
+
+Instead:
+
+1. first model whether respondent gives a substantive answer or a non-substantive answer
+2. then model the substantive answer conditional on being substantive
+3. combine the outputs
+
+This is especially important for:
+
+- T14
+- T17
+- T18
+- T25
+- T26
+
+Why this matters:
+
+- A lot of accuracy can be lost by mapping meaningful attitude scales and DK into one flat numeric axis.
+
+
+Step 5: Use richer persona-derived features
+-------------------------------------------
+Current structured persona features are useful but incomplete.
+
+Add features from persona text that capture:
+
+- political identity
+- trust in institutions
+- media skepticism
+- economic security / insecurity
+- religiosity tone
+- social dominance / fairness language
+- community orientation
+- personal responsibility vs structural explanations
+
+How to do this:
+
+Option A:
+- embed the persona essays directly and use the dense vectors as person features
+
+Option B:
+- ask the LLM once per respondent to extract stable trait tags
+- save those tags as structured features
+
+Recommended extracted tags:
+
+- ideology_strength
+- media_trust
+- institutional_trust
+- economic_anxiety
+- social_traditionalism
+- racial_progressivism
+- civic_engagement
+- political_certainty
+
+Do this once and cache it. Do not call the LLM live for every training row.
+
+
+Step 6: Add targeted interactions
+---------------------------------
+Build explicit person-question interactions, but keep them controlled.
+
+Examples:
+
+- ideology x question_is_political
+- party_score x election_question
+- race x affirmative_action_question
+- age x turnout_question
+- education x father_education_question
+- income x financial_satisfaction_question
+- media_trust x press_confidence_question
+- civic_engagement x turnout_question
+
+Avoid generating thousands of random interactions.
+Create a curated set tied to interpretable constructs.
+
+
+Step 7: Improve post-processing and calibration
+-----------------------------------------------
+After raw model prediction:
+
+- clip to valid range
+- calibrate per question family
+- then map to discrete labels
+
+Recommended:
+
+- ordinal questions: use learned thresholds, not plain round()
+- vote questions: probability thresholds
+- DK questions: pick DK only when DK probability is sufficiently high
+
+Important:
+
+- Strong correlation with bad accuracy often means the rank is correct but the label thresholds are wrong.
+- This is likely already happening on political/social items.
+
+
+PART 2 - HOW TO BLEND WITH THE LLM
+----------------------------------
+
+Use the LLM as a semantic specialist, not as a replacement for ML.
+
+The ML model should contribute:
+
+- respondent consistency
+- historical behavior
+- stable trait structure
+- scaling across all respondents
+
+The LLM should contribute:
+
+- understanding the meaning of new questions
+- mapping persona descriptions to likely stance
+- better handling of nuanced political and social wording
+
+
+Recommended LLM role
+--------------------
+For each respondent-question pair, ask Claude to produce:
+
+1. predicted answer
+2. confidence score
+3. question category
+4. whether the respondent is likely to choose DK / abstain / nonresponse
+5. short rationale tags, not long reasoning
+
+Suggested outputs to parse:
+
+- predicted_label
+- predicted_numeric
+- confidence_0_1
+- dk_probability_0_1
+- category
+- ideology_alignment
+- trust_alignment
+
+Keep the response structured as JSON.
+
+
+Recommended prompt design
+-------------------------
+The prompt should include:
+
+1. respondent profile summary
+2. stable structured features
+3. relevant persona text excerpts
+4. question text
+5. question context
+6. options
+7. answer constraints
+
+Prompt rules:
+
+- tell Claude the task is to predict this respondent's most likely survey answer
+- require choosing only among valid options
+- ask for a confidence estimate
+- ask for DK only when genuinely likely
+- ask for concise tags, not chain-of-thought
+
+Do not ask for free-form essays.
+Use deterministic settings and cache all responses.
+
+
+Dynamic blending strategy
+-------------------------
+Do not use one fixed blend for all questions.
+
+Use dynamic blending based on:
+
+- question category
+- retrieval similarity
+- ML confidence
+- LLM confidence
+- whether DK is in the option set
+
+Example starting policy:
+
+1. High-similarity questions:
+   - trust ML more
+   - example: 0.45 ML / 0.55 LLM
+
+2. Low-similarity political/social questions:
+   - trust LLM more
+   - example: 0.15 ML / 0.85 LLM
+
+3. Background / factual questions:
+   - trust ML more if structured features strongly apply
+   - example: 0.55 ML / 0.45 LLM
+
+4. News-sharing / lifestyle questions:
+   - moderate blend
+   - example: 0.35 ML / 0.65 LLM
+
+5. Election behavior questions:
+   - blend label probabilities, not rounded numeric outputs
+
+Best practice:
+
+- blend before final rounding
+- blend probabilities for discrete tasks
+- blend continuous scores for ordinal tasks
+
+
+Confidence-aware blend formula
+------------------------------
+For each row, define:
+
+- ml_score
+- llm_score
+- sim_score = semantic similarity to nearest historical questions
+- llm_conf
+- ml_conf
+
+Then compute:
+
+blend_weight_llm = base_weight_by_category
+blend_weight_llm += low_similarity_bonus
+blend_weight_llm += llm_conf_bonus
+blend_weight_llm -= ml_conf_bonus
+
+Clamp final LLM weight to a safe range, for example:
+
+- min 0.20
+- max 0.90
+
+This is much better than a fixed 0.1/0.9 or 0.3/0.7 for every case.
+
+
+PART 3 - HOW TO VALIDATE WITHOUT OVERFITTING
+--------------------------------------------
+
+Rule 1:
+Never trust random row split.
+
+Always validate by unseen questions.
+
+Use:
+
+- GroupKFold by question_id
+
+Also add harder stress tests:
+
+- hold out political/social question clusters
+- hold out background/factual clusters
+- hold out low-similarity semantic clusters
+
+
+Rule 2:
+Track both metrics at all times
+
+For each held-out question compute:
+
+- MAD
+- Accuracy = 1 - MAD / range
+- Pearson correlation across respondents
+
+Then report:
+
+- mean accuracy
+- mean correlation
+- combined score = 0.4 * accuracy + 0.6 * correlation
+
+
+Rule 3:
+Keep a simple baseline in every experiment
+
+Always compare new versions against:
+
+- current ML baseline
+- current ML + LLM baseline
+
+If a more complex model does not clearly beat the baseline on held-out questions, reject it.
+
+
+Rule 4:
+Do not leaderboard-tune endlessly
+
+The risk of overfitting rises when:
+
+- you change rules after every live submission
+- you write special logic for individual blackbox questions
+- you optimize to one tiny test set
+
+Safer approach:
+
+- change model by category or question type
+- test offline first
+- only then submit
+
+
+PART 4 - PRACTICAL BUILD ORDER
+------------------------------
+
+Phase 1: Highest-value upgrades
+
+1. Replace TF-IDF question embeddings with sentence embeddings
+2. Rebuild semantic nearest-question respondent priors
+3. Add question family routing
+4. Add DK / nonresponse gate
+
+Expected outcome:
+
+- biggest gain in generalization
+- biggest gain in political accuracy
+
+
+Phase 2: Stronger respondent semantics
+
+1. Add persona-text embeddings
+2. Add LLM-extracted structured tags per respondent
+3. Add controlled person-question interactions
+
+Expected outcome:
+
+- better respondent ranking
+- especially helpful for political/social and personal background questions
+
+
+Phase 3: Better blend
+
+1. Ask Claude for structured predictions + confidence
+2. Blend dynamically by category and confidence
+3. Blend probabilities for discrete questions
+4. Add threshold calibration
+
+Expected outcome:
+
+- best path to hit both high accuracy and high correlation
+
+
+Phase 4: Reliability
+
+1. cache all LLM outputs
+2. log semantic neighbors
+3. log per-question calibration thresholds
+4. version every submission artifact
+
+
+PART 5 - HOW TO USE CLAUDE OPUS 4.2
+-----------------------------------
+
+Use Claude as a batch inference service with strict structured outputs.
+
+Recommended workflow:
+
+1. prepare one JSONL row per respondent-question pair
+2. include:
+   - person_id
+   - summarized persona
+   - key structured traits
+   - question text
+   - context
+   - options
+3. request JSON output only
+4. cache the raw result
+5. convert to:
+   - numeric answer
+   - confidence
+   - DK probability
+   - category tag
+
+Operational advice:
+
+- keep temperature low
+- use deterministic formatting
+- retry parse failures automatically
+- never send the API key in code or commit history
+- load the API key from environment variables
+
+
+PART 6 - WHAT TO AVOID
+----------------------
+
+Avoid these traps:
+
+- one-off rules for every blackbox question id
+- treating DK as just the largest numeric label
+- evaluating on random row splits
+- letting the LLM produce long free-form answers
+- using only demographics and ignoring response history
+- using only response history and ignoring question semantics
+- blindly trusting one global blend ratio
+
+
+PART 7 - TARGET ARCHITECTURE
+----------------------------
+
+Best long-term setup:
+
+1. ML backbone
+   - respondent features
+   - latent historical features
+   - semantic question embeddings
+   - semantic retrieval priors
+   - question-family-specific models
+
+2. LLM inference layer
+   - structured prediction
+   - confidence
+   - DK propensity
+   - semantic tags
+
+3. Blend layer
+   - category-aware
+   - confidence-aware
+   - calibration-aware
+
+4. Validation layer
+   - grouped by unseen question
+   - stress tested by category and semantic shift
+
+
+Bottom line
+-----------
+
+To reach around 60% accuracy and 0.51 correlation:
+
+- do not keep hand-tuning question-specific heuristics
+- improve semantic understanding
+- separate question types
+- model DK explicitly
+- use Claude as a structured semantic expert
+- blend dynamically, not with one fixed ratio
+- validate on harder unseen-question splits
+
+The most realistic route is:
+
+stronger ML backbone + structured Claude predictions + dynamic calibrated blend
+
+not ML-only and not LLM-only.
