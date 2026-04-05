@@ -154,7 +154,7 @@ pip install -r requirements.txt
 <td align="center" width="33%">
 
 **Tanmay Kallakuri**<br>
-*Lead Engineer & Systems Architect*
+*Data Pipeline & LLM Systems*
 
 Built the master data pipeline (125K rows), SVD embedding model, question-to-construct mapper (531→148), KNN retrieval model, and the LLM persona simulation system. Designed the multi-source cherry-pick blending strategy and managed all 40 API submissions.
 
@@ -177,6 +177,8 @@ Built the 92-feature person response profiles, discovered and repaired broken co
 *ML Modeling & Ensemble Optimization*
 
 Built the LightGBM ensemble through 5 iterations (V1→V4.1), implementing family-aware heuristics, question-type routing, and data leakage fixes. Ran calibration analysis and exported cross-machine-compatible model artifacts.
+
+[![GitHub](https://img.shields.io/badge/GitHub-mazy--kz-181717?logo=github)](https://github.com/mazy-kz)
 
 </td>
 </tr>
